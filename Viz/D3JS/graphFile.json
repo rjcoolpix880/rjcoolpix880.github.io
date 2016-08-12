@@ -6,7 +6,7 @@
         {"id":"node4","group":3}
     ],
     "links":[
-        {"source":2,"target":1,"weight":1},
-        {"source":0,"target":2,"weight":3}
+        {"source":"node2","target":"node1","weight":1},
+        {"source":"node1","target":"node3","weight":3}
     ]
 }
