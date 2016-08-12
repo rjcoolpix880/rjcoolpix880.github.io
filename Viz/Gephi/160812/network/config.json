@@ -19,11 +19,11 @@
   },
   "features": {
     "search": true,
-    "groupSelectorAttribute": false,
-    "hoverBehavior": "default"
+    "groupSelectorAttribute": "CreditShort",
+    "hoverBehavior": "dim"
   },
   "informationPanel": {
-    "imageAttribute": false,
+    "imageAttribute": "CreditShort",
     "groupByEdgeDirection": false
   },
   "sigma": {
