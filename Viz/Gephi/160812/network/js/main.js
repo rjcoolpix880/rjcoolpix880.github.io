@@ -54,7 +54,7 @@ function initSigma(config) {
 	edgeColor: "source",
         labelAlignment: "center",    
         defaultLabelColor: "#000",
-        defaultLabelSize: 28,
+        defaultLabelSize: 7,
         defaultLabelBGColor: "#ddd",
         defaultHoverLabelBGColor: "#002147",
         defaultLabelHoverColor: "#fff",
