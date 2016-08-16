@@ -51,6 +51,7 @@ function initSigma(config) {
 		drawProps=config.sigma.drawingProperties;
 	else
 		drawProps={
+	edgeColor: "source",
         labelAlignment: "center",    
         defaultLabelColor: "#000",
         defaultLabelSize: 14,
