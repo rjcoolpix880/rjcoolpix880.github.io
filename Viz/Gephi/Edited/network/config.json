@@ -1,3 +1,5 @@
+
+
 {
   "type": "network",
   "version": "1.0",
@@ -26,6 +28,8 @@
     "imageAttribute": "CreditShort",
     "groupByEdgeDirection": false
   },
+
+  /*
   "sigma": {
     "graphProperties": {
       "minEdgeSize": 1,
@@ -54,4 +58,7 @@
       "maxRatio": 20
     }
   }
+
+  */
 }
+
