@@ -2,8 +2,8 @@
 <head>
 <style type="text/css">
   #container {
-    max-width: 400px;
-    height: 400px;
+    max-width: 100%;
+    height: 100%;
     margin: auto;
   }
 </style>
@@ -16,7 +16,8 @@
   sigma.parsers.json('data.json', {
     container: 'container',
     settings: {
-      defaultNodeColor: '#ec5148'
+      defaultNodeColor: '#ec5148',
+      edgeColor: 'source'
     }
   });
 </script>
