@@ -46,12 +46,12 @@ Object.size = function(obj) {
 function initSigma(config) {
 	var data=config.data
 	
-	var drawProps, graphProps,mouseProps;
+	//var drawProps, graphProps,mouseProps;
 	
     //if (config.sigma && config.sigma.drawingProperties) 
 	//	drawProps=config.sigma.drawingProperties;
 	//else 
-		drawProps={
+	var	drawProps={
 	    edgeColor: "source",
         labelAlignment: "center",    
         defaultLabelColor: "#000",
@@ -68,9 +68,9 @@ function initSigma(config) {
     };
     
     //if (config.sigma && config.sigma.graphProperties)	
-    //	graphProps=config.sigma.graphProperties;
+    // 	graphProps=config.sigma.graphProperties;
     //else
-    	graphProps={
+    var	graphProps={
         minNodeSize: 1,
         maxNodeSize: 7,
         minEdgeSize: 0.2,
@@ -80,7 +80,7 @@ function initSigma(config) {
 	//if (config.sigma && config.sigma.mouseProperties) 
 	//	mouseProps=config.sigma.mouseProperties;
 	//else
-		mouseProps={
+	var	mouseProps={
         minRatio: 0.75, // How far can we zoom out?
         maxRatio: 20, // How far can we zoom in?
     	};
