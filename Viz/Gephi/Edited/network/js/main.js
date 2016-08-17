@@ -47,11 +47,12 @@ function initSigma(config) {
 	var data=config.data
 	
 	var drawProps, graphProps,mouseProps;
-	if (config.sigma && config.sigma.drawingProperties) 
-		drawProps=config.sigma.drawingProperties;
-	else
+	
+    //if (config.sigma && config.sigma.drawingProperties) 
+	//	drawProps=config.sigma.drawingProperties;
+	//else 
 		drawProps={
-	edgeColor: "source",
+	    edgeColor: "source",
         labelAlignment: "center",    
         defaultLabelColor: "#000",
         defaultLabelSize: 7,
@@ -63,11 +64,12 @@ function initSigma(config) {
         hoverFontStyle: "bold",
         fontStyle: "bold",
         activeFontStyle: "bold"
+        
     };
     
-    if (config.sigma && config.sigma.graphProperties)	
-    	graphProps=config.sigma.graphProperties;
-    else
+    //if (config.sigma && config.sigma.graphProperties)	
+    //	graphProps=config.sigma.graphProperties;
+    //else
     	graphProps={
         minNodeSize: 1,
         maxNodeSize: 7,
@@ -75,9 +77,9 @@ function initSigma(config) {
         maxEdgeSize: 0.5
     	};
 	
-	if (config.sigma && config.sigma.mouseProperties) 
-		mouseProps=config.sigma.mouseProperties;
-	else
+	//if (config.sigma && config.sigma.mouseProperties) 
+	//	mouseProps=config.sigma.mouseProperties;
+	//else
 		mouseProps={
         minRatio: 0.75, // How far can we zoom out?
         maxRatio: 20, // How far can we zoom in?
