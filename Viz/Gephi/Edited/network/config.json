@@ -34,7 +34,9 @@
       "minNodeSize": 5
     },
     "drawingProperties": {
+      "labelColor": "node",
       "edgeColor": "source",
+      "defaultEdgeColor": "#000",
       "labelAlignment": "center",
       "labelThreshold": 10,
       "hoverFontStyle": "bold",
@@ -45,7 +47,7 @@
       "activeFontStyle": "bold",
       "fontStyle": "bold",
       "defaultHoverLabelBGColor": "#002147",
-      "defaultLabelBGColor": "#fff"
+      "defaultLabelBGColor": "#ddd"
     },
     "mouseProperties": {
       "minRatio": 0.75,
