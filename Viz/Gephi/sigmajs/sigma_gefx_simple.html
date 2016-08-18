@@ -18,18 +18,24 @@
 <script src="sigmasource/plugins/sigma.parsers.gexf.min.js"></script>
 
 <script>
-  sigma.parsers.gexf(
-    'LEEDTest.gexf',
-    { // Here is the ID of the DOM element that
-      // will contain the graph:
-      container: 'sigma-container'
-    },
-    function(s) {
-      // This function will be executed when the
-      // graph is displayed, with "s" the related
-      // sigma instance.
+  sigma.parsers.gexf('LEEDTest.gexf', {
+    container: 'container',
+    settings: {
+      defaultNodeColor: '#ec5148',
+      edgeColor: 'source',
+      defaultEdgeType: 'curve',
+      labelThreshold: 16,
+      labelAlignment: 'center',
+      enableHovering: 'true',
+      hoverBehavior: 'dim',
+      defaultHoverLabelBGColor: "#002147",
+      defaultLabelHoverColor: "#fff",
+      minNodeSize: 5,
+      maxNodeSize: 30
+
     }
-  );
+
+  });
 </script>
 <!-- [...] -->
 
