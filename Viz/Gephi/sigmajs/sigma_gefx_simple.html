@@ -33,6 +33,9 @@
   <div id="graph-container"></div>
 </div>
 <script>
+
+
+
 /**
  * Here is just a basic example on how to properly display a graph
  * exported from Gephi in the GEXF format.
@@ -58,7 +61,7 @@ sigma.parsers.gexf('LEEDTest.gexf', {
   settings: {
         //defaultNodeColor: '#ec5148',
         //edgeColor: 'source',
-        edgeType: 'curve',
+        defaultEdgeType: 'curve',
         labelThreshold: 16,
         //labelAlignment: 'center',
         //enableHovering: 'true',
@@ -121,6 +124,21 @@ sigma.parsers.gexf('LEEDTest.gexf', {
       });
     }
   );
+
+
+
+
+
+var s = new sigma({
+  renderers: [
+    {
+      container: document.getElementById('graph-container'),
+      type: 'canvas' // sigma.renderers.canvas works as well
+    }
+  ]
+});
+
+
 </script>
 
 
