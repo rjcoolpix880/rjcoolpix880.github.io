@@ -53,7 +53,23 @@
     return neighbors;
   });
 sigma.parsers.gexf('LEEDTest.gexf', {
-  container: 'graph-container'
+  container: 'graph-container',
+
+  settings: {
+        //defaultNodeColor: '#ec5148',
+        //edgeColor: 'source',
+        defaultEdgeType: 'curve',
+        //labelThreshold: 16,
+        //labelAlignment: 'center',
+        //enableHovering: 'true',
+        //hoverBehavior: 'dim',
+        //defaultHoverLabelBGColor: "#002147",
+        //defaultLabelHoverColor: "#fff",
+        minNodeSize: 5,
+        maxNodeSize: 40
+
+
+
 },
     function(s) {
       // We first need to save the original colors of our
