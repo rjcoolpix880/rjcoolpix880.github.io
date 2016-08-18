@@ -2,8 +2,8 @@
 <head>
 <style type="text/css">
   #container {
-    max-width: 400px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
     margin: auto;
   }
 </style>
@@ -16,9 +16,36 @@
 <div id="sigma-container"></div>
 <script src="sigmasource/sigma.min.js"></script>
 <script src="sigmasource/plugins/sigma.parsers.gexf.min.js"></script>
+
+
+
+
+
+<div id="container">
+  <style>
+    #graph-container {
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      position: absolute;
+    }
+  </style>
+  <div id="graph-container"></div>
+</div>
 <script>
-  // Add a method to the graph model that returns an
-  // object with every neighbors of a node inside:
+/**
+ * Here is just a basic example on how to properly display a graph
+ * exported from Gephi in the GEXF format.
+ *
+ * The plugin sigma.parsers.gexf can load and parse the GEXF graph file,
+ * and instantiate sigma when the graph is received.
+ *
+ * The object given as the second parameter is the base of the instance
+ * configuration object. The plugin will just add the "graph" key to it
+ * before the instanciation.
+ */
+
   sigma.classes.graph.addMethod('neighbors', function(nodeId) {
     var k,
         neighbors = {},
@@ -30,11 +57,14 @@
     return neighbors;
   });
 
-  sigma.parsers.gexf(
-    'LEEDTest.gexf',
-    {
-      container: 'sigma-container'
-    },
+
+
+
+
+
+sigma.parsers.gexf('LEEDTest.gexf', {
+  container: 'graph-container'
+},
     function(s) {
       // We first need to save the original colors of our
       // nodes and edges, like this:
@@ -93,15 +123,9 @@
     }
   );
 </script>
-<!-- [...] -->
-
-
-
-
-
-
-
 
 
 </body>
 </html>
+
+
