@@ -51,7 +51,7 @@ sigma.drawingProperties({
 -->
 
 <script src="sigma.js"></script>
-<script src="sigmasource/plugins/sigma.parsers.gexf.min.js"></script>
+<script src="sigmasource/plugins/sigma.parsers.json.min.js"></script>
 
 
 <script>
@@ -68,8 +68,8 @@ sigma.drawingProperties({
     return neighbors;
   });
 
-  sigma.parsers.gexf(
-    'path/to/les-miserables.gexf',
+  sigma.parsers.json('data.json', {
+    //'path/to/les-miserables.gexf',
     {
       container: 'sigma-container'
     },
