@@ -1,0 +1,2445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.3" version="1.3" xmlns:viz="http://www.gexf.net/1.3/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.3 http://www.gexf.net/1.3/gexf.xsd">
+  <meta lastmodifieddate="2016-08-18">
+    <creator>Gephi 0.9</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="majorcategorylong" title="MajorCategoryLong" type="string"></attribute>
+      <attribute id="majorcategoryshort" title="MajorCategoryShort" type="string"></attribute>
+      <attribute id="creditshort" title="CreditShort" type="string"></attribute>
+      <attribute id="creditlong" title="CreditLong" type="string"></attribute>
+      <attribute id="credittype" title="CreditType" type="string"></attribute>
+      <attribute id="leedpoints" title="LEEDPoints" type="double"></attribute>
+      <attribute id="type" title="Type" type="string"></attribute>
+      <attribute id="source" title="Source" type="string"></attribute>
+      <attribute id="target" title="Target" type="string"></attribute>
+      <attribute id="componentnumber" title="Component ID" type="integer">
+        <default>0</default>
+      </attribute>
+      <attribute id="strongcompnum" title="Strongly-Connected ID" type="integer">
+        <default>0</default>
+      </attribute>
+      <attribute id="eigencentrality" title="Eigenvector Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="eccentricity" title="Eccentricity" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="closnesscentrality" title="Closeness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="harmonicclosnesscentrality" title="Harmonic Closeness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="betweenesscentrality" title="Betweenness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="modularity_class" title="Modularity Class" type="integer">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="Minimum Project Requirements" label="Minimum Project Requirements">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Minimum Project Requirements"></attvalue>
+          <attvalue for="majorcategoryshort" value="MPR"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Credit"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="0"></attvalue>
+          <attvalue for="strongcompnum" value="0"></attvalue>
+          <attvalue for="eigencentrality" value="0.0"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="-20921.404" y="469.05237"></viz:position>
+        <viz:color r="255" g="173" b="210"></viz:color>
+      </node>
+      <node id="Integrative Process" label="Integrative Process">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Integrative Process"></attvalue>
+          <attvalue for="majorcategoryshort" value="IP"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Credit"></attvalue>
+          <attvalue for="leedpoints" value="1.0"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="43"></attvalue>
+          <attvalue for="eigencentrality" value="0.4771842778869158"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="434.029"></viz:size>
+        <viz:position x="1107.7856" y="-2568.887"></viz:position>
+        <viz:color r="255" g="0" b="107"></viz:color>
+      </node>
+      <node id="LEED for Neighborhood Development Location" label="LEED for Neighborhood Development Location">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Location and Transportation"></attvalue>
+          <attvalue for="majorcategoryshort" value="LT"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Credit"></attvalue>
+          <attvalue for="leedpoints" value="16.0"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="41"></attvalue>
+          <attvalue for="eigencentrality" value="0.022720728866626454"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="115.90451"></viz:size>
+        <viz:position x="-5440.473" y="1787.0538"></viz:position>
+        <viz:color r="64" g="41" b="255"></viz:color>
+      </node>
+      <node id="Sensitive Land Protection" label="Sensitive Land Protection">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Location and Transportation"></attvalue>
+          <attvalue for="majorcategoryshort" value="LT"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Credit"></attvalue>
+          <attvalue for="leedpoints" value="1.0"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="43"></attvalue>
+          <attvalue for="eigencentrality" value="0.0854851475740315"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="159.8396"></viz:size>
+        <viz:position x="-3661.424" y="-1607.9359"></viz:position>
+        <viz:color r="64" g="41" b="255"></viz:color>
+      </node>
+      <node id="High Priority Site" label="High Priority Site">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Location and Transportation"></attvalue>
+          <attvalue for="majorcategoryshort" value="LT"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Credit"></attvalue>
+          <attvalue for="leedpoints" value="2.0"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="43"></attvalue>
+          <attvalue for="eigencentrality" value="0.11075375277238114"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="177.52762"></viz:size>
+        <viz:position x="-3900.6414" y="1102.9761"></viz:position>
+        <viz:color r="64" g="41" b="255"></viz:color>
+      </node>
+      <node id="Surrounding Density and Diverse Uses" label="Surrounding Density and Diverse Uses">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Location and Transportation"></attvalue>
+          <attvalue for="majorcategoryshort" value="LT"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Credit"></attvalue>
+          <attvalue for="leedpoints" value="5.0"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="43"></attvalue>
+          <attvalue for="eigencentrality" value="0.1501940836695788"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="205.13586"></viz:size>
+        <viz:position x="-4475.913" y="50.959774"></viz:position>
+        <viz:color r="64" g="41" b="255"></viz:color>
+      </node>
+      <node id="Access to Quality Transit" label="Access to Quality Transit">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Location and Transportation"></attvalue>
+          <attvalue for="majorcategoryshort" value="LT"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Credit"></attvalue>
+          <attvalue for="leedpoints" value="5.0"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="43"></attvalue>
+          <attvalue for="eigencentrality" value="0.21694193277967103"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="251.85936"></viz:size>
+        <viz:position x="-3271.8953" y="-370.8789"></viz:position>
+        <viz:color r="64" g="41" b="255"></viz:color>
+      </node>
+      <node id="Bicycle Facilities" label="Bicycle Facilities">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Location and Transportation"></attvalue>
+          <attvalue for="majorcategoryshort" value="LT"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Credit"></attvalue>
+          <attvalue for="leedpoints" value="1.0"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="43"></attvalue>
+          <attvalue for="eigencentrality" value="0.12444767340192502"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="187.11337"></viz:size>
+        <viz:position x="-4238.85" y="-755.2713"></viz:position>
+        <viz:color r="64" g="41" b="255"></viz:color>
+      </node>
+      <node id="Reduced Parking Footprint" label="Reduced Parking Footprint">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Location and Transportation"></attvalue>
+          <attvalue for="majorcategoryshort" value="LT"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Credit"></attvalue>
+          <attvalue for="leedpoints" value="1.0"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="43"></attvalue>
+          <attvalue for="eigencentrality" value="0.12830279541201264"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="189.81195"></viz:size>
+        <viz:position x="-2178.8591" y="-257.9621"></viz:position>
+        <viz:color r="64" g="41" b="255"></viz:color>
+      </node>
+      <node id="Green Vehicles" label="Green Vehicles">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Location and Transportation"></attvalue>
+          <attvalue for="majorcategoryshort" value="LT"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Credit"></attvalue>
+          <attvalue for="leedpoints" value="1.0"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="43"></attvalue>
+          <attvalue for="eigencentrality" value="0.047073365254636915"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="132.95135"></viz:size>
+        <viz:position x="687.101" y="1301.824"></viz:position>
+        <viz:color r="64" g="41" b="255"></viz:color>
+      </node>
+      <node id="Construction Activity Pollution Prevention" label="Construction Activity Pollution Prevention">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Sustainable Sites"></attvalue>
+          <attvalue for="majorcategoryshort" value="SS"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Prereq"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="43"></attvalue>
+          <attvalue for="eigencentrality" value="0.046624280653596445"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="132.637"></viz:size>
+        <viz:position x="-5314.5967" y="-5110.821"></viz:position>
+        <viz:color r="5" g="245" b="0"></viz:color>
+      </node>
+      <node id="Site Assessment" label="Site Assessment">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Sustainable Sites"></attvalue>
+          <attvalue for="majorcategoryshort" value="SS"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Credit"></attvalue>
+          <attvalue for="leedpoints" value="1.0"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="43"></attvalue>
+          <attvalue for="eigencentrality" value="0.3628406712364827"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="353.98846"></viz:size>
+        <viz:position x="-1785.8756" y="-2650.1763"></viz:position>
+        <viz:color r="5" g="245" b="0"></viz:color>
+      </node>
+      <node id="Site Development - Protect or Restore Habitat" label="Site Development - Protect or Restore Habitat">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Sustainable Sites"></attvalue>
+          <attvalue for="majorcategoryshort" value="SS"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Credit"></attvalue>
+          <attvalue for="leedpoints" value="2.0"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="43"></attvalue>
+          <attvalue for="eigencentrality" value="0.26835257540766455"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="287.8468"></viz:size>
+        <viz:position x="-4333.733" y="-4669.4536"></viz:position>
+        <viz:color r="5" g="245" b="0"></viz:color>
+      </node>
+      <node id="Open Space" label="Open Space">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Sustainable Sites"></attvalue>
+          <attvalue for="majorcategoryshort" value="SS"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Credit"></attvalue>
+          <attvalue for="leedpoints" value="1.0"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="43"></attvalue>
+          <attvalue for="eigencentrality" value="0.3676779460995191"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="357.37457"></viz:size>
+        <viz:position x="-2746.343" y="-4414.94"></viz:position>
+        <viz:color r="5" g="245" b="0"></viz:color>
+      </node>
+      <node id="Rainwater Management" label="Rainwater Management">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Sustainable Sites"></attvalue>
+          <attvalue for="majorcategoryshort" value="SS"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Credit"></attvalue>
+          <attvalue for="leedpoints" value="3.0"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="43"></attvalue>
+          <attvalue for="eigencentrality" value="0.3881332082884391"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="371.69324"></viz:size>
+        <viz:position x="-2366.7305" y="-6076.177"></viz:position>
+        <viz:color r="5" g="245" b="0"></viz:color>
+      </node>
+      <node id="Heat Island Reduction" label="Heat Island Reduction">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Sustainable Sites"></attvalue>
+          <attvalue for="majorcategoryshort" value="SS"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Credit"></attvalue>
+          <attvalue for="leedpoints" value="2.0"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="43"></attvalue>
+          <attvalue for="eigencentrality" value="0.31396257765708185"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="319.7738"></viz:size>
+        <viz:position x="-1227.135" y="-4229.3574"></viz:position>
+        <viz:color r="5" g="245" b="0"></viz:color>
+      </node>
+      <node id="Light Pollution Reduction" label="Light Pollution Reduction">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Sustainable Sites"></attvalue>
+          <attvalue for="majorcategoryshort" value="SS"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Credit"></attvalue>
+          <attvalue for="leedpoints" value="1.0"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="43"></attvalue>
+          <attvalue for="eigencentrality" value="0.07777569946076168"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="154.443"></viz:size>
+        <viz:position x="2518.8242" y="-3250.2378"></viz:position>
+        <viz:color r="5" g="245" b="0"></viz:color>
+      </node>
+      <node id="Outdoor Water Use Reduction - Prereq" label="Outdoor Water Use Reduction - Prereq">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Water Efficiency"></attvalue>
+          <attvalue for="majorcategoryshort" value="WE"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Prereq"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="43"></attvalue>
+          <attvalue for="eigencentrality" value="0.28143603811428214"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="297.00522"></viz:size>
+        <viz:position x="-576.62134" y="-8375.055"></viz:position>
+        <viz:color r="41" g="255" b="210"></viz:color>
+      </node>
+      <node id="Indoor Water Use Reduction - Prereq" label="Indoor Water Use Reduction - Prereq">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Water Efficiency"></attvalue>
+          <attvalue for="majorcategoryshort" value="WE"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Prereq"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="43"></attvalue>
+          <attvalue for="eigencentrality" value="0.42936393772774584"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="400.55475"></viz:size>
+        <viz:position x="2583.482" y="-6193.7397"></viz:position>
+        <viz:color r="41" g="255" b="210"></viz:color>
+      </node>
+      <node id="Building-Level Water Metering" label="Building-Level Water Metering">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Water Efficiency"></attvalue>
+          <attvalue for="majorcategoryshort" value="WE"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Prereq"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="43"></attvalue>
+          <attvalue for="eigencentrality" value="0.30700441474182977"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="314.90308"></viz:size>
+        <viz:position x="2406.4265" y="-7793.7993"></viz:position>
+        <viz:color r="41" g="255" b="210"></viz:color>
+      </node>
+      <node id="Outdoor Water Use Reduction" label="Outdoor Water Use Reduction">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Water Efficiency"></attvalue>
+          <attvalue for="majorcategoryshort" value="WE"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Credit"></attvalue>
+          <attvalue for="leedpoints" value="2.0"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="43"></attvalue>
+          <attvalue for="eigencentrality" value="0.37361267326371334"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="361.52887"></viz:size>
+        <viz:position x="511.39713" y="-7262.717"></viz:position>
+        <viz:color r="41" g="255" b="210"></viz:color>
+      </node>
+      <node id="Indoor Water Use Reduction" label="Indoor Water Use Reduction">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Water Efficiency"></attvalue>
+          <attvalue for="majorcategoryshort" value="WE"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Credit"></attvalue>
+          <attvalue for="leedpoints" value="6.0"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="43"></attvalue>
+          <attvalue for="eigencentrality" value="0.35804781203160385"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="350.63348"></viz:size>
+        <viz:position x="892.5085" y="-8419.331"></viz:position>
+        <viz:color r="41" g="255" b="210"></viz:color>
+      </node>
+      <node id="Cooling Tower Water Use" label="Cooling Tower Water Use">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Water Efficiency"></attvalue>
+          <attvalue for="majorcategoryshort" value="WE"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Credit"></attvalue>
+          <attvalue for="leedpoints" value="2.0"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="43"></attvalue>
+          <attvalue for="eigencentrality" value="0.3035897939662586"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="312.51285"></viz:size>
+        <viz:position x="1368.2782" y="-5729.018"></viz:position>
+        <viz:color r="41" g="255" b="210"></viz:color>
+      </node>
+      <node id="Water Metering" label="Water Metering">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Water Efficiency"></attvalue>
+          <attvalue for="majorcategoryshort" value="WE"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Credit"></attvalue>
+          <attvalue for="leedpoints" value="1.0"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="43"></attvalue>
+          <attvalue for="eigencentrality" value="0.4520663800906574"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="416.44647"></viz:size>
+        <viz:position x="1949.7616" y="-9120.889"></viz:position>
+        <viz:color r="41" g="255" b="210"></viz:color>
+      </node>
+      <node id="Fundamental Commissioning and Verification" label="Fundamental Commissioning and Verification">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Energy and Atmosphere"></attvalue>
+          <attvalue for="majorcategoryshort" value="EA"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Prereq"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="43"></attvalue>
+          <attvalue for="eigencentrality" value="0.18253108358281284"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="227.77176"></viz:size>
+        <viz:position x="7079.485" y="-1231.3232"></viz:position>
+        <viz:color r="255" g="187" b="71"></viz:color>
+      </node>
+      <node id="Minimum Energy Performance" label="Minimum Energy Performance">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Energy and Atmosphere"></attvalue>
+          <attvalue for="majorcategoryshort" value="EA"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Prereq"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="43"></attvalue>
+          <attvalue for="eigencentrality" value="0.6269710705816457"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="538.87976"></viz:size>
+        <viz:position x="4081.7083" y="-677.0395"></viz:position>
+        <viz:color r="255" g="187" b="71"></viz:color>
+      </node>
+      <node id="Building-Level Energy Metering" label="Building-Level Energy Metering">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Energy and Atmosphere"></attvalue>
+          <attvalue for="majorcategoryshort" value="EA"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Prereq"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="43"></attvalue>
+          <attvalue for="eigencentrality" value="0.11273291161982514"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="178.91304"></viz:size>
+        <viz:position x="7434.575" y="-3560.5107"></viz:position>
+        <viz:color r="255" g="187" b="71"></viz:color>
+      </node>
+      <node id="Fundamental Refrigerant Management" label="Fundamental Refrigerant Management">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Energy and Atmosphere"></attvalue>
+          <attvalue for="majorcategoryshort" value="EA"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Prereq"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="45"></attvalue>
+          <attvalue for="eigencentrality" value="0.0"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="6718.757" y="-4003.8232"></viz:position>
+        <viz:color r="255" g="187" b="71"></viz:color>
+      </node>
+      <node id="Enhanced Commissioning" label="Enhanced Commissioning">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Energy and Atmosphere"></attvalue>
+          <attvalue for="majorcategoryshort" value="EA"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Credit"></attvalue>
+          <attvalue for="leedpoints" value="6.0"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="43"></attvalue>
+          <attvalue for="eigencentrality" value="0.12909631905345278"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="190.36742"></viz:size>
+        <viz:position x="8414.829" y="-1598.5068"></viz:position>
+        <viz:color r="255" g="187" b="71"></viz:color>
+      </node>
+      <node id="Optimize Energy Performance" label="Optimize Energy Performance">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Energy and Atmosphere"></attvalue>
+          <attvalue for="majorcategoryshort" value="EA"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Credit"></attvalue>
+          <attvalue for="leedpoints" value="18.0"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="43"></attvalue>
+          <attvalue for="eigencentrality" value="0.663778857887623"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="564.6452"></viz:size>
+        <viz:position x="4045.0088" y="-2692.3718"></viz:position>
+        <viz:color r="255" g="187" b="71"></viz:color>
+      </node>
+      <node id="Advanced Energy Metering" label="Advanced Energy Metering">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Energy and Atmosphere"></attvalue>
+          <attvalue for="majorcategoryshort" value="EA"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Credit"></attvalue>
+          <attvalue for="leedpoints" value="1.0"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="43"></attvalue>
+          <attvalue for="eigencentrality" value="0.16481824915750873"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="215.37277"></viz:size>
+        <viz:position x="8157.929" y="-2735.6929"></viz:position>
+        <viz:color r="255" g="187" b="71"></viz:color>
+      </node>
+      <node id="Demand Response" label="Demand Response">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Energy and Atmosphere"></attvalue>
+          <attvalue for="majorcategoryshort" value="EA"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Credit"></attvalue>
+          <attvalue for="leedpoints" value="2.0"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="43"></attvalue>
+          <attvalue for="eigencentrality" value="0.20152856282196707"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="241.06999"></viz:size>
+        <viz:position x="7660.896" y="-271.46832"></viz:position>
+        <viz:color r="255" g="187" b="71"></viz:color>
+      </node>
+      <node id="Renewable Energy Production" label="Renewable Energy Production">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Energy and Atmosphere"></attvalue>
+          <attvalue for="majorcategoryshort" value="EA"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Credit"></attvalue>
+          <attvalue for="leedpoints" value="3.0"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="43"></attvalue>
+          <attvalue for="eigencentrality" value="0.39210699125612936"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="374.47488"></viz:size>
+        <viz:position x="6187.148" y="-2424.2397"></viz:position>
+        <viz:color r="255" g="187" b="71"></viz:color>
+      </node>
+      <node id="Enhanced Refrigerant Management" label="Enhanced Refrigerant Management">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Energy and Atmosphere"></attvalue>
+          <attvalue for="majorcategoryshort" value="EA"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Credit"></attvalue>
+          <attvalue for="leedpoints" value="1.0"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="44"></attvalue>
+          <attvalue for="eigencentrality" value="0.003582575223366709"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="102.507805"></viz:size>
+        <viz:position x="6572.0854" y="-4675.7114"></viz:position>
+        <viz:color r="255" g="187" b="71"></viz:color>
+      </node>
+      <node id="Green Power and Carbon Offsets" label="Green Power and Carbon Offsets">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Energy and Atmosphere"></attvalue>
+          <attvalue for="majorcategoryshort" value="EA"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Credit"></attvalue>
+          <attvalue for="leedpoints" value="2.0"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="43"></attvalue>
+          <attvalue for="eigencentrality" value="0.16971361114638747"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="218.79953"></viz:size>
+        <viz:position x="5259.501" y="-1713.6036"></viz:position>
+        <viz:color r="255" g="187" b="71"></viz:color>
+      </node>
+      <node id="Storage and Collection of Recyclables" label="Storage and Collection of Recyclables">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Materials and Resources"></attvalue>
+          <attvalue for="majorcategoryshort" value="MR"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Prereq"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="46"></attvalue>
+          <attvalue for="eigencentrality" value="0.0"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="1991.1682" y="3717.8481"></viz:position>
+        <viz:color r="0" g="189" b="148"></viz:color>
+      </node>
+      <node id="Construction and Demolition Waste Management Planning" label="Construction and Demolition Waste Management Planning">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Materials and Resources"></attvalue>
+          <attvalue for="majorcategoryshort" value="MR"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Prereq"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="27"></attvalue>
+          <attvalue for="eigencentrality" value="0.026179924393913465"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="118.32594"></viz:size>
+        <viz:position x="-2283.745" y="5741.299"></viz:position>
+        <viz:color r="0" g="189" b="148"></viz:color>
+      </node>
+      <node id="Building Life-Cycle Impact Reduction" label="Building Life-Cycle Impact Reduction">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Materials and Resources"></attvalue>
+          <attvalue for="majorcategoryshort" value="MR"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Credit"></attvalue>
+          <attvalue for="leedpoints" value="5.0"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="43"></attvalue>
+          <attvalue for="eigencentrality" value="0.07290874129360256"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="151.03612"></viz:size>
+        <viz:position x="-2713.5825" y="6799.281"></viz:position>
+        <viz:color r="0" g="189" b="148"></viz:color>
+      </node>
+      <node id="Building Product Disclosure and Optimization - Environmental Product 
+Declarations" label="Building Product Disclosure and Optimization - Environmental Product 
+Declarations">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Materials and Resources"></attvalue>
+          <attvalue for="majorcategoryshort" value="MR"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Credit"></attvalue>
+          <attvalue for="leedpoints" value="2.0"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="43"></attvalue>
+          <attvalue for="eigencentrality" value="0.06461619854405096"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="145.23134"></viz:size>
+        <viz:position x="-1066.8356" y="8060.8286"></viz:position>
+        <viz:color r="0" g="189" b="148"></viz:color>
+      </node>
+      <node id="Building Product Disclosure and Optimization - Sourcing of Raw Materials" label="Building Product Disclosure and Optimization - Sourcing of Raw Materials">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Materials and Resources"></attvalue>
+          <attvalue for="majorcategoryshort" value="MR"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Credit"></attvalue>
+          <attvalue for="leedpoints" value="2.0"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="43"></attvalue>
+          <attvalue for="eigencentrality" value="0.06461619854405096"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="145.23134"></viz:size>
+        <viz:position x="-1683.6035" y="8812.898"></viz:position>
+        <viz:color r="0" g="189" b="148"></viz:color>
+      </node>
+      <node id="Building Product Disclosure and Optimization - Material Ingredients " label="Building Product Disclosure and Optimization - Material Ingredients ">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Materials and Resources"></attvalue>
+          <attvalue for="majorcategoryshort" value="MR"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Credit"></attvalue>
+          <attvalue for="leedpoints" value="2.0"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="43"></attvalue>
+          <attvalue for="eigencentrality" value="0.06461619854405096"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="145.23134"></viz:size>
+        <viz:position x="-2077.8003" y="7872.3433"></viz:position>
+        <viz:color r="0" g="189" b="148"></viz:color>
+      </node>
+      <node id="Construction and Demolition Waste Management " label="Construction and Demolition Waste Management ">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Materials and Resources"></attvalue>
+          <attvalue for="majorcategoryshort" value="MR"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Credit"></attvalue>
+          <attvalue for="leedpoints" value="2.0"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="27"></attvalue>
+          <attvalue for="eigencentrality" value="0.026179924393913465"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="118.32594"></viz:size>
+        <viz:position x="-1729.4288" y="6063.083"></viz:position>
+        <viz:color r="0" g="189" b="148"></viz:color>
+      </node>
+      <node id="Minimum Indoor Air Quality Performance" label="Minimum Indoor Air Quality Performance">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Indoor Environmental Quality"></attvalue>
+          <attvalue for="majorcategoryshort" value="EQ"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Prereq"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="43"></attvalue>
+          <attvalue for="eigencentrality" value="0.5326475129283481"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="472.85324"></viz:size>
+        <viz:position x="3812.7986" y="3533.9573"></viz:position>
+        <viz:color r="159" g="0" b="224"></viz:color>
+      </node>
+      <node id="Environmental Tobacco Smoke Control" label="Environmental Tobacco Smoke Control">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Indoor Environmental Quality"></attvalue>
+          <attvalue for="majorcategoryshort" value="EQ"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Prereq"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="47"></attvalue>
+          <attvalue for="eigencentrality" value="0.0"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="3105.3079" y="4961.7573"></viz:position>
+        <viz:color r="159" g="0" b="224"></viz:color>
+      </node>
+      <node id="Enhanced Indoor Air Quality Strategies" label="Enhanced Indoor Air Quality Strategies">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Indoor Environmental Quality"></attvalue>
+          <attvalue for="majorcategoryshort" value="EQ"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Credit"></attvalue>
+          <attvalue for="leedpoints" value="2.0"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="43"></attvalue>
+          <attvalue for="eigencentrality" value="0.5201231546683709"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="464.08624"></viz:size>
+        <viz:position x="5193.07" y="3049.6128"></viz:position>
+        <viz:color r="159" g="0" b="224"></viz:color>
+      </node>
+      <node id="Low-Emitting Materials" label="Low-Emitting Materials">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Indoor Environmental Quality"></attvalue>
+          <attvalue for="majorcategoryshort" value="EQ"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Credit"></attvalue>
+          <attvalue for="leedpoints" value="3.0"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="43"></attvalue>
+          <attvalue for="eigencentrality" value="0.05573511070571076"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="139.01459"></viz:size>
+        <viz:position x="2454.886" y="8162.0347"></viz:position>
+        <viz:color r="159" g="0" b="224"></viz:color>
+      </node>
+      <node id="Construction Indoor Air Quality Management Plan" label="Construction Indoor Air Quality Management Plan">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Indoor Environmental Quality"></attvalue>
+          <attvalue for="majorcategoryshort" value="EQ"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Credit"></attvalue>
+          <attvalue for="leedpoints" value="1.0"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="43"></attvalue>
+          <attvalue for="eigencentrality" value="0.05573511070571076"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="139.01459"></viz:size>
+        <viz:position x="4274.324" y="7472.9634"></viz:position>
+        <viz:color r="159" g="0" b="224"></viz:color>
+      </node>
+      <node id="Indoor Air Quality Assessment" label="Indoor Air Quality Assessment">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Indoor Environmental Quality"></attvalue>
+          <attvalue for="majorcategoryshort" value="EQ"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Credit"></attvalue>
+          <attvalue for="leedpoints" value="2.0"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="43"></attvalue>
+          <attvalue for="eigencentrality" value="0.11295264980812046"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="179.06686"></viz:size>
+        <viz:position x="4231.096" y="6467.2466"></viz:position>
+        <viz:color r="159" g="0" b="224"></viz:color>
+      </node>
+      <node id="Thermal Comfort" label="Thermal Comfort">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Indoor Environmental Quality"></attvalue>
+          <attvalue for="majorcategoryshort" value="EQ"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Credit"></attvalue>
+          <attvalue for="leedpoints" value="1.0"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="43"></attvalue>
+          <attvalue for="eigencentrality" value="0.12176823839498047"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="185.23776"></viz:size>
+        <viz:position x="4541.5425" y="1597.9153"></viz:position>
+        <viz:color r="159" g="0" b="224"></viz:color>
+      </node>
+      <node id="Interior Lighting" label="Interior Lighting">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Indoor Environmental Quality"></attvalue>
+          <attvalue for="majorcategoryshort" value="EQ"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Credit"></attvalue>
+          <attvalue for="leedpoints" value="2.0"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="43"></attvalue>
+          <attvalue for="eigencentrality" value="0.2637658031402966"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="284.63605"></viz:size>
+        <viz:position x="5420.433" y="724.03253"></viz:position>
+        <viz:color r="159" g="0" b="224"></viz:color>
+      </node>
+      <node id="Daylight" label="Daylight">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Indoor Environmental Quality"></attvalue>
+          <attvalue for="majorcategoryshort" value="EQ"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Credit"></attvalue>
+          <attvalue for="leedpoints" value="3.0"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="43"></attvalue>
+          <attvalue for="eigencentrality" value="0.16975285753751052"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="218.827"></viz:size>
+        <viz:position x="2523.5393" y="-1267.6307"></viz:position>
+        <viz:color r="159" g="0" b="224"></viz:color>
+      </node>
+      <node id="Quality Views" label="Quality Views">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Indoor Environmental Quality"></attvalue>
+          <attvalue for="majorcategoryshort" value="EQ"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Credit"></attvalue>
+          <attvalue for="leedpoints" value="1.0"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="43"></attvalue>
+          <attvalue for="eigencentrality" value="0.16975285753751052"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="218.827"></viz:size>
+        <viz:position x="1107.0608" y="-502.80576"></viz:position>
+        <viz:color r="159" g="0" b="224"></viz:color>
+      </node>
+      <node id="Acoustic Performance" label="Acoustic Performance">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Indoor Environmental Quality"></attvalue>
+          <attvalue for="majorcategoryshort" value="EQ"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Credit"></attvalue>
+          <attvalue for="leedpoints" value="1.0"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="49"></attvalue>
+          <attvalue for="eigencentrality" value="0.0"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="3013.8967" y="7105.4233"></viz:position>
+        <viz:color r="159" g="0" b="224"></viz:color>
+      </node>
+      <node id="Innovation  " label="Innovation  ">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Innovation"></attvalue>
+          <attvalue for="majorcategoryshort" value="IN"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Credit"></attvalue>
+          <attvalue for="leedpoints" value="5.0"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="50"></attvalue>
+          <attvalue for="eigencentrality" value="0.0"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="134.23607" y="80.066154"></viz:position>
+        <viz:color r="217" g="66" b="255"></viz:color>
+      </node>
+      <node id="LEED Accredited Professional" label="LEED Accredited Professional">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Innovation"></attvalue>
+          <attvalue for="majorcategoryshort" value="IN"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Credit"></attvalue>
+          <attvalue for="leedpoints" value="1.0"></attvalue>
+          <attvalue for="componentnumber" value="2"></attvalue>
+          <attvalue for="strongcompnum" value="51"></attvalue>
+          <attvalue for="eigencentrality" value="0.0"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="-18890.348" y="8941.511"></viz:position>
+        <viz:color r="217" g="66" b="255"></viz:color>
+      </node>
+      <node id="Regional Priority: Specific Credit" label="Regional Priority: Specific Credit">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Regional Priority"></attvalue>
+          <attvalue for="majorcategoryshort" value="RP"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Credit"></attvalue>
+          <attvalue for="leedpoints" value="1.0"></attvalue>
+          <attvalue for="componentnumber" value="3"></attvalue>
+          <attvalue for="strongcompnum" value="52"></attvalue>
+          <attvalue for="eigencentrality" value="0.0"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="100.0"></viz:size>
+        <viz:position x="-20131.498" y="5494.2607"></viz:position>
+        <viz:color r="0" g="189" b="92"></viz:color>
+      </node>
+      <node id="Civil Engineer" label="Civil Engineer">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Who"></attvalue>
+          <attvalue for="majorcategoryshort" value="W"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Who"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="8"></attvalue>
+          <attvalue for="eigencentrality" value="0.627659687557412"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="539.3618"></viz:size>
+        <viz:position x="-786.9173" y="-5999.404"></viz:position>
+        <viz:color r="136" g="136" b="136"></viz:color>
+      </node>
+      <node id="Community Members" label="Community Members">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Who"></attvalue>
+          <attvalue for="majorcategoryshort" value="W"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Who"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="17"></attvalue>
+          <attvalue for="eigencentrality" value="0.07956698707244504"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="155.69688"></viz:size>
+        <viz:position x="-904.46497" y="-534.77374"></viz:position>
+        <viz:color r="136" g="136" b="136"></viz:color>
+      </node>
+      <node id="Facilities Manager" label="Facilities Manager">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Who"></attvalue>
+          <attvalue for="majorcategoryshort" value="W"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Who"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="16"></attvalue>
+          <attvalue for="eigencentrality" value="0.2943766522707375"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="306.06366"></viz:size>
+        <viz:position x="2192.7285" y="16.711533"></viz:position>
+        <viz:color r="136" g="136" b="136"></viz:color>
+      </node>
+      <node id="Owner" label="Owner">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Who"></attvalue>
+          <attvalue for="majorcategoryshort" value="W"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Who"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="18"></attvalue>
+          <attvalue for="eigencentrality" value="0.9766995393904043"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="783.6897"></viz:size>
+        <viz:position x="2585.3809" y="1796.697"></viz:position>
+        <viz:color r="136" g="136" b="136"></viz:color>
+      </node>
+      <node id="Geologist" label="Geologist">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Who"></attvalue>
+          <attvalue for="majorcategoryshort" value="W"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Who"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="39"></attvalue>
+          <attvalue for="eigencentrality" value="0.009664178322866186"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="106.76492"></viz:size>
+        <viz:position x="-7814.861" y="-6371.142"></viz:position>
+        <viz:color r="136" g="136" b="136"></viz:color>
+      </node>
+      <node id="Cost Estimator" label="Cost Estimator">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Who"></attvalue>
+          <attvalue for="majorcategoryshort" value="W"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Who"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="14"></attvalue>
+          <attvalue for="eigencentrality" value="0.09629632454810372"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="167.40742"></viz:size>
+        <viz:position x="-2079.04" y="2980.5337"></viz:position>
+        <viz:color r="136" g="136" b="136"></viz:color>
+      </node>
+      <node id="Natural Resource Specialist" label="Natural Resource Specialist">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Who"></attvalue>
+          <attvalue for="majorcategoryshort" value="W"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Who"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="36"></attvalue>
+          <attvalue for="eigencentrality" value="0.06276441870740504"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="143.93509"></viz:size>
+        <viz:position x="-4836.7065" y="-5771.295"></viz:position>
+        <viz:color r="136" g="136" b="136"></viz:color>
+      </node>
+      <node id="Building Operations and Management" label="Building Operations and Management">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Who"></attvalue>
+          <attvalue for="majorcategoryshort" value="W"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Who"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="7"></attvalue>
+          <attvalue for="eigencentrality" value="0.16589937990725717"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="216.12958"></viz:size>
+        <viz:position x="4040.8716" y="-4600.622"></viz:position>
+        <viz:color r="136" g="136" b="136"></viz:color>
+      </node>
+      <node id="Soil Scientist" label="Soil Scientist">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Who"></attvalue>
+          <attvalue for="majorcategoryshort" value="W"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Who"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="35"></attvalue>
+          <attvalue for="eigencentrality" value="0.10938869936100144"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="176.57208"></viz:size>
+        <viz:position x="-6007.0757" y="-4172.245"></viz:position>
+        <viz:color r="136" g="136" b="136"></viz:color>
+      </node>
+      <node id="Daylight / Energy Analyst" label="Daylight / Energy Analyst">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Who"></attvalue>
+          <attvalue for="majorcategoryshort" value="W"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Who"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="11"></attvalue>
+          <attvalue for="eigencentrality" value="0.10877972644178877"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="176.14581"></viz:size>
+        <viz:position x="1851.7607" y="-3865.6965"></viz:position>
+        <viz:color r="136" g="136" b="136"></viz:color>
+      </node>
+      <node id="Land Planner" label="Land Planner">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Who"></attvalue>
+          <attvalue for="majorcategoryshort" value="W"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Who"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="33"></attvalue>
+          <attvalue for="eigencentrality" value="0.12415906547885242"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="186.91135"></viz:size>
+        <viz:position x="-4165.737" y="-6032.9717"></viz:position>
+        <viz:color r="136" g="136" b="136"></viz:color>
+      </node>
+      <node id="Plumbing Engineer" label="Plumbing Engineer">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Who"></attvalue>
+          <attvalue for="majorcategoryshort" value="W"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Who"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="4"></attvalue>
+          <attvalue for="eigencentrality" value="0.22201144074027473"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="255.40802"></viz:size>
+        <viz:position x="361.71222" y="-4634.641"></viz:position>
+        <viz:color r="136" g="136" b="136"></viz:color>
+      </node>
+      <node id="Planning Staff" label="Planning Staff">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Who"></attvalue>
+          <attvalue for="majorcategoryshort" value="W"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Who"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="15"></attvalue>
+          <attvalue for="eigencentrality" value="0.10228771593907149"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="171.60141"></viz:size>
+        <viz:position x="-1740.4816" y="648.9188"></viz:position>
+        <viz:color r="136" g="136" b="136"></viz:color>
+      </node>
+      <node id="Landscape / Irrigation Designer" label="Landscape / Irrigation Designer">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Who"></attvalue>
+          <attvalue for="majorcategoryshort" value="W"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Who"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="9"></attvalue>
+          <attvalue for="eigencentrality" value="0.5848636175045768"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="509.4045"></viz:size>
+        <viz:position x="-4268.446" y="-2817.3853"></viz:position>
+        <viz:color r="136" g="136" b="136"></viz:color>
+      </node>
+      <node id="Architect" label="Architect">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Who"></attvalue>
+          <attvalue for="majorcategoryshort" value="W"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Who"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="6"></attvalue>
+          <attvalue for="eigencentrality" value="1.0"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="800.0"></viz:size>
+        <viz:position x="-42.06173" y="3352.002"></viz:position>
+        <viz:color r="136" g="136" b="136"></viz:color>
+      </node>
+      <node id="Structural Engineer" label="Structural Engineer">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Who"></attvalue>
+          <attvalue for="majorcategoryshort" value="W"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Who"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="5"></attvalue>
+          <attvalue for="eigencentrality" value="0.10877972644178877"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="176.14581"></viz:size>
+        <viz:position x="-151.28668" y="-941.9512"></viz:position>
+        <viz:color r="136" g="136" b="136"></viz:color>
+      </node>
+      <node id="Building Automation System Designer" label="Building Automation System Designer">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Who"></attvalue>
+          <attvalue for="majorcategoryshort" value="W"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Who"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="28"></attvalue>
+          <attvalue for="eigencentrality" value="0.11273291161982514"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="178.91304"></viz:size>
+        <viz:position x="7593.9717" y="-5537.931"></viz:position>
+        <viz:color r="136" g="136" b="136"></viz:color>
+      </node>
+      <node id="Building User" label="Building User">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Who"></attvalue>
+          <attvalue for="majorcategoryshort" value="W"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Who"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="1"></attvalue>
+          <attvalue for="eigencentrality" value="0.07956698707244504"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="155.69688"></viz:size>
+        <viz:position x="-782.3456" y="-1238.0902"></viz:position>
+        <viz:color r="136" g="136" b="136"></viz:color>
+      </node>
+      <node id="Vendors" label="Vendors">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Who"></attvalue>
+          <attvalue for="majorcategoryshort" value="W"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Who"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="25"></attvalue>
+          <attvalue for="eigencentrality" value="0.06593754952261412"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="146.15628"></viz:size>
+        <viz:position x="-1731.7875" y="2018.6709"></viz:position>
+        <viz:color r="136" g="136" b="136"></viz:color>
+      </node>
+      <node id="Mechanical Engineer" label="Mechanical Engineer">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Who"></attvalue>
+          <attvalue for="majorcategoryshort" value="W"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Who"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="3"></attvalue>
+          <attvalue for="eigencentrality" value="0.6177548157439694"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="532.42834"></viz:size>
+        <viz:position x="6576.407" y="1711.187"></viz:position>
+        <viz:color r="136" g="136" b="136"></viz:color>
+      </node>
+      <node id="Wastewater Engineer" label="Wastewater Engineer">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Who"></attvalue>
+          <attvalue for="majorcategoryshort" value="W"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Who"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="40"></attvalue>
+          <attvalue for="eigencentrality" value="0.046161552679320914"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="132.31308"></viz:size>
+        <viz:position x="-1299.684" y="-10998.043"></viz:position>
+        <viz:color r="136" g="136" b="136"></viz:color>
+      </node>
+      <node id="Contractor" label="Contractor">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Who"></attvalue>
+          <attvalue for="majorcategoryshort" value="W"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Who"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="13"></attvalue>
+          <attvalue for="eigencentrality" value="0.42825798630013684"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="399.78058"></viz:size>
+        <viz:position x="1086.2985" y="5908.4634"></viz:position>
+        <viz:color r="136" g="136" b="136"></viz:color>
+      </node>
+      <node id="Commissioning Authority" label="Commissioning Authority">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Who"></attvalue>
+          <attvalue for="majorcategoryshort" value="W"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Who"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="10"></attvalue>
+          <attvalue for="eigencentrality" value="0.1480717126128411"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="203.65019"></viz:size>
+        <viz:position x="6014.5923" y="-1395.1201"></viz:position>
+        <viz:color r="136" g="136" b="136"></viz:color>
+      </node>
+      <node id="Energy Modeler" label="Energy Modeler">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Who"></attvalue>
+          <attvalue for="majorcategoryshort" value="W"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Who"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="30"></attvalue>
+          <attvalue for="eigencentrality" value="0.1455680562436661"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="201.89764"></viz:size>
+        <viz:position x="5489.57" y="-4126.4844"></viz:position>
+        <viz:color r="136" g="136" b="136"></viz:color>
+      </node>
+      <node id="Electricity Provider" label="Electricity Provider">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Who"></attvalue>
+          <attvalue for="majorcategoryshort" value="W"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Who"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="31"></attvalue>
+          <attvalue for="eigencentrality" value="0.03649372200305071"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="125.54561"></viz:size>
+        <viz:position x="10543.011" y="135.27432"></viz:position>
+        <viz:color r="136" g="136" b="136"></viz:color>
+      </node>
+      <node id="Electrical Engineer" label="Electrical Engineer">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Who"></attvalue>
+          <attvalue for="majorcategoryshort" value="W"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Who"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="2"></attvalue>
+          <attvalue for="eigencentrality" value="0.4157328677577169"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="391.013"></viz:size>
+        <viz:position x="5899.933" y="-411.09122"></viz:position>
+        <viz:color r="136" g="136" b="136"></viz:color>
+      </node>
+      <node id="Interior Designer" label="Interior Designer">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Who"></attvalue>
+          <attvalue for="majorcategoryshort" value="W"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Who"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="19"></attvalue>
+          <attvalue for="eigencentrality" value="0.1383212822086333"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="196.82489"></viz:size>
+        <viz:position x="1002.133" y="7558.404"></viz:position>
+        <viz:color r="136" g="136" b="136"></viz:color>
+      </node>
+      <node id="Furniture Specifier" label="Furniture Specifier">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Who"></attvalue>
+          <attvalue for="majorcategoryshort" value="W"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Who"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="24"></attvalue>
+          <attvalue for="eigencentrality" value="0.02986604134206998"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="120.90623"></viz:size>
+        <viz:position x="783.68317" y="10205.554"></viz:position>
+        <viz:color r="136" g="136" b="136"></viz:color>
+      </node>
+      <node id="Industrial Hygenist" label="Industrial Hygenist">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Who"></attvalue>
+          <attvalue for="majorcategoryshort" value="W"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Who"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="42"></attvalue>
+          <attvalue for="eigencentrality" value="0.02129920341964972"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="114.90944"></viz:size>
+        <viz:position x="5765.831" y="8655.14"></viz:position>
+        <viz:color r="136" g="136" b="136"></viz:color>
+      </node>
+      <node id="Lighting Designer" label="Lighting Designer">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Who"></attvalue>
+          <attvalue for="majorcategoryshort" value="W"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Who"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="29"></attvalue>
+          <attvalue for="eigencentrality" value="0.0869213799494593"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="160.84497"></viz:size>
+        <viz:position x="5333.7397" y="-3315.574"></viz:position>
+        <viz:color r="136" g="136" b="136"></viz:color>
+      </node>
+      <node id="Acoustical Engineer" label="Acoustical Engineer">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Who"></attvalue>
+          <attvalue for="majorcategoryshort" value="W"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Who"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="48"></attvalue>
+          <attvalue for="eigencentrality" value="0.0017912876116833545"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="101.2539"></viz:size>
+        <viz:position x="3975.0483" y="9645.581"></viz:position>
+        <viz:color r="136" g="136" b="136"></viz:color>
+      </node>
+      <node id="Waste Hauler" label="Waste Hauler">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Who"></attvalue>
+          <attvalue for="majorcategoryshort" value="W"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Who"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="26"></attvalue>
+          <attvalue for="eigencentrality" value="0.0163182093351826"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="111.422745"></viz:size>
+        <viz:position x="-3963.2869" y="7237.6406"></viz:position>
+        <viz:color r="136" g="136" b="136"></viz:color>
+      </node>
+      <node id="Developer" label="Developer">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Who"></attvalue>
+          <attvalue for="majorcategoryshort" value="W"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Who"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="22"></attvalue>
+          <attvalue for="eigencentrality" value="0.018020819726322156"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="112.61457"></viz:size>
+        <viz:position x="-4421.7754" y="8893.4"></viz:position>
+        <viz:color r="136" g="136" b="136"></viz:color>
+      </node>
+      <node id="LCA Specialist" label="LCA Specialist">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Who"></attvalue>
+          <attvalue for="majorcategoryshort" value="W"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Who"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="21"></attvalue>
+          <attvalue for="eigencentrality" value="0.018020819726322156"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="112.61457"></viz:size>
+        <viz:position x="-4801.4033" y="8404.258"></viz:position>
+        <viz:color r="136" g="136" b="136"></viz:color>
+      </node>
+      <node id="Spec Writer" label="Spec Writer">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Who"></attvalue>
+          <attvalue for="majorcategoryshort" value="W"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Who"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="20"></attvalue>
+          <attvalue for="eigencentrality" value="0.05018801242697608"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="135.1316"></viz:size>
+        <viz:position x="-2435.7222" y="10137.92"></viz:position>
+        <viz:color r="136" g="136" b="136"></viz:color>
+      </node>
+      <node id="Project Manager" label="Project Manager">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Who"></attvalue>
+          <attvalue for="majorcategoryshort" value="W"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Who"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="23"></attvalue>
+          <attvalue for="eigencentrality" value="0.016729337475658693"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="111.71054"></viz:size>
+        <viz:position x="-1550.3097" y="10747.329"></viz:position>
+        <viz:color r="136" g="136" b="136"></viz:color>
+      </node>
+      <node id="Hydrologist" label="Hydrologist">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Who"></attvalue>
+          <attvalue for="majorcategoryshort" value="W"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Who"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="32"></attvalue>
+          <attvalue for="eigencentrality" value="0.12169199104033393"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="185.18439"></viz:size>
+        <viz:position x="-5691.2236" y="-6877.8457"></viz:position>
+        <viz:color r="136" g="136" b="136"></viz:color>
+      </node>
+      <node id="Local Historian" label="Local Historian">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Who"></attvalue>
+          <attvalue for="majorcategoryshort" value="W"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Who"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="34"></attvalue>
+          <attvalue for="eigencentrality" value="0.06276441870740504"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="143.93509"></viz:size>
+        <viz:position x="-5852.393" y="-2787.1072"></viz:position>
+        <viz:color r="136" g="136" b="136"></viz:color>
+      </node>
+      <node id="Site Planner" label="Site Planner">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Who"></attvalue>
+          <attvalue for="majorcategoryshort" value="W"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Who"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="38"></attvalue>
+          <attvalue for="eigencentrality" value="0.046624280653596445"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="132.637"></viz:size>
+        <viz:position x="-7147.0615" y="-5659.259"></viz:position>
+        <viz:color r="136" g="136" b="136"></viz:color>
+      </node>
+      <node id="Restoration Ecologist" label="Restoration Ecologist">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Who"></attvalue>
+          <attvalue for="majorcategoryshort" value="W"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Who"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="37"></attvalue>
+          <attvalue for="eigencentrality" value="0.046624280653596445"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="132.637"></viz:size>
+        <viz:position x="-6858.961" y="-6317.9966"></viz:position>
+        <viz:color r="136" g="136" b="136"></viz:color>
+      </node>
+      <node id="Remediation Specialist" label="Remediation Specialist">
+        <attvalues>
+          <attvalue for="majorcategorylong" value="Who"></attvalue>
+          <attvalue for="majorcategoryshort" value="W"></attvalue>
+          <attvalue for="creditshort" value=""></attvalue>
+          <attvalue for="credittype" value="Who"></attvalue>
+          <attvalue for="leedpoints" value="0.1"></attvalue>
+          <attvalue for="componentnumber" value="1"></attvalue>
+          <attvalue for="strongcompnum" value="12"></attvalue>
+          <attvalue for="eigencentrality" value="0.10228771593907149"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="171.60141"></viz:size>
+        <viz:position x="-2458.1282" y="868.66644"></viz:position>
+        <viz:color r="136" g="136" b="136"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="1" source="Outdoor Water Use Reduction - Prereq" target="Outdoor Water Use Reduction"></edge>
+      <edge id="2" source="Outdoor Water Use Reduction - Prereq" target="Indoor Water Use Reduction"></edge>
+      <edge id="3" source="Outdoor Water Use Reduction - Prereq" target="Cooling Tower Water Use"></edge>
+      <edge id="4" source="Outdoor Water Use Reduction - Prereq" target="Water Metering"></edge>
+      <edge id="5" source="Indoor Water Use Reduction - Prereq" target="Outdoor Water Use Reduction"></edge>
+      <edge id="6" source="Indoor Water Use Reduction - Prereq" target="Indoor Water Use Reduction"></edge>
+      <edge id="7" source="Indoor Water Use Reduction - Prereq" target="Cooling Tower Water Use"></edge>
+      <edge id="8" source="Indoor Water Use Reduction - Prereq" target="Water Metering"></edge>
+      <edge id="9" source="Building-Level Water Metering" target="Outdoor Water Use Reduction"></edge>
+      <edge id="10" source="Building-Level Water Metering" target="Indoor Water Use Reduction"></edge>
+      <edge id="11" source="Building-Level Water Metering" target="Cooling Tower Water Use"></edge>
+      <edge id="12" source="Building-Level Water Metering" target="Water Metering"></edge>
+      <edge id="13" source="Rainwater Management" target="Outdoor Water Use Reduction - Prereq"></edge>
+      <edge id="14" source="Rainwater Management" target="Outdoor Water Use Reduction"></edge>
+      <edge id="15" source="Building-Level Water Metering" target="Civil Engineer"></edge>
+      <edge id="16" source="Building-Level Water Metering" target="Owner"></edge>
+      <edge id="17" source="Building-Level Water Metering" target="Civil Engineer"></edge>
+      <edge id="18" source="Building-Level Water Metering" target="Building Operations and Management"></edge>
+      <edge id="19" source="Building-Level Water Metering" target="Plumbing Engineer"></edge>
+      <edge id="20" source="Building-Level Water Metering" target="Landscape / Irrigation Designer"></edge>
+      <edge id="21" source="Building-Level Water Metering" target="Building Automation System Designer"></edge>
+      <edge id="22" source="Cooling Tower Water Use" target="Facilities Manager"></edge>
+      <edge id="23" source="Cooling Tower Water Use" target="Vendors"></edge>
+      <edge id="24" source="Cooling Tower Water Use" target="Civil Engineer"></edge>
+      <edge id="25" source="Cooling Tower Water Use" target="Mechanical Engineer"></edge>
+      <edge id="26" source="Indoor Water Use Reduction - Prereq" target="Facilities Manager"></edge>
+      <edge id="27" source="Indoor Water Use Reduction - Prereq" target="Owner"></edge>
+      <edge id="28" source="Indoor Water Use Reduction - Prereq" target="Plumbing Engineer"></edge>
+      <edge id="29" source="Indoor Water Use Reduction - Prereq" target="Mechanical Engineer"></edge>
+      <edge id="30" source="Outdoor Water Use Reduction - Prereq" target="Landscape / Irrigation Designer"></edge>
+      <edge id="31" source="Outdoor Water Use Reduction - Prereq" target="Civil Engineer"></edge>
+      <edge id="32" source="Outdoor Water Use Reduction - Prereq" target="Wastewater Engineer"></edge>
+      <edge id="33" source="Fundamental Commissioning and Verification" target="Enhanced Commissioning"></edge>
+      <edge id="34" source="Fundamental Commissioning and Verification" target="Mechanical Engineer"></edge>
+      <edge id="35" source="Fundamental Commissioning and Verification" target="Owner"></edge>
+      <edge id="36" source="Fundamental Commissioning and Verification" target="Contractor"></edge>
+      <edge id="37" source="Fundamental Commissioning and Verification" target="Commissioning Authority"></edge>
+      <edge id="38" source="Fundamental Commissioning and Verification" target="Building Automation System Designer"></edge>
+      <edge id="39" source="Fundamental Commissioning and Verification" target="Electrical Engineer"></edge>
+      <edge id="40" source="Fundamental Commissioning and Verification" target="Architect"></edge>
+      <edge id="41" source="Minimum Energy Performance" target="Optimize Energy Performance"></edge>
+      <edge id="42" source="Minimum Energy Performance" target="Architect"></edge>
+      <edge id="43" source="Minimum Energy Performance" target="Electrical Engineer"></edge>
+      <edge id="44" source="Minimum Energy Performance" target="Mechanical Engineer"></edge>
+      <edge id="45" source="Minimum Energy Performance" target="Owner"></edge>
+      <edge id="46" source="Minimum Energy Performance" target="Energy Modeler"></edge>
+      <edge id="47" source="Building-Level Energy Metering" target="Advanced Energy Metering"></edge>
+      <edge id="48" source="Building-Level Energy Metering" target="Facilities Manager"></edge>
+      <edge id="49" source="Building-Level Energy Metering" target="Owner"></edge>
+      <edge id="50" source="Advanced Energy Metering" target="Building Automation System Designer"></edge>
+      <edge id="51" source="Fundamental Refrigerant Management" target="Enhanced Refrigerant Management"></edge>
+      <edge id="52" source="Fundamental Refrigerant Management" target="Mechanical Engineer"></edge>
+      <edge id="53" source="Demand Response" target="Facilities Manager"></edge>
+      <edge id="54" source="Demand Response" target="Mechanical Engineer"></edge>
+      <edge id="55" source="Demand Response" target="Electrical Engineer"></edge>
+      <edge id="56" source="Demand Response" target="Commissioning Authority"></edge>
+      <edge id="57" source="Demand Response" target="Electricity Provider"></edge>
+      <edge id="58" source="Demand Response" target="Building Operations and Management"></edge>
+      <edge id="59" source="Renewable Energy Production" target="Electrical Engineer"></edge>
+      <edge id="60" source="Renewable Energy Production" target="Owner"></edge>
+      <edge id="61" source="Renewable Energy Production" target="Architect"></edge>
+      <edge id="62" source="Green Power and Carbon Offsets" target="Energy Modeler"></edge>
+      <edge id="63" source="Green Power and Carbon Offsets" target="Owner"></edge>
+      <edge id="64" source="Green Power and Carbon Offsets" target="Architect"></edge>
+      <edge id="65" source="Minimum Energy Performance" target="Integrative Process"></edge>
+      <edge id="66" source="Optimize Energy Performance" target="Integrative Process"></edge>
+      <edge id="67" source="Fundamental Commissioning and Verification" target="Building-Level Energy Metering"></edge>
+      <edge id="68" source="Fundamental Commissioning and Verification" target="Demand Response"></edge>
+      <edge id="69" source="Minimum Energy Performance" target="Minimum Indoor Air Quality Performance"></edge>
+      <edge id="70" source="Optimize Energy Performance" target="Minimum Indoor Air Quality Performance"></edge>
+      <edge id="71" source="Minimum Energy Performance" target="Interior Lighting"></edge>
+      <edge id="72" source="Optimize Energy Performance" target="Interior Lighting"></edge>
+      <edge id="73" source="Minimum Energy Performance" target="Enhanced Indoor Air Quality Strategies"></edge>
+      <edge id="74" source="Optimize Energy Performance" target="Enhanced Indoor Air Quality Strategies"></edge>
+      <edge id="75" source="Minimum Indoor Air Quality Performance" target="Owner"></edge>
+      <edge id="76" source="Minimum Indoor Air Quality Performance" target="Contractor"></edge>
+      <edge id="77" source="Minimum Indoor Air Quality Performance" target="Architect"></edge>
+      <edge id="78" source="Minimum Indoor Air Quality Performance" target="Mechanical Engineer"></edge>
+      <edge id="79" source="Minimum Indoor Air Quality Performance" target="Enhanced Indoor Air Quality Strategies"></edge>
+      <edge id="80" source="Enhanced Indoor Air Quality Strategies" target="Owner"></edge>
+      <edge id="81" source="Enhanced Indoor Air Quality Strategies" target="Contractor"></edge>
+      <edge id="82" source="Enhanced Indoor Air Quality Strategies" target="Architect"></edge>
+      <edge id="83" source="Enhanced Indoor Air Quality Strategies" target="Mechanical Engineer"></edge>
+      <edge id="84" source="Environmental Tobacco Smoke Control" target="Mechanical Engineer"></edge>
+      <edge id="85" source="Environmental Tobacco Smoke Control" target="Owner"></edge>
+      <edge id="86" source="Environmental Tobacco Smoke Control" target="Contractor"></edge>
+      <edge id="87" source="Environmental Tobacco Smoke Control" target="Architect"></edge>
+      <edge id="88" source="Low-Emitting Materials" target="Owner"></edge>
+      <edge id="89" source="Low-Emitting Materials" target="Interior Designer"></edge>
+      <edge id="90" source="Low-Emitting Materials" target="Furniture Specifier"></edge>
+      <edge id="91" source="Low-Emitting Materials" target="Contractor"></edge>
+      <edge id="92" source="Low-Emitting Materials" target="Architect"></edge>
+      <edge id="93" source="Construction Indoor Air Quality Management Plan" target="Contractor"></edge>
+      <edge id="94" source="Indoor Air Quality Assessment" target="Industrial Hygenist"></edge>
+      <edge id="95" source="Indoor Air Quality Assessment" target="Contractor"></edge>
+      <edge id="96" source="Indoor Air Quality Assessment" target="Owner"></edge>
+      <edge id="97" source="Indoor Air Quality Assessment" target="Mechanical Engineer"></edge>
+      <edge id="98" source="Indoor Air Quality Assessment" target="Architect"></edge>
+      <edge id="99" source="Thermal Comfort" target="Facilities Manager"></edge>
+      <edge id="100" source="Thermal Comfort" target="Owner"></edge>
+      <edge id="101" source="Thermal Comfort" target="Mechanical Engineer"></edge>
+      <edge id="102" source="Thermal Comfort" target="Architect"></edge>
+      <edge id="103" source="Interior Lighting" target="Lighting Designer"></edge>
+      <edge id="104" source="Interior Lighting" target="Owner"></edge>
+      <edge id="105" source="Interior Lighting" target="Electrical Engineer"></edge>
+      <edge id="106" source="Interior Lighting" target="Interior Designer"></edge>
+      <edge id="107" source="Interior Lighting" target="Architect"></edge>
+      <edge id="108" source="Daylight" target="Owner"></edge>
+      <edge id="109" source="Daylight" target="Daylight / Energy Analyst"></edge>
+      <edge id="110" source="Daylight" target="Mechanical Engineer"></edge>
+      <edge id="111" source="Daylight" target="Lighting Designer"></edge>
+      <edge id="112" source="Daylight" target="Architect"></edge>
+      <edge id="113" source="Daylight" target="Electrical Engineer"></edge>
+      <edge id="114" source="Quality Views" target="Owner"></edge>
+      <edge id="115" source="Quality Views" target="Interior Designer"></edge>
+      <edge id="116" source="Quality Views" target="Structural Engineer"></edge>
+      <edge id="117" source="Quality Views" target="Architect"></edge>
+      <edge id="118" source="Acoustic Performance" target="Mechanical Engineer"></edge>
+      <edge id="119" source="Acoustic Performance" target="Interior Designer"></edge>
+      <edge id="120" source="Acoustic Performance" target="Contractor"></edge>
+      <edge id="121" source="Acoustic Performance" target="Acoustical Engineer"></edge>
+      <edge id="122" source="Acoustic Performance" target="Architect"></edge>
+      <edge id="123" source="Daylight" target="Optimize Energy Performance"></edge>
+      <edge id="124" source="Interior Lighting" target="Optimize Energy Performance"></edge>
+      <edge id="125" source="Quality Views" target="Optimize Energy Performance"></edge>
+      <edge id="126" source="Low-Emitting Materials" target="Building Product Disclosure and Optimization - Material Ingredients "></edge>
+      <edge id="127" source="Low-Emitting Materials" target="Building Product Disclosure and Optimization - Environmental Product 
+Declarations"></edge>
+      <edge id="128" source="Low-Emitting Materials" target="Building Product Disclosure and Optimization - Sourcing of Raw Materials"></edge>
+      <edge id="129" source="Daylight" target="Site Assessment"></edge>
+      <edge id="130" source="Quality Views" target="Site Assessment"></edge>
+      <edge id="131" source="Indoor Air Quality Assessment" target="Low-Emitting Materials"></edge>
+      <edge id="132" source="Indoor Air Quality Assessment" target="Construction Indoor Air Quality Management Plan"></edge>
+      <edge id="133" source="Low-Emitting Materials" target="Construction Indoor Air Quality Management Plan"></edge>
+      <edge id="134" source="Integrative Process" target="Access to Quality Transit" weight="2.0"></edge>
+      <edge id="135" source="Integrative Process" target="Reduced Parking Footprint" weight="2.0"></edge>
+      <edge id="136" source="Integrative Process" target="Site Assessment" weight="2.0"></edge>
+      <edge id="137" source="Integrative Process" target="Open Space" weight="2.0"></edge>
+      <edge id="138" source="Integrative Process" target="Rainwater Management" weight="2.0"></edge>
+      <edge id="139" source="Integrative Process" target="Heat Island Reduction" weight="2.0"></edge>
+      <edge id="140" source="Integrative Process" target="Light Pollution Reduction" weight="2.0"></edge>
+      <edge id="141" source="Integrative Process" target="Outdoor Water Use Reduction - Prereq" weight="2.0"></edge>
+      <edge id="142" source="Integrative Process" target="Indoor Water Use Reduction - Prereq" weight="2.0"></edge>
+      <edge id="143" source="Integrative Process" target="Outdoor Water Use Reduction" weight="2.0"></edge>
+      <edge id="144" source="Integrative Process" target="Indoor Water Use Reduction" weight="2.0"></edge>
+      <edge id="145" source="Integrative Process" target="Cooling Tower Water Use" weight="2.0"></edge>
+      <edge id="146" source="Integrative Process" target="Fundamental Commissioning and Verification" weight="2.0"></edge>
+      <edge id="147" source="Integrative Process" target="Minimum Energy Performance" weight="2.0"></edge>
+      <edge id="148" source="Integrative Process" target="Optimize Energy Performance" weight="2.0"></edge>
+      <edge id="149" source="Integrative Process" target="Minimum Indoor Air Quality Performance" weight="2.0"></edge>
+      <edge id="150" source="Integrative Process" target="Enhanced Indoor Air Quality Strategies" weight="2.0"></edge>
+      <edge id="151" source="Integrative Process" target="Thermal Comfort" weight="2.0"></edge>
+      <edge id="152" source="Integrative Process" target="Daylight" weight="2.0"></edge>
+      <edge id="153" source="Integrative Process" target="Quality Views" weight="2.0"></edge>
+      <edge id="154" source="Sensitive Land Protection" target="High Priority Site" weight="2.0"></edge>
+      <edge id="155" source="Sensitive Land Protection" target="Surrounding Density and Diverse Uses" weight="2.0"></edge>
+      <edge id="156" source="Sensitive Land Protection" target="Reduced Parking Footprint" weight="2.0"></edge>
+      <edge id="157" source="Sensitive Land Protection" target="Site Assessment" weight="2.0"></edge>
+      <edge id="158" source="Sensitive Land Protection" target="Site Development - Protect or Restore Habitat" weight="2.0"></edge>
+      <edge id="159" source="Sensitive Land Protection" target="Rainwater Management" weight="2.0"></edge>
+      <edge id="160" source="High Priority Site" target="Building Life-Cycle Impact Reduction" weight="2.0"></edge>
+      <edge id="161" source="High Priority Site" target="Site Assessment" weight="2.0"></edge>
+      <edge id="162" source="High Priority Site" target="LEED for Neighborhood Development Location" weight="2.0"></edge>
+      <edge id="163" source="High Priority Site" target="Sensitive Land Protection" weight="2.0"></edge>
+      <edge id="164" source="High Priority Site" target="Surrounding Density and Diverse Uses" weight="2.0"></edge>
+      <edge id="165" source="High Priority Site" target="Access to Quality Transit" weight="2.0"></edge>
+      <edge id="166" source="High Priority Site" target="Bicycle Facilities" weight="2.0"></edge>
+      <edge id="167" source="High Priority Site" target="Reduced Parking Footprint" weight="2.0"></edge>
+      <edge id="168" source="High Priority Site" target="Green Vehicles" weight="2.0"></edge>
+      <edge id="169" source="Surrounding Density and Diverse Uses" target="High Priority Site" weight="2.0"></edge>
+      <edge id="170" source="Surrounding Density and Diverse Uses" target="Access to Quality Transit" weight="2.0"></edge>
+      <edge id="171" source="Access to Quality Transit" target="Bicycle Facilities" weight="2.0"></edge>
+      <edge id="172" source="Bicycle Facilities" target="Surrounding Density and Diverse Uses" weight="2.0"></edge>
+      <edge id="173" source="Reduced Parking Footprint" target="Surrounding Density and Diverse Uses" weight="2.0"></edge>
+      <edge id="174" source="Reduced Parking Footprint" target="Access to Quality Transit" weight="2.0"></edge>
+      <edge id="175" source="Reduced Parking Footprint" target="Green Vehicles" weight="2.0"></edge>
+      <edge id="176" source="Green Vehicles" target="Reduced Parking Footprint" weight="2.0"></edge>
+      <edge id="177" source="Green Vehicles" target="Demand Response" weight="2.0"></edge>
+      <edge id="178" source="Green Vehicles" target="Minimum Indoor Air Quality Performance" weight="2.0"></edge>
+      <edge id="179" source="Construction Activity Pollution Prevention" target="Site Development - Protect or Restore Habitat" weight="2.0"></edge>
+      <edge id="180" source="Construction Activity Pollution Prevention" target="Rainwater Management" weight="2.0"></edge>
+      <edge id="181" source="Site Assessment" target="Integrative Process" weight="2.0"></edge>
+      <edge id="182" source="Site Assessment" target="Sensitive Land Protection" weight="2.0"></edge>
+      <edge id="183" source="Site Assessment" target="Surrounding Density and Diverse Uses" weight="2.0"></edge>
+      <edge id="184" source="Site Assessment" target="Access to Quality Transit" weight="2.0"></edge>
+      <edge id="185" source="Site Assessment" target="Bicycle Facilities" weight="2.0"></edge>
+      <edge id="186" source="Site Assessment" target="Site Development - Protect or Restore Habitat" weight="2.0"></edge>
+      <edge id="187" source="Site Assessment" target="Open Space" weight="2.0"></edge>
+      <edge id="188" source="Site Assessment" target="Open Space" weight="2.0"></edge>
+      <edge id="189" source="Site Assessment" target="Rainwater Management" weight="2.0"></edge>
+      <edge id="190" source="Site Assessment" target="Heat Island Reduction" weight="2.0"></edge>
+      <edge id="191" source="Site Assessment" target="Minimum Energy Performance" weight="2.0"></edge>
+      <edge id="192" source="Site Assessment" target="Optimize Energy Performance" weight="2.0"></edge>
+      <edge id="193" source="Site Assessment" target="Renewable Energy Production" weight="2.0"></edge>
+      <edge id="194" source="Site Assessment" target="Daylight" weight="2.0"></edge>
+      <edge id="195" source="Site Assessment" target="Quality Views" weight="2.0"></edge>
+      <edge id="196" source="Site Development - Protect or Restore Habitat" target="Construction Activity Pollution Prevention" weight="2.0"></edge>
+      <edge id="197" source="Site Development - Protect or Restore Habitat" target="Site Assessment" weight="2.0"></edge>
+      <edge id="198" source="Site Development - Protect or Restore Habitat" target="Open Space" weight="2.0"></edge>
+      <edge id="199" source="Site Development - Protect or Restore Habitat" target="Rainwater Management" weight="2.0"></edge>
+      <edge id="200" source="Site Development - Protect or Restore Habitat" target="Heat Island Reduction" weight="2.0"></edge>
+      <edge id="201" source="Site Development - Protect or Restore Habitat" target="High Priority Site" weight="2.0"></edge>
+      <edge id="202" source="Open Space" target="Site Development - Protect or Restore Habitat" weight="2.0"></edge>
+      <edge id="203" source="Open Space" target="Rainwater Management" weight="2.0"></edge>
+      <edge id="204" source="Open Space" target="Heat Island Reduction" weight="2.0"></edge>
+      <edge id="205" source="Open Space" target="Site Assessment" weight="2.0"></edge>
+      <edge id="206" source="Rainwater Management" target="Integrative Process" weight="2.0"></edge>
+      <edge id="207" source="Rainwater Management" target="Site Development - Protect or Restore Habitat" weight="2.0"></edge>
+      <edge id="208" source="Rainwater Management" target="Open Space" weight="2.0"></edge>
+      <edge id="209" source="Rainwater Management" target="Site Assessment" weight="2.0"></edge>
+      <edge id="210" source="Rainwater Management" target="Outdoor Water Use Reduction - Prereq" weight="2.0"></edge>
+      <edge id="211" source="Rainwater Management" target="Indoor Water Use Reduction - Prereq" weight="2.0"></edge>
+      <edge id="212" source="Rainwater Management" target="Outdoor Water Use Reduction" weight="2.0"></edge>
+      <edge id="213" source="Rainwater Management" target="Indoor Water Use Reduction" weight="2.0"></edge>
+      <edge id="214" source="Rainwater Management" target="Heat Island Reduction" weight="2.0"></edge>
+      <edge id="215" source="Heat Island Reduction" target="Site Development - Protect or Restore Habitat" weight="2.0"></edge>
+      <edge id="216" source="Heat Island Reduction" target="Open Space" weight="2.0"></edge>
+      <edge id="217" source="Heat Island Reduction" target="Rainwater Management" weight="2.0"></edge>
+      <edge id="218" source="Heat Island Reduction" target="Minimum Energy Performance" weight="2.0"></edge>
+      <edge id="219" source="Heat Island Reduction" target="Optimize Energy Performance" weight="2.0"></edge>
+      <edge id="220" source="Light Pollution Reduction" target="Site Assessment" weight="2.0"></edge>
+      <edge id="221" source="Light Pollution Reduction" target="Minimum Energy Performance" weight="2.0"></edge>
+      <edge id="222" source="Light Pollution Reduction" target="Optimize Energy Performance" weight="2.0"></edge>
+      <edge id="223" source="Outdoor Water Use Reduction - Prereq" target="Building-Level Water Metering" weight="2.0"></edge>
+      <edge id="224" source="Indoor Water Use Reduction - Prereq" target="Building-Level Water Metering" weight="2.0"></edge>
+      <edge id="225" source="Indoor Water Use Reduction - Prereq" target="Water Metering" weight="2.0"></edge>
+      <edge id="226" source="Building-Level Water Metering" target="Water Metering" weight="2.0"></edge>
+      <edge id="227" source="Building-Level Water Metering" target="Indoor Water Use Reduction" weight="2.0"></edge>
+      <edge id="228" source="Building-Level Water Metering" target="Building-Level Energy Metering" weight="2.0"></edge>
+      <edge id="229" source="Outdoor Water Use Reduction" target="Rainwater Management" weight="2.0"></edge>
+      <edge id="230" source="Outdoor Water Use Reduction" target="Indoor Water Use Reduction - Prereq" weight="2.0"></edge>
+      <edge id="231" source="Outdoor Water Use Reduction" target="Cooling Tower Water Use" weight="2.0"></edge>
+      <edge id="232" source="Outdoor Water Use Reduction" target="Building-Level Water Metering" weight="2.0"></edge>
+      <edge id="233" source="Outdoor Water Use Reduction" target="Water Metering" weight="2.0"></edge>
+      <edge id="234" source="Indoor Water Use Reduction" target="Building-Level Water Metering" weight="2.0"></edge>
+      <edge id="235" source="Indoor Water Use Reduction" target="Water Metering" weight="2.0"></edge>
+      <edge id="236" source="Cooling Tower Water Use" target="Indoor Water Use Reduction - Prereq" weight="2.0"></edge>
+      <edge id="237" source="Cooling Tower Water Use" target="Water Metering" weight="2.0"></edge>
+      <edge id="238" source="Water Metering" target="Building-Level Water Metering" weight="2.0"></edge>
+      <edge id="239" source="Water Metering" target="Outdoor Water Use Reduction - Prereq" weight="2.0"></edge>
+      <edge id="240" source="Water Metering" target="Indoor Water Use Reduction - Prereq" weight="2.0"></edge>
+      <edge id="241" source="Fundamental Commissioning and Verification" target="Integrative Process" weight="2.0"></edge>
+      <edge id="242" source="Fundamental Commissioning and Verification" target="Advanced Energy Metering" weight="2.0"></edge>
+      <edge id="243" source="Fundamental Commissioning and Verification" target="Enhanced Commissioning" weight="2.0"></edge>
+      <edge id="244" source="Fundamental Commissioning and Verification" target="Renewable Energy Production" weight="2.0"></edge>
+      <edge id="245" source="Minimum Energy Performance" target="Optimize Energy Performance" weight="2.0"></edge>
+      <edge id="246" source="Minimum Energy Performance" target="Integrative Process" weight="2.0"></edge>
+      <edge id="247" source="Minimum Energy Performance" target="Demand Response" weight="2.0"></edge>
+      <edge id="248" source="Minimum Energy Performance" target="Renewable Energy Production" weight="2.0"></edge>
+      <edge id="249" source="Minimum Energy Performance" target="Green Power and Carbon Offsets" weight="2.0"></edge>
+      <edge id="250" source="Minimum Energy Performance" target="Indoor Water Use Reduction - Prereq" weight="2.0"></edge>
+      <edge id="251" source="Minimum Energy Performance" target="Minimum Indoor Air Quality Performance" weight="2.0"></edge>
+      <edge id="252" source="Building-Level Energy Metering" target="Advanced Energy Metering" weight="2.0"></edge>
+      <edge id="253" source="Building-Level Energy Metering" target="Enhanced Commissioning" weight="2.0"></edge>
+      <edge id="254" source="Fundamental Refrigerant Management" target="Enhanced Refrigerant Management" weight="2.0"></edge>
+      <edge id="255" source="Fundamental Refrigerant Management" target="Optimize Energy Performance" weight="2.0"></edge>
+      <edge id="256" source="Enhanced Commissioning" target="Fundamental Commissioning and Verification" weight="2.0"></edge>
+      <edge id="257" source="Enhanced Commissioning" target="Renewable Energy Production" weight="2.0"></edge>
+      <edge id="258" source="Enhanced Commissioning" target="Demand Response" weight="2.0"></edge>
+      <edge id="259" source="Enhanced Commissioning" target="Advanced Energy Metering" weight="2.0"></edge>
+      <edge id="260" source="Optimize Energy Performance" target="Minimum Energy Performance" weight="2.0"></edge>
+      <edge id="261" source="Optimize Energy Performance" target="Renewable Energy Production" weight="2.0"></edge>
+      <edge id="262" source="Advanced Energy Metering" target="Minimum Energy Performance" weight="2.0"></edge>
+      <edge id="263" source="Advanced Energy Metering" target="Building-Level Energy Metering" weight="2.0"></edge>
+      <edge id="264" source="Advanced Energy Metering" target="Demand Response" weight="2.0"></edge>
+      <edge id="265" source="Advanced Energy Metering" target="Renewable Energy Production" weight="2.0"></edge>
+      <edge id="266" source="Demand Response" target="Fundamental Commissioning and Verification" weight="2.0"></edge>
+      <edge id="267" source="Renewable Energy Production" target="Advanced Energy Metering" weight="2.0"></edge>
+      <edge id="268" source="Renewable Energy Production" target="Green Power and Carbon Offsets" weight="2.0"></edge>
+      <edge id="269" source="Enhanced Refrigerant Management" target="Optimize Energy Performance" weight="2.0"></edge>
+      <edge id="270" source="Green Power and Carbon Offsets" target="Minimum Energy Performance" weight="2.0"></edge>
+      <edge id="271" source="Green Power and Carbon Offsets" target="Optimize Energy Performance" weight="2.0"></edge>
+      <edge id="272" source="Green Power and Carbon Offsets" target="Renewable Energy Production" weight="2.0"></edge>
+      <edge id="273" source="Construction and Demolition Waste Management Planning" target="Construction and Demolition Waste Management " weight="2.0"></edge>
+      <edge id="274" source="Building Life-Cycle Impact Reduction" target="High Priority Site" weight="2.0"></edge>
+      <edge id="275" source="Building Life-Cycle Impact Reduction" target="Construction and Demolition Waste Management Planning" weight="2.0"></edge>
+      <edge id="276" source="Building Life-Cycle Impact Reduction" target="Construction and Demolition Waste Management " weight="2.0"></edge>
+      <edge id="277" source="Building Life-Cycle Impact Reduction" target="Building Product Disclosure and Optimization - Environmental Product 
+Declarations" weight="2.0"></edge>
+      <edge id="278" source="Building Life-Cycle Impact Reduction" target="Building Product Disclosure and Optimization - Sourcing of Raw Materials" weight="2.0"></edge>
+      <edge id="279" source="Building Life-Cycle Impact Reduction" target="Building Product Disclosure and Optimization - Material Ingredients " weight="2.0"></edge>
+      <edge id="280" source="Building Product Disclosure and Optimization - Environmental Product 
+Declarations" target="Building Product Disclosure and Optimization - Sourcing of Raw Materials" weight="2.0"></edge>
+      <edge id="281" source="Building Product Disclosure and Optimization - Environmental Product 
+Declarations" target="Building Product Disclosure and Optimization - Material Ingredients " weight="2.0"></edge>
+      <edge id="282" source="Building Product Disclosure and Optimization - Environmental Product 
+Declarations" target="Building Life-Cycle Impact Reduction" weight="2.0"></edge>
+      <edge id="283" source="Building Product Disclosure and Optimization - Sourcing of Raw Materials" target="Building Life-Cycle Impact Reduction" weight="2.0"></edge>
+      <edge id="284" source="Building Product Disclosure and Optimization - Sourcing of Raw Materials" target="Building Product Disclosure and Optimization - Environmental Product 
+Declarations" weight="2.0"></edge>
+      <edge id="285" source="Building Product Disclosure and Optimization - Sourcing of Raw Materials" target="Building Product Disclosure and Optimization - Material Ingredients " weight="2.0"></edge>
+      <edge id="286" source="Building Product Disclosure and Optimization - Material Ingredients " target="Building Product Disclosure and Optimization - Sourcing of Raw Materials" weight="2.0"></edge>
+      <edge id="287" source="Building Product Disclosure and Optimization - Material Ingredients " target="Building Product Disclosure and Optimization - Environmental Product 
+Declarations" weight="2.0"></edge>
+      <edge id="288" source="Building Product Disclosure and Optimization - Material Ingredients " target="Building Life-Cycle Impact Reduction" weight="2.0"></edge>
+      <edge id="289" source="Construction and Demolition Waste Management " target="Construction and Demolition Waste Management Planning" weight="2.0"></edge>
+      <edge id="290" source="Minimum Indoor Air Quality Performance" target="Minimum Energy Performance" weight="2.0"></edge>
+      <edge id="291" source="Minimum Indoor Air Quality Performance" target="Enhanced Indoor Air Quality Strategies" weight="2.0"></edge>
+      <edge id="292" source="Minimum Indoor Air Quality Performance" target="Indoor Air Quality Assessment" weight="2.0"></edge>
+      <edge id="293" source="Enhanced Indoor Air Quality Strategies" target="Minimum Indoor Air Quality Performance" weight="2.0"></edge>
+      <edge id="294" source="Enhanced Indoor Air Quality Strategies" target="Minimum Energy Performance" weight="2.0"></edge>
+      <edge id="295" source="Enhanced Indoor Air Quality Strategies" target="Optimize Energy Performance" weight="2.0"></edge>
+      <edge id="296" source="Low-Emitting Materials" target="Indoor Air Quality Assessment" weight="2.0"></edge>
+      <edge id="297" source="Construction Indoor Air Quality Management Plan" target="Enhanced Indoor Air Quality Strategies" weight="2.0"></edge>
+      <edge id="298" source="Construction Indoor Air Quality Management Plan" target="Low-Emitting Materials" weight="2.0"></edge>
+      <edge id="299" source="Construction Indoor Air Quality Management Plan" target="Indoor Air Quality Assessment" weight="2.0"></edge>
+      <edge id="300" source="Indoor Air Quality Assessment" target="Minimum Indoor Air Quality Performance" weight="2.0"></edge>
+      <edge id="301" source="Indoor Air Quality Assessment" target="Enhanced Indoor Air Quality Strategies" weight="2.0"></edge>
+      <edge id="302" source="Indoor Air Quality Assessment" target="Low-Emitting Materials" weight="2.0"></edge>
+      <edge id="303" source="Indoor Air Quality Assessment" target="Construction Indoor Air Quality Management Plan" weight="2.0"></edge>
+      <edge id="304" source="Thermal Comfort" target="Minimum Energy Performance" weight="2.0"></edge>
+      <edge id="305" source="Thermal Comfort" target="Minimum Indoor Air Quality Performance" weight="2.0"></edge>
+      <edge id="306" source="Thermal Comfort" target="Enhanced Indoor Air Quality Strategies" weight="2.0"></edge>
+      <edge id="307" source="Thermal Comfort" target="Interior Lighting" weight="2.0"></edge>
+      <edge id="308" source="Interior Lighting" target="Thermal Comfort" weight="2.0"></edge>
+      <edge id="309" source="Interior Lighting" target="Fundamental Commissioning and Verification" weight="2.0"></edge>
+      <edge id="310" source="Interior Lighting" target="Enhanced Commissioning" weight="2.0"></edge>
+      <edge id="311" source="Daylight" target="Minimum Energy Performance" weight="2.0"></edge>
+      <edge id="312" source="Daylight" target="Optimize Energy Performance" weight="2.0"></edge>
+      <edge id="313" source="Daylight" target="Quality Views" weight="2.0"></edge>
+      <edge id="314" source="Daylight" target="Interior Lighting" weight="2.0"></edge>
+      <edge id="315" source="Quality Views" target="Daylight" weight="2.0"></edge>
+      <edge id="316" source="Quality Views" target="Minimum Energy Performance" weight="2.0"></edge>
+      <edge id="317" source="Storage and Collection of Recyclables" target="Facilities Manager"></edge>
+      <edge id="318" source="Storage and Collection of Recyclables" target="Owner"></edge>
+      <edge id="319" source="Storage and Collection of Recyclables" target="Architect"></edge>
+      <edge id="320" source="Construction and Demolition Waste Management Planning" target="Facilities Manager"></edge>
+      <edge id="321" source="Construction and Demolition Waste Management Planning" target="Architect"></edge>
+      <edge id="322" source="Construction and Demolition Waste Management Planning" target="Contractor"></edge>
+      <edge id="323" source="Construction and Demolition Waste Management Planning" target="Waste Hauler"></edge>
+      <edge id="324" source="Building Life-Cycle Impact Reduction" target="Owner"></edge>
+      <edge id="325" source="Building Life-Cycle Impact Reduction" target="Architect"></edge>
+      <edge id="326" source="Building Life-Cycle Impact Reduction" target="Contractor"></edge>
+      <edge id="327" source="Building Life-Cycle Impact Reduction" target="Developer"></edge>
+      <edge id="328" source="Building Life-Cycle Impact Reduction" target="LCA Specialist"></edge>
+      <edge id="329" source="Building Product Disclosure and Optimization - Environmental Product 
+Declarations" target="Cost Estimator"></edge>
+      <edge id="330" source="Building Product Disclosure and Optimization - Environmental Product 
+Declarations" target="Owner"></edge>
+      <edge id="331" source="Building Product Disclosure and Optimization - Environmental Product 
+Declarations" target="Vendors"></edge>
+      <edge id="332" source="Building Product Disclosure and Optimization - Environmental Product 
+Declarations" target="Contractor"></edge>
+      <edge id="333" source="Building Product Disclosure and Optimization - Environmental Product 
+Declarations" target="Furniture Specifier"></edge>
+      <edge id="334" source="Building Product Disclosure and Optimization - Environmental Product 
+Declarations" target="Architect"></edge>
+      <edge id="335" source="Building Product Disclosure and Optimization - Environmental Product 
+Declarations" target="Spec Writer"></edge>
+      <edge id="336" source="Building Product Disclosure and Optimization - Environmental Product 
+Declarations" target="Interior Designer"></edge>
+      <edge id="337" source="Building Product Disclosure and Optimization - Environmental Product 
+Declarations" target="Project Manager"></edge>
+      <edge id="338" source="Building Product Disclosure and Optimization - Sourcing of Raw Materials" target="Architect"></edge>
+      <edge id="339" source="Building Product Disclosure and Optimization - Sourcing of Raw Materials" target="Spec Writer"></edge>
+      <edge id="340" source="Building Product Disclosure and Optimization - Sourcing of Raw Materials" target="Interior Designer"></edge>
+      <edge id="341" source="Building Product Disclosure and Optimization - Sourcing of Raw Materials" target="Contractor"></edge>
+      <edge id="342" source="Building Product Disclosure and Optimization - Material Ingredients " target="Contractor"></edge>
+      <edge id="343" source="Building Product Disclosure and Optimization - Material Ingredients " target="Spec Writer"></edge>
+      <edge id="344" source="Building Product Disclosure and Optimization - Material Ingredients " target="Landscape / Irrigation Designer"></edge>
+      <edge id="345" source="Building Product Disclosure and Optimization - Material Ingredients " target="Architect"></edge>
+      <edge id="346" source="Building Product Disclosure and Optimization - Material Ingredients " target="Interior Designer"></edge>
+      <edge id="347" source="Construction and Demolition Waste Management " target="Facilities Manager"></edge>
+      <edge id="348" source="Construction and Demolition Waste Management " target="Architect"></edge>
+      <edge id="349" source="Construction and Demolition Waste Management " target="Contractor"></edge>
+      <edge id="350" source="Construction and Demolition Waste Management " target="Waste Hauler"></edge>
+      <edge id="351" source="Construction Activity Pollution Prevention" target="Landscape / Irrigation Designer"></edge>
+      <edge id="352" source="Construction Activity Pollution Prevention" target="Contractor"></edge>
+      <edge id="353" source="Construction Activity Pollution Prevention" target="Geologist"></edge>
+      <edge id="354" source="Construction Activity Pollution Prevention" target="Civil Engineer"></edge>
+      <edge id="355" source="Construction Activity Pollution Prevention" target="Hydrologist"></edge>
+      <edge id="356" source="Site Assessment" target="Civil Engineer"></edge>
+      <edge id="357" source="Site Assessment" target="Landscape / Irrigation Designer"></edge>
+      <edge id="358" source="Site Assessment" target="Owner"></edge>
+      <edge id="359" source="Site Assessment" target="Natural Resource Specialist"></edge>
+      <edge id="360" source="Site Assessment" target="Soil Scientist"></edge>
+      <edge id="361" source="Site Assessment" target="Land Planner"></edge>
+      <edge id="362" source="Site Assessment" target="Architect"></edge>
+      <edge id="363" source="Site Assessment" target="Local Historian"></edge>
+      <edge id="364" source="Site Development - Protect or Restore Habitat" target="Civil Engineer"></edge>
+      <edge id="365" source="Site Development - Protect or Restore Habitat" target="Landscape / Irrigation Designer"></edge>
+      <edge id="366" source="Site Development - Protect or Restore Habitat" target="Soil Scientist"></edge>
+      <edge id="367" source="Site Development - Protect or Restore Habitat" target="Hydrologist"></edge>
+      <edge id="368" source="Site Development - Protect or Restore Habitat" target="Site Planner"></edge>
+      <edge id="369" source="Site Development - Protect or Restore Habitat" target="Restoration Ecologist"></edge>
+      <edge id="370" source="Open Space" target="Civil Engineer"></edge>
+      <edge id="371" source="Open Space" target="Owner"></edge>
+      <edge id="372" source="Open Space" target="Landscape / Irrigation Designer"></edge>
+      <edge id="373" source="Open Space" target="Land Planner"></edge>
+      <edge id="374" source="Rainwater Management" target="Civil Engineer"></edge>
+      <edge id="375" source="Rainwater Management" target="Landscape / Irrigation Designer"></edge>
+      <edge id="376" source="Rainwater Management" target="Hydrologist"></edge>
+      <edge id="377" source="Heat Island Reduction" target="Architect"></edge>
+      <edge id="378" source="Heat Island Reduction" target="Civil Engineer"></edge>
+      <edge id="379" source="Light Pollution Reduction" target="Lighting Designer"></edge>
+      <edge id="380" source="Light Pollution Reduction" target="Landscape / Irrigation Designer"></edge>
+      <edge id="381" source="Light Pollution Reduction" target="Electrical Engineer"></edge>
+      <edge id="382" source="Light Pollution Reduction" target="Energy Modeler"></edge>
+      <edge id="383" source="Light Pollution Reduction" target="Architect"></edge>
+      <edge id="384" source="Light Pollution Reduction" target="Civil Engineer"></edge>
+      <edge id="385" source="Innovation  " target="Owner"></edge>
+      <edge id="386" source="Innovation  " target="Community Members"></edge>
+      <edge id="387" source="Innovation  " target="Facilities Manager"></edge>
+      <edge id="388" source="Innovation  " target="Planning Staff"></edge>
+      <edge id="389" source="Innovation  " target="Cost Estimator"></edge>
+      <edge id="390" source="Innovation  " target="Contractor"></edge>
+      <edge id="391" source="Innovation  " target="Remediation Specialist"></edge>
+      <edge id="392" source="Innovation  " target="Daylight / Energy Analyst"></edge>
+      <edge id="393" source="Innovation  " target="Commissioning Authority"></edge>
+      <edge id="394" source="Innovation  " target="Landscape / Irrigation Designer"></edge>
+      <edge id="395" source="Innovation  " target="Civil Engineer"></edge>
+      <edge id="396" source="Innovation  " target="Building Operations and Management"></edge>
+      <edge id="397" source="Innovation  " target="Architect"></edge>
+      <edge id="398" source="Innovation  " target="Structural Engineer"></edge>
+      <edge id="399" source="Innovation  " target="Plumbing Engineer"></edge>
+      <edge id="400" source="Innovation  " target="Mechanical Engineer"></edge>
+      <edge id="401" source="Innovation  " target="Electrical Engineer"></edge>
+      <edge id="402" source="Innovation  " target="Building User"></edge>
+      <edge id="403" source="Integrative Process" target="Owner"></edge>
+      <edge id="404" source="Integrative Process" target="Community Members"></edge>
+      <edge id="405" source="Integrative Process" target="Facilities Manager"></edge>
+      <edge id="406" source="Integrative Process" target="Planning Staff"></edge>
+      <edge id="407" source="Integrative Process" target="Cost Estimator"></edge>
+      <edge id="408" source="Integrative Process" target="Contractor"></edge>
+      <edge id="409" source="Integrative Process" target="Remediation Specialist"></edge>
+      <edge id="410" source="Integrative Process" target="Daylight / Energy Analyst"></edge>
+      <edge id="411" source="Integrative Process" target="Commissioning Authority"></edge>
+      <edge id="412" source="Integrative Process" target="Landscape / Irrigation Designer"></edge>
+      <edge id="413" source="Integrative Process" target="Civil Engineer"></edge>
+      <edge id="414" source="Integrative Process" target="Building Operations and Management"></edge>
+      <edge id="415" source="Integrative Process" target="Architect"></edge>
+      <edge id="416" source="Integrative Process" target="Structural Engineer"></edge>
+      <edge id="417" source="Integrative Process" target="Plumbing Engineer"></edge>
+      <edge id="418" source="Integrative Process" target="Mechanical Engineer"></edge>
+      <edge id="419" source="Integrative Process" target="Electrical Engineer"></edge>
+      <edge id="420" source="Integrative Process" target="Building User"></edge>
+      <edge id="421" source="Sensitive Land Protection" target="Architect"></edge>
+      <edge id="422" source="Sensitive Land Protection" target="Landscape / Irrigation Designer"></edge>
+      <edge id="423" source="Sensitive Land Protection" target="Civil Engineer"></edge>
+      <edge id="424" source="High Priority Site" target="Architect"></edge>
+      <edge id="425" source="High Priority Site" target="Remediation Specialist"></edge>
+      <edge id="426" source="High Priority Site" target="Planning Staff"></edge>
+      <edge id="427" source="Surrounding Density and Diverse Uses" target="Landscape / Irrigation Designer"></edge>
+      <edge id="428" source="Surrounding Density and Diverse Uses" target="Architect"></edge>
+      <edge id="429" source="Access to Quality Transit" target="Landscape / Irrigation Designer"></edge>
+      <edge id="430" source="Access to Quality Transit" target="Architect"></edge>
+      <edge id="431" source="Bicycle Facilities" target="Architect"></edge>
+      <edge id="432" source="Bicycle Facilities" target="Landscape / Irrigation Designer"></edge>
+      <edge id="433" source="Bicycle Facilities" target="Plumbing Engineer"></edge>
+      <edge id="439" source="Reduced Parking Footprint" target="Civil Engineer"></edge>
+      <edge id="440" source="Reduced Parking Footprint" target="Landscape / Irrigation Designer"></edge>
+      <edge id="441" source="Reduced Parking Footprint" target="Owner"></edge>
+      <edge id="442" source="Green Vehicles" target="Architect"></edge>
+      <edge id="443" source="Green Vehicles" target="Electrical Engineer"></edge>
+      <edge id="432.1" source="Green Vehicles" target="Owner"></edge>
+    </edges>
+  </graph>
+</gexf>
