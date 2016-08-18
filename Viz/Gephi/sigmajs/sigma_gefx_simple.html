@@ -62,7 +62,7 @@ sigma.parsers.gexf('LEEDTest.gexf', {
         //defaultNodeColor: '#ec5148',
         edgeColor: 'source', //works
         defaultEdgeType: 'curve',
-        labelSize: 4,
+        labelSize: 1,
         labelThreshold: 16,
         labelAlignment: 'center',
         //enableHovering: 'true',
@@ -143,7 +143,8 @@ var s = new sigma({
 
 
 //these next 2 makes the edges curved
-var edges = sgraph.graph.edges(); 
+//var edges = sgraph.graph.edges(); 
+var edges = s.graph.edges(); 
 
 //Using for loop
 for (var i = 0; i < edges.length; i += 1){
