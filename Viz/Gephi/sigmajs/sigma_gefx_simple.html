@@ -100,8 +100,7 @@ sigma.parsers.gexf('LEEDTest.gexf', {
             n.color = '#eee';
         });
         s.graph.edges().forEach(function(e) {
-          //if (toKeep[e.source] && toKeep[e.target])
-          if (toKeep[e.source])
+          if (toKeep[e.source] && toKeep[e.target])
             e.color = e.originalColor;
           else
             e.color = '#eee';
