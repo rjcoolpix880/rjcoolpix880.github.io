@@ -120,7 +120,7 @@
             model: h.getModelTags(a)
         }, l.hasViz = !!h.getAttributeNS(l.els.root, "xmlns", "viz"), l.version = l.els.root.getAttribute("version") || "1.0", l.mode = l.els.graph.getAttribute("mode") || "static";
         var m = l.els.graph.getAttribute("defaultedgetype");
-        l.defaultEdgetype = m || "undirected";
+        l.defaultEdgetype = m || 'curve';
         var n = e("node"),
             o = e("edge"),
             p = {
