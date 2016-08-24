@@ -16,6 +16,8 @@
 <script src="sigmasource/sigma.min.js"></script>
 <script src="sigmasource/plugins/sigma.parsers.gexf.edit.js"></script>
 <script src="sigmasource/plugins/sigma.plugins.dragNodes.min.js"></script>
+<script src="sigmasource/plugins/sigma.plugins.animate.min.js"></script>
+<script src="sigmasource/plugins/plugins/sigma.layout.noverlap/sigma.layout.noverlap.js"></script>
 
 
 <div id="container">
@@ -181,6 +183,36 @@ dragListener.bind('drop', function(event) {
 dragListener.bind('dragend', function(event) {
   console.log(event);
 });
+
+
+
+
+
+
+
+
+// Configure the noverlap layout:
+var noverlapListener = s.configNoverlap({
+  nodeMargin: 0.1,
+  scaleNodes: 1.05,
+  gridSize: 75,
+  easing: 'quadraticInOut', // animation transition function
+  duration: 10000   // animation duration. Long here for the purposes of this example only
+});
+// Bind the events:
+noverlapListener.bind('start stop interpolate', function(e) {
+  console.log(e.type);
+  if(e.type === 'start') {
+    console.time('noverlap');
+  }
+  if(e.type === 'interpolate') {
+    console.timeEnd('noverlap');
+  }
+});
+// Start the layout:
+s.startNoverlap();
+
+
 
 
 
