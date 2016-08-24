@@ -155,15 +155,15 @@ s = new sigma({
 
 
 // Instantiate sigma: (needed for dragnodes plugin)
-s = new sigma({
-  graph: g,
+g = new sigma({
+  graph: s,
   container: 'graph-container',
   type: 'canvas'
 });
 
 
 // Initialize the dragNodes plugin:
-var dragListener = sigma.plugins.dragNodes(s, s.renderers[0]);
+var dragListener = sigma.plugins.dragNodes(g, g.renderers[0]);
 dragListener.bind('startdrag', function(event) {
   console.log(event);
 });
