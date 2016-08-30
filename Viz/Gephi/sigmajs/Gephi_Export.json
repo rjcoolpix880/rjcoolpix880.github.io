@@ -2220,7 +2220,8 @@
         "id":"378",
         "attributes": {}
         ,
-         "size": 1.0
+         "size": 1.0,
+
     }
     ,
     {
@@ -5199,7 +5200,8 @@
         "id":"318",
         "attributes": {}
         ,
-         "size": 1.0
+         "size": 1.0,
+         "type" : "arrow"
     }
     ,
     {
@@ -5208,7 +5210,8 @@
         "id":"244",
         "attributes": {}
         ,
-         "size": 2.0
+         "size": 2.0,
+         "type" : "curve"
     }
     ]
 }
