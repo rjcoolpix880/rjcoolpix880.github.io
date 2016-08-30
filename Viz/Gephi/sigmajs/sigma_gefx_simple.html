@@ -18,7 +18,8 @@
 <script src="sigmasource/plugins/sigma.plugins.dragNodes.min.js"></script>
 <script src="sigmasource/plugins/sigma.plugins.animate.min.js"></script>
 <script src="sigmasource/plugins/plugins/sigma.layout.noverlap/sigma.layout.noverlap.js"></script>
-
+<script src="sigmasource/sigma.canvas.edges.curve.js"></script>
+<script src="sigmasource/sigma.canvas.edges.curvedArrow.js"></script>
 
 <div id="container">
   <style>
@@ -60,6 +61,7 @@ var i,
       neighbors[k] = this.nodesIndex[k];
     return neighbors;
   });
+  
 sigma.parsers.gexf('LEEDTest_R2.gexf', {
   container: 'graph-container',
 
