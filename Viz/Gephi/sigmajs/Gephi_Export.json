@@ -5201,7 +5201,7 @@
         "attributes": {}
         ,
          "size": 1.0,
-         "type" : "arrow"
+         "type" : "arrow" //works!
     }
     ,
     {
