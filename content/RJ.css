@@ -105,6 +105,24 @@ a:active {
 }
 
 
+
+.col-half{
+	width:49%;
+	display: inline-block;
+	padding:0.01em 0px;
+	vertical-align:top;
+
+}
+
+.col-halfright{
+	width:49%;
+	display: inline-block;
+	padding:0.01em 0px;
+	text-align:right;
+
+}
+
+
 .red{
 	background-color:#f44336!important
 }
