@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Images</title>
+
+</head>
+<body onload="onload();">
+<script>   
+
+<?php
+$files = glob("content/*.*");
+for ($i=1; $i<count($files); $i++)
+{
+    $num = $files[$i];
+    echo '<img src="'.$num.'" alt="random image">'."&nbsp;&nbsp;";
+    }
+?>
+
+
+</script>
+</body>
