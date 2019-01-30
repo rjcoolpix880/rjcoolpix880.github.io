@@ -32,11 +32,10 @@ h2{
 }
 
 h3{
-	font-family: 'Abril Fatface', cursive;
-	font-weight: 200;
+	font-weight: 300;
 	font-size:30px;
-	margin-bottom: 10px;
-	line-height: 50%;
+	line-height: 90%;
+	letter-spacing: -1.5px;
 	color: #313131;
 }
 
