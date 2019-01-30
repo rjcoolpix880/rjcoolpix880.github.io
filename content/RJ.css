@@ -25,7 +25,7 @@ h1{
 h2{
 	font-weight: 100;
 	font-size:30px;
-	line-height: 70%;
+	line-height: 50%;
 	letter-spacing: -1.5px;
 	color: #313131;
 	
@@ -34,7 +34,7 @@ h2{
 h3{
 	font-weight: 300;
 	font-size:30px;
-	line-height: 70%;
+	line-height: 50%;
 	letter-spacing: -1.5px;
 	color: #313131;
 }
