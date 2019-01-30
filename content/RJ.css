@@ -31,6 +31,17 @@ h2{
 	
 }
 
+h3{
+	font-family: 'Abril Fatface', cursive;
+	font-weight: 200;
+	font-size:30px;
+	margin-bottom: 10px;
+	line-height: 50%;
+	color: #313131;
+}
+
+
+
 i{
 	color: gray;
 	font-size:10px;
