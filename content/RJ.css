@@ -34,6 +34,7 @@ h2{
 }
 
 h3{
+	
 	font-weight: 300;
 	font-size:30px;
 	margin-bottom: 1px;
@@ -41,6 +42,18 @@ h3{
 	line-height: 80%;
 	letter-spacing: -1.5px;
 	color: #313131;
+}
+
+
+#over{
+    float: left;
+    margin-top: -115px; /* height + (1.5 x padding) */
+    margin-left: 10px;
+    background-color: #FFFFFF;
+    height: 80px;
+    position: relative;
+    padding: 10px;
+    z-index: 2;
 }
 
 
@@ -173,19 +186,12 @@ img {
 }
 
 
-.video-responsive{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
+video {
+  position: relative;
+  width: 100%;
 }
-.video-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-}
+
+
 
 
 .whiteline{
