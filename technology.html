@@ -12,6 +12,40 @@
 <title>Work</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="content/RJ.css">
+
+
+<head>
+	<script>
+		function showDiv(divClasses) {
+		  var allDivs = document.getElementsByClassName("toggle"); //ChatGPT made this 'toggle' part orignally 'hiddeDev' so it was removing it and it didnt work. so i ahd to make a new class that it didt remove ever, then it could toggle on and off the other class as needed and the toggle class remained always
+		  
+		  // Hide all divs
+		  for (var i = 0; i < allDivs.length; i++) {
+		    var div = allDivs[i];
+		    div.classList.add("hiddenDiv");
+		  }
+		  
+		  // Show the clicked divs
+		  for (var j = 0; j < divClasses.length; j++) {
+		    var divClass = divClasses[j];
+		    var divs = document.getElementsByClassName(divClass);
+		    
+		    for (var k = 0; k < divs.length; k++) {
+		      var div = divs[k];
+		      div.classList.remove("hiddenDiv");
+		    }
+		  }
+		}
+	</script>
+</head>
+
+
+
+
+
+
+
+
 <body>
 
 
@@ -31,464 +65,519 @@
 <div class= "whitelineBig">
 </div>
 
-<!--______________________________________________________________________________ -->
 
-<a id="6169"></a>
+
+
 <div class="row">
 
-	<div class="col-third container">
-
-
-	  <h3>Fitts-Woolard Hall</h3>
+	<div class="col-third dullhover ">
 		
-	  <a href="https://rjcoolpix880.github.io/architecture.html#6169">Link to Architecture page</a>
-	  <p>3D wood wall
-	   </p>
 
-		</div>
-	<div class="col-third container">
-	  <img src="content/FWH Wood Wall Animation.gif">
-	</div>
-
-</div>
-<div class="row">
-
-	<div class="col-third container">
-
-	  <p>Monumental stairs
-	   </p>
-
-	   <a href="https://issuu.com/clarknexsen/docs/tap_innovation_award_-_process_-_r2_edit_for_websi?fr=sNmFiMDU0NjA2Mjc">Read the paper about the process for the structural stair process titled  "A Workflow for Iterative Designing and Structural Analysis of Complex Forms" here.</a>
-
+		<div class="navhover crop-container">
+	 	  <img src="content/01538_00_N391_jpg.jpg" >
+	 	  <div class="overlaypart1 "></div>
+	 	  <div class="overlaypart2 "></div>
+	 	  <div class="overlaypart3 "></div>
+		  <div class="overlay ">
+		    <h3 class="navhovertext " onclick="showDiv( ['div1a','div1b','div1c'] )">Fitts-Woolard Hall</h3>
+		  </div>
 		</div>
 
-	<div class="col-third container">
-	  <img src="content/stair-workflow.jpg">
-	</div>
-</div>
-	
-<div class="row">
-
-	<div class="col-third container">
-
-	  <p>Punched opening window layout, Programming data, & Punch list data viz
-	   </p>
+		<div class="navhover crop-container">
+		  <img src="content/Cyber-Stair2.jpg" >
+	 	  <div class="overlaypart1 "></div>
+	 	  <div class="overlaypart2 "></div>
+	 	  <div class="overlaypart3 "></div>
+		  <div class="overlay ">
+		    <h3 class="navhovertext" onclick="showDiv( ['div2a','div2b'] )" >USAFA Cyberworx</h3>
+		  </div>
 		</div>
-	<div class="col-third container">
-	  <img src="content/punch-list-viz-gif.gif">
-	</div>
-</div>
 
-	<!--______________________________________________________________________________ -->
-	<div class= "whiteline">
-</div>
-<div class= "blacklinethin">
-</div>
-<div class= "whiteline">
-</div>
-
-
-<div class="row">
-
-	<div class="col-third container">
-
-
-	  <h3>USAFA Cyberworks</h3>
-	  <p>The client requested a spiral staircase with glass railings, but due to the size and height of the space, the staircase needed to be a freeform shape rather than a traditional spiral. By using computational design, I was able to ensure that the structure of the staircase and the requirements for safety and building codes were all properly met. All while maintaining the requirements for fabrication of the bent glass needed for the railings.</p>
+		<div class="navhover crop-container">
+		  <img src="content/01648_00_N2_jpg.jpg" >
+			<div class="overlaypart1 "></div>
+	 	  <div class="overlaypart2 "></div>
+	 	  <div class="overlaypart3 "></div>
+		  <div class="overlay ">
+		    <h3 class="navhovertext" onclick="showDiv( ['div3a','div3b','div3c'] )" >Wake Tech Parking Deck</h3>
+		  </div>
 		</div>
-	<div class="col-third container">
-	  <img src="content/Cyber-Stair2.jpg">
-	</div>
-	<div class="col-third container">
-	  <img src="content/Cyberworx-Stair-New.gif">
-	</div>
-</div>
-	
-	
-<!--______________________________________________________________________________ -->
-<div class= "whiteline">
-</div>
-<div class= "blacklinethin">
-</div>
-<div class= "whiteline">
-</div>
-
-<a id="1648"></a>
-<div class="row">
-
-	<div class="col-third container">
 
 
-	  <h3>Wake Tech Parking Deck</h3>
-		<a href="https://rjcoolpix880.github.io/architecture.html#1648">Link to Architecture page</a>
-	  <p>Stainless steel facade panels</p>
+		<div class="navhover crop-container">
+		  <img src="content/bridge-render-2.jpg" >
+		  <div class="overlaypart1 "></div>
+	 	  <div class="overlaypart2 "></div>
+	 	  <div class="overlaypart3 "></div>
+		  <div class="overlay ">
+		    <h3 class="navhovertext" onclick="showDiv( ['div4a','div4b'] )" >Pedestrian Bridge</h3>
+		  </div>
 		</div>
-	<div class="col-third container">
-	  <img src="content/WTCC Panel_A.gif">
-	  <img src="content/image33.jpg">
-	</div>
 
-</div>
-	
-<div class="row">
-
-	<div class="col-third container">
-
-
-	  <p>CNC supergraphic numbers</p>
+		<div class="navhover crop-container">
+		  <img src="content/alderman-render.jpg" >
+			<div class="overlaypart1 "></div>
+	 	  <div class="overlaypart2 "></div>
+	 	  <div class="overlaypart3 "></div>
+		  <div class="overlay ">
+		    <h3 class="navhovertext" onclick="showDiv( ['div5a','div5b'] )" >UVA Alderman Library Rennovation</h3>
+		  </div>
 		</div>
-	<div class="col-third container">
-	  <img src="content/WTCC Panel_B.gif">
-	  <img src="content/image37.jpg">
-	</div>
-</div>
 
-
-<!--______________________________________________________________________________ -->
-<div class= "whiteline">
-</div>
-<div class= "blacklinethin">
-</div>
-<div class= "whiteline">
-</div>
-
-<div class="row">
-
-	<div class="col-third container">
-
-
-	  <h3>Pedestrian Bridge</h3>
-	  <p>Mirrored Panel Glare Analysis</p>
+		<div class="navhover crop-container">
+		  <img src="content/brooks-1.png" >	
+	 	  <div class="overlaypart1 "></div>
+	 	  <div class="overlaypart2 "></div>
+	 	  <div class="overlaypart3 "></div>
+		  <div class="overlay ">
+		    <h3 class="navhovertext" onclick="showDiv( ['div6a','div6b'] )" >Brooks Global Studies</h3>
+		  </div>
 		</div>
-	<div class="col-third container">
-	  <img src="content/Bridge Glare.png">
-	</div>
-	<div class="col-third container">
-	  <img src="content/Bridge Glare Calc.png">
-	</div>
-</div>
 
-
-
-<!--______________________________________________________________________________ -->
-<div class= "whiteline">
-</div>
-<div class= "blacklinethin">
-</div>
-<div class= "whiteline">
-</div>
-
-<div class="row">
-
-	<div class="col-third container">
-
-
-	  <h3>UVA Alderman Library Rennovation</h3>
-	  <p>Skylight geometry design and otimization</p>
+		<div class="navhover crop-container">
+		  <img src="content/01648_00_N2_jpg.jpg" >	 	  
+	 	  <div class="overlaypart1 "></div>
+	 	  <div class="overlaypart2 "></div>
+	 	  <div class="overlaypart3 "></div>
+		  <div class="overlay ">
+		    <h3 class="navhovertext" onclick="showDiv( ['div7a','div7b'] )" >Charlotte New Main Library</h3>
+		  </div>
 		</div>
-	<div class="col-third container">
-	  <img src="content/Skylight Animation.gif">
-	</div>
-	<div class="col-third container">
-	  <img src="content/Skylight.jpg">
-	</div>
-</div>
+
+		<div class="navhover crop-container">
+		  <img src="content/01648_00_N2_jpg.jpg" >
+	 	  <div class="overlaypart1 "></div>
+	 	  <div class="overlaypart2 "></div>
+	 	  <div class="overlaypart3 "></div>
+		  <div class="overlay ">
+		    <h3 class="navhovertext" onclick="showDiv( ['div8a','div8b'] )" >Dynamo and Grasshopper Deployment</h3>
+		  </div>
+		</div>
+
+		<div class="navhover crop-container">
+		  <img src="content/IMG_20160701_112352.jpg" >	 	 
+	 	  <div class="overlaypart1 "></div>
+	 	  <div class="overlaypart2 "></div>
+	 	  <div class="overlaypart3 "></div>
+		  <div class="overlay ">
+		    <h3 class="navhovertext" onclick="showDiv( ['div9a','div9b'] )" >Project Data Warehouse</h3>
+		  </div>
+		</div>
+
+		<div class="navhover crop-container">
+		  <img src="content/2015%20Annual%20Report_FINAL_.jpg" >	 	 
+	 	  <div class="overlaypart1 "></div>
+	 	  <div class="overlaypart2 "></div>
+	 	  <div class="overlaypart3 "></div>
+		  <div class="overlay ">
+		    <h3 class="navhovertext" onclick="showDiv( ['div10a','div10b'] )" >Misc Work</h3>
+		  </div>
+		</div>
 
 
 
-
-
-
-
-
-
-
-
-<!--______________________________________________________________________________ -->
-<div class= "whiteline">
-</div>
-<div class= "blackline">
-</div>
-<div class= "whiteline">
-</div>
-
-
-
-
-
-<h4>MISC WORK</h4>
-<p> <br></p>
-
-
-
-<div class="row">
-
-	<div class="col-third container">
-
-	  <h5>AIA TAP National Advisory Group   2020 Chair</h5>
-	  <p>2017-2022. I serve on the leadership group for the AIA Technology in Architectural Practice Knowledge Community (TAP). Responsibilities include charing the 2020 Building Connections Congress confrerence and the 2021 national AIA Innovation awards. Other involvement includes advising the AIA Strategic Council, and serving on various taskforces such as the national AIA COVID-19 task force. TAP serves as a resource for AIA members, the profession, and the public in the deployment of computer technology in the practice of architecture. Technology in Architectural Practice monitors the development of computer technology and its impact on architecture practice and the entire building life cycle, including design, construction, facility management, and retirement or reuse. </p>
-
-		<a href="https://network.aia.org/technologyinarchitecturalpractice/home/leadership">Link to the AIA TAP webiste</a>
-	</div>
-	<img src="content/BE_AIA_Member_logo_redwhite.png">
-	<div class="col-third container">
-	</div>
-	<div class="col-third container">
-</div>
-
-
-
-
-<div class= "whiteline">
-</div>
-<div class= "blacklinethin">
-</div>
-<div class= "whiteline">
-</div>
-
-<div class="row">
-
-	<div class="col-third container">
-
-	  <h5>Daylighting and Energy Modeling</h5>
-	  <p>During design of the Engineering Building at NC State University, I developed a tool to help determine loads and daylighting for a typical office. There are nearly 200 8ft x 16ft  offices on the perimeter of the building. Working alongside Mechanical and Electrical engineers we determined a set of criteria for analyzing options. We established that the chilled beam sizes were a good, tangible,  threshold for determining the value of each iteration. We focused on reducing the peak load to get down to certain thresholds of chilled beams via WWR, Glass types (SHGC), and Shading. The original Mechanical engineers calculation required more than one 2ft x 6ft chilled beam in each office. Using the tool we were able to come up with an acceptable option that could reduce the load down to only requiring one 2ft x 2ft chilled beam in the office. </p>
-	</div>
-	<div class="col-third container">
-	  <img src="content/DIVA Image_1.jpg">
-	</div>
-	<div class="col-third container">
-	  <img src="content/DIVA Image_2.jpg">
 	</div>
 
-</div>
 
 
 
 
-<div class= "whiteline">
-</div>
-<div class= "blacklinethin">
-</div>
-<div class= "whiteline">
-</div>
+	<div class="col-2third container toggle hiddenDiv div1a"> 
+		<div class="row">
+			<div class="col-half container "> 
+					
+				 	<h5>Fitts-Woolard Hall</h5>
+					 <h3>3D Wood Wall</h3>
+					<br>
+					 <a href="https://rjcoolpix880.github.io/architecture.html#6169">Link to Architecture page</a>
+					  <p>This 220,000 sf  project is a new engineering building for NC State University, housing the dean of the college of engineering, the civil engineering department, and the structural engineering department. It includes research labs, teaching labs, classrooms, and offices. I was involved from the programming phase through closeout. During Programming,  I developed a database to track and validate programming requirements throughout the design process. In the design phase,  computational design was used to calculate daylighting, energy usage, a dynamic window layout on the exterior.  Computational tools were also used to create the focal point for the interior of the building, a wood wall and metal stair meant to visually draw people up into the building. The wood wall was made up of a  series of 50 unique faceted panels arranged into large repeating triangles, the form inspired by blending the work of  both departments. The resulting design was digitally transmitted to the fabricator for production. As the main Architectural representative on the project, during CA the data from the contractor was linked to a floor plan to quickly illustrate where the design team needed to work that day. My scope of work also included me being the LEED accredited professional helping the project get LEED Silver, and the first LEED v4 project for our company.
+					   </p>
+			</div>
+
+			<div class="col-half container">  
+		 		<img src="content/FWH Wood Wall Animation.gif">
+		  		<img src="content/fwh-wood1.png">
+		  	  	<img src="content/fwh-laser.jpg">
+			</div>
+
+			<div class= "whiteline">
+			</div>
+			<div class= "blacklinethin">
+			</div>
+			<div class= "whiteline">
+			</div>
+
+
+		</div>
+		<div class="row">
+			<div class="col-half container "> 
+					
+					 <h3>Monumental Stairs</h3>
+						<p>asdf
+					   </p>
+		   				<a href="https://issuu.com/clarknexsen/docs/tap_innovation_award_-_process_-_r2_edit_for_websi?fr=sNmFiMDU0NjA2Mjc">Read the paper about the process for the structural stair process titled  "A Workflow for Iterative Designing and Structural Analysis of Complex Forms" here.</a>
+
+				</div>
+
+			<div class="col-half container">  
+		  		<img src="content/stair-workflow.jpg">
+		  	  	<img src="content/fwh-stair-gif.gif">
+			</div>
+		</div>
+	</div>
 
 
 
-<div class="row">
 
-	<div class="col-third container">
+	<div class="col-2third container toggle hiddenDiv div2a"> 
+		<div class="col-half container " > 
+			 	<h5>USAFA Cyberworx</h5>
+				 <h3>Freeform Stair</h3>
+				 <p>Under Construction<br>
+				 	A new classroom building in Colorado provides opportunities for the students in the Academy.  Cyberworx  prioritize the needs of military personnel, think about complex systems, and use new technologies like AI, AR, IoT, and quantum computing to make the Air Force and Department of Defense more effective and efficient. My involvement is isolated to  the freeform stair that is located in the entrance atrium. The owner wanted a spiral stair to fit in with the context of other buildings on campus that have similar stairs. However due to the shape of the opening a spiral stair could not fit. Working closely with structural engineer and the glass bending company, a freeform stair was designed that meets all code, fabrication, and structural requirements. Work also included providing digital 3D models to the fabricator for direct fabrication of formwork. 
+				  </p>
+		</div>
 
-	  <h5>Pebble Smart-watch App</h5>
-	  <p>I like minimal watch faces on my Pebble Smart-watch. The issue with these is they do not show the date and the pebble OS didn't have an easy way to simply show the date. I hacked together some code and created an app for the Pebble Appstore that does just that. It shoes the date when you hit one of the buttons on the side of the watch. Various visual aspects of the app are customizable through your smart phone<p>
-
-	  <a href="https://apps.getpebble.com/en_US/application/57926763842428d96600039f">Link to the App Store</a>
+		<div class="col-half container "> 
+	 		 <img src="content/Cyber-Stair2.jpg">
+	 		 <img src="content/Cyberworx-Stair-New.gif">
+		</div>
 
 	</div>
-	<div class="col-third container">
-	  <img src="content/banner_2.png">
-	</div>
-	<div class="col-third container">
-
-	</div>
-</div>
-
-
-
-<div class= "whiteline">
-</div>
-<div class= "blacklinethin">
-</div>
-<div class= "whiteline">
-</div>
 
 
 
 
+	<div class="col-2third container toggle hiddenDiv div3a"> 
+		<div class="row">
+			<div class="col-half container " > 
+				 	<h5>Wake Tech Parking Deck</h5>
+					 <h3>Stainless steel facade panels</h3>
+					 <a href="https://rjcoolpix880.github.io/architecture.html#1648">Link to Architecture page</a>
+					 <p>The Wake Tech campus is split by a natural wetland and forest. The site for the deck is located directly on one edge of the forest. All students commute to campus, requiring ample parking and large parking decks. To break up the monotony of the long edge of the deck, a parametrically generated stainless steel facade was designed. The panels respond to its context by being closely spaced at the street edge and opening up at the wetland edge as they turn the corner. Both sides of the deck are visible to students, one side is visible from the street, and the other from a pedestrian bridge that moves across the wetlands and connects to the main library of the campus. In addition, a computational design for supergraphic floor numbers was generated out of durable ACM panels.
+					  </p>
 
-<div class="row">
-
-	<div class="col-third container">
-	 <h5>Who We Are: Javascript image</h5>
-	 <p> I created a Script that took employee data from our employee database and images from our image database and created a graphic of the faces of our entire firm. At the time of it's creation, our multi-office firm was attempting to feel more cohesive and people also found it fun to try to find themselves in the image. The script allows for a strong amount of customization such as the order of images and color borders representing office location or discipline.</p>
-	</div>
-	<div class="col-third container">
-	  <img src="content/2015 Annual Report_FINAL_.jpg">
-	</div>
-	<div class="col-third container">
-	</div>
-</div>
-
-
-
-
-<div class= "whiteline">
-</div>
-<div class= "blacklinethin">
-</div>
-<div class= "whiteline">
-</div>
-
-
-
-
-<div class="row">
-
-	<div class="col-third container">
-	 <h5>AIA2030 Challenge</h5>
-	 <p>I am involved in the research, roll-out, and implementation of our firm's AIA2030 commitment. Currently it involves working with a small group of people who are working with a consultant. This will be presented to the board and shareholders once it is complete. Concurrently I am working with the energy modeling group to gather energy usage data from all firm projects and input them into the AIA2030 DDX.</p>
-	</div>
-	<div class="col-third container">
-	  <img src="content/IMG_20160629_121904373.jpg">
-	</div>
-	<div class="col-third container">
-	  <img src="content/IMG_20160701_112352.jpg">
-	</div>
-</div>
-
-
-
-
-<div class= "whiteline">
-</div>
-<div class= "blacklinethin">
-</div>
-<div class= "whiteline">
-</div>
-
-
-
-
-<div class="row">
-
-	<div class="col-third container">
-	 <h5>Intranet Restructuring</h5>
-	 <p>I was involved with a small team to improve our company's Intranet. The previous Intranet was confusing, unregulated and all the information was outdated. Our group took the existing Intranet and pared it down immensely. It became easier to find what was needed as well as an easier place to share knowledge. The result is more engagement across the firm, the information in the libraries is more relevant, staff know where find information, as well as who to contact if things are outdated or missing. Our group is still involved in encouraging people to post and contribute to the Intranet. As a result, the amount of posts, content, and most importantly, the quality have all increased. Our firm was asked to present our redesign to at a conference put on by Knowledge Architecture.</p>
-	</div>
-	<div class="col-third container">
-	  <img src="content/Intranet-Knowledge-Diagram3.gif">
-	</div>
-	<div class="col-third container">
-		  <img src="content/Intranet.png">
-	</div>
-</div>
-
-
-
-<div class= "whiteline">
-</div>
-<div class= "blacklinethin">
-</div>
-<div class= "whiteline">
-</div>
-
-
-
-<div class="row">
-
-	<div class="col-third container">
-	 <h5>LEED Complexity Diagram</h5>
-	 <p>I set out to create a interactive diagram that showed the complexity and relationship of the LEED v4 points. I used a data visualization tool and then packaged it up for the web so that it could be shared.</p>
-	 <a href="https://rjcoolpix880.github.io/Viz/Gephi/sigmajs/sigma_gefx_simple.html">Check out the interactive graphic</a>
-	</div>
-	<div class="col-third container">
-	  <img src="content/LEED_Diagram.jpg">
-	</div>
-	<div class="col-third container">
-	</div>
-</div>
-
-
-
-<div class= "whiteline">
-</div>
-<div class= "blacklinethin">
-</div>
-<div class= "whiteline">
-</div>
-
-
-<div class="row">
-
-	<div class="col-third container">
-	 <h5>Clark Nexsen Holiday Graphic</h5>
-	 <p>Marketing approached me to create the Clark Nexsen holiday graphic to send to clients and use on social media.</p>
-	 <p>
-	 <a href="https://www.clarknexsen.com/bringing-marketings-vision-to-life-with-computational-design-2022-holiday-card-story/"> Here is a Link</a> to an article where we discuss the process of making the animation.
-	 </p>
-	</div>
-	<div class="col-third container">
-		  <img src="content/FINAL-animation_full-quality.gif">
-
-	</div>
-	<div class="col-third container">
-	  <iframe src="https://player.vimeo.com/video/783285670?h=2ed4f98c29&title=0&byline=0&portrait=0" width="640" height="512"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-	</div>
-</div>
-
+					 <img src="content/01648_00_N4_jpg.jpg">
+			</div>
+			<div class="col-half container "> 
 	
+		 		 <img src="content/wtcc-axon1.jpg">
+				 <img src="content/wtcc-axon.jpg">
+				  <img src="content/WTCC Panel_A.gif">
 
+			</div>
+		</div>
 
-<div class= "whiteline">
-</div>
-<div class= "blacklinethin">
-</div>
-<div class= "whiteline">
-</div>
+			<div class= "whiteline">
+			</div>
+			<div class= "blacklinethin">
+			</div>
+			<div class= "whiteline">
+			</div>
 
+		<div class="row">
+			<div class="col-half container " > 
+					 <h3>CNC supergraphic numbers</h3>
 
+					 <p>asdf
+					  </p>
 
+					  <img src="content/wtcc-final.png">
+			</div>
 
-<div class="row">
+			<div class="col-half container "> 
+		 	 	<img src="content/image33.jpg">
+		 	 	<img src="content/image37.jpg">
+			</div>
+		</div>
 
-	<div class="col-third container">
-	 <h5>CANstruction</h5>
-	 <p>I created a Grasshopper script to rapidly visualize and iterate the design for the CANStruction fund raising event. We partnered with RedHat, a tech company, so I wanted to implement as much technology as possible. The script allowed for the form and can heights to be input and it would then generate a visualization of the final result including can count. After the design was completed and sent to the CNC fabricator, the quote was too high because it was slightly wider than the material provided. A quick reduction in the size of the underlying form generated a new output that used 21 less sheets and saved over $1,000 in labor. Without parametric scripting the entire drawings would have had to be redone.</p>
-	 <p>
-	 <a href="http://www.clarknexsen.com/2016/09/leveraging-power-parametric-design-canstruction/"> Here is a Link</a> to an article I wrote for Clark Nexsen's website.
-	 </p>
 	</div>
-	<div class="col-third container">
-		  <img src="content/gif.gif">
-	<a href="https://www.youtube.com/watch?v=Y0o1loCDWR8">Link to RedHat YouTube video</a>
+
+
+
+	<div class="col-2third container toggle hiddenDiv div4a"> 
+		<div class="col-half container " > 
+			 	<h5>Pedestrian Bridge</h5>
+				 <h3>Mirrored Panel Glare Analysis</h3>
+
+				 <p>asdf
+				  </p>
+		</div>
+
+		<div class="col-half container "> 
+	  		<img src="content/bridge-render-2.jpg">
+	  	 	 <img src="content/Bridge Glare.png">
+	  		<img src="content/Bridge Glare Calc.png">
+		</div>
 
 	</div>
-	<div class="col-third container">
-	  <img src="content/150929_Tall Cans_image003.png">
+
+
+	<div class="col-2third container toggle hiddenDiv div5a"> 
+		<div class="col-half container " > 
+			 	<h5>UVA Alderman Library Rennovation</h5>
+				 <h3>Skylight geometry design and optimization</h3>
+
+				 <p>asdf
+				  </p>
+		</div>
+
+		<div class="col-half container "> 
+	 	 	<img src="content/alderman-render.jpg">
+	 	   <img src="content/Skylight Animation.gif">
+	 		<img src="content/Skylight.jpg">
+		</div>
+
 	</div>
+
+
+
+	<div class="col-2third container toggle hiddenDiv div6a"> 
+		<div class="col-half container " > 
+			 	<h5>Brooks Global Studies</h5>
+				 <h3>Supergraphic</h3>
+
+				 <p>asdf
+				  </p>
+		</div>
+
+		<div class="col-half container "> 
+	 		 <img src="content/brooks-1.png">
+	  		<img src="content/brooks-2.png">
+	  	  <img src="content/brooks-2.png">
+		</div>
+
+	</div>
+
+
+	<div class="col-2third container toggle hiddenDiv div7a"> 
+		<div class="col-half container " > 
+			 	<h5>Charlotte New Main Library</h5>
+				 <h3>Facade and Stair Rationalizationc</h3>
+
+				 <p>In Design <br>
+				 	This  project  is the new main library  in downtown Charlotte where they are replacing the old facility with a new one that focuses on the public and the new role and responsibility that libraries have for their communities. As the Architect of Record working with Snohetta, my involvement began in late Design Development. I am responsible for generating new scripts or  making changes to existing  scripts generated in previous phases as the design is refined. Work on the exterior includes: updating the curved facade to revise mullion shapes and sizes and geometry and alignments with the floors as well as  metal panel facade studies  on the remaining 3 sides of the building. It also includes scope on the interior where I am revising the geometry of the atrium stairs and opening with a complete redesign of the guardrails, coordination with structure and ensuring that the stairs are meeting code. 
+				  </p>
+		</div>
+
+		<div class="col-half container "> 
+	 		 <img src="content/x.jpg">
+		</div>
+
+	</div>
+
+
+
+	<div class="col-2third container toggle hiddenDiv div8a"> 
+		<div class="col-half container " > 
+			 	<h5>Dynamo and Grasshopper Deployment</h5>
+				 <p>asdf
+				  </p>
+		</div>
+
+		<div class="col-half container "> 
+			<img src="content/pbi-dyn.jpg">
+			<img src="content/dyn-50.png">
+			<img src="content/dyn-32.png">
+		</div>
+
+	</div>
+
+
+
+
+	<div class="col-2third container toggle hiddenDiv div10a"> 
+		<div class="row">
+			<div class="col-half container " > 
+			 	<h5>Misc Work</h5>
+
+			  <h3>AIA TAP National Advisory Group   2020 Chair</h3>
+			  <p>2017-2022. I serve on the leadership group for the AIA Technology in Architectural Practice Knowledge Community (TAP). Responsibilities include charing the 2020 Building Connections Congress confrerence and the 2021 national AIA Innovation awards. Other involvement includes advising the AIA Strategic Council, and serving on various taskforces such as the national AIA COVID-19 task force. TAP serves as a resource for AIA members, the profession, and the public in the deployment of computer technology in the practice of architecture. Technology in Architectural Practice monitors the development of computer technology and its impact on architecture practice and the entire building life cycle, including design, construction, facility management, and retirement or reuse. </p>
+
+				<a href="https://network.aia.org/technologyinarchitecturalpractice/home/leadership">Link to the AIA TAP webiste</a>
+			</div>
+
+			<div class="col-half container">
+				<img src="content/BE_AIA_Member_logo_redwhite.png">
+			</div>
+
+			<div class= "whiteline">
+			</div>
+			<div class= "blacklinethin">
+			</div>
+			<div class= "whiteline">
+			</div>
+
+		</div>
+		<div class="row">
+			<div class="col-half container " > 
+			 	<h3>Pebble Smart-watch App</h3>
+	 			<p>I like minimal watch faces on my Pebble Smart-watch. The issue with these is they do not show the date and the pebble OS didn't have an easy way to simply show the date. I hacked together some code and created an app for the Pebble Appstore that does just that. It shoes the date when you hit one of the buttons on the side of the watch. Various visual aspects of the app are customizable through your smart phone<p>
+			</div>
+
+			<div class="col-half container "> 
+	  			<img src="content/banner_2.png">
+			</div>
+
+			<div class= "whiteline">
+			</div>
+			<div class= "blacklinethin">
+			</div>
+			<div class= "whiteline">
+			</div>
+
+
+		</div>
+
+
+
+
+		<div class="row">
+			<div class="col-half container " > 
+			 	<h3>Who We Are: Javascript image</h3>
+				 <p>I created a Script that took employee data from our employee database and images from our image database and created a graphic of the faces of our entire firm. At the time of it's creation, our multi-office firm was attempting to feel more cohesive and people also found it fun to try to find themselves in the image. The script allows for a strong amount of customization such as the order of images and color borders representing office location or discipline.
+				  </p>
+			</div>
+
+			<div class="col-half container "> 
+	 			 <img src="content/2015 Annual Report_FINAL_.jpg">
+			</div>
+
+			<div class= "whiteline">
+			</div>
+			<div class= "blacklinethin">
+			</div>
+			<div class= "whiteline">
+			</div>
+
+		</div>
+
+		<div class="row">
+			<div class="col-half container " > 
+			 	<h3>Intranet Restructuring</h3>
+	 			<p>I was involved with a small team to improve our company's Intranet. The previous Intranet was confusing, unregulated and all the information was outdated. Our group took the existing Intranet and pared it down immensely. It became easier to find what was needed as well as an easier place to share knowledge. The result is more engagement across the firm, the information in the libraries is more relevant, staff know where find information, as well as who to contact if things are outdated or missing. Our group is still involved in encouraging people to post and contribute to the Intranet. As a result, the amount of posts, content, and most importantly, the quality have all increased. Our firm was asked to present our redesign to at a conference put on by Knowledge Architecture.</p>
+			</div>
+
+			<div class="col-half container "> 
+	 			 <img src="content/Intranet-Knowledge-Diagram3.gif">
+	  		  <img src="content/Intranet.png">
+			</div>
+
+			<div class= "whiteline">
+			</div>
+			<div class= "blacklinethin">
+			</div>
+			<div class= "whiteline">
+			</div>
+
+		</div>
+
+		<div class="row">
+			<div class="col-half container " > 
+			 	<h3>LEED Complexity Diagram</h3>
+	 			<p>I set out to create a interactive diagram that showed the complexity and relationship of the LEED v4 points. I used a data visualization tool and then packaged it up for the web so that it could be shared.</p>
+	 			<a href="https://rjcoolpix880.github.io/Viz/Gephi/sigmajs/sigma_gefx_simple.html">Check out the interactive graphic</a>
+			</div>
+
+			<div class="col-half container "> 
+	 			 <img src="content/LEED_Diagram.jpg">
+			</div>
+
+			<div class= "whiteline">
+			</div>
+			<div class= "blacklinethin">
+			</div>
+			<div class= "whiteline">
+			</div>
+
+		</div>
+
+		<div class="row">
+			<div class="col-half container " > 
+			 	<h3>Clark Nexsen Holiday Graphic</h3>
+				 <p>Marketing approached me to create the Clark Nexsen holiday graphic to send to clients and use on social media.</p>
+				 <p>
+				 <a href="https://www.clarknexsen.com/bringing-marketings-vision-to-life-with-computational-design-2022-holiday-card-story/"> Here is a Link</a> to an article where we discuss the process of making the animation.
+				 </p>
+			</div>
+
+			<div class="col-half container "> 
+		 	 <img src="content/FINAL-animation_full-quality.gif">
+		  	  <iframe src="https://player.vimeo.com/video/783285670?h=2ed4f98c29&title=0&byline=0&portrait=0" width="640" height="512"  frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+			</div>
+
+			<div class= "whiteline">
+			</div>
+			<div class= "blacklinethin">
+			</div>
+			<div class= "whiteline">
+			</div>
+
+		</div>
+
+
+		<div class="row">
+			<div class="col-half container " > 
+			 	<h3>CANstruction</h3>
+				 <p>I created a Grasshopper script to rapidly visualize and iterate the design for the CANStruction fund raising event. We partnered with RedHat, a tech company, so I wanted to implement as much technology as possible. The script allowed for the form and can heights to be input and it would then generate a visualization of the final result including can count. After the design was completed and sent to the CNC fabricator, the quote was too high because it was slightly wider than the material provided. A quick reduction in the size of the underlying form generated a new output that used 21 less sheets and saved over $1,000 in labor. Without parametric scripting the entire drawings would have had to be redone.</p>
+				 	 <p>
+	 			<a href="http://www.clarknexsen.com/2016/09/leveraging-power-parametric-design-canstruction/"> Here is a Link</a> to an article I wrote for Clark Nexsen's website.
+	 			</p>
+			</div>
+
+			<div class="col-half container "> 
+		  		<img src="content/gif.gif">
+				<a href="https://www.youtube.com/watch?v=Y0o1loCDWR8">Link to RedHat YouTube video</a>
+		  		<img src="content/150929_Tall Cans_image003.png">
+			</div>
+
+			<div class= "whiteline">
+			</div>
+			<div class= "blacklinethin">
+			</div>
+			<div class= "whiteline">
+			</div>
+
+		</div>
+
+
+		<div class="row">
+
+			<div class="img-big"  >
+				<iframe height=1000 width=100% src="https://datastudio.google.com/embed/reporting/8412c63e-7c84-40c5-8631-259079c9f848/page/p_71e7eoiypc" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+			<div class= "whiteline">
+			</div>
+			<div class= "blacklinethin">
+			</div>
+			<div class= "whiteline">
+			</div>
+
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</div>
+
+
+
+
 </div>
 
-	
 
 
-<div class= "whiteline">
-</div>
-<div class= "blacklinethin">
-</div>
-<div class= "whiteline">
-</div>
-
-
-
-	
-	
-
-<div class="img-big"  >
-	<iframe height=1000 width=100% src="https://datastudio.google.com/embed/reporting/8412c63e-7c84-40c5-8631-259079c9f848/page/p_71e7eoiypc" frameborder="0" style="border:0" allowfullscreen></iframe>
-</div>
-
-	
-	
-
-
-
-
-
-
-
-
-
-
-</div>
 
 
 
