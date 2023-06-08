@@ -263,7 +263,7 @@ The Wake Tech campus is split by a natural wetland and forest. The site for the 
 
 
 <script>
-
+	/*<!--*/
   // Get all elements with the class "image-clickable"
   const images = document.querySelectorAll('.image-clickable');
 
@@ -272,22 +272,24 @@ The Wake Tech campus is split by a natural wetland and forest. The site for the 
     image.addEventListener('click', function() {
       const src = this.getAttribute('src');
       const alt = this.getAttribute('alt');
-      const anchor = this.getAttribute('anc')
+      const anchor = this.getAttribute('anc');
 
       const newPage = `
         <!DOCTYPE html>
         <html>
-        	<style>
+          <head>
+				 <style>
 				@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300');
 				@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
 				@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
-			</style>
-				 
+				</style>
 
 
-			<meta name="viewport" content="width=device-width, initial-scale=1">
-			<link rel="stylesheet" href="content/RJ.css">
-          <head>
+				<title>Work</title>
+				<meta name="viewport" content="width=device-width, initial-scale=1">
+				<link rel="stylesheet" href="content/RJ.css">
+
+
             <title>Full-size Image</title>
             <style>
               /* CSS for image display */
@@ -314,22 +316,29 @@ The Wake Tech campus is split by a natural wetland and forest. The site for the 
             </style>
           </head>
           <body>
-     		 <a class="back-button" href="architecture.html#${anchor}">Back</a>
+            <a class="back-button" href="" onclick="goBack(# + '${anchor}')">Back</a>
             <img src="${src}" alt="${alt}" />
+            
+            <script>
+              function goBack(previousPageURL, anchor) {
+                const modifiedURL = previousPageURL + '#' + anchor;
+                window.location.href = modifiedURL;
+              }
+            </script>
           </body>
         </html>
       `;
 
-        // Replace the current page's content with the new image page
-        document.open();
-        document.write(newPage);
-        document.close();
+
+      // Replace the current page's content with the new image page
+      document.open();
+      document.write(newPage);
+      document.close();
     });
   });
-
-
-
+  /*-->*/
 </script>
+
 
 
 
