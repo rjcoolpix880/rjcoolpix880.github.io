@@ -12,7 +12,12 @@ html,body{
 }
 
 
-
+.hyphenate {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
 
 
 #content {
@@ -57,18 +62,19 @@ h3{
 h4{
 	font-family: 'Teko', sans-serif;
 	font-weight: 300;
-	font-size:175px;
+	font-size:150px;
 	line-height: 70%;
 	color: #313131;
 	letter-spacing: -3px;
 	margin-bottom: 0px;
 	margin-top: 20px;
+	hyphens: auto;
 }
 
 h5{
 	font-family: 'Teko', sans-serif;
 	font-weight: 300;
-	font-size:75px;
+	font-size:65px;
 	line-height: 70%;
 	color: #313131;
 	letter-spacing: -.2px;
@@ -78,7 +84,7 @@ h5{
 
 h6{
 	font-weight: 100;
-	font-size:30px;
+	font-size:25px;
 	margin-bottom: 1px;
 	margin-top: 5px;
 	line-height: 80%;
