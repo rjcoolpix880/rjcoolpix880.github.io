@@ -13,8 +13,8 @@
             box-sizing: border-box;
         }
 
-        .frame {
-            background-color: #f0f0f0; /* Light grey background */
+        .frame, .framelower {
+           /*  background-color: #f0f0f0; Light grey background */
             width: 100%;
             max-width: 800px;
             margin: auto;
@@ -22,9 +22,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 1px solid #ddd; /* Light border */
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+           /* border: 1px solid #ddd;  Light border */
+            /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  Subtle shadow */
             position: relative; /* Needed for absolute positioning of child */
+            text-align: center; /* Centers inline-block elements horizontally */
         }
 
         .frame a {
@@ -34,13 +35,9 @@
             height: 100%;
         }
 
-        .frame p {
-            margin: 0;
-            width: 100%; /* Full width */
-            position: absolute; /* Positioning inside the frame */
-            top: 0; /* Align to the top */
-            left: 0; /* Align to the left */
-            padding: 10px; /* Some padding */
+        .framelower {
+            height: 100px;
+            
         }
 
         .button-style {
@@ -53,11 +50,16 @@
             cursor: pointer; /* Cursor changes to hand icon */
             display: inline-block; /* Align with text baseline */
             margin-top: 10px; /* Margin at the top */
-            width: 200px; /* Button width */
+            width: 150px !important; /* Adjusted button width with !important to ensure override */
+            align-items: center;
+        }
+
+        .button-style:hover {
+            background-color: #008cff; /* Lighter shade of blue on hover */
         }
 
         @media screen and (max-width: 800px) {
-            .frame {
+         .frame,  {
                 height: auto;
             }
         }
@@ -68,9 +70,9 @@
     <div class="frame">
         <iframe src="https://speckle.corestudio.io/embed?stream=4fe5719a1b" width="100%" height="100%" frameborder="0"></iframe>
     </div>
-    <div class="frame">
+    <div class="framelower">
         <a href="file:///I:/Projects/8500/8683-Practice%20Technology%20Innovation/500_Computation/Research/Speckle/3d%20model%20sharing/Sample_Panel.igs" download>
-            <p class="button-style">Frame 2 Content (Click to download file)</p>
+            <p class="button-style">Download Sample Panel 3D model</p>
         </a>
     </div>
 </body>
