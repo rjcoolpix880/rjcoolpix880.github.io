@@ -499,3 +499,8 @@ video {
 		/*background-color: darkgray*/
 	}
 }
+
+/*this is the color of the bullet points*/
+li::marker {
+  color: #d3d3d3;
+}
