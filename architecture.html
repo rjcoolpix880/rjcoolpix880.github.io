@@ -68,7 +68,7 @@
 	<div class="col-third container">
 
 	  <p>2016-2021</p>
-	  <p>2021 AIA South Atlantic Interior Merit Award<br/>2021 SEA NC Excellence in Structural Engineering Award</p>
+	  <p>2024 AIA North Carolina Merit Award<br/>2022 AIA Triangle Merit Award<br/>2021 Building North Carolina Award for Best Public Project<br/>2021 AIA South Atlantic Interior Merit Award<br/>2021 SEA NC Excellence in Structural Engineering Award</p>
 	  <p>220,000 sqft Lab+Classroom Building</p>
 	  <p><a href="https://www.clarknexsen.com/project/fitts-woolard-hall/" target="_blank">Clark Nexsen Project Page</a></p>
 	  <p><a href="https://rjcoolpix880.github.io/technology.html#6169">Technology Details</a></p>
@@ -259,87 +259,8 @@ The Wake Tech campus is split by a natural wetland and forest. The site for the 
 <div class= "whitelineBig">
 </div>
 
+
+<script src="imageModal.js"></script>
 </body>
-
-
-<script>
-	/*<!--*/
-  // Get all elements with the class "image-clickable"
-  const images = document.querySelectorAll('.image-clickable');
-
-  // Add a click event listener to each image
-  images.forEach(function(image) {
-    image.addEventListener('click', function() {
-      const src = this.getAttribute('src');
-      const alt = this.getAttribute('alt');
-      const anchor = this.getAttribute('anc');
-
-      const newPage = `
-        <!DOCTYPE html>
-        <html>
-          <head>
-				 <style>
-				@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300');
-				@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
-				@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
-				</style>
-
-
-				<title>Work</title>
-				<meta name="viewport" content="width=device-width, initial-scale=1">
-				<link rel="stylesheet" href="content/RJ.css">
-
-
-            <title>Full-size Image</title>
-            <style>
-              /* CSS for image display */
-              body {
-                margin: 0;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 100vh;
-                background-color: #f1f1f1;
-              }
-              
-              img {
-                max-width: 100%;
-                max-height: 100%;
-              }
-              
-              /* CSS for back button */
-              .back-button {
-                position: fixed;
-                top: 20px;
-                left: 20px;
-              }
-            </style>
-          </head>
-          <body>
-            <a class="back-button" href="" onclick="goBack(# + '${anchor}')">Back</a>
-            <img src="${src}" alt="${alt}" />
-            
-            <script>
-              function goBack(previousPageURL, anchor) {
-                const modifiedURL = previousPageURL + '#' + anchor;
-                window.location.href = modifiedURL;
-              }
-            </script>
-          </body>
-        </html>
-      `;
-
-
-      // Replace the current page's content with the new image page
-      document.open();
-      document.write(newPage);
-      document.close();
-    });
-  });
-  /*-->*/
-</script>
-
-
-
 
 </html>
