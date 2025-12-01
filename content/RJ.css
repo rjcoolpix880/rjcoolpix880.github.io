@@ -418,6 +418,7 @@ img {
 
 
 
+
 .img-big{
 	width: 100%;
 	/*
@@ -481,23 +482,17 @@ video {
 		width:33%;
 		text-align: left !important;
 	}
-@media screen and (max-width:851px){
 	.col-2third{
 		/*background-color:purple;*/
 		display: initial;
 		width:100%;	
 	}
-
-@media screen and (max-width:851px){
 	.col-half{
 		/*background-color:purple;*/
 		display: initial;
 		width:100%;
 		text-align: left !important;
 	}
-
-
-
 	body{
 		/*background-color: darkgray*/
 	}
@@ -507,3 +502,14 @@ video {
 li::marker {
   color: #d3d3d3;
 }
+
+
+
+img.img-random {
+	padding-left: 40px;
+	width: 100px;
+	max-width: 100px;
+	height: auto;
+}
+
+
