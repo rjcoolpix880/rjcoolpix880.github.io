@@ -507,9 +507,10 @@ li::marker {
 
 img.img-random {
 	padding-left: 40px;
-	width: 100px;
-	max-width: 100px;
+	width: 300px;
+	max-width: 300px;
 	height: auto;
+	padding-bottom: 40px;
 }
 
 
