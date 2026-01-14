@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Speaking Engagements Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        #map {
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
+    
+    <script>
+        // Initialize the map
+        var map = L.map('map').setView([39.0, -95.0], 4); // Center on USA
+
+        // Add CartoDB Positron No Labels tile layer - no text labels, just state outlines and water
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png', {
+            attribution: '© OpenStreetMap contributors © CARTO',
+            maxZoom: 19,
+            subdomains: 'abcd'
+        }).addTo(map);
+
+        // Color mapping for categories
+        var categoryColors = {
+            'Conference': '#3388ff',
+            'School': '#ff7800'
+        };
+
+        // Fetch and process JSON data
+        fetch('bio-map-data.json')
+            .then(response => response.json())
+            .then(data => {
+                // Filter entries that have lat and long values
+                var validEntries = data.filter(entry => 
+                    entry.lat && entry.long && entry.lat !== '' && entry.long !== ''
+                );
+
+                // Aggregate entries by location (lat, long)
+                var locationMap = {};
+                
+                validEntries.forEach(entry => {
+                    var lat = parseFloat(entry.lat);
+                    var lng = parseFloat(entry.long);
+                    var locationKey = lat + ',' + lng;
+                    
+                    if (!locationMap[locationKey]) {
+                        locationMap[locationKey] = {
+                            lat: lat,
+                            lng: lng,
+                            entries: [],
+                            city: entry.city || ''
+                        };
+                    }
+                    
+                    locationMap[locationKey].entries.push(entry);
+                });
+
+                // Create circle markers for each aggregated location
+                Object.values(locationMap).forEach(location => {
+                    var count = location.entries.length;
+                    
+                    // Scale radius based on count (min 8, max 20)
+                    var radius = Math.min(8 + (count - 1) * 3, 20);
+                    
+                    // Determine color - if mixed categories, use a neutral color, otherwise use category color
+                    var categories = [...new Set(location.entries.map(e => e.category))];
+                    var color;
+                    if (categories.length === 1) {
+                        color = categoryColors[categories[0]] || '#3388ff';
+                    } else {
+                        color = '#9b59b6'; // Purple for mixed categories
+                    }
+                    
+                    // Create circle marker
+                    var circle = L.circleMarker([location.lat, location.lng], {
+                        radius: radius,
+                        fillColor: color,
+                        color: '#fff',
+                        weight: 2,
+                        opacity: 1,
+                        fillOpacity: 0.8
+                    }).addTo(map);
+
+                    // Create popup content with all entries
+                    var popupContent = '<div style="max-width: 300px;">';
+                    if (location.city) {
+                        popupContent += '<b>' + location.city + '</b><br>';
+                    }
+                    popupContent += '<b>' + count + ' speaking engagement' + (count > 1 ? 's' : '') + '</b><br><br>';
+                    
+                    // Sort entries by year (newest first)
+                    location.entries.sort((a, b) => parseInt(b.year) - parseInt(a.year));
+                    
+                    location.entries.forEach((entry, index) => {
+                        popupContent += '<b>' + entry.year + '</b> - ' + entry.title + '<br>';
+                        if (index < location.entries.length - 1) {
+                            popupContent += '<br>';
+                        }
+                    });
+                    
+                    popupContent += '</div>';
+
+                    circle.bindPopup(popupContent);
+                });
+
+                // Fit map bounds to show all markers
+                if (Object.keys(locationMap).length > 0) {
+                    var bounds = Object.values(locationMap).map(location => 
+                        [location.lat, location.lng]
+                    );
+                    map.fitBounds(bounds, { padding: [50, 50] });
+                }
+            })
+            .catch(error => {
+                console.error('Error loading JSON data:', error);
+            });
+    </script>
+</body>
+</html>

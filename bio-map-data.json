@@ -1,0 +1,186 @@
+[
+  {
+    "year": "2026",
+    "title": "PSMJ: Vibe Coding",
+    "category": "Conference",
+    "city": "Las Vegas",
+    "lat": "36.1",
+    "long": "-115.1"
+  },
+  {
+    "year": "2025",
+    "title": "AIA TAP Triangle Chapter: Building with Logic: A Practical Intro to Computational Design",
+    "category": "Conference",
+    "city": "Raleigh",
+    "lat": "35.7",
+    "long": "-78.6"
+  },
+  {
+    "year": "2025",
+    "title": "BIMxt Raleigh Chapter: AI Overload? Let's Talk",
+    "category": "Conference",
+    "city": "Raleigh",
+    "lat": "35.7",
+    "long": "-78.6"
+  },
+  {
+    "year": "2025",
+    "title": "PSMJ AEC Innovate: Developing Your Firms AI Strategy: From Innovation to Implementation",
+    "category": "Conference",
+    "city": "Austin",
+    "lat": "30.2",
+    "long": "-97.7"
+  },
+  {
+    "year": "2025",
+    "title": "PSMJ: The $10,000 Hour: PSMJ's A/E/C Senior Executive Briefing",
+    "category": "Conference",
+    "city": "",
+    "lat": "",
+    "long": ""
+  },
+  {
+    "year": "2025",
+    "title": "BIMxt Network: AI in 60 Minutes: Quick Tip",
+    "category": "Conference",
+    "city": "",
+    "lat": "",
+    "long": ""
+  },
+  {
+    "year": "2025",
+    "title": "PENC: Developing Your Firms AI Strategy: From Innovation to Implementation",
+    "category": "Conference",
+    "city": "Charlotte",
+    "lat": "35.2",
+    "long": "-80.8"
+  },
+  {
+    "year": "2025",
+    "title": "UNC Charlotte: Gen AI Workshop (co speaker- Gota Miyazaki)",
+    "category": "School",
+    "city": "Charlotte",
+    "lat": "35.2",
+    "long": "-80.8"
+  },
+  {
+    "year": "2024",
+    "title": "Society for College and University Planning: Tour of James B. Hunt Library at NC State University",
+    "category": "Conference",
+    "city": "Raleigh",
+    "lat": "35.7",
+    "long": "-78.6"
+  },
+  {
+    "year": "2024",
+    "title": "BIMxt Baltimore Chapter: Leveraging AI: Creating our AI Strategy",
+    "category": "Conference",
+    "city": "Baltimore",
+    "lat": "39.2",
+    "long": "-76.6"
+  },
+  {
+    "year": "2024",
+    "title": "BIMxt Washington DC Chapter: Leveraging AI: Creating our AI Strategy",
+    "category": "Conference",
+    "city": "Washington DC",
+    "lat": "38.9",
+    "long": "-77.0"
+  },
+  {
+    "year": "2024",
+    "title": "TCREW: Navigating AI Hype: Fears and the Future of Work",
+    "category": "Conference",
+    "city": "Raleigh",
+    "lat": "35.7",
+    "long": "-78.6"
+  },
+  {
+    "year": "2024",
+    "title": "East Tennessee State University: Practical AI",
+    "category": "School",
+    "city": "Johnson City",
+    "lat": "36.3",
+    "long": "-82.3"
+  },
+  {
+    "year": "2024",
+    "title": "BIMxt Raleigh Chapter: Navigating the AI Hype: Fears and Opportunities",
+    "category": "Conference",
+    "city": "Raleigh",
+    "lat": "35.7",
+    "long": "-78.6"
+  },
+  {
+    "year": "2024",
+    "title": "University Illinois Urbana Champagne: Computational Designerers Journey",
+    "category": "School",
+    "city": "Urbana-Champaign",
+    "lat": "41.8",
+    "long": "-87.6"
+  },
+  {
+    "year": "2024",
+    "title": "Advancing Computational Building Design Conference: Maximizing the ROI of AI (Panelist)",
+    "category": "Conference",
+    "city": "Dallas",
+    "lat": "32.7",
+    "long": "-96.7"
+  },
+  {
+    "year": "2023",
+    "title": "UNC Charlotte: Computational Design in Practice",
+    "category": "School",
+    "city": "Charlotte",
+    "lat": "35.2",
+    "long": "-80.8"
+  },
+  {
+    "year": "2022",
+    "title": "TCREW: What's new in AEC tech (co speaker- Whitney Keever of Skanska Inc)",
+    "category": "Conference",
+    "city": "Raleigh",
+    "lat": "35.7",
+    "long": "-78.6"
+  },
+  {
+    "year": "2022",
+    "title": "AIA San Francisco Design Technology: Bringing computational design to your firm: Complex Geometry and KPIs",
+    "category": "Conference",
+    "city": "San Francisco",
+    "lat": "37.7",
+    "long": "-122.4"
+  },
+  {
+    "year": "2021",
+    "title": "Advancing Computational Building Design Conference: Assessing Constructability of Complex Geometry in Early Design & Determining Your Design Limitations",
+    "category": "Conference",
+    "city": "Dallas",
+    "lat": "32.7",
+    "long": "-96.7"
+  },
+  {
+    "year": "2020",
+    "title": "National Project Delivery Symposium: Changing Project Delivery by leveraging the power of Technology, Culture, and Trust",
+    "category": "Conference",
+    "city": "Washington DC",
+    "lat": "38.9",
+    "long": "-77.0"
+  },
+  {
+    "year": "2020",
+    "title": "AIA TAP National Building Connections Congress: Computational Design",
+    "category": "Conference",
+    "city": "Washington DC",
+    "lat": "38.9",
+    "long": "-77.0"
+  },
+  {
+    "year": "2018",
+    "title": "AIA NC Leadership Conference: Fostering Design Technology Culture in your firm",
+    "category": "Conference",
+    "city": "Charlotte",
+    "lat": "35.2",
+    "long": "-80.8"
+  }
+]
