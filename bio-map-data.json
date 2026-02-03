@@ -1,6 +1,22 @@
 [
   {
     "year": "2026",
+    "title": "UNC Charlotte: Tour of the New Charlotte Meklenburg County Library",
+    "category": "School",
+    "city": "Charlotte",
+    "lat": "35.2",
+    "long": "-80.8"
+  },
+  {
+    "year": "2026",
+    "title": "UNC Charlotte: Computaion in Practice",
+    "category": "School",
+    "city": "Charlotte",
+    "lat": "35.2",
+    "long": "-80.8"
+  },
+  {
+    "year": "2026",
     "title": "PSMJ: Vibe Coding",
     "category": "Conference",
     "city": "Las Vegas",
