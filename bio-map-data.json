@@ -5,7 +5,8 @@
     "category": "School",
     "city": "Charlotte",
     "lat": "35.2",
-    "long": "-80.8"
+    "long": "-80.8",
+    "attendees": 90
   },
   {
     "year": "2026",
@@ -13,7 +14,8 @@
     "category": "School",
     "city": "Charlotte",
     "lat": "35.2",
-    "long": "-80.8"
+    "long": "-80.8",
+    "attendees": 90
   },
   {
     "year": "2026",

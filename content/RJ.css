@@ -320,7 +320,16 @@ a:active {
 }
 
 
+a.home-arrow, a.home-arrow:visited {
+    text-decoration: none !important;
+	display: inline-block; 
+	padding: 4px 8px;
+	color: black;
+	&:hover {
+		color: red;
+	}
 
+}
 
 
 
