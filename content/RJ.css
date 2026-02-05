@@ -484,6 +484,13 @@ video {
 	background-color: #313131;
 }
 
+.arch-hidden{
+	display:none;
+}
+
+.arch-show{
+	display:block;
+}
 
 @media screen and (max-width:851px){
 	.col-third{
@@ -505,6 +512,13 @@ video {
 	}
 	body{
 		/*background-color: darkgray*/
+	}
+	.arch-hidden{
+		display:block;
+	}
+
+	.arch-show{
+		display:none;
 	}
 }
 
