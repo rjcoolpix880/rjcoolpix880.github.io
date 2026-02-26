@@ -64,7 +64,7 @@ h4{
 	font-size:150px;
 	line-height: 70%;
 	color: #313131;
-	letter-spacing: -3px;
+	letter-spacing: -6px;
 	margin-bottom: 0px;
 	margin-top: 20px;
 	hyphens: auto;
@@ -92,7 +92,9 @@ h6{
 	
 }
 
-
+strong{
+	font-weight: 600;
+}
 
     .back-button {
       position: fixed;
