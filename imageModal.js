@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
             img.style.cursor = 'pointer';
             img.addEventListener('click', function() {
                 modal.style.display = 'block';
-                modalImg.src = this.src;
+                modalImg.src = this.getAttribute('data-full') || this.src;
             });
         }
     });
