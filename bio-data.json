@@ -1,4 +1,46 @@
 [
+    {
+    "section": "Speaking Engagements",
+    "year": "2023",
+    "title": "Grassfield High School STEM Academy: Summer Experience: Clark Nexsen Innovation Hubs",
+    "blurb": "",
+    "category": "Virtual",
+    "city": "",
+    "lat": "",
+    "long": ""
+    },  
+    {
+    "section": "Speaking Engagements",
+    "year": "2021",
+    "title": "Grassfield High School STEM Academy: Summer Experience: Computational Design",
+    "blurb": "",
+    "category": "Virtual",
+    "city": "",
+    "lat": "",
+    "long": ""
+    },  
+    {
+    "section": "Speaking Engagements",
+    "year": "2026",
+    "title": "Ceraclad University: Computaion in Practice",
+    "blurb": "Discover how to translate your design intent into simple rules and data to solve complex challenges. This session introduces computational design, demonstrating how it’s not just for complex forms, but an invaluable tool for boosting creativity and efficiency on projects of any budget. You don't need to be a coding expert to get started. We’ll bridge the gap from concept to reality, showing how this method connects to BIM for clear documentation and the creation of fabrication-ready files for contractors.",
+    "category": "Virtual",
+    "city": "",
+    "lat": "",
+    "long": "",
+    "attendees": 150
+    },
+    {
+    "section": "Speaking Engagements",
+    "year": "2026",
+    "title": "NC State AIAS: Computaion in Practice",
+    "blurb": "Discover how to translate your design intent into simple rules and data to solve complex challenges. This session introduces computational design, demonstrating how it’s not just for complex forms, but an invaluable tool for boosting creativity and efficiency on projects of any budget. You don't need to be a coding expert to get started. We’ll bridge the gap from concept to reality, showing how this method connects to BIM for clear documentation and the creation of fabrication-ready files for contractors.",
+    "category": "School",
+    "city": "Raleigh",
+    "lat": "35.7",
+    "long": "-78.6",
+    "attendees": 15
+  },
   {
     "section": "Speaking Engagements",
     "year": "2026",
@@ -172,6 +214,16 @@
     "city": "Dallas",
     "lat": "32.7",
     "long": "-96.7"
+  },
+    {
+    "section": "Speaking Engagements",
+    "year": "2023",
+    "title": "Diversify Architecture: Centennial Middle School: Community Based Architecture",
+    "blurb": "This talk covers the standard stages of architectural design with a focus on prioritizing community well-being and cultural identity. It examines how specific social factors and heritage inform the design process and discusses the risks of architecture that ignores local context. Key components include strategies for direct community involvement, a case study on a complex past project, and a simulation exercise designed to help students navigate real-world stakeholder engagement.",
+    "category": "School",
+    "city": "Raleigh",
+    "lat": "35.7",
+    "long": "-78.6"
   },
   {
     "section": "Speaking Engagements",
