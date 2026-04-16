@@ -4,8 +4,11 @@
         "projectName": "Madera Cyber Innovation Center",
         "AOR": "Clark Nexsen",
         "designArchitect": "Clark Nexsen",
-        "completeionDate": 2025,
-        "role": "Computational Designer",
+        "startDate": 2021,
+        "completionDate": 2025,
+        "sqft": "50,000 sqft",
+        "projectType": "Lab+Classroom Building",
+        "role": "Architect and Computational Designer",
         "projectAwards": [
             "2025 AIA North Carolina Honor Award for Design",
             "2025 AIA Aspire Honor Award for Design"
@@ -23,10 +26,14 @@
             }
     },
     {
+        "projectID": "6169",
         "projectName": "Fitts-Woolard Hall",
         "AOR": "Clark Nexsen",
         "designArchitect": "Clark Nexsen",
-        "completeionDate": 2021,
+        "startDate": 2016,
+        "completionDate": 2021,
+        "sqft": "220,000 sqft",
+        "projectType": "Lab and Classroom building",
         "role": "Architect and Computational Designer",
         "projectAwards": [
             "2024 AIA North Carolina Merit Award",
@@ -39,7 +46,15 @@
         "technologyDescription": "3D Wood Wall: This 220,000 sf project is a new engineering building for NC State University, housing the dean of the college of engineering, the civil engineering department, and the structural engineering department. It includes research labs, teaching labs, classrooms, and offices. Computational tools were used to create the focal point for the interior of the building, 2 wood walls at the entrances with the biggest spanning 4 floors measuring 86\u2019 by 50\u2019 meant to visually draw people up into the building. Inspired by the work of the departments, images from their research were used to create the underlying form.The form generated the 50, 4-sided flat panels that were arranged into large repeating triangles. Aggressive cost targets were met by repeating each panel at least 6 times and not exceeding a maximum panel size. The resulting design was digitally transmitted to the fabricator for production.\n\nMonumental Stairs: I created a computational approach for moving geometry between the design softwares for the design of the monumental stairs at Fitts-Woolard hall. There are 5 unique sets of stairs, all configured differently, bending to maximize the penetration of the sunlight from the skylight at the top of each run. The engineer used the traditional workflow of manually modeling for 2 of the stairs and the computational approach for the remaining 3. The engineer stated that the new process saved around a day of time for the more simple stairs, and around 3 days of time for the winding stair. An estimated 7 days of time would have been saved if the process was used on all 5 stairs. Later on it was even identified that one of the manually input stairs offset the members on the wrong side of the reference line, resulting in a stair that was 6\u201d too narrow and needed to be fixed.\n\nMisc: For Fitts-Woolard Hall I was involved from the programming phase through closeout and ustilized comutational thinking throught to improve processes and the design. During Programming, I developed a database to track and validate programming requirements throughout the design process. In the design phase, computational design was used to calculate daylighting, energy usage, and a dynamic window layout on the exterior. As the main Architectural representative on the project, during CA the data from the contractor was linked to a floor plan to quickly illustrate where the design team needed to work that day. My scope of work also included me being the LEED accredited professional helping the project achieve LEED Silver, and the first LEED v4 project for our company."
     },
     {
+        "projectID": "1648",
         "projectName": "Wake Tech Parking Deck",
+        "AOR": "Clark Nexsen",
+        "designArchitect": "Clark Nexsen",
+        "startDate": 2013,
+        "completionDate": 2016,
+        "sqft": "850 spaces",
+        "projectType": "Parking Deck",
+        "role": "Architect and Computational Designer",
         "projectAwards": [
             "2019 AIA South Atlantic Region Honor Award",
             "2019 AIA Virginia Merit Award",
@@ -50,11 +65,15 @@
         "technologyDescription": "Stainless steel facade panels: The Wake Tech campus is split by a natural wetland and forest. The site for the deck is located directly on one edge of the forest. All students commute to campus, requiring ample parking and large parking decks. For this project, the facade is 350 feet long so the traditional ideas were not working for the design team. The idea was to create a textured pattern on the facade that would reflect and respond to the site. The team liked the idea of creating panels that reflected the surroundings at different angles to create a dynamic appearance as you drove along the deck. The resulting design arranged panels in a way that created a texture by only varying the panel spacing and the panel orientation. The script first generated a single panel profile that could be bent from a roll of stainless steel. These panels could then be rotated 180 degrees to add to the desired texture. The design bid under budget, however the owner wanted the facade budget cut in half. Fortunately since the design was done using computational tools, we quickly studied options with half the panels removed. With computation this redesign was done in a few days instead of a few weeks using the traditional process. This was the first major project done at Clark Nexsen using computation and this redesign process showed the power of the tool and led to more projects using computation design.\n\nCNC supergraphic numbers: The design team liked the approach of having supergraphic numbers on each floor at the stairs. Computational and non-computatal designs were studied with the team liking the direction of the computational schemes. Working with the CM, various fabrication methods were studied, eventually landing on CNC ACM panels for their cost and durability. Over 35,000 holes were drilled to create the graphics on the panels. Working with the contractor, we looked at drilling partially or fully through the panels. Studies were completed to determine if the holes went just into the core of the ACM or if they went all the way through the entire panel. The contractor recommended using thru-holes since they could produce it faster and more accurately."
     },
     {
+        "projectID": "1538",
         "projectName": "James B Hunt Jr Library",
         "AOR": "Clark Nexsen",
         "designArchitect": "Snohetta",
-        "completeionDate": 2012,
-        "role": "Architect",
+        "startDate": 2009,
+        "completionDate": 2012,
+        "sqft": "230,000 sqft",
+        "projectType": "Library",
+        "role": "Intern Architect",
         "projectAwards": [
             "2015 AIA North Carolina Honor Award",
             "2015 AIA Triangle Honor Award",
@@ -68,7 +87,15 @@
         "technologyDescription": null
     },
     {
+        "projectID" : "5369",
         "projectName": "Edens Quad Dorm Renovation",
+        "AOR": "Clark Nexsen",
+        "designArchitect": "Clark Nexsen",
+        "startDate": 2015,
+        "completionDate": 2016,
+        "sqft": "154,000 sqft",
+        "projectType": "Dormitory",
+        "role": "Architect",
         "projectAwards": [
             "2021 AIA South Atlantic Merit Award",
             "2020 AIA Triangle Honor Award",
@@ -100,7 +127,7 @@
         "projectName": "Charlotte New Main Library",
         "AOR": "Clark Nexsen",
         "designArchitect": "Snohetta",
-        "completeionDate": 2026,
+        "completionDate": 2026,
         "role": "Computational Designer",
         "projectAwards": [],
         "architecturalDescription": null,
