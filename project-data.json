@@ -13,7 +13,7 @@
             "2025 AIA North Carolina Honor Award for Design",
             "2025 AIA Aspire Honor Award for Design"
         ],
-        "projectPublications":[
+        "projectPublications": [
             "'Drawn in Code, Cast in Concrete: The MCIC Monumental Stair', Rhino3D Zine, 2026"
         ],
         "architecturalDescription": "The Madera Cyber Innovation Center serves as a bridge between heritage and the future at the U.S. Air Force Academy, designed to unite military and academic expertise in a state-of-the-art facility. As the lead architect for the building's central feature, I was tasked with designing a monumental staircase that serves as both a functional connector and a symbolic centerpiece. The design challenge was to reconcile the client's vision for a spiraling, freeform structure - inspired by the campus's iconic McDermott Library - within the constraints of a rigid, rectangular structural opening. The result is a sculptural element that visually anchors the open atrium, fostering interaction between the collaborative zones while respecting the Academy's Modern Movement architectural legacy.\n\nMy role encompassed the complete architectural scope for the stair and its integration into the surrounding floor plates. This went far beyond schematic design; I held full responsibility for the stair's detailing, material selection, and life-safety compliance. To achieve the seamless aesthetic of the self-supporting concrete form and custom bent-glass guardrails, I managed the interplay between complex geometry and building codes, ensuring that egress widths, head heights, and rise-run ratios were maintained without compromising the design's fluid elegance. This required coordination with structural engineers to resolve the connections at the slab edges and ensure the freestanding structure met strict performance criteria.\n\nThe execution of such a complex form demanded a rigorous application of standard Construction Administration services. I led this phase for the stair scope, managing the review of intricate shop drawings, responding to requests for information, and conducting site observations to verify compliance with the design intent. Because the unique geometry required the contractor to deviate from traditional sequencing, the coordination process was intensive, necessitating frequent communication and detailed submittal reviews throughout the build. Through this sustained engagement, I worked closely with the general contractor and specialty trades to resolve constructability issues, ensuring the finished stair was executed with the precision and quality its form required.",
@@ -23,7 +23,10 @@
             "name": "Brett Kmetz",
             "title": "Project Manager | Federal",
             "relationship": "Bryan Construction"
-            }
+        },
+        "hours": 341,
+        "section": "Architecture",
+        "compD": true
     },
     {
         "projectID": "6169",
@@ -43,7 +46,10 @@
             "2021 SEA NC Excellence in Structural Engineering Award"
         ],
         "architecturalDescription": "This 220,000 sf project is a new engineering building for NC State University, housing the dean of the college of engineering, the civil engineering department, and the structural engineering department. It includes research labs, teaching labs, classrooms, and offices. I was involved from the programming phase through closeout. During Programming, I developed a database to track and validate programming requirements throughout the design process. In the design phase, computational design was used to calculate daylighting, energy usage, a dynamic window layout on the exterior. Computational tools were also used to create the focal point for the interior of the building, a wood wall and metal stair meant to visually draw people up into the building. The wood wall was made up of a series of 50 unique, 4-sided faceted panels arranged into large repeating triangles, the form inspired by blending the work of both departments. Since computational design was used, each panel was repeated up to 8 times each allowing for design intent and budget constraints to be met. The resulting design was sent digitally as a series of coordinate points to the fabricator to be digitally fabricated. As the main Architectural representative on the project during CA, the data from the contractor was linked to a floor plan to quickly illustrate where the design team needed to work that day. My scope of work also included me being the LEED accredited professional helping the project achieve LEED Silver, and the first LEED v4 project for our company.",
-        "technologyDescription": "3D Wood Wall: This 220,000 sf project is a new engineering building for NC State University, housing the dean of the college of engineering, the civil engineering department, and the structural engineering department. It includes research labs, teaching labs, classrooms, and offices. Computational tools were used to create the focal point for the interior of the building, 2 wood walls at the entrances with the biggest spanning 4 floors measuring 86\u2019 by 50\u2019 meant to visually draw people up into the building. Inspired by the work of the departments, images from their research were used to create the underlying form.The form generated the 50, 4-sided flat panels that were arranged into large repeating triangles. Aggressive cost targets were met by repeating each panel at least 6 times and not exceeding a maximum panel size. The resulting design was digitally transmitted to the fabricator for production.\n\nMonumental Stairs: I created a computational approach for moving geometry between the design softwares for the design of the monumental stairs at Fitts-Woolard hall. There are 5 unique sets of stairs, all configured differently, bending to maximize the penetration of the sunlight from the skylight at the top of each run. The engineer used the traditional workflow of manually modeling for 2 of the stairs and the computational approach for the remaining 3. The engineer stated that the new process saved around a day of time for the more simple stairs, and around 3 days of time for the winding stair. An estimated 7 days of time would have been saved if the process was used on all 5 stairs. Later on it was even identified that one of the manually input stairs offset the members on the wrong side of the reference line, resulting in a stair that was 6\u201d too narrow and needed to be fixed.\n\nMisc: For Fitts-Woolard Hall I was involved from the programming phase through closeout and ustilized comutational thinking throught to improve processes and the design. During Programming, I developed a database to track and validate programming requirements throughout the design process. In the design phase, computational design was used to calculate daylighting, energy usage, and a dynamic window layout on the exterior. As the main Architectural representative on the project, during CA the data from the contractor was linked to a floor plan to quickly illustrate where the design team needed to work that day. My scope of work also included me being the LEED accredited professional helping the project achieve LEED Silver, and the first LEED v4 project for our company."
+        "technologyDescription": "3D Wood Wall: This 220,000 sf project is a new engineering building for NC State University, housing the dean of the college of engineering, the civil engineering department, and the structural engineering department. It includes research labs, teaching labs, classrooms, and offices. Computational tools were used to create the focal point for the interior of the building, 2 wood walls at the entrances with the biggest spanning 4 floors measuring 86\u2019 by 50\u2019 meant to visually draw people up into the building. Inspired by the work of the departments, images from their research were used to create the underlying form.The form generated the 50, 4-sided flat panels that were arranged into large repeating triangles. Aggressive cost targets were met by repeating each panel at least 6 times and not exceeding a maximum panel size. The resulting design was digitally transmitted to the fabricator for production.\n\nMonumental Stairs: I created a computational approach for moving geometry between the design softwares for the design of the monumental stairs at Fitts-Woolard hall. There are 5 unique sets of stairs, all configured differently, bending to maximize the penetration of the sunlight from the skylight at the top of each run. The engineer used the traditional workflow of manually modeling for 2 of the stairs and the computational approach for the remaining 3. The engineer stated that the new process saved around a day of time for the more simple stairs, and around 3 days of time for the winding stair. An estimated 7 days of time would have been saved if the process was used on all 5 stairs. Later on it was even identified that one of the manually input stairs offset the members on the wrong side of the reference line, resulting in a stair that was 6\u201d too narrow and needed to be fixed.\n\nMisc: For Fitts-Woolard Hall I was involved from the programming phase through closeout and ustilized comutational thinking throught to improve processes and the design. During Programming, I developed a database to track and validate programming requirements throughout the design process. In the design phase, computational design was used to calculate daylighting, energy usage, and a dynamic window layout on the exterior. As the main Architectural representative on the project, during CA the data from the contractor was linked to a floor plan to quickly illustrate where the design team needed to work that day. My scope of work also included me being the LEED accredited professional helping the project achieve LEED Silver, and the first LEED v4 project for our company.",
+        "hours": 6234,
+        "section": "Architecture",
+        "compD": true
     },
     {
         "projectID": "1648",
@@ -62,7 +68,10 @@
             "2020 AIA Triangle Merit Award"
         ],
         "architecturalDescription": "The Wake Tech campus is split by a natural wetland and forest. The site for the deck is located directly on one edge of the forest. All students commute to campus, requiring ample parking and large parking decks. To break up the monotony of the long edge of the deck, a parametrically generated stainless steel facade was designed. The panels respond to its context by being closely spaced at the street edge and opening up at the wetland edge as they turn the corner. Both sides of the deck are visible to students, one side is visible from the street, and the other from a pedestrian bridge that moves across the wetlands and connects to the main library of the campus. In addition, a computational design for supergraphic floor numbers was generated out of durable ACM panels.",
-        "technologyDescription": "Stainless steel facade panels: The Wake Tech campus is split by a natural wetland and forest. The site for the deck is located directly on one edge of the forest. All students commute to campus, requiring ample parking and large parking decks. For this project, the facade is 350 feet long so the traditional ideas were not working for the design team. The idea was to create a textured pattern on the facade that would reflect and respond to the site. The team liked the idea of creating panels that reflected the surroundings at different angles to create a dynamic appearance as you drove along the deck. The resulting design arranged panels in a way that created a texture by only varying the panel spacing and the panel orientation. The script first generated a single panel profile that could be bent from a roll of stainless steel. These panels could then be rotated 180 degrees to add to the desired texture. The design bid under budget, however the owner wanted the facade budget cut in half. Fortunately since the design was done using computational tools, we quickly studied options with half the panels removed. With computation this redesign was done in a few days instead of a few weeks using the traditional process. This was the first major project done at Clark Nexsen using computation and this redesign process showed the power of the tool and led to more projects using computation design.\n\nCNC supergraphic numbers: The design team liked the approach of having supergraphic numbers on each floor at the stairs. Computational and non-computatal designs were studied with the team liking the direction of the computational schemes. Working with the CM, various fabrication methods were studied, eventually landing on CNC ACM panels for their cost and durability. Over 35,000 holes were drilled to create the graphics on the panels. Working with the contractor, we looked at drilling partially or fully through the panels. Studies were completed to determine if the holes went just into the core of the ACM or if they went all the way through the entire panel. The contractor recommended using thru-holes since they could produce it faster and more accurately."
+        "technologyDescription": "Stainless steel facade panels: The Wake Tech campus is split by a natural wetland and forest. The site for the deck is located directly on one edge of the forest. All students commute to campus, requiring ample parking and large parking decks. For this project, the facade is 350 feet long so the traditional ideas were not working for the design team. The idea was to create a textured pattern on the facade that would reflect and respond to the site. The team liked the idea of creating panels that reflected the surroundings at different angles to create a dynamic appearance as you drove along the deck. The resulting design arranged panels in a way that created a texture by only varying the panel spacing and the panel orientation. The script first generated a single panel profile that could be bent from a roll of stainless steel. These panels could then be rotated 180 degrees to add to the desired texture. The design bid under budget, however the owner wanted the facade budget cut in half. Fortunately since the design was done using computational tools, we quickly studied options with half the panels removed. With computation this redesign was done in a few days instead of a few weeks using the traditional process. This was the first major project done at Clark Nexsen using computation and this redesign process showed the power of the tool and led to more projects using computation design.\n\nCNC supergraphic numbers: The design team liked the approach of having supergraphic numbers on each floor at the stairs. Computational and non-computatal designs were studied with the team liking the direction of the computational schemes. Working with the CM, various fabrication methods were studied, eventually landing on CNC ACM panels for their cost and durability. Over 35,000 holes were drilled to create the graphics on the panels. Working with the contractor, we looked at drilling partially or fully through the panels. Studies were completed to determine if the holes went just into the core of the ACM or if they went all the way through the entire panel. The contractor recommended using thru-holes since they could produce it faster and more accurately.",
+        "hours": 1020,
+        "section": "Architecture",
+        "compD": true
     },
     {
         "projectID": "1538",
@@ -84,10 +93,13 @@
             "2013 Engineering News-Record Southeast Best Higher Education/Research Project"
         ],
         "architecturalDescription": "The new engineering library for NC State has won over 20 design awards and been featured in multiple publications. My engagement started during Schematic Design. As BIM Coordinator I was responsible for ensuring the Revit model was working properly. I was also responsible for a large part of the documentation alongside the team. I also was responsible for reviewing RFI's, Site visits, and ASI's. During CA I created a database that tracked all the CA Documents. The database was such a success that it was deployed firm-wide for all projects in CA.",
-        "technologyDescription": null
+        "technologyDescription": null,
+        "hours": 5696,
+        "section": "Architecture",
+        "compD": false
     },
     {
-        "projectID" : "5369",
+        "projectID": "5369",
         "projectName": "Edens Quad Dorm Renovation",
         "AOR": "Clark Nexsen",
         "designArchitect": "Clark Nexsen",
@@ -102,28 +114,46 @@
             "2017 AIA NC Honor Award"
         ],
         "architecturalDescription": "Duke University needed to increase the desirability of the Edens Quad dorms. Students simply didn't want to stay in the closed off, Brutalist quad that turned its back on the rest of campus. The University also wanted the dorms to feel more open, inviting and connected to the rest of the campus. The big idea we had was to collect all the small shared commons spaces that were spread throughout the dorms and gather them into one place (replacing the existing spaces with dorm rooms). The final idea included slicing a hole through one of the buildings to act as the gateway to the quad, making it more inviting. This gateway houses the new study commons and gaming room. Other parts of the renovation included reworking the outdoor spaces to be more inviting and usable, renovation of each dorm's commons rooms by removing the solid concrete panels and replacing them with glass, as well as the addition of amenities such as a Gym.",
-        "technologyDescription": null
+        "technologyDescription": null,
+        "hours": 1100,
+        "section": "Architecture",
+        "compD": false
     },
     {
         "projectName": "Brooks Global Studies",
         "projectAwards": [],
         "architecturalDescription": null,
-        "technologyDescription": "Supergraphic: Under Construction. Part of my job is to teach people how to use computational tools. A project member approached me with an idea to use icons placed on glass to create a supergraphic but didnt know how to accomplish it. Over several multi-hour phone calls, I taught them how to create the design they were after. Eventually they didn't have the time to finish the design, so working with them I refined it and created the final piece to deliver to the printer. The final design featured 23,745 icons over the 84\u2019 length made up of 21 icons. This design was the result of a VE exercise that removed some 3D casework lettering inside the building. After the supergraphic was complete, several team members said that this was an improvement over the original concept that this replaced.\n\nDiscover Graphic: For the 'Discover' graphic at Brooks Global Studies Elementary School, I applied my expertise in computational design to translate a complex design concept into a functional architectural feature. The challenge was to arrange 16 unique icons into a legible and artistic composition without the thousands of hours of manual labor it would typically require. As the computational designer, I developed a custom algorithm to automate this process entirely.\n\nThe script I created managed multiple parameters simultaneously, generating a seamless green-to-blue color gradient across the icons while strategically increasing their density at the letters' edges to create clear definition. This process not only made the design feasible but also embedded functionality into the art. The graphic serves as an inspiring focal point for students, a screen for outdoor views, and an effective sun-shading element, demonstrating how computational design can efficiently create solutions that are at once beautiful, practical, and meaningful."
+        "technologyDescription": "Supergraphic: Under Construction. Part of my job is to teach people how to use computational tools. A project member approached me with an idea to use icons placed on glass to create a supergraphic but didnt know how to accomplish it. Over several multi-hour phone calls, I taught them how to create the design they were after. Eventually they didn't have the time to finish the design, so working with them I refined it and created the final piece to deliver to the printer. The final design featured 23,745 icons over the 84\u2019 length made up of 21 icons. This design was the result of a VE exercise that removed some 3D casework lettering inside the building. After the supergraphic was complete, several team members said that this was an improvement over the original concept that this replaced.\n\nDiscover Graphic: For the 'Discover' graphic at Brooks Global Studies Elementary School, I applied my expertise in computational design to translate a complex design concept into a functional architectural feature. The challenge was to arrange 16 unique icons into a legible and artistic composition without the thousands of hours of manual labor it would typically require. As the computational designer, I developed a custom algorithm to automate this process entirely.\n\nThe script I created managed multiple parameters simultaneously, generating a seamless green-to-blue color gradient across the icons while strategically increasing their density at the letters' edges to create clear definition. This process not only made the design feasible but also embedded functionality into the art. The graphic serves as an inspiring focal point for students, a screen for outdoor views, and an effective sun-shading element, demonstrating how computational design can efficiently create solutions that are at once beautiful, practical, and meaningful.",
+        "projectID": "9608",
+        "hours": 16,
+        "section": "Architecture",
+        "compD": true,
+        "role": "Computational Designer"
     },
     {
         "projectName": "Pedestrian Bridge",
         "projectAwards": [],
         "architecturalDescription": null,
-        "technologyDescription": "Mirrored Panel Glare Analysis: Unbuilt. The design team approached me with a question they couldn't answer. The designers wanted to install reflective metal panels on a pedestrian bridge so that it would become invisible, reflecting the sky and the landscape. However there was concern that the bridge would create hotspots on the surrounding landscape, or even worse be a source of glare for pedestrians on the site, or add glare/heat gain on surrounding buildings. There was no tool to answer this question, so a custom script was created to understand where the hotspots would be at certain times and days. Ultimately the team decided that the times of glare were very limited and proceeded with the scheme."
+        "technologyDescription": "Mirrored Panel Glare Analysis: Unbuilt. The design team approached me with a question they couldn't answer. The designers wanted to install reflective metal panels on a pedestrian bridge so that it would become invisible, reflecting the sky and the landscape. However there was concern that the bridge would create hotspots on the surrounding landscape, or even worse be a source of glare for pedestrians on the site, or add glare/heat gain on surrounding buildings. There was no tool to answer this question, so a custom script was created to understand where the hotspots would be at certain times and days. Ultimately the team decided that the times of glare were very limited and proceeded with the scheme.",
+        "projectID": "1553",
+        "hours": 29,
+        "section": "Architecture",
+        "compD": true,
+        "role": "Computational Designer"
     },
     {
         "projectName": "UVA Alderman Library Rennovation",
         "projectAwards": [],
         "architecturalDescription": null,
-        "technologyDescription": "Skylight geometry design and optimization: Unbuilt. The renovation for the alderman library built in 1938 called for putting a skylight in the lightwell to provide more space in the library. The main entrance to the library is up on the third floor overlooking the lightwells. The design team wanted the skylight to be as low as possible so it's not visible outside the windows from the entrance. The design team wanted to contrast the historic building with a modern pillow shaped skylight which also allowed for a low profile to be achieved. Working with the skylight manufacturer, a design was established that met all the requirements such as minimum depth and minimum slope for drainage. The resulting skylight was only 4\u2019 deep and had a soft curving appearance and was well received by the client. Ultimately the skylight was changed to an alternate in the Bid and was not accepted."
+        "technologyDescription": "Skylight geometry design and optimization: Unbuilt. The renovation for the alderman library built in 1938 called for putting a skylight in the lightwell to provide more space in the library. The main entrance to the library is up on the third floor overlooking the lightwells. The design team wanted the skylight to be as low as possible so it's not visible outside the windows from the entrance. The design team wanted to contrast the historic building with a modern pillow shaped skylight which also allowed for a low profile to be achieved. Working with the skylight manufacturer, a design was established that met all the requirements such as minimum depth and minimum slope for drainage. The resulting skylight was only 4\u2019 deep and had a soft curving appearance and was well received by the client. Ultimately the skylight was changed to an alternate in the Bid and was not accepted.",
+        "projectID": "7567",
+        "hours": 149,
+        "section": "Architecture",
+        "compD": false,
+        "role": "Computational Designer"
     },
     {
-        "projectID" : "7343",
+        "projectID": "7343",
         "projectName": "Charlotte New Main Library",
         "AOR": "Clark Nexsen",
         "designArchitect": "Snohetta",
@@ -137,7 +167,10 @@
             "name": "Chad Carpenter",
             "title": "Senior Project Leader, Architect, LEED AP",
             "relationship": "Snohetta"
-            }
+        },
+        "hours": 1752,
+        "section": "Architecture",
+        "compD": true
     },
     {
         "projectName": "Dynamo and Grasshopper Deployment",
@@ -203,6 +236,219 @@
         "projectName": "Williamsburg Live Performance Venue",
         "projectAwards": [],
         "architecturalDescription": "",
-        "technologyDescription": "Colonial Williamsburg is known for its strict architectural requirements. Our team's design fit comfortably within the traditional aesthetic without appearing dated. We worked closely with the Williamsburg Architecture Review Board to ensure the size and presence of the complex was appropriate for the site, creating a facility that respects its historic setting. As a stage for live performance, the building draws its lineage from the colonial past through the enduring language of music.\n\nRather than relying on literal imitation of 18th-century buildings, the design uses this musical connection as the primary bridge to the past. The fife and drum music heard throughout the city became the main driver for our architectural decisions. Specifically, we used the rhythmic measures of \"Yankee Doodle\" to guide the layout of the lobby's shading screen. By studying the fife melody, we identified fifteen unique musical phrases that were translated into a series of repeating panel types. Each panel features a different depth and density of shading elements, creating a visual texture built directly from the song's composition. Even the vertical supports behind the screen follow the song's drum patterns, providing a subtle structural logic that moves across the entire facade.\n\nThis approach ensures the building is defined by a story that resonates with residents and visitors. By aligning the facility's function with this specific part of Williamsburg's heritage, the architecture becomes a meaningful part of the Williamsburg's story. For donors and stakeholders, this provides a clear connection to the project, showing that every design choice was made to celebrate the local spirit and the shared experience of performance."
+        "technologyDescription": "Colonial Williamsburg is known for its strict architectural requirements. Our team's design fit comfortably within the traditional aesthetic without appearing dated. We worked closely with the Williamsburg Architecture Review Board to ensure the size and presence of the complex was appropriate for the site, creating a facility that respects its historic setting. As a stage for live performance, the building draws its lineage from the colonial past through the enduring language of music.\n\nRather than relying on literal imitation of 18th-century buildings, the design uses this musical connection as the primary bridge to the past. The fife and drum music heard throughout the city became the main driver for our architectural decisions. Specifically, we used the rhythmic measures of \"Yankee Doodle\" to guide the layout of the lobby's shading screen. By studying the fife melody, we identified fifteen unique musical phrases that were translated into a series of repeating panel types. Each panel features a different depth and density of shading elements, creating a visual texture built directly from the song's composition. Even the vertical supports behind the screen follow the song's drum patterns, providing a subtle structural logic that moves across the entire facade.\n\nThis approach ensures the building is defined by a story that resonates with residents and visitors. By aligning the facility's function with this specific part of Williamsburg's heritage, the architecture becomes a meaningful part of the Williamsburg's story. For donors and stakeholders, this provides a clear connection to the project, showing that every design choice was made to celebrate the local spirit and the shared experience of performance.",
+        "projectID": "10577",
+        "hours": 27,
+        "section": "Architecture",
+        "compD": true,
+        "role": "Computational Designer"
+    },
+    {
+        "projectID": "1633",
+        "projectName": "COR Critical Public Safety Facility",
+        "hours": 1327,
+        "section": "Architecture",
+        "compD": false,
+        "role": "Architect"
+    },
+    {
+        "projectID": "1467",
+        "projectName": "Green Square Parking Deck",
+        "hours": 1307,
+        "section": "Architecture",
+        "compD": false,
+        "role": "Intern Architect"
+    },
+    {
+        "projectID": "1513",
+        "projectName": "North Carolina Visitors' Center",
+        "hours": 794,
+        "section": "Architecture",
+        "compD": false,
+        "role": "Intern Architect"
+    },
+    {
+        "projectID": "1432",
+        "projectName": "OLD PLAYMAKERS/SMITH HALL RENOVATION",
+        "hours": 360,
+        "section": "Architecture",
+        "compD": false,
+        "role": "Intern Architect"
+    },
+    {
+        "projectID": "5144",
+        "projectName": "Duke University East Campus Union",
+        "hours": 310,
+        "section": "Architecture",
+        "compD": false,
+        "role": "Architect"
+    },
+    {
+        "projectID": "5884",
+        "projectName": "Terminal 1 North/South Concourse Demo",
+        "hours": 227,
+        "section": "Architecture",
+        "compD": false,
+        "role": "Intern Architect"
+    },
+    {
+        "projectID": "1564",
+        "projectName": "UNCSA Library",
+        "hours": 189,
+        "section": "Architecture",
+        "compD": true,
+        "role": "Computational Designer"
+    },
+    {
+        "projectID": "1398",
+        "projectName": "UNC Coastal Studies Institute",
+        "hours": 160,
+        "section": "Architecture",
+        "compD": false,
+        "role": "Intern Architect"
+    },
+    {
+        "projectID": "8902",
+        "projectName": "DB UVA Brandon Ave Upper Class Housing",
+        "hours": 112,
+        "section": "Architecture",
+        "compD": false,
+        "role": "Architect"
+    },
+    {
+        "projectID": "1582",
+        "projectName": "RDU Terminal 1 Renovation",
+        "hours": 99,
+        "section": "Architecture",
+        "compD": false,
+        "role": "Intern Architect"
+    },
+    {
+        "projectID": "P6479",
+        "projectName": "Metals in Construction DesignCompetition",
+        "hours": 86,
+        "section": "Architecture",
+        "compD": true,
+        "role": "Computational Designer"
+    },
+    {
+        "projectID": "7937",
+        "projectName": "UNC S-1 Lot Parking Deck",
+        "hours": 75,
+        "section": "Architecture",
+        "compD": true,
+        "role": "Computational Designer"
+    },
+    {
+        "projectID": "6412",
+        "projectName": "GU Car Barn Landlord Shell Bldg",
+        "hours": 64,
+        "section": "Architecture",
+        "compD": false,
+        "role": "Architect"
+    },
+    {
+        "projectID": "9051",
+        "projectName": "JLab CEBAF Renovation/Expansion",
+        "hours": 57,
+        "section": "Architecture",
+        "compD": true,
+        "role": "Computational Designer"
+    },
+    {
+        "projectID": "1580",
+        "projectName": "Triangle Brick Headquarters",
+        "hours": 52,
+        "section": "Architecture",
+        "compD": false,
+        "role": "Intern Architect"
+    },
+    {
+        "projectID": "6200",
+        "projectName": "Craven and Crowell Renovations",
+        "hours": 39,
+        "section": "Architecture",
+        "compD": false,
+        "role": "Architect"
+    },
+    {
+        "projectID": "6375",
+        "projectName": "Georgetown Univ Car Barn 1st Floor TO#01",
+        "hours": 36,
+        "section": "Architecture",
+        "compD": false,
+        "role": "Architect"
+    },
+    {
+        "projectID": "10174",
+        "projectName": "Rockingham Speedway",
+        "hours": 34,
+        "section": "Architecture",
+        "compD": true,
+        "role": "Computational Designer"
+    },
+    {
+        "projectID": "7524",
+        "projectName": "Bluebird Bio Manufacturing Fitup",
+        "hours": 34,
+        "section": "Architecture",
+        "compD": true,
+        "role": "Computational Designer"
+    },
+    {
+        "projectID": "5923",
+        "projectName": "WCPSS Adaptive Reuse Site Analysis",
+        "hours": 33,
+        "section": "Architecture",
+        "compD": true,
+        "role": "Computational Designer"
+    },
+    {
+        "projectID": "5254",
+        "projectName": "Virginia Beach Arena Infrastructure",
+        "hours": 24,
+        "section": "Architecture",
+        "compD": true,
+        "role": "Computational Designer"
+    },
+    {
+        "projectID": "10600",
+        "projectName": "Deep Energy Retrofit Assessments",
+        "hours": 23,
+        "section": "Architecture",
+        "compD": true,
+        "role": "Computational Designer"
+    },
+    {
+        "projectID": "10549",
+        "projectName": "Norfolk Rec and Library Comprehensive Ag",
+        "hours": 13,
+        "section": "Architecture",
+        "compD": true,
+        "role": "Computational Designer"
+    },
+    {
+        "projectID": "8153",
+        "projectName": "RTF Park Center Pedestrian Bridge",
+        "hours": 13,
+        "section": "Architecture",
+        "compD": true,
+        "role": "Computational Designer"
+    },
+    {
+        "projectID": "8153-A",
+        "projectName": "RTF Park Center East Pedestrian Bridge",
+        "hours": 12,
+        "section": "Architecture",
+        "compD": true,
+        "role": "Computational Designer"
+    },
+    {
+        "projectID": "P9482",
+        "projectName": "Smoky Hollow Phase 3",
+        "hours": 11,
+        "section": "Architecture",
+        "compD": true,
+        "role": "Computational Designer"
     }
 ]
