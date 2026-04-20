@@ -150,7 +150,7 @@
         "projectID": "7567",
         "hours": 149,
         "section": "Architecture",
-        "compD": false,
+        "compD": true,
         "role": "Computational Designer"
     },
     {
