@@ -1,11 +1,16 @@
-// Simple script to load project data from project-data.json into architecture.html
+// Simple script to load project data from project-data.json and project-awards.json into architecture.html
 document.addEventListener('DOMContentLoaded', () => {
-  // Fetch the project data JSON file
-  fetch('project-data.json')
-    .then(response => response.json())
-    .then(data => {
+  // Fetch both the project data and awards JSON files
+  Promise.all([
+    fetch('project-data.json').then(response => response.json()),
+    fetch('project-awards.json').then(response => response.json())
+  ])
+    .then(([projects, awardsData]) => {
+      // The awardsData is an array containing an object where keys are projectIDs
+      const allAwards = awardsData[0];
+
       // Loop through each project in the data array
-      data.forEach(project => {
+      projects.forEach(project => {
         // If the project doesn't have an ID, skip it
         if (!project.projectID) return;
 
@@ -21,11 +26,18 @@ document.addEventListener('DOMContentLoaded', () => {
             dateDiv.innerHTML = `<div class='dataTitle'>Dates:</div> ${project.startDate} - ${project.completionDate}`;
           }
 
-          // Update Project Awards
+          // Update Project Awards from the new source
           const projectAwardsDiv = projectDiv.querySelector('.projectAwards');
-          if (projectAwardsDiv && project.projectAwards) {
-            // Join awards with a line break for simple formatting
-            projectAwardsDiv.innerHTML = `<div class='dataTitle'>Awards:</div> ${project.projectAwards.join('<br>')}`;
+          if (projectAwardsDiv) {
+            const awards = allAwards[project.projectID] || [];
+            if (awards.length > 0) {
+              const formattedAwards = awards
+                .map(a => `${a.year} - ${a.body}: ${a.name}`)
+                .join('<br>');
+              projectAwardsDiv.innerHTML = `<div class='dataTitle'>Awards:</div> ${formattedAwards}`;
+            } else {
+              projectAwardsDiv.innerHTML = ''; // Clear if no awards
+            }
           }
 
           // Update Project SQFT

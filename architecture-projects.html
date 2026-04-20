@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architecture Projects | Ryan Johnson</title>
+    <link rel="stylesheet" href="architecture-table.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header" style="margin-bottom: 2rem;">
+        <h1 style="margin: 0; font-size: 2rem;">Architecture Projects</h1>
+        <p style="color: var(--secondary-color); margin-top: 0.5rem;">Interactive overview of project data, phases, and honors.</p>
+    </div>
+
+    <div class="controls">
+        <input type="text" id="tableSearch" placeholder="Search projects by name, type, role...">
+        <span id="projectCount" style="font-size: 0.875rem; color: var(--secondary-color);"></span>
+    </div>
+
+    <div class="table-container">
+        <table id="projectsTable">
+            <thead>
+                <tr>
+                    <th data-key="projectID">ID</th>
+                    <th data-key="projectName">Project Name</th>
+                    <th data-key="startDate">Start</th>
+                    <th data-key="completionDate">End</th>
+                    <th data-key="projectType">Type</th>
+                    <th data-key="role">Role</th>
+                    <th data-key="sqft">Area</th>
+                    <th data-key="phases">Phases</th>
+                    <th data-key="awards">Awards</th>
+                    <th data-key="compD">CD</th>
+                    <th data-key="architecturalDescription">Arch</th>
+                    <th data-key="technologyDescription">Tech</th>
+                    <th data-key="AOR">AOR</th>
+                    <th data-key="designArchitect">Design Arch</th>
+                    <th data-key="hours">Hours</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- Rows will be injected here -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Modal for Awards -->
+    <div id="awardsModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle" style="margin-top: 0;">Project Awards</h2>
+            <div id="modalAwardsList"></div>
+        </div>
+    </div>
+
+    <script src="architecture-table.js"></script>
+</body>
+</html>
