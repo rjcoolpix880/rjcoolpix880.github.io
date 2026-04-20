@@ -7,7 +7,7 @@
         "startDate": 2021,
         "completionDate": 2025,
         "sqft": "50,000 sqft",
-        "projectType": "Lab+Classroom Building",
+        "projectType": "Lab and Classroom",
         "role": "Architect and Computational Designer",
         "phases": [
             "DD",
@@ -36,14 +36,14 @@
         "startDate": 2016,
         "completionDate": 2021,
         "sqft": "220,000 sqft",
-        "projectType": "Lab and Classroom building",
+        "projectType": "Lab and Classroom",
         "role": "Architect and Computational Designer",
         "phases": [
             "PD",
             "CA"
         ],
         "architecturalDescription": "This 220,000 sf project is a new engineering building for NC State University, housing the dean of the college of engineering, the civil engineering department, and the structural engineering department. It includes research labs, teaching labs, classrooms, and offices. I was involved from the programming phase through closeout. During Programming, I developed a database to track and validate programming requirements throughout the design process. In the design phase, computational design was used to calculate daylighting, energy usage, a dynamic window layout on the exterior. Computational tools were also used to create the focal point for the interior of the building, a wood wall and metal stair meant to visually draw people up into the building. The wood wall was made up of a series of 50 unique, 4-sided faceted panels arranged into large repeating triangles, the form inspired by blending the work of both departments. Since computational design was used, each panel was repeated up to 8 times each allowing for design intent and budget constraints to be met. The resulting design was sent digitally as a series of coordinate points to the fabricator to be digitally fabricated. As the main Architectural representative on the project during CA, the data from the contractor was linked to a floor plan to quickly illustrate where the design team needed to work that day. My scope of work also included me being the LEED accredited professional helping the project achieve LEED Silver, and the first LEED v4 project for our company.",
-        "technologyDescription": "3D Wood Wall: This 220,000 sf project is a new engineering building for NC State University, housing the dean of the college of engineering, the civil engineering department, and the structural engineering department. It includes research labs, teaching labs, classrooms, and offices. Computational tools were used to create the focal point for the interior of the building, 2 wood walls at the entrances with the biggest spanning 4 floors measuring 86’ by 50’ meant to visually draw people up into the building. Inspired by the work of the departments, images from their research were used to create the underlying form.The form generated the 50, 4-sided flat panels that were arranged into large repeating triangles. Aggressive cost targets were met by repeating each panel at least 6 times and not exceeding a maximum panel size. The resulting design was digitally transmitted to the fabricator for production.\n\nMonumental Stairs: I created a computational approach for moving geometry between the design softwares for the design of the monumental stairs at Fitts-Woolard hall. There are 5 unique sets of stairs, all configured differently, bending to maximize the penetration of the sunlight from the skylight at the top of each run. The engineer used the traditional workflow of manually modeling for 2 of the stairs and the computational approach for the remaining 3. The engineer stated that the new process saved around a day of time for the more simple stairs, and around 3 days of time for the winding stair. An estimated 7 days of time would have been saved if the process was used on all 5 stairs. Later on it was even identified that one of the manually input stairs offset the members on the wrong side of the reference line, resulting in a stair that was 6” too narrow and needed to be fixed.\n\nMisc: For Fitts-Woolard Hall I was involved from the programming phase through closeout and ustilized comutational thinking throught to improve processes and the design. During Programming, I developed a database to track and validate programming requirements throughout the design process. In the design phase, computational design was used to calculate daylighting, energy usage, and a dynamic window layout on the exterior. As the main Architectural representative on the project, during CA the data from the contractor was linked to a floor plan to quickly illustrate where the design team needed to work that day. My scope of work also included me being the LEED accredited professional helping the project achieve LEED Silver, and the first LEED v4 project for our company.",
+        "technologyDescription": "3D Wood Wall: This 220,000 sf project is a new engineering building for NC State University, housing the dean of the college of engineering, the civil engineering department, and the structural engineering department. It includes research labs, teaching labs, classrooms, and offices. Computational tools were used to create the focal point for the interior of the building, 2 wood walls at the entrances with the biggest spanning 4 floors measuring 86\u2019 by 50\u2019 meant to visually draw people up into the building. Inspired by the work of the departments, images from their research were used to create the underlying form.The form generated the 50, 4-sided flat panels that were arranged into large repeating triangles. Aggressive cost targets were met by repeating each panel at least 6 times and not exceeding a maximum panel size. The resulting design was digitally transmitted to the fabricator for production.\n\nMonumental Stairs: I created a computational approach for moving geometry between the design softwares for the design of the monumental stairs at Fitts-Woolard hall. There are 5 unique sets of stairs, all configured differently, bending to maximize the penetration of the sunlight from the skylight at the top of each run. The engineer used the traditional workflow of manually modeling for 2 of the stairs and the computational approach for the remaining 3. The engineer stated that the new process saved around a day of time for the more simple stairs, and around 3 days of time for the winding stair. An estimated 7 days of time would have been saved if the process was used on all 5 stairs. Later on it was even identified that one of the manually input stairs offset the members on the wrong side of the reference line, resulting in a stair that was 6\u201d too narrow and needed to be fixed.\n\nMisc: For Fitts-Woolard Hall I was involved from the programming phase through closeout and ustilized comutational thinking throught to improve processes and the design. During Programming, I developed a database to track and validate programming requirements throughout the design process. In the design phase, computational design was used to calculate daylighting, energy usage, and a dynamic window layout on the exterior. As the main Architectural representative on the project, during CA the data from the contractor was linked to a floor plan to quickly illustrate where the design team needed to work that day. My scope of work also included me being the LEED accredited professional helping the project achieve LEED Silver, and the first LEED v4 project for our company.",
         "hours": 6234,
         "section": "Architecture",
         "compD": true
@@ -54,7 +54,7 @@
         "AOR": "Clark Nexsen",
         "designArchitect": "Clark Nexsen",
         "startDate": 2013,
-        "completionDate": 2016,
+        "completionDate": 2015,
         "sqft": "850 spaces",
         "projectType": "Parking Deck",
         "role": "Architect and Computational Designer",
@@ -74,7 +74,7 @@
         "AOR": "Clark Nexsen",
         "designArchitect": "Snohetta",
         "startDate": 2009,
-        "completionDate": 2012,
+        "completionDate": 2013,
         "sqft": "230,000 sqft",
         "projectType": "Library",
         "role": "Intern Architect",
@@ -93,10 +93,10 @@
         "projectName": "Edens Quad Dorm Renovation",
         "AOR": "Clark Nexsen",
         "designArchitect": "Clark Nexsen",
-        "startDate": 2015,
+        "startDate": 2014,
         "completionDate": 2016,
         "sqft": "154,000 sqft",
-        "projectType": "Dormitory",
+        "projectType": "Student Housing",
         "role": "Architect",
         "phases": [
             "SD",
@@ -110,58 +110,75 @@
     },
     {
         "projectName": "Brooks Global Studies",
+        "AOR": "Clark Nexsen",
+        "designArchitect": "Clark Nexsen",
         "phases": [
             "CD",
             "CA"
         ],
         "architecturalDescription": null,
-        "technologyDescription": "Supergraphic: Under Construction. Part of my job is to teach people how to use computational tools. A project member approached me with an idea to use icons placed on glass to create a supergraphic but didnt know how to accomplish it. Over several multi-hour phone calls, I taught them how to create the design they were after. Eventually they didn't have the time to finish the design, so working with them I refined it and created the final piece to deliver to the printer. The final design featured 23,745 icons over the 84’ length made up of 21 icons. This design was the result of a VE exercise that removed some 3D casework lettering inside the building. After the supergraphic was complete, several team members said that this was an improvement over the original concept that this replaced.\n\nDiscover Graphic: For the 'Discover' graphic at Brooks Global Studies Elementary School, I applied my expertise in computational design to translate a complex design concept into a functional architectural feature. The challenge was to arrange 16 unique icons into a legible and artistic composition without the thousands of hours of manual labor it would typically require. As the computational designer, I developed a custom algorithm to automate this process entirely.\n\nThe script I created managed multiple parameters simultaneously, generating a seamless green-to-blue color gradient across the icons while strategically increasing their density at the letters' edges to create clear definition. This process not only made the design feasible but also embedded functionality into the art. The graphic serves as an inspiring focal point for students, a screen for outdoor views, and an effective sun-shading element, demonstrating how computational design can efficiently create solutions that are at once beautiful, practical, and meaningful.",
+        "technologyDescription": "Supergraphic: Under Construction. Part of my job is to teach people how to use computational tools. A project member approached me with an idea to use icons placed on glass to create a supergraphic but didnt know how to accomplish it. Over several multi-hour phone calls, I taught them how to create the design they were after. Eventually they didn't have the time to finish the design, so working with them I refined it and created the final piece to deliver to the printer. The final design featured 23,745 icons over the 84\u2019 length made up of 21 icons. This design was the result of a VE exercise that removed some 3D casework lettering inside the building. After the supergraphic was complete, several team members said that this was an improvement over the original concept that this replaced.\n\nDiscover Graphic: For the 'Discover' graphic at Brooks Global Studies Elementary School, I applied my expertise in computational design to translate a complex design concept into a functional architectural feature. The challenge was to arrange 16 unique icons into a legible and artistic composition without the thousands of hours of manual labor it would typically require. As the computational designer, I developed a custom algorithm to automate this process entirely.\n\nThe script I created managed multiple parameters simultaneously, generating a seamless green-to-blue color gradient across the icons while strategically increasing their density at the letters' edges to create clear definition. This process not only made the design feasible but also embedded functionality into the art. The graphic serves as an inspiring focal point for students, a screen for outdoor views, and an effective sun-shading element, demonstrating how computational design can efficiently create solutions that are at once beautiful, practical, and meaningful.",
         "projectID": "9608",
         "hours": 16,
         "section": "Architecture",
         "compD": true,
-        "role": "Computational Designer"
+        "role": "Computational Designer",
+        "startDate": 2023,
+        "completionDate": 2023,
+        "projectType": "K12"
     },
     {
+        "projectID": "1553",
         "projectName": "Pedestrian Bridge",
+        "AOR": "Clark Nexsen",
+        "designArchitect": "Clark Nexsen",
         "phases": [
             "DD"
         ],
         "architecturalDescription": null,
         "technologyDescription": "Mirrored Panel Glare Analysis: Unbuilt. The design team approached me with a question they couldn't answer. The designers wanted to install reflective metal panels on a pedestrian bridge so that it would become invisible, reflecting the sky and the landscape. However there was concern that the bridge would create hotspots on the surrounding landscape, or even worse be a source of glare for pedestrians on the site, or add glare/heat gain on surrounding buildings. There was no tool to answer this question, so a custom script was created to understand where the hotspots would be at certain times and days. Ultimately the team decided that the times of glare were very limited and proceeded with the scheme.",
-        "projectID": "1553",
+
         "hours": 29,
         "section": "Architecture",
         "compD": true,
-        "role": "Computational Designer"
+        "role": "Computational Designer",
+        "startDate": 2008,
+        "completionDate": 2009,
+        "projectType": "Pedestrian Bridge"
     },
     {
         "projectName": "UVA Alderman Library Rennovation",
+        "AOR": "Clark Nexsen",
+        "designArchitect": "Clark Nexsen",
         "phases": [
             "DD",
             "CD"
         ],
         "architecturalDescription": null,
-        "technologyDescription": "Skylight geometry design and optimization: Unbuilt. The renovation for the alderman library built in 1938 called for putting a skylight in the lightwell to provide more space in the library. The main entrance to the library is up on the third floor overlooking the lightwells. The design team wanted the skylight to be as low as possible so it's not visible outside the windows from the entrance. The design team wanted to contrast the historic building with a modern pillow shaped skylight which also allowed for a low profile to be achieved. Working with the skylight manufacturer, a design was established that met all the requirements such as minimum depth and minimum slope for drainage. The resulting skylight was only 4’ deep and had a soft curving appearance and was well received by the client. Ultimately the skylight was changed to an alternate in the Bid and was not accepted.",
+        "technologyDescription": "Skylight geometry design and optimization: Unbuilt. The renovation for the alderman library built in 1938 called for putting a skylight in the lightwell to provide more space in the library. The main entrance to the library is up on the third floor overlooking the lightwells. The design team wanted the skylight to be as low as possible so it's not visible outside the windows from the entrance. The design team wanted to contrast the historic building with a modern pillow shaped skylight which also allowed for a low profile to be achieved. Working with the skylight manufacturer, a design was established that met all the requirements such as minimum depth and minimum slope for drainage. The resulting skylight was only 4\u2019 deep and had a soft curving appearance and was well received by the client. Ultimately the skylight was changed to an alternate in the Bid and was not accepted.",
         "projectID": "7567",
         "hours": 149,
         "section": "Architecture",
         "compD": true,
-        "role": "Computational Designer"
+        "role": "Computational Designer",
+        "startDate": 2018,
+        "completionDate": 2018,
+        "projectType": "Library"
     },
     {
         "projectID": "7343",
         "projectName": "Charlotte New Main Library",
         "AOR": "Clark Nexsen",
         "designArchitect": "Snohetta",
-        "completionDate": 2026,
+        "startDate": 2021,
+        "completionDate": 2025,
         "role": "Computational Designer",
         "phases": [
             "DD",
             "CA"
         ],
         "architecturalDescription": null,
-        "technologyDescription": "Facade Refinement: In Design. This project is the new main library in downtown Charlotte where they are replacing the old facility with a new one. The new building focuses on the public as well as new role and responsibilities that libraries have in their communities. As the Architect of Record working with Snohetta, my involvement began in late Design Development. The design concepts are generated by their team and handed off to me to either refine or create new scripts. Refinements are based on code requirements, changes in CD as the products and pricing are refined, etc. In the case of the curved bowl facade, I modified the script to change elevations of horizontal mullions and create new curving horizontal mullion options as part of a VE studies. For the metal panels that are on the curved bowl and also on all other sides of the building, I created a script to study the quantity, pattern, and mix of the 3 metal panel colors. Other scope of work for this project includes geometry coordination between Revit and Rhino where Speckle and Rhino.Inside is used to update the models as needed for the entire design team.\n\nAtrium and Stair Refinement: Similar to the exterior, the design for the atrium was generated by Snohetta, and passed off to me to refine. In the case of the atrium stairs and guardrail, the railing design changed from glass to wood pickets. I created a script that generates the wood pickets while also revising the stair geometry to meet all the constraints of structure, layout, code, and aesthetics.\n\nSE Facade Graphic: The southeast facade of the project, situated on the interior block and facing a future tower and plaza, presented an opportunity to integrate computational design into a highly visible graphic element. The facade, approximately 130 feet tall and 85 feet wide, features a design that occupies half its surface area. Based on the initial design intent provided by Snøhetta, I developed the final graphic, consisting of over 750,000 circles in four colors, and delivered it to the fabricator for production. The primary challenge lay in the computational complexity of generating these points. Traditional methods required over four hours to run the script, which would have made iteration impossible. By leveraging AI-driven tools, I reduced the generation time to just 15 minutes while preserving the original density and design intent. This efficiency not only streamlined production but also demonstrated the value of integrating advanced computational approaches into architectural workflows.\n\nLoading Enclosures: Originally, the design included an underground loading dock for the new library and Spirit Square, shared with an adjacent high-rise, with a public plaza above. However, late in the design process, the tower developer withdrew, making the underground loading dock unfeasible. Due to the urban site constraints, the loading docks for both buildings were relocated to the plaza, necessitating careful integration to screen dumpsters and semi-truck trailers while providing cover for loading and unloading activities.\n\nCollaborating with Snøhetta’s design intent for corten steel screen walls and canopies, I developed and rationalized the final design. This involved coordinating with all disciplines to create detailed documentation for the enclosures and canopies, ensuring structural and functional requirements were met. The panels featured a custom perforation and dimple pattern, which I designed parametrically to align with the architectural intent while optimizing for fabrication. This solution balanced aesthetic quality with urban practicality, enhancing the functionality of the shared plaza space.",
+        "technologyDescription": "Facade Refinement: In Design. This project is the new main library in downtown Charlotte where they are replacing the old facility with a new one. The new building focuses on the public as well as new role and responsibilities that libraries have in their communities. As the Architect of Record working with Snohetta, my involvement began in late Design Development. The design concepts are generated by their team and handed off to me to either refine or create new scripts. Refinements are based on code requirements, changes in CD as the products and pricing are refined, etc. In the case of the curved bowl facade, I modified the script to change elevations of horizontal mullions and create new curving horizontal mullion options as part of a VE studies. For the metal panels that are on the curved bowl and also on all other sides of the building, I created a script to study the quantity, pattern, and mix of the 3 metal panel colors. Other scope of work for this project includes geometry coordination between Revit and Rhino where Speckle and Rhino.Inside is used to update the models as needed for the entire design team.\n\nAtrium and Stair Refinement: Similar to the exterior, the design for the atrium was generated by Snohetta, and passed off to me to refine. In the case of the atrium stairs and guardrail, the railing design changed from glass to wood pickets. I created a script that generates the wood pickets while also revising the stair geometry to meet all the constraints of structure, layout, code, and aesthetics.\n\nSE Facade Graphic: The southeast facade of the project, situated on the interior block and facing a future tower and plaza, presented an opportunity to integrate computational design into a highly visible graphic element. The facade, approximately 130 feet tall and 85 feet wide, features a design that occupies half its surface area. Based on the initial design intent provided by Sn\u00f8hetta, I developed the final graphic, consisting of over 750,000 circles in four colors, and delivered it to the fabricator for production. The primary challenge lay in the computational complexity of generating these points. Traditional methods required over four hours to run the script, which would have made iteration impossible. By leveraging AI-driven tools, I reduced the generation time to just 15 minutes while preserving the original density and design intent. This efficiency not only streamlined production but also demonstrated the value of integrating advanced computational approaches into architectural workflows.\n\nLoading Enclosures: Originally, the design included an underground loading dock for the new library and Spirit Square, shared with an adjacent high-rise, with a public plaza above. However, late in the design process, the tower developer withdrew, making the underground loading dock unfeasible. Due to the urban site constraints, the loading docks for both buildings were relocated to the plaza, necessitating careful integration to screen dumpsters and semi-truck trailers while providing cover for loading and unloading activities.\n\nCollaborating with Sn\u00f8hetta\u2019s design intent for corten steel screen walls and canopies, I developed and rationalized the final design. This involved coordinating with all disciplines to create detailed documentation for the enclosures and canopies, ensuring structural and functional requirements were met. The panels featured a custom perforation and dimple pattern, which I designed parametrically to align with the architectural intent while optimizing for fabrication. This solution balanced aesthetic quality with urban practicality, enhancing the functionality of the shared plaza space.",
         "declarationOfResponsibility": {
             "declaration": "I have personal knoweledge that the nominee was largely responsible for the computational design of the project listed above. (alt: for the computational design during Construction Documentes and CA Phases.)",
             "name": "Chad Carpenter",
@@ -170,7 +187,9 @@
         },
         "hours": 1752,
         "section": "Architecture",
-        "compD": true
+        "compD": true,
+        "projectType": "Library"
+
     },
     {
         "projectName": "Dynamo and Grasshopper Deployment",
@@ -224,17 +243,24 @@
     },
     {
         "projectName": "Williamsburg Live Performance Venue",
+        "AOR": "Clark Nexsen",
+        "designArchitect": "Clark Nexsen",
         "architecturalDescription": "",
         "technologyDescription": "Colonial Williamsburg is known for its strict architectural requirements. Our team's design fit comfortably within the traditional aesthetic without appearing dated. We worked closely with the Williamsburg Architecture Review Board to ensure the size and presence of the complex was appropriate for the site, creating a facility that respects its historic setting. As a stage for live performance, the building draws its lineage from the colonial past through the enduring language of music.\n\nRather than relying on literal imitation of 18th-century buildings, the design uses this musical connection as the primary bridge to the past. The fife and drum music heard throughout the city became the main driver for our architectural decisions. Specifically, we used the rhythmic measures of \"Yankee Doodle\" to guide the layout of the lobby's shading screen. By studying the fife melody, we identified fifteen unique musical phrases that were translated into a series of repeating panel types. Each panel features a different depth and density of shading elements, creating a visual texture built directly from the song's composition. Even the vertical supports behind the screen follow the song's drum patterns, providing a subtle structural logic that moves across the entire facade.\n\nThis approach ensures the building is defined by a story that resonates with residents and visitors. By aligning the facility's function with this specific part of Williamsburg's heritage, the architecture becomes a meaningful part of the Williamsburg's story. For donors and stakeholders, this provides a clear connection to the project, showing that every design choice was made to celebrate the local spirit and the shared experience of performance.",
         "projectID": "10577",
         "hours": 27,
         "section": "Architecture",
         "compD": true,
-        "role": "Computational Designer"
+        "role": "Computational Designer",
+        "startDate": 2024,
+        "completionDate": 2025,
+        "projectType": "Performing Arts Center"
     },
     {
         "projectID": "1633",
-        "projectName": "COR Critical Public Safety Facility",
+        "AOR": "Clark Nexsen",
+        "designArchitect": "Clark Nexsen",
+        "projectName": "City of Raleigh Critical Public Safety Facility",
         "hours": 1327,
         "section": "Architecture",
         "compD": false,
@@ -242,11 +268,16 @@
         "phases": [
             "SD",
             "CA"
-        ]
+        ],
+        "startDate": 2012,
+        "completionDate": 2015,
+        "projectType": "Public Safety Facility"
     },
     {
         "projectID": "1467",
         "projectName": "Green Square Parking Deck",
+        "AOR": "Clark Nexsen",
+        "designArchitect": "Clark Nexsen",
         "hours": 1307,
         "section": "Architecture",
         "compD": false,
@@ -254,11 +285,16 @@
         "phases": [
             "SD",
             "CA"
-        ]
+        ],
+        "startDate": 2008,
+        "completionDate": 2012,
+        "projectType": "Parking Deck"
     },
     {
         "projectID": "1513",
         "projectName": "North Carolina Visitors' Center",
+        "AOR": "Clark Nexsen",
+        "designArchitect": "Clark Nexsen",
         "hours": 794,
         "section": "Architecture",
         "compD": false,
@@ -266,11 +302,16 @@
         "phases": [
             "SD",
             "CD"
-        ]
+        ],
+        "startDate": 2008,
+        "completionDate": 2008,
+        "projectType": "Visitors Center"
     },
     {
         "projectID": "1432",
-        "projectName": "OLD PLAYMAKERS/SMITH HALL RENOVATION",
+        "projectName": "Old Playmakers Theater Rennovation",
+        "AOR": "Clark Nexsen",
+        "designArchitect": "Clark Nexsen",
         "hours": 360,
         "section": "Architecture",
         "compD": false,
@@ -278,11 +319,16 @@
         "phases": [
             "SD",
             "CD"
-        ]
+        ],
+        "startDate": 2008,
+        "completionDate": 2009,
+        "projectType": "Performing Arts Center"
     },
     {
         "projectID": "5144",
         "projectName": "Duke University East Campus Union",
+        "AOR": "Clark Nexsen",
+        "designArchitect": "Clark Nexsen",
         "hours": 310,
         "section": "Architecture",
         "compD": false,
@@ -290,93 +336,138 @@
         "phases": [
             "SD",
             "DD"
-        ]
+        ],
+        "startDate": 2014,
+        "completionDate": 2014,
+        "projectType": "Student Center"
     },
     {
         "projectID": "5884",
         "projectName": "Terminal 1 North/South Concourse Demo",
+        "AOR": "Clark Nexsen",
+        "designArchitect": "Clark Nexsen",
         "hours": 227,
         "section": "Architecture",
         "compD": false,
         "role": "Intern Architect",
         "phases": [
             "CD"
-        ]
+        ],
+        "startDate": 2015,
+        "completionDate": 2015,
+        "projectType": "Aviation"
     },
     {
         "projectID": "1564",
         "projectName": "UNCSA Library",
+        "AOR": "Clark Nexsen",
+        "designArchitect": "Clark Nexsen",
         "hours": 189,
         "section": "Architecture",
         "compD": true,
         "role": "Computational Designer",
         "phases": [
             "CD"
-        ]
+        ],
+        "startDate": 2011,
+        "completionDate": 2013,
+        "projectType": "Library"
     },
     {
         "projectID": "1398",
         "projectName": "UNC Coastal Studies Institute",
+        "AOR": "Clark Nexsen",
+        "designArchitect": "Clark Nexsen",
         "hours": 160,
         "section": "Architecture",
         "compD": false,
-        "role": "Intern Architect"
+        "role": "Intern Architect",
+        "startDate": 2010,
+        "completionDate": 2011,
+        "projectType": "Lab"
     },
     {
         "projectID": "8902",
         "projectName": "DB UVA Brandon Ave Upper Class Housing",
+        "AOR": "Clark Nexsen",
+        "designArchitect": "Clark Nexsen",
         "hours": 112,
         "section": "Architecture",
         "compD": false,
         "role": "Architect",
         "phases": [
             "CD"
-        ]
+        ],
+        "startDate": 2021,
+        "completionDate": 2024,
+        "projectType": "Student Housing"
     },
     {
         "projectID": "1582",
         "projectName": "RDU Terminal 1 Renovation",
+        "AOR": "Clark Nexsen",
+        "designArchitect": "Clark Nexsen",
         "hours": 99,
         "section": "Architecture",
         "compD": false,
         "role": "Intern Architect",
         "phases": [
             "CD"
-        ]
+        ],
+        "startDate": 2011,
+        "completionDate": 2013,
+        "projectType": "Aviation"
     },
     {
         "projectID": "P6479",
         "projectName": "Metals in Construction DesignCompetition",
+        "AOR": "Clark Nexsen",
+        "designArchitect": "Clark Nexsen",
         "hours": 86,
         "section": "Architecture",
         "compD": true,
-        "role": "Computational Designer"
+        "role": "Computational Designer",
+        "startDate": 2016,
+        "completionDate": 2016,
+        "projectType": "Competition"
     },
     {
         "projectID": "7937",
         "projectName": "UNC S-1 Lot Parking Deck",
+        "AOR": "Clark Nexsen",
+        "designArchitect": "Clark Nexsen",
         "hours": 75,
         "section": "Architecture",
         "compD": true,
         "role": "Computational Designer",
         "phases": [
             "DD"
-        ]
+        ],
+        "startDate": 2018,
+        "completionDate": 2019,
+        "projectType": "Parking Deck"
     },
     {
         "projectID": "6412",
-        "projectName": "GU Car Barn Landlord Shell Bldg",
-        "hours": 64,
+        "projectName": "Georgetown Univ Car Barn",
+        "AOR": "Clark Nexsen",
+        "designArchitect": "Clark Nexsen",
+        "hours": 100,
         "section": "Architecture",
         "compD": false,
         "role": "Architect",
         "phases": [
             "CD"
-        ]
+        ],
+        "startDate": 2016,
+        "completionDate": 2016,
+        "projectType": "Office"
     },
     {
         "projectID": "9051",
         "projectName": "JLab CEBAF Renovation/Expansion",
+        "AOR": "Clark Nexsen",
+        "designArchitect": "Clark Nexsen",
         "hours": 57,
         "section": "Architecture",
         "compD": true,
@@ -384,112 +475,140 @@
         "phases": [
             "CD",
             "CA"
-        ]
+        ],
+        "startDate": 2021,
+        "completionDate": 2022,
+        "projectType": "Lab"
     },
     {
         "projectID": "1580",
         "projectName": "Triangle Brick Headquarters",
+        "AOR": "Clark Nexsen",
+        "designArchitect": "Clark Nexsen",
         "hours": 52,
         "section": "Architecture",
         "compD": false,
-        "role": "Intern Architect"
+        "role": "Intern Architect",
+        "startDate": 2010,
+        "completionDate": 2010,
+        "projectType": "Office"
     },
     {
         "projectID": "6200",
         "projectName": "Craven and Crowell Renovations",
+        "AOR": "Clark Nexsen",
+        "designArchitect": "Clark Nexsen",
         "hours": 39,
         "section": "Architecture",
         "compD": false,
-        "role": "Architect"
-    },
-    {
-        "projectID": "6375",
-        "projectName": "Georgetown Univ Car Barn 1st Floor TO#01",
-        "hours": 36,
-        "section": "Architecture",
-        "compD": false,
         "role": "Architect",
-        "phases": [
-            "CD"
-        ]
+        "startDate": 2015,
+        "completionDate": 2015,
+        "projectType": "Student Housing"
     },
     {
         "projectID": "10174",
         "projectName": "Rockingham Speedway",
+        "AOR": "Clark Nexsen",
+        "designArchitect": "Clark Nexsen",
         "hours": 34,
         "section": "Architecture",
         "compD": true,
         "role": "Computational Designer",
         "phases": [
             "PD"
-        ]
+        ],
+        "startDate": 2023,
+        "completionDate": 2023,
+        "projectType": "Sports Venue"
     },
     {
         "projectID": "7524",
         "projectName": "Bluebird Bio Manufacturing Fitup",
+        "AOR": "Clark Nexsen",
+        "designArchitect": "Clark Nexsen",
         "hours": 34,
         "section": "Architecture",
         "compD": true,
-        "role": "Computational Designer"
+        "role": "Computational Designer",
+        "startDate": 2018,
+        "completionDate": 2018,
+        "projectType": "Lab"
     },
     {
         "projectID": "5923",
         "projectName": "WCPSS Adaptive Reuse Site Analysis",
+        "AOR": "Clark Nexsen",
+        "designArchitect": "Clark Nexsen",
         "hours": 33,
         "section": "Architecture",
         "compD": true,
         "role": "Computational Designer",
         "phases": [
             "PD"
-        ]
+        ],
+        "startDate": 2015,
+        "completionDate": 2015,
+        "projectType": "K12"
     },
     {
         "projectID": "5254",
         "projectName": "Virginia Beach Arena Infrastructure",
+        "AOR": "Clark Nexsen",
+        "designArchitect": "Clark Nexsen",
         "hours": 24,
         "section": "Architecture",
         "compD": true,
         "role": "Computational Designer",
         "phases": [
             "PD"
-        ]
+        ],
+        "startDate": 2014,
+        "completionDate": 2014,
+        "projectType": "Sports Venue"
     },
     {
         "projectID": "10600",
-        "projectName": "Deep Energy Retrofit Assessments",
+        "projectName": "Energy Assessments",
         "hours": 23,
         "section": "Architecture",
         "compD": true,
-        "role": "Computational Designer"
+        "role": "Computational Designer",
+        "startDate": 2024,
+        "completionDate": 2025,
+        "projectType": "Energy Modeling"
     },
     {
         "projectID": "10549",
         "projectName": "Norfolk Rec and Library Comprehensive Ag",
+        "AOR": "Clark Nexsen",
+        "designArchitect": "Clark Nexsen",
         "hours": 13,
         "section": "Architecture",
         "compD": true,
         "role": "Computational Designer",
         "phases": [
             "DD"
-        ]
+        ],
+        "startDate": 2025,
+        "completionDate": 2025,
+        "projectType": "Library and Rec Center"
     },
     {
         "projectID": "8153",
         "projectName": "RTF Park Center Pedestrian Bridge",
-        "hours": 13,
+        "AOR": "Clark Nexsen",
+        "designArchitect": "Clark Nexsen",
+        "hours": 25,
         "section": "Architecture",
         "compD": true,
         "role": "Computational Designer",
         "phases": [
             "PD"
-        ]
-    },
-    {
-        "projectID": "8153-A",
-        "projectName": "RTF Park Center East Pedestrian Bridge",
-        "hours": 12,
-        "section": "Architecture",
-        "compD": true,
-        "role": "Computational Designer"
+        ],
+        "startDate": 2019,
+        "completionDate": 2019,
+        "projectType": "Pedestrian Bridge"
     }
+   
 ]
