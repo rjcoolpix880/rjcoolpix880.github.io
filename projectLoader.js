@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const awards = allAwards[project.projectID] || [];
             if (awards.length > 0) {
               const formattedAwards = awards
-                .map(a => `${a.year} - ${a.body}: ${a.name}`)
+                .map(a => `${a.year} ${a.name} - ${a.body}`)
                 .join('<br>');
               projectAwardsDiv.innerHTML = `<div class='dataTitle'>Awards:</div> ${formattedAwards}`;
             } else {
