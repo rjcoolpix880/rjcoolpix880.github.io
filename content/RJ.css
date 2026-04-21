@@ -561,6 +561,13 @@ video {
 		text-align: left !important;
 	}
 
+	#over-right {
+		float: left;
+		/* height + (1.5 x padding) */
+		margin-left: 10px;
+		text-align: left;
+	}
+
 	body {
 		/*background-color: darkgray*/
 	}
