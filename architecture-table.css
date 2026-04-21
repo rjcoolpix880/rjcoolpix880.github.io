@@ -102,6 +102,70 @@ tr:hover {
 .phase-cd { background-color: var(--cd-color); }
 .phase-ca { background-color: var(--ca-color); }
 
+/* Status Pills */
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.725rem;
+  font-weight: 600;
+  white-space: nowrap;
+  letter-spacing: 0.01em;
+  border: 1px solid transparent;
+}
+
+.status-pill::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.status-completed {
+  background-color: rgba(134, 239, 172, 0.15); /* --cd-color at 15% */
+  color: #065f46;
+  border-color: var(--cd-color);
+}
+.status-completed::before { background-color: var(--cd-color); }
+
+.status-in-construction {
+  background-color: rgba(147, 197, 253, 0.15); /* --ca-color at 15% */
+  color: #1e3a8a;
+  border-color: var(--ca-color);
+}
+.status-in-construction::before { background-color: var(--ca-color); }
+
+.status-in-design {
+  background-color: rgba(253, 224, 71, 0.15); /* --dd-color at 15% */
+  color: #854d0e;
+  border-color: var(--dd-color);
+}
+.status-in-design::before { background-color: var(--dd-color); }
+
+.status-unbuilt {
+  background-color: rgba(252, 165, 165, 0.15); /* --pd-color at 15% */
+  color: #991b1b;
+  border-color: var(--pd-color);
+}
+.status-unbuilt::before { background-color: var(--pd-color); }
+
+/* Project Links */
+.project-link {
+  color: var(--text-color);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border-color);
+  transition: all 0.2s;
+}
+
+.project-link:hover {
+  color: var(--primary-color);
+  border-bottom-color: var(--primary-color);
+  background-color: rgba(37, 99, 235, 0.05);
+}
+
 /* Icons */
 .icon-check {
   color: #10b981;

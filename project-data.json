@@ -2,11 +2,14 @@
     {
         "projectID": "8953",
         "projectName": "Madera Cyber Innovation Center",
+        "client": "United States Air Force Academy",
         "AOR": "Clark Nexsen",
         "designArchitect": "Clark Nexsen",
         "startDate": 2021,
         "completionDate": 2025,
+        "status": "Completed",
         "sqft": "50,000 sqft",
+        "cost": 50000000,
         "projectType": "Lab and Classroom",
         "role": "Architect and Computational Designer",
         "phases": [
@@ -26,16 +29,20 @@
         },
         "hours": 341,
         "section": "Architecture",
-        "compD": true
+        "compD": true,
+        "link": "https://www.clarknexsen.com/project/the-madera-cyber-innovation-center/"
     },
     {
         "projectID": "6169",
         "projectName": "Fitts-Woolard Hall",
+        "client": "North Carolina State University",
         "AOR": "Clark Nexsen",
         "designArchitect": "Clark Nexsen",
         "startDate": 2016,
         "completionDate": 2021,
+        "status": "Completed",
         "sqft": "220,000 sqft",
+        "cost": 103000000,
         "projectType": "Lab and Classroom",
         "role": "Architect and Computational Designer",
         "phases": [
@@ -46,16 +53,20 @@
         "technologyDescription": "3D Wood Wall: This 220,000 sf project is a new engineering building for NC State University, housing the dean of the college of engineering, the civil engineering department, and the structural engineering department. It includes research labs, teaching labs, classrooms, and offices. Computational tools were used to create the focal point for the interior of the building, 2 wood walls at the entrances with the biggest spanning 4 floors measuring 86\u2019 by 50\u2019 meant to visually draw people up into the building. Inspired by the work of the departments, images from their research were used to create the underlying form.The form generated the 50, 4-sided flat panels that were arranged into large repeating triangles. Aggressive cost targets were met by repeating each panel at least 6 times and not exceeding a maximum panel size. The resulting design was digitally transmitted to the fabricator for production.\n\nMonumental Stairs: I created a computational approach for moving geometry between the design softwares for the design of the monumental stairs at Fitts-Woolard hall. There are 5 unique sets of stairs, all configured differently, bending to maximize the penetration of the sunlight from the skylight at the top of each run. The engineer used the traditional workflow of manually modeling for 2 of the stairs and the computational approach for the remaining 3. The engineer stated that the new process saved around a day of time for the more simple stairs, and around 3 days of time for the winding stair. An estimated 7 days of time would have been saved if the process was used on all 5 stairs. Later on it was even identified that one of the manually input stairs offset the members on the wrong side of the reference line, resulting in a stair that was 6\u201d too narrow and needed to be fixed.\n\nMisc: For Fitts-Woolard Hall I was involved from the programming phase through closeout and ustilized comutational thinking throught to improve processes and the design. During Programming, I developed a database to track and validate programming requirements throughout the design process. In the design phase, computational design was used to calculate daylighting, energy usage, and a dynamic window layout on the exterior. As the main Architectural representative on the project, during CA the data from the contractor was linked to a floor plan to quickly illustrate where the design team needed to work that day. My scope of work also included me being the LEED accredited professional helping the project achieve LEED Silver, and the first LEED v4 project for our company.",
         "hours": 6234,
         "section": "Architecture",
-        "compD": true
+        "compD": true,
+        "link": "https://www.clarknexsen.com/project/fitts-woolard-hall/"
     },
     {
         "projectID": "1648",
-        "projectName": "Wake Tech Parking Deck",
+        "projectName": "Parking Deck 2",
+        "client": "Wake Tech Community College",
         "AOR": "Clark Nexsen",
         "designArchitect": "Clark Nexsen",
         "startDate": 2013,
         "completionDate": 2015,
+        "status": "Completed",
         "sqft": "850 spaces",
+        "cost": 14600000,
         "projectType": "Parking Deck",
         "role": "Architect and Computational Designer",
         "phases": [
@@ -66,16 +77,20 @@
         "technologyDescription": "Stainless steel facade panels: The Wake Tech campus is split by a natural wetland and forest. The site for the deck is located directly on one edge of the forest. All students commute to campus, requiring ample parking and large parking decks. For this project, the facade is 350 feet long so the traditional ideas were not working for the design team. The idea was to create a textured pattern on the facade that would reflect and respond to the site. The team liked the idea of creating panels that reflected the surroundings at different angles to create a dynamic appearance as you drove along the deck. The resulting design arranged panels in a way that created a texture by only varying the panel spacing and the panel orientation. The script first generated a single panel profile that could be bent from a roll of stainless steel. These panels could then be rotated 180 degrees to add to the desired texture. The design bid under budget, however the owner wanted the facade budget cut in half. Fortunately since the design was done using computational tools, we quickly studied options with half the panels removed. With computation this redesign was done in a few days instead of a few weeks using the traditional process. This was the first major project done at Clark Nexsen using computation and this redesign process showed the power of the tool and led to more projects using computation design.\n\nCNC supergraphic numbers: The design team liked the approach of having supergraphic numbers on each floor at the stairs. Computational and non-computatal designs were studied with the team liking the direction of the computational schemes. Working with the CM, various fabrication methods were studied, eventually landing on CNC ACM panels for their cost and durability. Over 35,000 holes were drilled to create the graphics on the panels. Working with the contractor, we looked at drilling partially or fully through the panels. Studies were completed to determine if the holes went just into the core of the ACM or if they went all the way through the entire panel. The contractor recommended using thru-holes since they could produce it faster and more accurately.",
         "hours": 1020,
         "section": "Architecture",
-        "compD": true
+        "compD": true,
+        "link": "https://www.clarknexsen.com/project/parking-deck/"
     },
     {
         "projectID": "1538",
         "projectName": "James B Hunt Jr Library",
+        "client": "North Carolina State University",
         "AOR": "Clark Nexsen",
         "designArchitect": "Snohetta",
         "startDate": 2009,
         "completionDate": 2013,
+        "status": "Completed",
         "sqft": "230,000 sqft",
+        "cost": 93750000,
         "projectType": "Library",
         "role": "Intern Architect",
         "phases": [
@@ -86,16 +101,20 @@
         "technologyDescription": null,
         "hours": 5696,
         "section": "Architecture",
-        "compD": false
+        "compD": false,
+        "link": "https://www.clarknexsen.com/project/james-b-hunt-jr-library-nc-state-university/"
     },
     {
         "projectID": "5369",
         "projectName": "Edens Quad Dorm Renovation",
+        "client": "Duke University",
         "AOR": "Clark Nexsen",
         "designArchitect": "Clark Nexsen",
         "startDate": 2014,
         "completionDate": 2016,
+        "status": "Completed",
         "sqft": "154,000 sqft",
+        "cost": 8000000,
         "projectType": "Student Housing",
         "role": "Architect",
         "phases": [
@@ -106,10 +125,13 @@
         "technologyDescription": null,
         "hours": 1100,
         "section": "Architecture",
-        "compD": false
+        "compD": false,
+        "link": "https://www.clarknexsen.com/project/duke-edens-quad-renovation/"
     },
     {
+        "projectID": "9608",
         "projectName": "Brooks Global Studies",
+        "client": "Guilford County Schools",
         "AOR": "Clark Nexsen",
         "designArchitect": "Clark Nexsen",
         "phases": [
@@ -118,36 +140,37 @@
         ],
         "architecturalDescription": null,
         "technologyDescription": "Supergraphic: Under Construction. Part of my job is to teach people how to use computational tools. A project member approached me with an idea to use icons placed on glass to create a supergraphic but didnt know how to accomplish it. Over several multi-hour phone calls, I taught them how to create the design they were after. Eventually they didn't have the time to finish the design, so working with them I refined it and created the final piece to deliver to the printer. The final design featured 23,745 icons over the 84\u2019 length made up of 21 icons. This design was the result of a VE exercise that removed some 3D casework lettering inside the building. After the supergraphic was complete, several team members said that this was an improvement over the original concept that this replaced.\n\nDiscover Graphic: For the 'Discover' graphic at Brooks Global Studies Elementary School, I applied my expertise in computational design to translate a complex design concept into a functional architectural feature. The challenge was to arrange 16 unique icons into a legible and artistic composition without the thousands of hours of manual labor it would typically require. As the computational designer, I developed a custom algorithm to automate this process entirely.\n\nThe script I created managed multiple parameters simultaneously, generating a seamless green-to-blue color gradient across the icons while strategically increasing their density at the letters' edges to create clear definition. This process not only made the design feasible but also embedded functionality into the art. The graphic serves as an inspiring focal point for students, a screen for outdoor views, and an effective sun-shading element, demonstrating how computational design can efficiently create solutions that are at once beautiful, practical, and meaningful.",
-        "projectID": "9608",
+        "sqft": "73,000 sqft",
+        "cost": 36000000,
         "hours": 16,
         "section": "Architecture",
         "compD": true,
         "role": "Computational Designer",
         "startDate": 2023,
         "completionDate": 2023,
-        "projectType": "K12"
+        "status": "Completed",
+        "projectType": "K12",
+        "link": "https://www.clarknexsen.com/project/brooks-global-studies-es/"
     },
     {
         "projectID": "1553",
         "projectName": "Pedestrian Bridge",
         "AOR": "Clark Nexsen",
         "designArchitect": "Clark Nexsen",
-        "phases": [
-            "DD"
-        ],
+        "phases": [],
         "architecturalDescription": null,
-        "technologyDescription": "Mirrored Panel Glare Analysis: Unbuilt. The design team approached me with a question they couldn't answer. The designers wanted to install reflective metal panels on a pedestrian bridge so that it would become invisible, reflecting the sky and the landscape. However there was concern that the bridge would create hotspots on the surrounding landscape, or even worse be a source of glare for pedestrians on the site, or add glare/heat gain on surrounding buildings. There was no tool to answer this question, so a custom script was created to understand where the hotspots would be at certain times and days. Ultimately the team decided that the times of glare were very limited and proceeded with the scheme.",
-
         "hours": 29,
         "section": "Architecture",
         "compD": true,
-        "role": "Computational Designer",
+        "role": "Intern Architect",
         "startDate": 2008,
         "completionDate": 2009,
+        "status": "Unbuilt",
         "projectType": "Pedestrian Bridge"
     },
     {
-        "projectName": "UVA Alderman Library Rennovation",
+        "projectName": "Alderman Library Rennovation",
+        "client": "University of Virginia",
         "AOR": "Clark Nexsen",
         "designArchitect": "Clark Nexsen",
         "phases": [
@@ -163,15 +186,20 @@
         "role": "Computational Designer",
         "startDate": 2018,
         "completionDate": 2018,
+        "status": "Unbuilt",
         "projectType": "Library"
     },
     {
         "projectID": "7343",
-        "projectName": "Charlotte New Main Library",
+        "projectName": "New Main Library",
+        "client": "Charlotte Mecklenburg County",
         "AOR": "Clark Nexsen",
         "designArchitect": "Snohetta",
         "startDate": 2021,
-        "completionDate": 2025,
+        "completionDate": 2026,
+        "status": "In Construction",
+        "cost": 91000000,
+        "sqft": "108,000 sqft",
         "role": "Computational Designer",
         "phases": [
             "DD",
@@ -188,8 +216,8 @@
         "hours": 1752,
         "section": "Architecture",
         "compD": true,
-        "projectType": "Library"
-
+        "projectType": "Library",
+        "link": "https://www.clarknexsen.com/project/charlotte-mecklenburg-new-main-library/"
     },
     {
         "projectName": "Dynamo and Grasshopper Deployment",
@@ -242,7 +270,8 @@
         "technologyDescription": "Clark Nexsen AI Strategy: The development of Clark Nexsen's AI strategy framework began with a firm-wide survey to understand existing AI knowledge, concerns, and opportunities across all departments. Based on these survey results, I developed and delivered a series of presentations to address identified knowledge gaps and establish common ground for AI discussions within the firm. As part of the AI Innovation Hub, I then led the creation of our implementation approach, establishing a central system for evaluating AI tools and creating channels for ongoing technology discussion. This initial phase focused on building consensus and understanding how different departments could benefit from AI integration in their workflows.\n\nBuilding on this foundation, I worked with firm leadership to develop a three-tier framework of Guidelines, Best Practices, and AI Labels for individual tools. The process included researching policies from peer firms, analyzing potential risks, and studying implementation strategies across the AEC industry. This research informed the development of a comprehensive risk assessment matrix and the creation of a strategic roadmap using PERT methodology to outline implementation phases and dependencies. These components were synthesized into the final AI strategy document, which establishes clear objectives, defines governance structures, and sets measurable targets for AI implementation. The resulting framework provides Clark Nexsen with a detailed roadmap for AI integration over the next several years, balancing innovation opportunities with practical implementation steps across all departments.\n\nAI Toolkit: Recognizing the need to bridge emerging technologies with practical architectural workflows, I developed an innovative AI Toolkit that transforms how our firm integrates AI into design processes. The toolkit addresses real-world challenges by automating time-intensive tasks like analyzing drawing notes, meeting recordings, and communications, ultimately enhancing decision-making and quality control. It also streamlines the creation of RFPs through a custom retrieval-augmented generation (RAG) system, ensuring AI-generated responses are grounded in our firm's unique data and expertise.\n\nBuilt on a foundation of multiple AI models, including OpenAI's GPT-4 and Anthropic's Claude, the system incorporates thoughtfully engineered prompts to make AI tools approachable for staff, fostering a gradual and confident adoption of this technology. The Django-based web interface I designed provides seamless access to specialized modules for drawing analysis, specification comparison, and automated quality control.\n\nBy automating critical workflows and integrating AI into familiar contexts, this toolkit accelerates decision-making, strengthens quality control, and prepares our firm for the next generation of AI-powered design tools"
     },
     {
-        "projectName": "Williamsburg Live Performance Venue",
+        "projectName": "Live Performance Venue",
+        "client": "Williamsburg",
         "AOR": "Clark Nexsen",
         "designArchitect": "Clark Nexsen",
         "architecturalDescription": "",
@@ -254,14 +283,18 @@
         "role": "Computational Designer",
         "startDate": 2024,
         "completionDate": 2025,
+        "status": "In Design",
         "projectType": "Performing Arts Center"
     },
     {
         "projectID": "1633",
+        "projectName": "Critical Public Safety Facility",
+        "client": "City of Raleigh",
         "AOR": "Clark Nexsen",
         "designArchitect": "Clark Nexsen",
-        "projectName": "City of Raleigh Critical Public Safety Facility",
+        "cost": 62000000,
         "hours": 1327,
+        "sqft": "98,000 sf",
         "section": "Architecture",
         "compD": false,
         "role": "Architect",
@@ -271,14 +304,18 @@
         ],
         "startDate": 2012,
         "completionDate": 2015,
+        "status": "Completed",
         "projectType": "Public Safety Facility"
     },
     {
         "projectID": "1467",
         "projectName": "Green Square Parking Deck",
+        "client": "City of Raleigh",
         "AOR": "Clark Nexsen",
         "designArchitect": "Clark Nexsen",
         "hours": 1307,
+        "sqft": "272,000 sqft",
+        "cost": 17000000,
         "section": "Architecture",
         "compD": false,
         "role": "Intern Architect",
@@ -288,11 +325,13 @@
         ],
         "startDate": 2008,
         "completionDate": 2012,
+        "status": "Completed",
         "projectType": "Parking Deck"
     },
     {
         "projectID": "1513",
-        "projectName": "North Carolina Visitors' Center",
+        "projectName": "Visitors' Center",
+        "client": "State of North Carolina",
         "AOR": "Clark Nexsen",
         "designArchitect": "Clark Nexsen",
         "hours": 794,
@@ -305,11 +344,13 @@
         ],
         "startDate": 2008,
         "completionDate": 2008,
+        "status": "Unbuilt",
         "projectType": "Visitors Center"
     },
     {
         "projectID": "1432",
         "projectName": "Old Playmakers Theater Rennovation",
+        "client": "University of North Carolina at Chapel Hill",
         "AOR": "Clark Nexsen",
         "designArchitect": "Clark Nexsen",
         "hours": 360,
@@ -322,13 +363,17 @@
         ],
         "startDate": 2008,
         "completionDate": 2009,
+        "status": "Unbuilt",
         "projectType": "Performing Arts Center"
     },
     {
         "projectID": "5144",
-        "projectName": "Duke University East Campus Union",
+        "projectName": "East Campus Union",
+        "client": "Duke University",
         "AOR": "Clark Nexsen",
         "designArchitect": "Clark Nexsen",
+        "sqft": "42,000 sqft",
+        "cost": 5000000,
         "hours": 310,
         "section": "Architecture",
         "compD": false,
@@ -338,12 +383,14 @@
             "DD"
         ],
         "startDate": 2014,
-        "completionDate": 2014,
+        "completionDate": 2015,
+        "status": "Completed",
         "projectType": "Student Center"
     },
     {
         "projectID": "5884",
         "projectName": "Terminal 1 North/South Concourse Demo",
+        "client": "Raleigh-Durham International Airport",
         "AOR": "Clark Nexsen",
         "designArchitect": "Clark Nexsen",
         "hours": 227,
@@ -355,13 +402,18 @@
         ],
         "startDate": 2015,
         "completionDate": 2015,
+        "status": "Completed",
         "projectType": "Aviation"
     },
     {
         "projectID": "1564",
-        "projectName": "UNCSA Library",
+        "projectName": "Library and Learning Commons",
+        "client": "University of North Carolina School of the Arts",
         "AOR": "Clark Nexsen",
         "designArchitect": "Clark Nexsen",
+        "sqft": "76,000 sqft",
+        "cost": 24000000,
+        "link": "https://www.clarknexsen.com/project/library-learning-commons-unc-school-of-the-arts/",
         "hours": 189,
         "section": "Architecture",
         "compD": true,
@@ -371,11 +423,13 @@
         ],
         "startDate": 2011,
         "completionDate": 2013,
+        "status": "Completed",
         "projectType": "Library"
     },
     {
         "projectID": "1398",
-        "projectName": "UNC Coastal Studies Institute",
+        "projectName": "Coastal Studies Institute",
+        "client": "University of North Carolina at Chapel Hill",
         "AOR": "Clark Nexsen",
         "designArchitect": "Clark Nexsen",
         "hours": 160,
@@ -384,11 +438,13 @@
         "role": "Intern Architect",
         "startDate": 2010,
         "completionDate": 2011,
+        "status": "Completed",
         "projectType": "Lab"
     },
     {
         "projectID": "8902",
-        "projectName": "DB UVA Brandon Ave Upper Class Housing",
+        "projectName": "Brandon Ave Upper Class Housing",
+        "client": "University of Virginia",
         "AOR": "Clark Nexsen",
         "designArchitect": "Clark Nexsen",
         "hours": 112,
@@ -400,13 +456,17 @@
         ],
         "startDate": 2021,
         "completionDate": 2024,
+        "status": "Completed",
         "projectType": "Student Housing"
     },
     {
         "projectID": "1582",
-        "projectName": "RDU Terminal 1 Renovation",
+        "projectName": "Terminal 1 Renovation",
+        "client": "Raleigh-Durham International Airport",
         "AOR": "Clark Nexsen",
         "designArchitect": "Clark Nexsen",
+        "sqft": "165,000 sqft",
+        "cost": 68000000,
         "hours": 99,
         "section": "Architecture",
         "compD": false,
@@ -415,7 +475,8 @@
             "CD"
         ],
         "startDate": 2011,
-        "completionDate": 2013,
+        "completionDate": 2014,
+        "status": "Completed",
         "projectType": "Aviation"
     },
     {
@@ -423,19 +484,26 @@
         "projectName": "Metals in Construction DesignCompetition",
         "AOR": "Clark Nexsen",
         "designArchitect": "Clark Nexsen",
+        "link": "https://www.clarknexsen.com/articles/metlife-building-competition/",
+        "unbuilt": true,
         "hours": 86,
         "section": "Architecture",
         "compD": true,
         "role": "Computational Designer",
         "startDate": 2016,
         "completionDate": 2016,
+        "status": "Unbuilt",
         "projectType": "Competition"
     },
     {
         "projectID": "7937",
-        "projectName": "UNC S-1 Lot Parking Deck",
+        "projectName": "S-1 Lot Parking Deck",
+        "client": "University of North Carolina at Chapel Hill",
         "AOR": "Clark Nexsen",
         "designArchitect": "Clark Nexsen",
+        "sqft": "450 parking spaces",
+        "link": "https://www.clarknexsen.com/articles/clark-nexsen-awarded-unc-chapel-hill-parking-deck-project/",
+        "cost": 14000000,
         "hours": 75,
         "section": "Architecture",
         "compD": true,
@@ -445,11 +513,13 @@
         ],
         "startDate": 2018,
         "completionDate": 2019,
+        "status": "Unbuilt",
         "projectType": "Parking Deck"
     },
     {
         "projectID": "6412",
-        "projectName": "Georgetown Univ Car Barn",
+        "projectName": "Car Barn",
+        "client": "Georgetown University",
         "AOR": "Clark Nexsen",
         "designArchitect": "Clark Nexsen",
         "hours": 100,
@@ -461,11 +531,13 @@
         ],
         "startDate": 2016,
         "completionDate": 2016,
+        "status": "Completed",
         "projectType": "Office"
     },
     {
         "projectID": "9051",
-        "projectName": "JLab CEBAF Renovation/Expansion",
+        "projectName": "CEBAF Renovation/Expansion",
+        "client": "Jefferson Labs",
         "AOR": "Clark Nexsen",
         "designArchitect": "Clark Nexsen",
         "hours": 57,
@@ -478,11 +550,13 @@
         ],
         "startDate": 2021,
         "completionDate": 2022,
+        "status": "In Construction",
         "projectType": "Lab"
     },
     {
         "projectID": "1580",
-        "projectName": "Triangle Brick Headquarters",
+        "projectName": "Headquarters",
+        "client": "Triangle Brick",
         "AOR": "Clark Nexsen",
         "designArchitect": "Clark Nexsen",
         "hours": 52,
@@ -491,19 +565,25 @@
         "role": "Intern Architect",
         "startDate": 2010,
         "completionDate": 2010,
+        "status": "Completed",
         "projectType": "Office"
     },
     {
         "projectID": "6200",
         "projectName": "Craven and Crowell Renovations",
+        "client": "Duke University",
         "AOR": "Clark Nexsen",
         "designArchitect": "Clark Nexsen",
+        "sqft": "223,000 sqft",
+        "cost": 52700000,
+        "link": "https://www.clarknexsen.com/project/craven-crowell-quads-renovations-duke-university/",
         "hours": 39,
         "section": "Architecture",
         "compD": false,
         "role": "Architect",
         "startDate": 2015,
         "completionDate": 2015,
+        "status": "Completed",
         "projectType": "Student Housing"
     },
     {
@@ -520,6 +600,7 @@
         ],
         "startDate": 2023,
         "completionDate": 2023,
+        "status": "Unbuilt",
         "projectType": "Sports Venue"
     },
     {
@@ -533,11 +614,13 @@
         "role": "Computational Designer",
         "startDate": 2018,
         "completionDate": 2018,
+        "status": "Completed",
         "projectType": "Lab"
     },
     {
         "projectID": "5923",
-        "projectName": "WCPSS Adaptive Reuse Site Analysis",
+        "projectName": "Adaptive Reuse Site Analysis",
+        "client": "Wake County Public School System",
         "AOR": "Clark Nexsen",
         "designArchitect": "Clark Nexsen",
         "hours": 33,
@@ -549,11 +632,13 @@
         ],
         "startDate": 2015,
         "completionDate": 2015,
+        "status": "Unbuilt",
         "projectType": "K12"
     },
     {
         "projectID": "5254",
-        "projectName": "Virginia Beach Arena Infrastructure",
+        "projectName": "Virginia Beach Arena",
+        "client": "City of Virginia Beach",
         "AOR": "Clark Nexsen",
         "designArchitect": "Clark Nexsen",
         "hours": 24,
@@ -565,6 +650,7 @@
         ],
         "startDate": 2014,
         "completionDate": 2014,
+        "status": "Unbuilt",
         "projectType": "Sports Venue"
     },
     {
@@ -576,39 +662,44 @@
         "role": "Computational Designer",
         "startDate": 2024,
         "completionDate": 2025,
+        "status": "Completed",
         "projectType": "Energy Modeling"
     },
     {
         "projectID": "10549",
-        "projectName": "Norfolk Rec and Library Comprehensive Ag",
+        "projectName": "Rec Center and Library",
+        "client": "City of Norfolk",
         "AOR": "Clark Nexsen",
         "designArchitect": "Clark Nexsen",
         "hours": 13,
         "section": "Architecture",
         "compD": true,
         "role": "Computational Designer",
+        "status": "In Design",
         "phases": [
             "DD"
         ],
         "startDate": 2025,
-        "completionDate": 2025,
+        "completionDate": 2026,
         "projectType": "Library and Rec Center"
     },
     {
         "projectID": "8153",
-        "projectName": "RTF Park Center Pedestrian Bridge",
+        "projectName": "Park Center Pedestrian Bridge",
+        "client": "Research Triangle Foundation",
         "AOR": "Clark Nexsen",
         "designArchitect": "Clark Nexsen",
         "hours": 25,
         "section": "Architecture",
         "compD": true,
         "role": "Computational Designer",
+        "status": "Unbuilt",
         "phases": [
             "PD"
         ],
         "startDate": 2019,
         "completionDate": 2019,
-        "projectType": "Pedestrian Bridge"
+        "projectType": "Pedestrian Bridge",
+        "technologyDescription": "Mirrored Panel Glare Analysis: Unbuilt. The design team approached me with a question they couldn't answer. The designers wanted to install reflective metal panels on a pedestrian bridge so that it would become invisible, reflecting the sky and the landscape. However there was concern that the bridge would create hotspots on the surrounding landscape, or even worse be a source of glare for pedestrians on the site, or add glare/heat gain on surrounding buildings. There was no tool to answer this question, so a custom script was created to understand where the hotspots would be at certain times and days. Ultimately the team decided that the times of glare were very limited and proceeded with the scheme."
     }
-   
 ]

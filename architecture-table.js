@@ -1,6 +1,6 @@
 let projectsData = [];
 let awardsData = {};
-let currentSort = { key: 'projectName', direction: 'asc' };
+let currentSort = { key: 'hours', direction: 'desc' };
 
 const PHASE_ORDER = ['PD', 'SD', 'DD', 'CD', 'CA'];
 
@@ -21,7 +21,7 @@ async function loadData() {
         projectsData = projectsRes.filter(p => p.section === 'Architecture');
         awardsData = awardsRes[0];
 
-        renderTable(projectsData);
+        sortData();
     } catch (error) {
         console.error('Error loading data:', error);
     }
@@ -40,21 +40,28 @@ function renderTable(data) {
 
         row.innerHTML = `
             <td>${project.projectID || ''}</td>
-            <td style="font-weight: 600;">${project.projectName || ''}</td>
+            <td>${project.client || ''}</td>
+            <td style="font-weight: 600;">
+                ${project.link ?
+                `<a href="${project.link}" target="_blank" class="project-link">${project.projectName || ''}</a>` :
+                (project.projectName || '')
+            }
+            </td>
             <td>${project.startDate || ''}</td>
             <td>${project.completionDate || ''}</td>
+            <td>${getStatusPill(project.status || '')}</td>
             <td>${project.projectType || ''}</td>
             <td>${project.role || ''}</td>
             <td>${project.sqft || ''}</td>
             <td>${getPhasesBar(project.phases || [])}</td>
-            <td>
-                ${awards.length > 0 ? 
-                    `<button class="btn-awards" onclick="showAwards('${project.projectID}', '${project.projectName.replace(/'/g, "\\'")}')">
+            <td style="text-align: center;">
+                ${awards.length > 0 ?
+                `<button class="btn-awards" onclick="showAwards('${project.projectID}', '${project.projectName.replace(/'/g, "\\'")}')">
                         ${awards.length} Award${awards.length > 1 ? 's' : ''}
                     </button>` : ''
-                }
+            }
             </td>
-            <td style="text-align: center;">${project.compD ? '<span class="icon-compd">🔷</span>' : ''}</td>
+            <td style="text-align: center;">${project.compD ? '<span class="icon-check">✓</span>' : ''}</td>
             <td style="text-align: center;">${project.architecturalDescription ? '<span class="icon-check">✓</span>' : ''}</td>
             <td style="text-align: center;">${project.technologyDescription ? '<span class="icon-check">✓</span>' : ''}</td>
             <td>${project.AOR || ''}</td>
@@ -65,6 +72,12 @@ function renderTable(data) {
     });
 }
 
+function getStatusPill(status) {
+    if (!status) return '';
+    const slug = status.toLowerCase().replace(/\s+/g, '-');
+    return `<span class="status-pill status-${slug}">${status}</span>`;
+}
+
 function getPhasesBar(phases) {
     if (!phases || phases.length === 0) return '<div class="phases-bar"></div>';
 
@@ -72,7 +85,7 @@ function getPhasesBar(phases) {
     const indices = phases
         .map(p => PHASE_ORDER.indexOf(p))
         .filter(idx => idx !== -1);
-    
+
     if (indices.length === 0) return '<div class="phases-bar"></div>';
 
     const minIdx = Math.min(...indices);
@@ -95,8 +108,10 @@ function initSearch() {
         const filtered = projectsData.filter(p => {
             return (
                 (p.projectName && p.projectName.toLowerCase().includes(term)) ||
+                (p.client && p.client.toLowerCase().includes(term)) ||
                 (p.projectType && p.projectType.toLowerCase().includes(term)) ||
                 (p.role && p.role.toLowerCase().includes(term)) ||
+                (p.status && p.status.toLowerCase().includes(term)) ||
                 (p.projectID && p.projectID.toLowerCase().includes(term))
             );
         });
@@ -109,7 +124,7 @@ function initSorting() {
     headers.forEach(header => {
         header.addEventListener('click', () => {
             const key = header.getAttribute('data-key');
-            
+
             if (currentSort.key === key) {
                 currentSort.direction = currentSort.direction === 'asc' ? 'desc' : 'asc';
             } else {
@@ -171,7 +186,7 @@ function closeModal() {
 }
 
 // Close modal when clicking outside
-window.onclick = function(event) {
+window.onclick = function (event) {
     const modal = document.getElementById('awardsModal');
     if (event.target == modal) {
         closeModal();
