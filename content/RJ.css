@@ -409,6 +409,12 @@ a.home-arrow:visited {
 	padding-right: 20px;
 }
 
+.col-third.dynamicText p {
+	font-size: clamp(12px, 1vw, 15px);
+	white-space: nowrap;
+	padding-right: 20px;
+    margin: 0;
+}
 
 .col-2third {
 	width: 66%;
