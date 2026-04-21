@@ -2,27 +2,33 @@
     {
     "section": "Speaking Engagements",
     "year": "2023",
-    "title": "Grassfield High School STEM Academy: Summer Experience: Clark Nexsen Innovation Hubs",
+    "topic": "Tech",
+    "body": "Grassfield High School STEM Academy",
+    "title": "Summer Experience: Clark Nexsen Innovation Hubs",
     "blurb": "",
     "category": "Virtual",
-    "city": "",
-    "lat": "",
-    "long": ""
+    "city": "Chesapeake",
+    "lat": "36.7",
+    "long": "-76.3"
     },  
     {
     "section": "Speaking Engagements",
     "year": "2021",
-    "title": "Grassfield High School STEM Academy: Summer Experience: What is Computational Design?",
+    "topic": "Comp",
+    "body": "Grassfield High School STEM Academy",
+    "title": "Summer Experience: What is Computational Design?",
     "blurb": "",
     "category": "Virtual",
-    "city": "",
-    "lat": "",
-    "long": ""
+    "city": "Chesapeake",
+    "lat": "36.7",
+    "long": "-76.3"
     },  
     {
     "section": "Speaking Engagements",
     "year": "2026",
-    "title": "Ceraclad University: Computaion in Practice",
+    "topic": "Comp",
+    "body": "Ceraclad University",
+    "title": "Computation in Practice",
     "blurb": "Discover how to translate your design intent into simple rules and data to solve complex challenges. This session introduces computational design, demonstrating how it’s not just for complex forms, but an invaluable tool for boosting creativity and efficiency on projects of any budget. You don't need to be a coding expert to get started. We’ll bridge the gap from concept to reality, showing how this method connects to BIM for clear documentation and the creation of fabrication-ready files for contractors.",
     "category": "Virtual",
     "city": "",
@@ -33,7 +39,9 @@
     {
     "section": "Speaking Engagements",
     "year": "2026",
-    "title": "NC State AIAS: Computaion in Practice",
+    "topic": "Comp",
+    "body": "NC State AIAS",
+    "title": "Computation in Practice",
     "blurb": "Discover how to translate your design intent into simple rules and data to solve complex challenges. This session introduces computational design, demonstrating how it’s not just for complex forms, but an invaluable tool for boosting creativity and efficiency on projects of any budget. You don't need to be a coding expert to get started. We’ll bridge the gap from concept to reality, showing how this method connects to BIM for clear documentation and the creation of fabrication-ready files for contractors.",
     "category": "School",
     "city": "Raleigh",
@@ -44,7 +52,9 @@
   {
     "section": "Speaking Engagements",
     "year": "2026",
-    "title": "UNC Charlotte: Tour of the New Charlotte Meklenburg County Library",
+    "topic": "Tour",
+    "body": "UNC Charlotte",
+    "title": "Tour of the New Charlotte Meklenburg County Library",
     "category": "School",
     "city": "Charlotte",
     "lat": "35.2",
@@ -54,7 +64,9 @@
   {
     "section": "Speaking Engagements",
     "year": "2026",
-    "title": "UNC Charlotte: Computaion in Practice",
+    "topic": "Comp",
+    "body": "UNC Charlotte",
+    "title": "Computation in Practice",
     "blurb": "Discover how to translate your design intent into simple rules and data to solve complex challenges. This session introduces computational design, demonstrating how it’s not just for complex forms, but an invaluable tool for boosting creativity and efficiency on projects of any budget. You don't need to be a coding expert to get started. We’ll bridge the gap from concept to reality, showing how this method connects to BIM for clear documentation and the creation of fabrication-ready files for contractors.",
     "category": "School",
     "city": "Charlotte",
@@ -65,7 +77,9 @@
   {
     "section": "Speaking Engagements",
     "year": "2026",
-    "title": "PSMJ: Vibe Coding: Balancing the Power and Peril of AI Automation",
+    "topic": "AI",
+    "body": "PSMJ",
+    "title": "Vibe Coding: Balancing the Power and Peril of AI Automation",
     "blurb": "\"Vibe Coding\" represents a new paradigm where designers use AI to translate creative intent into executable code, bypassing syntax to build everything from simple automations to complex web applications. However, this democratization brings a critical tension: while it exponentially increases staff capabilities, it introduces significant risks regarding data privacy, security vulnerabilities, and unverified code execution. This session cuts through the hype to explore the reality of this \"grey zone,\" helping leaders identify where AI coding is a safe innovation engine and where it requires expert oversight to prevent security nightmares.",
     "category": "Conference",
     "city": "Las Vegas",
@@ -75,7 +89,9 @@
   {
     "section": "Speaking Engagements",
     "year": "2025",
-    "title": "AIA TAP Triangle Chapter: Building with Logic: A Practical Intro to Computational Design",
+    "topic": "Comp",
+    "body": "AIA TAP Triangle Chapter",
+    "title": "Building with Logic: A Practical Intro to Computational Design",
     "blurb": "Discover how to translate your design intent into simple rules and data to solve complex challenges. This session introduces computational design, demonstrating how it’s not just for complex forms, but an invaluable tool for boosting creativity and efficiency on projects of any budget. You don't need to be a coding expert to get started. We’ll bridge the gap from concept to reality, showing how this method connects to BIM for clear documentation and the creation of fabrication-ready files for contractors.",
     "category": "Conference",
     "city": "Raleigh",
@@ -85,7 +101,9 @@
   {
     "section": "Speaking Engagements",
     "year": "2025",
-    "title": "BIMxt Raleigh Chapter: AI Overload? Let's Talk",
+    "topic": "AI",
+    "body": "BIMxt Raleigh Chapter",
+    "title": "AI Overload? Let's Talk",
     "blurb": "Tired of the AI hype? This session steps back from the noise to focus on the key concepts you really need to know to build a smart approach to AI at your firm. We'll provide a high-level overview of the trends shaping our industry, followed by a town-hall style dialogue. Come with your questions and let's make sense of it all, together.",
     "category": "Conference",
     "city": "Raleigh",
@@ -95,7 +113,9 @@
   {
     "section": "Speaking Engagements",
     "year": "2025",
-    "title": "PSMJ AEC Innovate: Developing Your Firms AI Strategy: From Innovation to Implementation",
+    "topic": "AI",
+    "body": "PSMJ AEC Innovate",
+    "title": "Developing Your Firms AI Strategy: From Innovation to Implementation",
     "blurb": "Ready to move beyond the AI hype but not sure where to start with at your firm? This session walks you through Clark Nexsen's process for creating their AI strategy that you can adapt for your own firm. You'll learn how to establish an AI innovation hub, build internal support, and develop practical policies that work in the real world. We'll share our successes, challenges, and lessons learned as we built our approach to fostering responsible AI innovation. Whether you're just starting your AI journey or looking to formalize your existing efforts, you'll leave with actionable insights and practical steps to develop a cohesive, sustainable AI strategy for your organization.",
     "category": "Conference",
     "city": "Austin",
@@ -105,7 +125,9 @@
   {
     "section": "Speaking Engagements",
     "year": "2025",
-    "title": "PSMJ: The $10,000 Hour: PSMJ's A/E/C Senior Executive Briefing",
+    "topic": "AI",
+    "body": "PSMJ",
+    "title": "The $10,000 Hour: PSMJ's A/E/C Senior Executive Briefing",
     "category": "Conference",
     "city": "Virtual",
     "lat": "",
@@ -114,7 +136,9 @@
   {
     "section": "Speaking Engagements",
     "year": "2025",
-    "title": "BIMxt Network: AI in 60 Minutes: Quick Tip",
+    "topic": "AI",
+    "body": "BIMxt Network",
+    "title": "AI in 60 Minutes: Quick Tip",
     "category": "Conference",
     "city": "Virtual",
     "lat": "",
@@ -123,7 +147,9 @@
   {
     "section": "Speaking Engagements",
     "year": "2025",
-    "title": "PENC: Developing Your Firms AI Strategy: From Innovation to Implementation",
+    "topic": "AI",
+    "body": "PENC",
+    "title": "Developing Your Firms AI Strategy: From Innovation to Implementation",
     "blurb": "Ready to move beyond the AI hype but not sure where to start with at your firm? This session walks you through Clark Nexsen's process for creating their AI strategy that you can adapt for your own firm. You'll learn how to establish an AI innovation hub, build internal support, and develop practical policies that work in the real world. We'll share our successes, challenges, and lessons learned as we built our approach to fostering responsible AI innovation. Whether you're just starting your AI journey or looking to formalize your existing efforts, you'll leave with actionable insights and practical steps to develop a cohesive, sustainable AI strategy for your organization.",
     "category": "Conference",
     "city": "Charlotte",
@@ -133,7 +159,9 @@
   {
     "section": "Speaking Engagements",
     "year": "2025",
-    "title": "UNC Charlotte: Gen AI Workshop (co speaker- Gota Miyazaki)",
+    "topic": "AI",
+    "body": "UNC Charlotte",
+    "title": "Gen AI Workshop (co speaker- Gota Miyazaki)",
     "category": "School",
     "city": "Charlotte",
     "lat": "35.2",
@@ -142,7 +170,9 @@
   {
     "section": "Speaking Engagements",
     "year": "2024",
-    "title": "Society for College and University Planning: Tour of James B. Hunt Library at NC State University",
+    "topic": "Tour",
+    "body": "Society for College and University Planning",
+    "title": "Tour of James B. Hunt Library at NC State University",
     "category": "Conference",
     "city": "Raleigh",
     "lat": "35.7",
@@ -151,7 +181,9 @@
   {
     "section": "Speaking Engagements",
     "year": "2024",
-    "title": "BIMxt Baltimore Chapter: Naviating the AI Hype: Fears and Opportunies",
+    "topic": "AI",
+    "body": "BIMxt Baltimore Chapter",
+    "title": "Naviating the AI Hype: Fears and Opportunies",
     "blurb": "AI has seemingly come out of nowhere with an explosion of tools and even more hype. This rapid fire session we will be a introduction and overview of what you need to know about AI.  We will examine AI's pivotal role in enhancing design efficiency and creativity, including workforce transformation and sustainable design.We'll delve into the shift in professional roles and skill sets needed to navigate AI adoption.  Additionally, the discussion will cover  its historical evolution and potential future impact on architectural practices alongside challenges and ethical considerations AI introduces. This session aims to offer insights into leveraging AI for advancing architectural design, encouraging a forward-thinking approach to adopting AI tools into your workflows. Join us to start your journey of understanding AI's contribution to the practice of architecture.",
     "category": "Conference",
     "city": "Baltimore",
@@ -161,7 +193,9 @@
   {
     "section": "Speaking Engagements",
     "year": "2024",
-    "title": "BIMxt Washington DC Chapter: Naviating the AI Hype: Fears and Opportunies",
+    "topic": "AI",
+    "body": "BIMxt Washington DC Chapter",
+    "title": "Naviating the AI Hype: Fears and Opportunies",
     "blurb": "AI has seemingly come out of nowhere with an explosion of tools and even more hype. This rapid fire session we will be a introduction and overview of what you need to know about AI.  We will examine AI's pivotal role in enhancing design efficiency and creativity, including workforce transformation and sustainable design.We'll delve into the shift in professional roles and skill sets needed to navigate AI adoption.  Additionally, the discussion will cover  its historical evolution and potential future impact on architectural practices alongside challenges and ethical considerations AI introduces. This session aims to offer insights into leveraging AI for advancing architectural design, encouraging a forward-thinking approach to adopting AI tools into your workflows. Join us to start your journey of understanding AI's contribution to the practice of architecture.",
     "category": "Conference",
     "city": "Washington DC",
@@ -171,7 +205,9 @@
   {
     "section": "Speaking Engagements",
     "year": "2024",
-    "title": "TCREW: Navigating AI Hype: Fears and the Future of Work",
+    "topic": "AI",
+    "body": "TCREW",
+    "title": "Navigating AI Hype: Fears and the Future of Work",
     "blurb": "AI has seemingly come out of nowhere with an explosion of tools and even more hype. This rapid fire session we will be a introduction and overview of what you need to know about AI.  We will examine AI's pivotal role in enhancing design efficiency and creativity, including workforce transformation and sustainable design.We'll delve into the shift in professional roles and skill sets needed to navigate AI adoption.  Additionally, the discussion will cover  its historical evolution and potential future impact on architectural practices alongside challenges and ethical considerations AI introduces. This session aims to offer insights into leveraging AI for advancing architectural design, encouraging a forward-thinking approach to adopting AI tools into your workflows. Join us to start your journey of understanding AI's contribution to the practice of architecture.",
     "category": "Conference",
     "city": "Raleigh",
@@ -181,7 +217,9 @@
   {
     "section": "Speaking Engagements",
     "year": "2024",
-    "title": "East Tennessee State University: Practical AI",
+    "topic": "AI",
+    "body": "East Tennessee State University",
+    "title": "Practical AI",
     "category": "School",
     "city": "Johnson City",
     "lat": "36.3",
@@ -190,7 +228,9 @@
   {
     "section": "Speaking Engagements",
     "year": "2024",
-    "title": "BIMxt Raleigh Chapter: Navigating the AI Hype: Fears and Opportunities",
+    "topic": "AI",
+    "body": "BIMxt Raleigh Chapter",
+    "title": "Navigating the AI Hype: Fears and Opportunities",
     "blurb": "AI has seemingly come out of nowhere with an explosion of tools and even more hype. This rapid fire session we will be a introduction and overview of what you need to know about AI.  We will examine AI's pivotal role in enhancing design efficiency and creativity, including workforce transformation and sustainable design.We'll delve into the shift in professional roles and skill sets needed to navigate AI adoption.  Additionally, the discussion will cover  its historical evolution and potential future impact on architectural practices alongside challenges and ethical considerations AI introduces. This session aims to offer insights into leveraging AI for advancing architectural design, encouraging a forward-thinking approach to adopting AI tools into your workflows. Join us to start your journey of understanding AI's contribution to the practice of architecture.",
     "category": "Conference",
     "city": "Raleigh",
@@ -200,7 +240,9 @@
   {
     "section": "Speaking Engagements",
     "year": "2024",
-    "title": "University Illinois Urbana Champagne: Computational Designerers Journey",
+    "topic": "Comp",
+    "body": "University Illinois Urbana Champagne",
+    "title": "Computational Designerers Journey",
     "category": "School",
     "city": "Urbana-Champaign",
     "lat": "41.8",
@@ -209,7 +251,9 @@
   {
     "section": "Speaking Engagements",
     "year": "2024",
-    "title": "Advancing Computational Building Design Conference: Maximizing the ROI of AI (Panelist)",
+    "topic": "AI",
+    "body": "Advancing Computational Building Design Conference",
+    "title": "Maximizing the ROI of AI (Panelist)",
     "category": "Conference",
     "city": "Dallas",
     "lat": "32.7",
@@ -218,7 +262,9 @@
     {
     "section": "Speaking Engagements",
     "year": "2023",
-    "title": "Diversify Architecture: Centennial Middle School: Community Based Architecture",
+    "topic": "Arch",
+    "body": "Diversify Architecture",  
+    "title": "Centennial Middle School: Community Based Architecture",
     "blurb": "This talk covers the standard stages of architectural design with a focus on prioritizing community well-being and cultural identity. It examines how specific social factors and heritage inform the design process and discusses the risks of architecture that ignores local context. Key components include strategies for direct community involvement, a case study on a complex past project, and a simulation exercise designed to help students navigate real-world stakeholder engagement.",
     "category": "School",
     "city": "Raleigh",
@@ -228,7 +274,9 @@
   {
     "section": "Speaking Engagements",
     "year": "2023",
-    "title": "UNC Charlotte: Computational Design in Practice",
+    "topic": "Comp",
+    "body": "UNC Charlotte",  
+    "title": "Computational Design in Practice",
     "blurb": "What's it really like to use computational design tools and principles in practice? Using case studies from nearly a decade of computational design projects , join Ryan Johnson as he maps out the process to apply computation design for any budget. He also will show how computational thinking and data can be leveraged to streamline processes and pain points during the design process. This will be shared in the context of how Computational Design fits into the practice technology vision for Clark Nexsen, but also how it benefits the entire firm.",
     "category": "School",
     "city": "Charlotte",
@@ -238,7 +286,9 @@
   {
     "section": "Speaking Engagements",
     "year": "2022",
-    "title": "TCREW: What's new in AEC tech (co speaker- Whitney Keever of Skanska Inc)",
+    "topic": "Tech",
+    "body": "TCREW",
+    "title": "What's new in AEC tech (co speaker- Whitney Keever of Skanska Inc)",
     "category": "Conference",
     "city": "Raleigh",
     "lat": "35.7",
@@ -247,7 +297,9 @@
   {
     "section": "Speaking Engagements",
     "year": "2022",
-    "title": "AIA San Francisco Design Technology: Bringing computational design to your firm: Complex Geometry and KPIs",
+    "topic": "Comp",
+    "body": "AIA San Francisco Design Technology",
+    "title": "Bringing computational design to your firm: Complex Geometry and KPIs",
     "blurb": "We all want to design better and more efficiently. Using computational design is one such approach. But how do you get started designing complex elements using computational design that are both constructible and within budget? Also, how do you track computational design's impact on design and productivity in your firm? Join Ryan Johnson, Clark Nexsen's first Computational Designer, as he shares case studies of built projects and KPIs for tracking computational usage across his firm.",
     "category": "Conference",
     "city": "San Francisco",
@@ -257,7 +309,9 @@
   {
     "section": "Speaking Engagements",
     "year": "2021",
-    "title": "Advancing Computational Building Design Conference: Assessing Constructability of Complex Geometry in Early Design & Determining Your Design Limitations",
+    "topic": "Comp",
+    "body": "Advancing Computational Building Design Conference",
+    "title": "Assessing Constructability of Complex Geometry in Early Design & Determining Your Design Limitations",
     "blurb": "Estimating the cost and logistics consequences of custom design elements when you have no historical data to refer to. Understanding how to provide your computation with variables limited by standardized components to ease constructability reviews. Exploring when the design benefts justify custom parts and breaking the limitations of traditional suppliers and construction methods: how do you reach shared agreement that it’s worth the cost?",
     "category": "Conference",
     "city": "Dallas",
@@ -267,7 +321,31 @@
   {
     "section": "Speaking Engagements",
     "year": "2020",
-    "title": "National Project Delivery Symposium: Changing Project Delivery by leveraging the power of Technology, Culture, and Trust",
+    "topic": "Comp",
+    "body": "AIA Triangle",
+    "title": "How to think like a Computational Designer (Part 2)",
+    "category": "Conference",
+    "city": "Raleigh",
+    "lat": "35.7",
+    "long": "-78.6"
+  },
+  {
+    "section": "Speaking Engagements",
+    "year": "2020",
+    "topic": "Comp",
+    "body": "AIA Triangle",
+    "title": "How Computational Design Can Help Us All (Part 1)",
+    "category": "Conference",
+    "city": "Raleigh",
+    "lat": "35.7",
+    "long": "-78.6"
+  },
+  {
+    "section": "Speaking Engagements",
+    "year": "2020",
+    "topic": "Tech",
+    "body": "AIA National Project Delivery Symposium",
+    "title": "Changing Project Delivery by leveraging the power of Technology, Culture, and Trust",
     "category": "Conference",
     "city": "Washington DC",
     "lat": "38.9",
@@ -277,7 +355,9 @@
   {
     "section": "Speaking Engagements",
     "year": "2020",
-    "title": "AIA TAP National Building Connections Congress: Computational Design",
+    "topic": "Comp",
+    "body": "AIA TAP National Building Connections Congress",
+    "title": "Computational Design",
     "category": "Conference",
     "city": "Washington DC",
     "lat": "38.9",
@@ -287,7 +367,9 @@
   {
     "section": "Speaking Engagements",
     "year": "2018",
-    "title": "AIA NC Leadership Conference: Fostering Design Technology Culture in your firm",
+    "topic": "Tech",
+    "body": "AIA NC Leadership Conference",
+    "title": "Fostering Design Technology Culture in your firm",
     "category": "Conference",
     "city": "Charlotte",
     "lat": "35.2",
@@ -373,6 +455,18 @@
     "link": "https://www.clarknexsen.com/blog-higher-ed-stem-design-nc-states-new-engineering-building-puts-research-on-display/"
   },
   {
+    "section": "Publications",
+    "year": "2018",
+    "title": "(Quoted) Architect Magazine: Digging into BIM Data ",
+    "link": "https://www.architectmagazine.com/aia-architect/aiafuture/digging-into-bim-data_o"
+  },
+  {
+    "section": "Publications",
+    "year": "2013",
+    "title": "(Project) Architect Magazine: James B. Hunt Jr. Library, Designed by Snøhetta",
+    "link": "https://www.architectmagazine.com/design/buildings/james-b-hunt-jr-library-designed-by-snhetta_o"
+  },
+  {
     "section": "Internal Speaking Engagements",
     "year": "2024",
     "title": "Clark Nexsen: CNCPT - Clark Nexsen's AI Strategy : Beyond the blueprint"
@@ -436,5 +530,35 @@
     "section": "Internal Speaking Engagements",
     "year": "2020",
     "title": "Clark Nexsen:  What the heck is computational design?"
-  }
+  },
+  {
+    "section": "Juries and Reviews",
+    "year": "2026",
+    "title": "ARC 564 Architectural Design Development",
+    "blurb": "",
+    "category": "Juries",
+    "city": "Raleigh",
+    "lat": "35.7",
+    "long": "-78.6"
+    }, 
+  {
+    "section": "Juries and Reviews",
+    "year": "2023",
+    "title": "ARCH 7104 Diploma Studio - Net Zero Energy Retrofitting: Adaptable Kinetic Facades",
+    "blurb": "",
+    "category": "Juries",
+    "city": "Charlotte",
+    "lat": "35.2",
+    "long": "-80.8"
+    },
+    {
+    "section": "Academic",
+    "year": "2017",
+    "title": "ARC 537 Digital - Material Translations (Co-Taught with Courtney Evans)",
+    "blurb": "",
+    "category": "Academic",
+    "city": "Raleigh",
+    "lat": "35.7",
+    "long": "-78.6"
+    }
 ]

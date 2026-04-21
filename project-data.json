@@ -54,7 +54,8 @@
         "hours": 6234,
         "section": "Architecture",
         "compD": true,
-        "link": "https://www.clarknexsen.com/project/fitts-woolard-hall/"
+        "link": "https://www.clarknexsen.com/project/fitts-woolard-hall/",
+        "LEED" : "Silver"
     },
     {
         "projectID": "1648",
@@ -102,7 +103,8 @@
         "hours": 5696,
         "section": "Architecture",
         "compD": false,
-        "link": "https://www.clarknexsen.com/project/james-b-hunt-jr-library-nc-state-university/"
+        "link": "https://www.clarknexsen.com/project/james-b-hunt-jr-library-nc-state-university/",
+        "LEED" : "Silver"
     },
     {
         "projectID": "5369",
@@ -172,7 +174,7 @@
         "projectName": "Alderman Library Rennovation",
         "client": "University of Virginia",
         "AOR": "Clark Nexsen",
-        "designArchitect": "Clark Nexsen",
+        "designArchitect": "HBRA",
         "phases": [
             "DD",
             "CD"
@@ -185,9 +187,11 @@
         "compD": true,
         "role": "Computational Designer",
         "startDate": 2018,
-        "completionDate": 2018,
-        "status": "Unbuilt",
-        "projectType": "Library"
+        "completionDate": 2024,
+        "status": "Completed",
+        "sqft": "130,000 sqft",
+        "projectType": "Library",
+        "LEED": "Gold"
     },
     {
         "projectID": "7343",
@@ -305,7 +309,8 @@
         "startDate": 2012,
         "completionDate": 2015,
         "status": "Completed",
-        "projectType": "Public Safety Facility"
+        "projectType": "Public Safety Facility",
+        "link": "https://www.clarknexsen.com/project/central-communications-center/"
     },
     {
         "projectID": "1467",
@@ -326,7 +331,8 @@
         "startDate": 2008,
         "completionDate": 2012,
         "status": "Completed",
-        "projectType": "Parking Deck"
+        "projectType": "Parking Deck",
+        "link": "https://www.clarknexsen.com/project/green-square-parking-deck/"
     },
     {
         "projectID": "1513",
@@ -368,7 +374,7 @@
     },
     {
         "projectID": "5144",
-        "projectName": "East Campus Union",
+        "projectName": "Wall Center for Student Life",
         "client": "Duke University",
         "AOR": "Clark Nexsen",
         "designArchitect": "Clark Nexsen",
@@ -385,7 +391,8 @@
         "startDate": 2014,
         "completionDate": 2015,
         "status": "Completed",
-        "projectType": "Student Center"
+        "projectType": "Student Center",
+        "link": "https://www.clarknexsen.com/project/wall-center-for-student-life-renovation/"
     },
     {
         "projectID": "5884",

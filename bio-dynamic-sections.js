@@ -107,26 +107,29 @@ document.addEventListener('DOMContentLoaded', function() {
                     if (entry.title) {
                         var li = document.createElement('li');
                         
-                        // Text node prefix for the year
-                        var textPrefix = entry.year ? entry.year + ' - ' : '';
-                        
-                        if (entry.section === "Speaking Engagements" && entry.year) {
-                            textPrefix = entry.year + ' ';
-                        } else if (entry.section !== "Speaking Engagements" && entry.year) {
-                             textPrefix = entry.year + ' ';
+                        // 1. Add Year
+                        if (entry.year) {
+                            var yearText = entry.year + ' ';
+                            li.appendChild(document.createTextNode(yearText));
                         }
 
-                        // Combine the year text and title properly
+                        // 2. Add Body (Bold) if it exists
+                        if (entry.body) {
+                            var strong = document.createElement('strong');
+                            strong.textContent = entry.body;
+                            li.appendChild(strong);
+                            li.appendChild(document.createTextNode(' ')); // Space after body
+                        }
+
+                        // 3. Add Title (Link or Text)
                         if (entry.link) {
-                            var textNode = document.createTextNode(textPrefix);
                             var a = document.createElement('a');
                             a.href = entry.link;
                             a.target = '_blank';
                             a.textContent = entry.title;
-                            li.appendChild(textNode);
                             li.appendChild(a);
                         } else {
-                            li.textContent = textPrefix + entry.title;
+                            li.appendChild(document.createTextNode(entry.title));
                         }
 
                         ul.appendChild(li);
