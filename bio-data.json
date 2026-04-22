@@ -1,4 +1,16 @@
 [
+      {
+    "section": "Speaking Engagements",
+    "year": "2024",
+    "topic": "Tech",
+    "body": "Grassfield High School STEM Academy",
+    "title": "Summer Experience: Clark Nexsen Innovation Hubs",
+    "blurb": "",
+    "category": "Virtual",
+    "city": "Chesapeake",
+    "lat": "36.7",
+    "long": "-76.3"
+    },  
     {
     "section": "Speaking Engagements",
     "year": "2023",
@@ -23,6 +35,18 @@
     "lat": "36.7",
     "long": "-76.3"
     },  
+      {
+    "section": "Speaking Engagements",
+    "year": "2020",
+    "topic": "Comp",
+    "body": "Grassfield High School STEM Academy",
+    "title": "Summer Experience: What is Computational Design?",
+    "blurb": "",
+    "category": "Virtual",
+    "city": "Chesapeake",
+    "lat": "36.7",
+    "long": "-76.3"
+    }, 
     {
     "section": "Speaking Engagements",
     "year": "2026",
