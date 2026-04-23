@@ -37,7 +37,7 @@ function renderTable(data) {
     data.forEach(project => {
         const row = document.createElement('tr');
         const awards = awardsData[project.projectID] || [];
-        const hasBrief = project.briefDesciption && project.briefDesciption.trim() !== '';
+        const hasBrief = project.briefDescription && project.briefDescription.trim() !== '';
 
         row.innerHTML = `
             <td class="project-id">${project.projectID || ''}</td>
@@ -128,7 +128,7 @@ function initSearch() {
                 (p.location && p.location.toLowerCase().includes(term)) ||
                 (p.status && p.status.toLowerCase().includes(term)) ||
                 (p.projectID && p.projectID.toLowerCase().includes(term)) ||
-                (p.briefDesciption && p.briefDesciption.toLowerCase().includes(term))
+                (p.briefDescription && p.briefDescription.toLowerCase().includes(term))
             );
         });
         renderTable(filtered);
@@ -223,7 +223,7 @@ function showBrief(projectId) {
     modalTitle.innerText = `Brief: ${project.projectName}`;
     list.innerHTML = `
         <div style="padding: 1rem 0; line-height: 1.6; color: var(--text-color);">
-            ${project.briefDesciption}
+            ${project.briefDescription}
         </div>
     `;
 
