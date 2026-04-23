@@ -115,6 +115,7 @@
         "compD": false,
         "link": "https://www.clarknexsen.com/project/james-b-hunt-jr-library-nc-state-university/",
         "LEED": "Silver",
+        "photo": "/content/01538_00_N391_jpg_small.webp",
         "briefDescription": "This award-winning library serves as a high-tech intellectual anchor for the university's engineering campus. Ryan served as an Intern Architect and BIM Coordinator from Schematic Design through CA, responsible for Revit model integrity and technical documentation. During this time, he designed and deployed a firm-wide database for tracking CA documents, using this project as the successful pilot for a tool that was later pushed out to the larger firm."
     },
     {
@@ -141,7 +142,8 @@
         "section": "Architecture",
         "compD": false,
         "link": "https://www.clarknexsen.com/project/duke-edens-quad-renovation/",
-        "briefDescription": "The renovation transforms a once-insular, Brutalist quad into an inviting campus gateway by physically slicing through an existing building to create a shared commons. Ryan helped lead the effort to centralize student amenities and replace solid concrete panels with glass as an architect. He developed the BIM implementation plan to manage the complex coordination of six buildings across multiple disciplines alongside typical architectural duties."
+        "briefDescription": "The renovation transforms a once-insular, Brutalist quad into an inviting campus gateway by physically slicing through an existing building to create a shared commons. Ryan helped lead the effort to centralize student amenities and replace solid concrete panels with glass as an architect. He developed the BIM implementation plan to manage the complex coordination of six buildings across multiple disciplines alongside typical architectural duties.",
+        "photo": "/content/5369_N5_webview_small.webp"
     },
     {
         "projectID": "9608",
@@ -241,7 +243,8 @@
         "projectType": "Library",
         "location": "Charlotte, NC",
         "link": "https://www.clarknexsen.com/project/charlotte-mecklenburg-new-main-library/",
-        "briefDescription": "This downtown library replaces an aging facility with a transparent facade that emphasizes community engagement. Ryan led the computational design efforts from Design Development through construction, rationalizing complex design intents into buildable systems. He specifically developed the logic for the sculptural atrium stairs, the custom-perforated loading enclosures, and the curved facade panels. By working directly with the construction manager, he provided the precise layout studies and documentation needed to execute the building's intricate geometry."
+        "briefDescription": "This downtown library replaces an aging facility with a transparent facade that emphasizes community engagement. Ryan led the computational design efforts from Design Development through construction, rationalizing complex design intents into buildable systems. He specifically developed the logic for the sculptural atrium stairs, the custom-perforated loading enclosures, and the curved facade panels. By working directly with the construction manager, he provided the precise layout studies and documentation needed to execute the building's intricate geometry.",
+        "photo": "/content/CML-1_small.webp"
     },
     {
         "projectName": "Dynamo and Grasshopper Deployment",
@@ -368,7 +371,8 @@
         "projectType": "Parking Deck",
         "location": "Raleigh, NC",
         "link": "https://www.clarknexsen.com/project/green-square-parking-deck/",
-        "briefDescription": "This large-scale urban parking structure supports a major mixed-use development in downtown Raleigh. Ryan contributed to the documentation and construction observation phases during his tenure as an Intern Architect. His typical responsibilities included site visits, drafting construction drawings, and performing shop drawing reviews."
+        "briefDescription": "This large-scale urban parking structure supports a major mixed-use development in downtown Raleigh. Ryan contributed to the documentation and construction observation phases during his tenure as an Intern Architect. His typical responsibilities included site visits, drafting construction drawings, and performing shop drawing reviews.",
+        "photo": "/content/01467_00_N63_jpg_small.webp"
     },
     {
         "projectID": "1513",
