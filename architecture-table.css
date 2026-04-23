@@ -1,15 +1,15 @@
 :root {
-  --primary-color: #2563eb;
+  --primary-color: #ffab9f;
   --secondary-color: #64748b;
   --bg-color: #f8fafc;
   --text-color: #1e293b;
   --border-color: #e2e8f0;
   --hover-color: #f1f5f9;
-  --pd-color: #fca5a5;
-  --sd-color: #fdba74;
-  --dd-color: #fde047;
-  --cd-color: #86efac;
-  --ca-color: #93c5fd;
+  --pd-color: #ffab9f;
+  --sd-color: #ffd1a4;
+  --dd-color: #e2efc4;
+  --cd-color: #a2d2df;
+  --ca-color: #b9b2da;
 }
 
 body {
@@ -106,51 +106,22 @@ tr:hover {
 .status-pill {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 0.2rem 0.6rem;
-  border-radius: 6px;
+  padding: 0.2rem 0.7rem;
+  border-radius: 4px;
   font-size: 0.725rem;
   font-weight: 600;
   white-space: nowrap;
   letter-spacing: 0.01em;
+  color: black;
+  background-color: white;
   border: 1px solid transparent;
+  border-left-width: 5px;
 }
 
-.status-pill::before {
-  content: '';
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  flex-shrink: 0;
-}
-
-.status-completed {
-  background-color: rgba(134, 239, 172, 0.15); /* --cd-color at 15% */
-  color: #065f46;
-  border-color: var(--cd-color);
-}
-.status-completed::before { background-color: var(--cd-color); }
-
-.status-in-construction {
-  background-color: rgba(147, 197, 253, 0.15); /* --ca-color at 15% */
-  color: #1e3a8a;
-  border-color: var(--ca-color);
-}
-.status-in-construction::before { background-color: var(--ca-color); }
-
-.status-in-design {
-  background-color: rgba(253, 224, 71, 0.15); /* --dd-color at 15% */
-  color: #854d0e;
-  border-color: var(--dd-color);
-}
-.status-in-design::before { background-color: var(--dd-color); }
-
-.status-unbuilt {
-  background-color: rgba(252, 165, 165, 0.15); /* --pd-color at 15% */
-  color: #991b1b;
-  border-color: var(--pd-color);
-}
-.status-unbuilt::before { background-color: var(--pd-color); }
+.status-completed { border-color: var(--dd-color); } /* Soft Lime (Green) */
+.status-in-construction { border-color: var(--cd-color); } /* Powder Blue (Blue) */
+.status-in-design { border-color: var(--sd-color); } /* Peach Sunset (Orange) */
+.status-unbuilt { border-color: var(--pd-color); } /* Brand Base (Salmon) */
 
 /* Project Links */
 .project-link {
@@ -294,4 +265,10 @@ tr:hover {
   max-height: 90vh;
   border-radius: 8px;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.project-id {
+  color: var(--secondary-color);
+  font-family: monospace;
+  font-size: 0.75rem;
 }

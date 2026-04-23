@@ -40,13 +40,13 @@ function renderTable(data) {
         const hasBrief = project.briefDesciption && project.briefDesciption.trim() !== '';
 
         row.innerHTML = `
+            <td class="project-id">${project.projectID || ''}</td>
             <td style="text-align: center;">
                 ${project.photo ?
                 `<img src="${project.photo}" class="table-thumbnail" onclick="showPhoto('${project.photo}', '${project.projectName.replace(/'/g, "\\'")}')" alt="${project.projectName}">` :
                 ''
             }
             </td>
-            <td>${project.projectID || ''}</td>
             <td>${project.client || ''}</td>
             <td style="font-weight: 600;">
                 ${project.link ?
@@ -54,9 +54,11 @@ function renderTable(data) {
                 (project.projectName || '')
             }
             </td>
+            <td>${project.location || ''}</td>
+            <td>${project.hours || ''}</td>
+            <td>${getStatusPill(project.status || '')}</td>
             <td>${project.startDate || ''}</td>
             <td>${project.completionDate || ''}</td>
-            <td>${getStatusPill(project.status || '')}</td>
             <td>${project.projectType || ''}</td>
             <td>${project.role || ''}</td>
             <td>${project.sqft || ''}</td>
@@ -68,18 +70,17 @@ function renderTable(data) {
                     </button>` : ''
             }
             </td>
-            <td style="text-align: center;">${project.compD ? '<span class="icon-check">✓</span>' : ''}</td>
             <td style="text-align: center;">
                 ${hasBrief ?
                 `<button class="btn-brief" onclick="showBrief('${project.projectID}')">View</button>` :
                 ''
             }
             </td>
+            <td style="text-align: center;">${project.compD ? '<span class="icon-check">✓</span>' : ''}</td>
             <td style="text-align: center;">${project.architecturalDescription ? '<span class="icon-check">✓</span>' : ''}</td>
             <td style="text-align: center;">${project.technologyDescription ? '<span class="icon-check">✓</span>' : ''}</td>
             <td>${project.AOR || ''}</td>
             <td>${project.designArchitect || ''}</td>
-            <td>${project.hours || ''}</td>
         `;
         tableBody.appendChild(row);
     });
@@ -124,6 +125,7 @@ function initSearch() {
                 (p.client && p.client.toLowerCase().includes(term)) ||
                 (p.projectType && p.projectType.toLowerCase().includes(term)) ||
                 (p.role && p.role.toLowerCase().includes(term)) ||
+                (p.location && p.location.toLowerCase().includes(term)) ||
                 (p.status && p.status.toLowerCase().includes(term)) ||
                 (p.projectID && p.projectID.toLowerCase().includes(term)) ||
                 (p.briefDesciption && p.briefDesciption.toLowerCase().includes(term))

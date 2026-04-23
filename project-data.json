@@ -4,13 +4,14 @@
         "projectName": "Madera Cyber Innovation Center",
         "client": "United States Air Force Academy",
         "AOR": "Clark Nexsen",
-        "designArchitect": "Clark Nexsen",
+        "designArchitect": "AECOM (Bridging Documents)",
         "startDate": 2021,
         "completionDate": 2025,
         "status": "Completed",
         "sqft": "50,000 sqft",
         "cost": 50000000,
         "projectType": "Lab and Classroom",
+        "location": "Colorado Springs, CO",
         "role": "Architect and Computational Designer",
         "phases": [
             "DD",
@@ -46,6 +47,7 @@
         "sqft": "220,000 sqft",
         "cost": 103000000,
         "projectType": "Lab and Classroom",
+        "location": "Raleigh, NC",
         "role": "Architect and Computational Designer",
         "phases": [
             "PD",
@@ -73,6 +75,7 @@
         "sqft": "850 spaces",
         "cost": 14600000,
         "projectType": "Parking Deck",
+        "location": "Raleigh, NC",
         "role": "Architect and Computational Designer",
         "phases": [
             "SD",
@@ -99,6 +102,7 @@
         "sqft": "230,000 sqft",
         "cost": 93750000,
         "projectType": "Library",
+        "location": "Raleigh, NC",
         "role": "Intern Architect",
         "phases": [
             "SD",
@@ -124,6 +128,7 @@
         "sqft": "154,000 sqft",
         "cost": 8000000,
         "projectType": "Student Housing",
+        "location": "Durham, NC",
         "role": "Architect",
         "phases": [
             "SD",
@@ -158,6 +163,7 @@
         "completionDate": 2023,
         "status": "Completed",
         "projectType": "K12",
+        "location": "Greensboro, NC",
         "link": "https://www.clarknexsen.com/project/brooks-global-studies-es/"
     },
     {
@@ -174,7 +180,8 @@
         "startDate": 2008,
         "completionDate": 2009,
         "status": "Unbuilt",
-        "projectType": "Pedestrian Bridge"
+        "projectType": "Pedestrian Bridge",
+        "location": "Chapel Hill, NC"
     },
     {
         "projectName": "Alderman Library Rennovation",
@@ -197,6 +204,7 @@
         "status": "Completed",
         "sqft": "130,000 sqft",
         "projectType": "Library",
+        "location": "Charlottesville, VA",
         "LEED": "Gold"
     },
     {
@@ -227,6 +235,7 @@
         "section": "Architecture",
         "compD": true,
         "projectType": "Library",
+        "location": "Charlotte, NC",
         "link": "https://www.clarknexsen.com/project/charlotte-mecklenburg-new-main-library/"
     },
     {
@@ -294,11 +303,12 @@
         "startDate": 2024,
         "completionDate": 2025,
         "status": "In Design",
-        "projectType": "Performing Arts Center"
+        "projectType": "Performing Arts Center",
+        "location": "Williamsburg, VA"
     },
     {
         "projectID": "1633",
-        "projectName": "Critical Public Safety Facility",
+        "projectName": "Central Communications Center",
         "client": "City of Raleigh",
         "AOR": "Clark Nexsen",
         "designArchitect": "Clark Nexsen",
@@ -316,6 +326,7 @@
         "completionDate": 2015,
         "status": "Completed",
         "projectType": "Public Safety Facility",
+        "location": "Raleigh, NC",
         "link": "https://www.clarknexsen.com/project/central-communications-center/"
     },
     {
@@ -338,6 +349,7 @@
         "completionDate": 2012,
         "status": "Completed",
         "projectType": "Parking Deck",
+        "location": "Raleigh, NC",
         "link": "https://www.clarknexsen.com/project/green-square-parking-deck/"
     },
     {
@@ -357,7 +369,8 @@
         "startDate": 2008,
         "completionDate": 2008,
         "status": "Unbuilt",
-        "projectType": "Visitors Center"
+        "projectType": "Visitors Center",
+        "location": "Raleigh, NC"
     },
     {
         "projectID": "1432",
@@ -376,7 +389,8 @@
         "startDate": 2008,
         "completionDate": 2009,
         "status": "Unbuilt",
-        "projectType": "Performing Arts Center"
+        "projectType": "Performing Arts Center",
+        "location": "Chapel Hill, NC"
     },
     {
         "projectID": "5144",
@@ -398,6 +412,7 @@
         "completionDate": 2015,
         "status": "Completed",
         "projectType": "Student Center",
+        "location": "Durham, NC",
         "link": "https://www.clarknexsen.com/project/wall-center-for-student-life-renovation/"
     },
     {
@@ -416,7 +431,8 @@
         "startDate": 2015,
         "completionDate": 2015,
         "status": "Completed",
-        "projectType": "Aviation"
+        "projectType": "Aviation",
+        "location": "Morrisville, NC"
     },
     {
         "projectID": "1564",
@@ -437,7 +453,8 @@
         "startDate": 2011,
         "completionDate": 2013,
         "status": "Completed",
-        "projectType": "Library"
+        "projectType": "Library",
+        "location": "Winston-Salem, NC"
     },
     {
         "projectID": "1398",
@@ -452,7 +469,8 @@
         "startDate": 2010,
         "completionDate": 2011,
         "status": "Completed",
-        "projectType": "Lab"
+        "projectType": "Lab",
+        "location": "Manteo, NC"
     },
     {
         "projectID": "8902",
@@ -470,7 +488,8 @@
         "startDate": 2021,
         "completionDate": 2024,
         "status": "Completed",
-        "projectType": "Student Housing"
+        "projectType": "Student Housing",
+        "location": "Charlottesville, VA"
     },
     {
         "projectID": "1582",
@@ -490,7 +509,8 @@
         "startDate": 2011,
         "completionDate": 2014,
         "status": "Completed",
-        "projectType": "Aviation"
+        "projectType": "Aviation",
+        "location": "Morrisville, NC"
     },
     {
         "projectID": "P6479",
@@ -527,7 +547,8 @@
         "startDate": 2018,
         "completionDate": 2019,
         "status": "Unbuilt",
-        "projectType": "Parking Deck"
+        "projectType": "Parking Deck",
+        "location": "Chapel Hill, NC"
     },
     {
         "projectID": "6412",
@@ -545,7 +566,8 @@
         "startDate": 2016,
         "completionDate": 2016,
         "status": "Completed",
-        "projectType": "Office"
+        "projectType": "Office",
+        "location": "Washington, DC"
     },
     {
         "projectID": "9051",
@@ -564,7 +586,8 @@
         "startDate": 2021,
         "completionDate": 2022,
         "status": "In Construction",
-        "projectType": "Lab"
+        "projectType": "Lab",
+        "location": "Newport News, VA"
     },
     {
         "projectID": "1580",
@@ -579,7 +602,8 @@
         "startDate": 2010,
         "completionDate": 2010,
         "status": "Completed",
-        "projectType": "Office"
+        "projectType": "Office",
+        "location": "Durham, NC"
     },
     {
         "projectID": "6200",
@@ -597,7 +621,8 @@
         "startDate": 2015,
         "completionDate": 2015,
         "status": "Completed",
-        "projectType": "Student Housing"
+        "projectType": "Student Housing",
+        "location": "Durham, NC"
     },
     {
         "projectID": "10174",
@@ -614,7 +639,8 @@
         "startDate": 2023,
         "completionDate": 2023,
         "status": "Unbuilt",
-        "projectType": "Sports Venue"
+        "projectType": "Sports Venue",
+        "location": "Rockingham, NC"
     },
     {
         "projectID": "7524",
@@ -664,7 +690,8 @@
         "startDate": 2014,
         "completionDate": 2014,
         "status": "Unbuilt",
-        "projectType": "Sports Venue"
+        "projectType": "Sports Venue",
+        "location": "Virginia Beach, VA"
     },
     {
         "projectID": "10600",
@@ -694,7 +721,8 @@
         ],
         "startDate": 2025,
         "completionDate": 2026,
-        "projectType": "Library and Rec Center"
+        "projectType": "Library and Rec Center",
+        "location": "Norfolk, VA"
     },
     {
         "projectID": "8153",
@@ -713,6 +741,7 @@
         "startDate": 2019,
         "completionDate": 2019,
         "projectType": "Pedestrian Bridge",
-        "technologyDescription": "Mirrored Panel Glare Analysis: Unbuilt. The design team approached me with a question they couldn't answer. The designers wanted to install reflective metal panels on a pedestrian bridge so that it would become invisible, reflecting the sky and the landscape. However there was concern that the bridge would create hotspots on the surrounding landscape, or even worse be a source of glare for pedestrians on the site, or add glare/heat gain on surrounding buildings. There was no tool to answer this question, so a custom script was created to understand where the hotspots would be at certain times and days. Ultimately the team decided that the times of glare were very limited and proceeded with the scheme."
+        "technologyDescription": "Mirrored Panel Glare Analysis: Unbuilt. The design team approached me with a question they couldn't answer. The designers wanted to install reflective metal panels on a pedestrian bridge so that it would become invisible, reflecting the sky and the landscape. However there was concern that the bridge would create hotspots on the surrounding landscape, or even worse be a source of glare for pedestrians on the site, or add glare/heat gain on surrounding buildings. There was no tool to answer this question, so a custom script was created to understand where the hotspots would be at certain times and days. Ultimately the team decided that the times of glare were very limited and proceeded with the scheme.",
+        "location": "Durham, NC"
     }
 ]
