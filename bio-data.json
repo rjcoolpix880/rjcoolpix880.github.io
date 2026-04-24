@@ -52,13 +52,13 @@
     "year": "2026",
     "topic": "Comp",
     "body": "Ceraclad University",
-    "title": "Computation in Practice",
+    "title": "Building with Logic: A Practical Intro to Computational Design",
     "blurb": "Discover how to translate your design intent into simple rules and data to solve complex challenges. This session introduces computational design, demonstrating how it’s not just for complex forms, but an invaluable tool for boosting creativity and efficiency on projects of any budget. You don't need to be a coding expert to get started. We’ll bridge the gap from concept to reality, showing how this method connects to BIM for clear documentation and the creation of fabrication-ready files for contractors.",
     "category": "Virtual",
     "city": "",
     "lat": "",
     "long": "",
-    "attendees": 150
+    "attendees": 40
     },
     {
     "section": "Speaking Engagements",
@@ -71,7 +71,7 @@
     "city": "Raleigh",
     "lat": "35.7",
     "long": "-78.6",
-    "attendees": 15
+    "attendees": 5
   },
   {
     "section": "Speaking Engagements",
