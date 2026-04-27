@@ -1,5 +1,6 @@
 let projectsData = [];
 let awardsData = {};
+let publicationsData = {};
 let currentSort = { key: 'hours', direction: 'desc' };
 
 const PHASE_ORDER = ['PD', 'SD', 'DD', 'CD', 'CA'];
@@ -12,14 +13,23 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 async function loadData() {
     try {
-        const [projectsRes, awardsRes] = await Promise.all([
+        const [projectsRes, awardsRes, bioRes] = await Promise.all([
             fetch('project-data.json').then(r => r.json()),
-            fetch('project-awards.json').then(r => r.json())
+            fetch('project-awards.json').then(r => r.json()),
+            fetch('bio-data.json').then(r => r.json())
         ]);
 
         // Filter projects by section "Architecture"
         projectsData = projectsRes.filter(p => p.section === 'Architecture');
         awardsData = awardsRes[0];
+
+        // Process publications from bio-data.json
+        const publications = bioRes.filter(item => item.section === 'Publications' && item.projectID);
+        publicationsData = publications.reduce((acc, pub) => {
+            if (!acc[pub.projectID]) acc[pub.projectID] = [];
+            acc[pub.projectID].push(pub);
+            return acc;
+        }, {});
 
         sortData();
     } catch (error) {
@@ -37,6 +47,7 @@ function renderTable(data) {
     data.forEach(project => {
         const row = document.createElement('tr');
         const awards = awardsData[project.projectID] || [];
+        const pubs = publicationsData[project.projectID] || [];
         const hasBrief = project.briefDescription && project.briefDescription.trim() !== '';
 
         row.innerHTML = `
@@ -67,6 +78,13 @@ function renderTable(data) {
                 ${awards.length > 0 ?
                 `<button class="btn-awards" onclick="showAwards('${project.projectID}', '${project.projectName.replace(/'/g, "\\'")}')">
                         ${awards.length} Award${awards.length > 1 ? 's' : ''}
+                    </button>` : ''
+            }
+            </td>
+            <td style="text-align: center;">
+                ${pubs.length > 0 ?
+                `<button class="btn-awards" onclick="showPublications('${project.projectID}', '${project.projectName.replace(/'/g, "\\'")}')">
+                        ${pubs.length} Pub${pubs.length > 1 ? 's' : ''}
                     </button>` : ''
             }
             </td>
@@ -120,6 +138,13 @@ function initSearch() {
     searchInput.addEventListener('input', (e) => {
         const term = e.target.value.toLowerCase();
         const filtered = projectsData.filter(p => {
+            const pubs = publicationsData[p.projectID] || [];
+            const pubsMatch = pubs.some(pub => 
+                (pub.title && pub.title.toLowerCase().includes(term)) ||
+                (pub.body && pub.body.toLowerCase().includes(term)) ||
+                (pub.blurb && pub.blurb.toLowerCase().includes(term))
+            );
+
             return (
                 (p.projectName && p.projectName.toLowerCase().includes(term)) ||
                 (p.client && p.client.toLowerCase().includes(term)) ||
@@ -128,7 +153,8 @@ function initSearch() {
                 (p.location && p.location.toLowerCase().includes(term)) ||
                 (p.status && p.status.toLowerCase().includes(term)) ||
                 (p.projectID && p.projectID.toLowerCase().includes(term)) ||
-                (p.briefDescription && p.briefDescription.toLowerCase().includes(term))
+                (p.briefDescription && p.briefDescription.toLowerCase().includes(term)) ||
+                pubsMatch
             );
         });
         renderTable(filtered);
@@ -162,6 +188,9 @@ function sortData() {
         if (currentSort.key === 'awards') {
             valA = (awardsData[a.projectID] || []).length;
             valB = (awardsData[b.projectID] || []).length;
+        } else if (currentSort.key === 'publications') {
+            valA = (publicationsData[a.projectID] || []).length;
+            valB = (publicationsData[b.projectID] || []).length;
         }
 
         if (valA == null) valA = '';
@@ -191,6 +220,25 @@ function showAwards(projectId, projectName) {
             <div class="award-name">${a.name}</div>
             ${a.comments ? `<div class="award-body">"${a.comments}"</div>` : ''}
             ${a.url ? `<a href="${a.url}" target="_blank" style="font-size: 0.75rem; color: var(--primary-color);">Project Link</a>` : ''}
+        </div>
+    `).join('');
+
+    modal.style.display = 'flex';
+}
+
+function showPublications(projectId, projectName) {
+    const pubs = publicationsData[projectId] || [];
+    const modal = document.getElementById('awardsModal');
+    const modalTitle = document.getElementById('modalTitle');
+    const list = document.getElementById('modalAwardsList');
+
+    modalTitle.innerText = `Publications: ${projectName}`;
+    list.innerHTML = pubs.map(p => `
+        <div class="award-item">
+            <div class="award-header">${p.year} - ${p.body}</div>
+            <div class="award-name">${p.title}</div>
+            ${p.blurb ? `<div class="award-body">"${p.blurb}"</div>` : ''}
+            ${p.link ? `<a href="${p.link}" target="_blank" style="font-size: 0.75rem; color: var(--primary-color);">Read Publication</a>` : ''}
         </div>
     `).join('');
 

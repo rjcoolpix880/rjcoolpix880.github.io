@@ -442,53 +442,90 @@
     "year": "2021",
     "title": "ENR National Top 20 under 40"
   },
+    {
+    "section": "Publications",
+    "projectID": "1648",
+    "year": "2022",
+    "body": "Parametric Architecture",
+    "title": "Parking Deck 2, A Renewal Project By Clark Nexen",
+    "link": "https://parametric-architecture.com/parking-deck-2-a-renewal-project-by-clark-nexen/?srsltid=AfmBOoq6csmP_wFVkLeXZKs6Ng9O4yKkp0TUexRTRY4DuGe1ChdCtUpE"
+  },
   {
     "section": "Publications",
+    "projectID": "8953",
+    "body": "Rhinozine 3D",
     "year": "2026",
     "title": "Rhinozine 3D : Drawn in Code, Cast in Concrete: The MCIC Monumental Stair",
     "link": "https://rhino3dzine.com/stories/digital-fabrication/drawn-in-code-cast-in-concrete-the-mcic-monumental-stair/"
   },
   {
     "section": "Publications",
+    "projectID": "6169",
     "year": "2022",
+    "body": "AIA TAP Innovation Awards Submission",
     "title": "A workflow for iteratively designing and structural analysis of structural forms",
     "link": "https://issuu.com/clarknexsen/docs/tap_innovation_award_-_process_-_r2_edit_for_websi?fr=sNmFiMDU0NjA2Mjc"
   },
   {
     "section": "Publications",
+    "projectID": "8953",
     "year": "2025",
+    "body": "Business North Carolina",
+    "title": "Point Taken: Clark Nexsen designs an innovative space for the Air Force Academy",
+    "link": "https://businessnc.com/point-taken-clark-nexsen-designs-an-innovative-space-for-the-air-force-academy/"
+  },
+  {
+    "section": "Publications",
+    "projectID": "8953",
+    "year": "2025",
+    "body": "Clark Nexsen",
     "title": "Monumental Stairs: How Computational Design Guided Collaboration and Innovation at the U.S. Air Force Academy",
     "link": "https://www.clarknexsen.com/monumental-stairs-how-computational-design-guided-collaboration-and-innovation-at-the-u-s-air-force-academy/"
   },
   {
     "section": "Publications",
     "year": "2022",
+    "body": "Clark Nexsen",
     "title": "Bringing Marketing's Vision to Life with Computational Design: 2022 Holiday Card Story",
     "link": "https://www.clarknexsen.com/bringing-marketings-vision-to-life-with-computational-design-2022-holiday-card-story/"
   },
   {
     "section": "Publications",
     "year": "2021",
+    "body": "Clark Nexsen",
     "title": "Q&A with Clark Nexsen Computational Designer Ryan Johnson",
     "link": "https://www.clarknexsen.com/blog-qa-with-clark-nexsen-computational-designer-ryan-johnson/"
   },
   {
     "section": "Publications",
+    "projectID": "6169",
     "year": "2021",
+    "body": "Clark Nexsen",
     "title": "Higher Ed STEM Design: NC State’s New Engineering Building Puts Research On Display",
     "link": "https://www.clarknexsen.com/blog-higher-ed-stem-design-nc-states-new-engineering-building-puts-research-on-display/"
   },
   {
     "section": "Publications",
     "year": "2018",
+    "body": "Architect Magazine",
     "title": "(Quoted) Architect Magazine: Digging into BIM Data ",
     "link": "https://www.architectmagazine.com/aia-architect/aiafuture/digging-into-bim-data_o"
   },
   {
     "section": "Publications",
+    "projectID": "1538",
     "year": "2013",
+    "body": "Architect Magazine",
     "title": "(Project) Architect Magazine: James B. Hunt Jr. Library, Designed by Snøhetta",
     "link": "https://www.architectmagazine.com/design/buildings/james-b-hunt-jr-library-designed-by-snhetta_o"
+  },
+  {
+    "section": "Publications",
+    "projectID": "1467",
+    "year": "2011",
+    "body": "ArchDaily",
+    "title": "Green Square Parking Deck / Pearce Brinkley Cease + Lee",
+    "link": "https://www.archdaily.com/264934/green-square-parking-deck-pearce-brinkley-cease-lee"
   },
   {
     "section": "Internal Speaking Engagements",
