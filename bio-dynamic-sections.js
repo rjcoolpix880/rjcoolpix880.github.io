@@ -12,7 +12,10 @@ document.addEventListener('DOMContentLoaded', function() {
         "Chair Appointments",
         "Awards",
         "Publications",
-        "Internal Speaking Engagements"
+        "Internal Speaking Engagements",
+        "Academic",
+        "Juries and Reviews",
+        "Curriculum Vitae"
     ];
 
     fetch(jsonPath)
@@ -104,32 +107,53 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
 
                 items.forEach(function(entry) {
-                    if (entry.title) {
+                    // Check if it's CV or has a title
+                    if (sectionName === "Curriculum Vitae" || entry.title) {
                         var li = document.createElement('li');
                         
-                        // 1. Add Year
-                        if (entry.year) {
-                            var yearText = entry.year + ' ';
-                            li.appendChild(document.createTextNode(yearText));
-                        }
-
-                        // 2. Add Body (Bold) if it exists
-                        if (entry.body) {
-                            var strong = document.createElement('strong');
-                            strong.textContent = entry.body;
-                            li.appendChild(strong);
-                            li.appendChild(document.createTextNode(' ')); // Space after body
-                        }
-
-                        // 3. Add Title (Link or Text)
-                        if (entry.link) {
-                            var a = document.createElement('a');
-                            a.href = entry.link;
-                            a.target = '_blank';
-                            a.textContent = entry.title;
-                            li.appendChild(a);
+                        if (sectionName === "Curriculum Vitae") {
+                            // CV specific formatting
+                            if (entry.years) {
+                                li.appendChild(document.createTextNode(entry.years + ' '));
+                            }
+                            if (entry.firm) {
+                                var strong = document.createElement('strong');
+                                strong.textContent = entry.firm;
+                                li.appendChild(strong);
+                                li.appendChild(document.createTextNode(' '));
+                            }
+                            var titles = [];
+                            if (entry.title1) titles.push(entry.title1);
+                            if (entry.title2) titles.push(entry.title2);
+                            if (titles.length > 0) {
+                                li.appendChild(document.createTextNode(titles.join(', ')));
+                            }
                         } else {
-                            li.appendChild(document.createTextNode(entry.title));
+                            // Standard formatting
+                            // 1. Add Year
+                            if (entry.year) {
+                                var yearText = entry.year + ' ';
+                                li.appendChild(document.createTextNode(yearText));
+                            }
+
+                            // 2. Add Body (Bold) if it exists
+                            if (entry.body) {
+                                var strong = document.createElement('strong');
+                                strong.textContent = entry.body;
+                                li.appendChild(strong);
+                                li.appendChild(document.createTextNode(' ')); // Space after body
+                            }
+
+                            // 3. Add Title (Link or Text)
+                            if (entry.link) {
+                                var a = document.createElement('a');
+                                a.href = entry.link;
+                                a.target = '_blank';
+                                a.textContent = entry.title;
+                                li.appendChild(a);
+                            } else {
+                                li.appendChild(document.createTextNode(entry.title));
+                            }
                         }
 
                         ul.appendChild(li);

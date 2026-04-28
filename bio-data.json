@@ -621,5 +621,54 @@
     "city": "Raleigh",
     "lat": "35.7",
     "long": "-78.6"
+    },
+    {
+    "section": "Curriculum Vitae",
+    "years": "2025 - Present",
+    "firm": "Clark Nexsen",
+    "title1": "Associate Principal",
+    "title2": "Practice Technology Leader"
+    },
+    {
+    "section": "Curriculum Vitae",
+    "years": "2020 - 2025",
+    "firm": "Clark Nexsen",
+    "title1": "Associate",
+    "title2": "Computational Designer"
+    },
+    {
+    "section": "Curriculum Vitae",
+    "years": "2017 - 2020",
+    "firm": "Clark Nexsen",
+    "title1": "Associate",
+    "title2": "Architect"
+    },
+    {
+    "section": "Curriculum Vitae",
+    "years": "2013 - 2017  ",
+    "firm": "Clark Nexsen (Formerly Pearce Brinkley Cease + Lee)",
+    "title1": "",
+    "title2": "Architect"
+    },
+    {
+    "section": "Curriculum Vitae",
+    "years": "2008 - 2013",
+    "firm": "Clark Nexsen (Formerly Pearce Brinkley Cease + Lee)",
+    "title1": "Intern Architect",
+    "title2": ""
+    },
+    {
+    "section": "Curriculum Vitae",
+    "years": "2004 - 2008",
+    "firm": "NC State University",
+    "title1": "Masters of Architecture",
+    "title2": ""
+    },
+    {
+    "section": "Curriculum Vitae",
+    "years": "2000 - 2004",
+    "firm": "Appalachian State University",
+    "title1": "Drafting and Design",
+    "title2": ""
     }
 ]
