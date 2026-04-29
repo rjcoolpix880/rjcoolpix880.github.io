@@ -1,5 +1,5 @@
 [
-      {
+  {
     "section": "Speaking Engagements",
     "year": "2024",
     "topic": "Tech",
@@ -10,8 +10,8 @@
     "city": "Chesapeake",
     "lat": "36.7",
     "long": "-76.3"
-    },  
-    {
+  },
+  {
     "section": "Speaking Engagements",
     "year": "2023",
     "topic": "Tech",
@@ -22,8 +22,8 @@
     "city": "Chesapeake",
     "lat": "36.7",
     "long": "-76.3"
-    },  
-    {
+  },
+  {
     "section": "Speaking Engagements",
     "year": "2021",
     "topic": "Comp",
@@ -34,8 +34,8 @@
     "city": "Chesapeake",
     "lat": "36.7",
     "long": "-76.3"
-    },  
-      {
+  },
+  {
     "section": "Speaking Engagements",
     "year": "2020",
     "topic": "Comp",
@@ -46,8 +46,8 @@
     "city": "Chesapeake",
     "lat": "36.7",
     "long": "-76.3"
-    }, 
-    {
+  },
+  {
     "section": "Speaking Engagements",
     "year": "2026",
     "topic": "Comp",
@@ -59,8 +59,8 @@
     "lat": "",
     "long": "",
     "attendees": 40
-    },
-    {
+  },
+  {
     "section": "Speaking Engagements",
     "year": "2026",
     "topic": "Comp",
@@ -283,11 +283,11 @@
     "lat": "32.7",
     "long": "-96.7"
   },
-    {
+  {
     "section": "Speaking Engagements",
     "year": "2023",
     "topic": "Arch",
-    "body": "Diversify Architecture",  
+    "body": "Diversify Architecture",
     "title": "Centennial Middle School: Community Based Architecture",
     "blurb": "This talk covers the standard stages of architectural design with a focus on prioritizing community well-being and cultural identity. It examines how specific social factors and heritage inform the design process and discusses the risks of architecture that ignores local context. Key components include strategies for direct community involvement, a case study on a complex past project, and a simulation exercise designed to help students navigate real-world stakeholder engagement.",
     "category": "School",
@@ -299,7 +299,7 @@
     "section": "Speaking Engagements",
     "year": "2023",
     "topic": "Comp",
-    "body": "UNC Charlotte",  
+    "body": "UNC Charlotte",
     "title": "Computational Design in Practice",
     "blurb": "What's it really like to use computational design tools and principles in practice? Using case studies from nearly a decade of computational design projects , join Ryan Johnson as he maps out the process to apply computation design for any budget. He also will show how computational thinking and data can be leveraged to streamline processes and pain points during the design process. This will be shared in the context of how Computational Design fits into the practice technology vision for Clark Nexsen, but also how it benefits the entire firm.",
     "category": "School",
@@ -419,7 +419,7 @@
   {
     "section": "Jury Appointments",
     "year": "2021",
-    "title": "ENR Mid atlantic Best Projects",
+    "title": "ENR Mid atlantic Best Projects Juror",
     "link": "https://www.enr.com/articles/52673-regions-winning-teams-withstand-tough-2020"
   },
   {
@@ -440,9 +440,9 @@
   {
     "section": "Awards",
     "year": "2021",
-    "title": "ENR National Top 20 under 40"
+    "title": "ENR National Top 20 under 40 Recipient"
   },
-    {
+  {
     "section": "Publications",
     "projectID": "1648",
     "year": "2022",
@@ -601,7 +601,7 @@
     "city": "Raleigh",
     "lat": "35.7",
     "long": "-78.6"
-    }, 
+  },
   {
     "section": "Juries and Reviews",
     "year": "2023",
@@ -611,8 +611,8 @@
     "city": "Charlotte",
     "lat": "35.2",
     "long": "-80.8"
-    },
-    {
+  },
+  {
     "section": "Academic",
     "year": "2017",
     "title": "ARC 537 Digital - Material Translations (Co-Taught with Courtney Evans)",
@@ -621,54 +621,54 @@
     "city": "Raleigh",
     "lat": "35.7",
     "long": "-78.6"
-    },
-    {
+  },
+  {
     "section": "Curriculum Vitae",
     "years": "2025 - Present",
     "firm": "Clark Nexsen",
     "title1": "Associate Principal",
     "title2": "Practice Technology Leader"
-    },
-    {
+  },
+  {
     "section": "Curriculum Vitae",
     "years": "2020 - 2025",
     "firm": "Clark Nexsen",
     "title1": "Associate",
     "title2": "Computational Designer"
-    },
-    {
+  },
+  {
     "section": "Curriculum Vitae",
     "years": "2017 - 2020",
     "firm": "Clark Nexsen",
     "title1": "Associate",
     "title2": "Architect"
-    },
-    {
+  },
+  {
     "section": "Curriculum Vitae",
     "years": "2013 - 2017  ",
     "firm": "Clark Nexsen (Formerly Pearce Brinkley Cease + Lee)",
     "title1": "",
     "title2": "Architect"
-    },
-    {
+  },
+  {
     "section": "Curriculum Vitae",
     "years": "2008 - 2013",
     "firm": "Clark Nexsen (Formerly Pearce Brinkley Cease + Lee)",
     "title1": "Intern Architect",
     "title2": ""
-    },
-    {
+  },
+  {
     "section": "Curriculum Vitae",
     "years": "2004 - 2008",
     "firm": "NC State University",
     "title1": "Masters of Architecture",
     "title2": ""
-    },
-    {
+  },
+  {
     "section": "Curriculum Vitae",
     "years": "2000 - 2004",
     "firm": "Appalachian State University",
     "title1": "Drafting and Design",
     "title2": ""
-    }
+  }
 ]

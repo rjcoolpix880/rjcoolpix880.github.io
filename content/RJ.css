@@ -413,7 +413,7 @@ a.home-arrow:visited {
 	font-size: clamp(12px, 1vw, 15px);
 	white-space: nowrap;
 	padding-right: 20px;
-    margin: 0;
+	margin: 0;
 }
 
 .col-2third {
