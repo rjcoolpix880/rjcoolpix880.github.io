@@ -57,6 +57,16 @@ document.addEventListener('DOMContentLoaded', () => {
           if (roleDiv && project.role) {
             roleDiv.innerHTML = `<div class='dataTitle'>Role:</div> ${project.role}`;
           }
+
+          // Update Architectural Description (New)
+          // Find the description element - it might be inside the info div or a sibling
+          const descDiv = projectDiv.querySelector('.architecturalDescription') || 
+                          projectDiv.parentNode.querySelector('.architecturalDescription');
+          if (descDiv && project.architecturalDescription) {
+            // Replace newlines with <br> for proper HTML rendering
+            const formattedDesc = project.architecturalDescription.replace(/\n/g, '<br>');
+            descDiv.innerHTML = formattedDesc;
+          }
         }
       });
     })
