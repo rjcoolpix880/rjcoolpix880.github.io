@@ -169,7 +169,8 @@
         "projectType": "K12",
         "location": "Greensboro, NC",
         "link": "https://www.clarknexsen.com/project/brooks-global-studies-es/",
-        "briefDescription": "When value engineering required the removal of the project's original interior signage, Ryan utilized computational design to create a high-performance alternative. He developed a custom algorithm as the computational designer to arrange over 23,000 unique icons into a seamless color gradient for the \"Discover\" graphic. This digital solution not only met the budget but resulted in a multifunctional feature that serves as an artistic focal point, a privacy screen, and a sun-shading element."
+        "briefDescription": "When value engineering required the removal of the project's original interior signage, Ryan utilized computational design to create a high-performance alternative. He developed a custom algorithm as the computational designer to arrange over 23,000 unique icons into a seamless color gradient for the \"Discover\" graphic. This digital solution not only met the budget but resulted in a multifunctional feature that serves as an artistic focal point, a privacy screen, and a sun-shading element.",
+        "photo": "/content/brooks/brooks_photo_1.jpg"
     },
     {
         "projectID": "1553",
@@ -211,7 +212,8 @@
         "projectType": "Library",
         "location": "Charlottesville, VA",
         "LEED": "Gold",
-        "briefDescription": "The renovation of this historic 1930s library features a modern, \"pillow-shaped\" skylight designed to enclose a courtyard without being visible from the main entrance. As the computational designer for the skylight, Ryan optimized the geometry to balance requirements for form, structure, and drainage. He used computational design to design and optimize repeating panels for cost efficiency and led the detailing and trade coordination to ensure a seamless fit within the historic fabric."
+        "briefDescription": "The renovation of this historic 1930s library features a modern, \"pillow-shaped\" skylight designed to enclose a courtyard without being visible from the main entrance. As the computational designer for the skylight, Ryan optimized the geometry to balance requirements for form, structure, and drainage. He used computational design to design and optimize repeating panels for cost efficiency and led the detailing and trade coordination to ensure a seamless fit within the historic fabric.",
+        "photo": "/content/alderman-render.jpg"
     },
     {
         "projectID": "7343",
@@ -785,6 +787,7 @@
         "projectType": "Pedestrian Bridge",
         "technologyDescription": "Mirrored Panel Glare Analysis: Unbuilt. The design team approached me with a question they couldn't answer. The designers wanted to install reflective metal panels on a pedestrian bridge so that it would become invisible, reflecting the sky and the landscape. However there was concern that the bridge would create hotspots on the surrounding landscape, or even worse be a source of glare for pedestrians on the site, or add glare/heat gain on surrounding buildings. There was no tool to answer this question, so a custom script was created to understand where the hotspots would be at certain times and days. Ultimately the team decided that the times of glare were very limited and proceeded with the scheme.",
         "location": "Durham, NC",
-        "briefDescription": "This unbuilt bridge was designed to be \"invisible\" by using mirrored panels to reflect the surrounding sky and landscape. Ryan created a custom script as the computational designer to conduct a glare and hotspot analysis, addressing concerns about heat gain on surrounding buildings and pedestrians. This analysis allowed the design team to proceed with the reflective scheme with a clear understanding of its environmental impact."
+        "briefDescription": "This unbuilt bridge was designed to be \"invisible\" by using mirrored panels to reflect the surrounding sky and landscape. Ryan created a custom script as the computational designer to conduct a glare and hotspot analysis, addressing concerns about heat gain on surrounding buildings and pedestrians. This analysis allowed the design team to proceed with the reflective scheme with a clear understanding of its environmental impact.",
+        "photo": "/content/bridge-render-2.jpg"
     }
 ]
