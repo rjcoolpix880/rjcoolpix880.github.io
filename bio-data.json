@@ -2,7 +2,7 @@
   {
     "section": "Speaking Engagements",
     "year": "2024",
-    "topic": "Tech",
+    "topic": "Technology",
     "body": "Grassfield High School STEM Academy",
     "title": "Summer Experience: Clark Nexsen Innovation Hubs",
     "blurb": "",
@@ -14,7 +14,7 @@
   {
     "section": "Speaking Engagements",
     "year": "2023",
-    "topic": "Tech",
+    "topic": "Technology",
     "body": "Grassfield High School STEM Academy",
     "title": "Summer Experience: Clark Nexsen Innovation Hubs",
     "blurb": "",
@@ -26,7 +26,7 @@
   {
     "section": "Speaking Engagements",
     "year": "2021",
-    "topic": "Comp",
+    "topic": "Computation",
     "body": "Grassfield High School STEM Academy",
     "title": "Summer Experience: What is Computational Design?",
     "blurb": "",
@@ -38,7 +38,7 @@
   {
     "section": "Speaking Engagements",
     "year": "2020",
-    "topic": "Comp",
+    "topic": "Computation",
     "body": "Grassfield High School STEM Academy",
     "title": "Summer Experience: What is Computational Design?",
     "blurb": "",
@@ -50,7 +50,7 @@
   {
     "section": "Speaking Engagements",
     "year": "2026",
-    "topic": "Comp",
+    "topic": "Computation",
     "body": "Ceraclad University",
     "title": "Building with Logic: A Practical Intro to Computational Design",
     "blurb": "Discover how to translate your design intent into simple rules and data to solve complex challenges. This session introduces computational design, demonstrating how it’s not just for complex forms, but an invaluable tool for boosting creativity and efficiency on projects of any budget. You don't need to be a coding expert to get started. We’ll bridge the gap from concept to reality, showing how this method connects to BIM for clear documentation and the creation of fabrication-ready files for contractors.",
@@ -63,7 +63,7 @@
   {
     "section": "Speaking Engagements",
     "year": "2026",
-    "topic": "Comp",
+    "topic": "Computation",
     "body": "NC State AIAS",
     "title": "Computation in Practice",
     "blurb": "Discover how to translate your design intent into simple rules and data to solve complex challenges. This session introduces computational design, demonstrating how it’s not just for complex forms, but an invaluable tool for boosting creativity and efficiency on projects of any budget. You don't need to be a coding expert to get started. We’ll bridge the gap from concept to reality, showing how this method connects to BIM for clear documentation and the creation of fabrication-ready files for contractors.",
@@ -88,7 +88,7 @@
   {
     "section": "Speaking Engagements",
     "year": "2026",
-    "topic": "Comp",
+    "topic": "Computation",
     "body": "UNC Charlotte",
     "title": "Computation in Practice",
     "blurb": "Discover how to translate your design intent into simple rules and data to solve complex challenges. This session introduces computational design, demonstrating how it’s not just for complex forms, but an invaluable tool for boosting creativity and efficiency on projects of any budget. You don't need to be a coding expert to get started. We’ll bridge the gap from concept to reality, showing how this method connects to BIM for clear documentation and the creation of fabrication-ready files for contractors.",
@@ -113,7 +113,7 @@
   {
     "section": "Speaking Engagements",
     "year": "2025",
-    "topic": "Comp",
+    "topic": "Computation",
     "body": "AIA TAP Triangle Chapter",
     "title": "Building with Logic: A Practical Intro to Computational Design",
     "blurb": "Discover how to translate your design intent into simple rules and data to solve complex challenges. This session introduces computational design, demonstrating how it’s not just for complex forms, but an invaluable tool for boosting creativity and efficiency on projects of any budget. You don't need to be a coding expert to get started. We’ll bridge the gap from concept to reality, showing how this method connects to BIM for clear documentation and the creation of fabrication-ready files for contractors.",
@@ -264,7 +264,7 @@
   {
     "section": "Speaking Engagements",
     "year": "2024",
-    "topic": "Comp",
+    "topic": "Computation",
     "body": "University Illinois Urbana Champagne",
     "title": "Computational Designerers Journey",
     "category": "School",
@@ -286,7 +286,7 @@
   {
     "section": "Speaking Engagements",
     "year": "2023",
-    "topic": "Arch",
+    "topic": "Architecture",
     "body": "Diversify Architecture",
     "title": "Centennial Middle School: Community Based Architecture",
     "blurb": "This talk covers the standard stages of architectural design with a focus on prioritizing community well-being and cultural identity. It examines how specific social factors and heritage inform the design process and discusses the risks of architecture that ignores local context. Key components include strategies for direct community involvement, a case study on a complex past project, and a simulation exercise designed to help students navigate real-world stakeholder engagement.",
@@ -298,7 +298,7 @@
   {
     "section": "Speaking Engagements",
     "year": "2023",
-    "topic": "Comp",
+    "topic": "Computation",
     "body": "UNC Charlotte",
     "title": "Computational Design in Practice",
     "blurb": "What's it really like to use computational design tools and principles in practice? Using case studies from nearly a decade of computational design projects , join Ryan Johnson as he maps out the process to apply computation design for any budget. He also will show how computational thinking and data can be leveraged to streamline processes and pain points during the design process. This will be shared in the context of how Computational Design fits into the practice technology vision for Clark Nexsen, but also how it benefits the entire firm.",
@@ -310,9 +310,9 @@
   {
     "section": "Speaking Engagements",
     "year": "2022",
-    "topic": "Tech",
+    "topic": "Technology",
     "body": "TCREW",
-    "title": "What's new in AEC tech (co speaker- Whitney Keever of Skanska Inc)",
+    "title": "What's new in AEC Technology (co speaker- Whitney Keever of Skanska Inc)",
     "category": "Conference",
     "city": "Raleigh",
     "lat": "35.7",
@@ -321,7 +321,7 @@
   {
     "section": "Speaking Engagements",
     "year": "2022",
-    "topic": "Comp",
+    "topic": "Computation",
     "body": "AIA San Francisco Design Technology",
     "title": "Bringing computational design to your firm: Complex Geometry and KPIs",
     "blurb": "We all want to design better and more efficiently. Using computational design is one such approach. But how do you get started designing complex elements using computational design that are both constructible and within budget? Also, how do you track computational design's impact on design and productivity in your firm? Join Ryan Johnson, Clark Nexsen's first Computational Designer, as he shares case studies of built projects and KPIs for tracking computational usage across his firm.",
@@ -333,7 +333,7 @@
   {
     "section": "Speaking Engagements",
     "year": "2021",
-    "topic": "Comp",
+    "topic": "Computation",
     "body": "Advancing Computational Building Design Conference",
     "title": "Assessing Constructability of Complex Geometry in Early Design & Determining Your Design Limitations",
     "blurb": "Estimating the cost and logistics consequences of custom design elements when you have no historical data to refer to. Understanding how to provide your computation with variables limited by standardized components to ease constructability reviews. Exploring when the design benefts justify custom parts and breaking the limitations of traditional suppliers and construction methods: how do you reach shared agreement that it’s worth the cost?",
@@ -345,7 +345,7 @@
   {
     "section": "Speaking Engagements",
     "year": "2020",
-    "topic": "Comp",
+    "topic": "Computation",
     "body": "AIA Triangle",
     "title": "How to think like a Computational Designer (Part 2)",
     "category": "Conference",
@@ -356,7 +356,7 @@
   {
     "section": "Speaking Engagements",
     "year": "2020",
-    "topic": "Comp",
+    "topic": "Computation",
     "body": "AIA Triangle",
     "title": "How Computational Design Can Help Us All (Part 1)",
     "category": "Conference",
@@ -367,7 +367,7 @@
   {
     "section": "Speaking Engagements",
     "year": "2020",
-    "topic": "Tech",
+    "topic": "Technology",
     "body": "AIA National Project Delivery Symposium",
     "title": "Changing Project Delivery by leveraging the power of Technology, Culture, and Trust",
     "category": "Conference",
@@ -379,7 +379,7 @@
   {
     "section": "Speaking Engagements",
     "year": "2020",
-    "topic": "Comp",
+    "topic": "Computation",
     "body": "AIA TAP National Building Connections Congress",
     "title": "Computational Design",
     "category": "Conference",
@@ -391,7 +391,7 @@
   {
     "section": "Speaking Engagements",
     "year": "2018",
-    "topic": "Tech",
+    "topic": "Technology",
     "body": "AIA NC Leadership Conference",
     "title": "Fostering Design Technology Culture in your firm",
     "category": "Conference",
@@ -435,7 +435,7 @@
   {
     "section": "Awards",
     "year": "2025",
-    "title": "AEC Tech Hackathon: Best Collaboration - Team BIM Shady."
+    "title": "AEC Technology Hackathon: Best Collaboration - Team BIM Shady."
   },
   {
     "section": "Awards",

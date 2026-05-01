@@ -56,6 +56,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Construct DOM for each section
             allSections.forEach(function(sectionName, index) {
+                var items = groupedData[sectionName];
+
                 // If not the first section, add the whitelineBig separator
                 if (index > 0) {
                     var whiteline = document.createElement('div');
@@ -82,6 +84,17 @@ document.addEventListener('DOMContentLoaded', function() {
                     iframe.src = 'bio-map.html';
                     mapContainer.appendChild(iframe);
                     colThird.appendChild(mapContainer);
+
+                    // Add Donut Chart
+                    colThird.appendChild(document.createElement('br'));
+                    colThird.appendChild(document.createElement('br'));
+                    var chartContainer = document.createElement('div');
+                    chartContainer.id = 'speaking-chart-container';
+                    colThird.appendChild(chartContainer);
+                    
+                    if (window.renderSpeakingChart) {
+                        window.renderSpeakingChart(items, chartContainer);
+                    }
                 }
 
                 container.appendChild(colThird);
@@ -99,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 var ul = document.createElement('ul');
 
                 // Sort items by year descending within the section
-                var items = groupedData[sectionName];
+                // items already defined at top of loop
                 items.sort(function(a, b) {
                     var yearA = parseInt(a.year, 10) || 0;
                     var yearB = parseInt(b.year, 10) || 0;
