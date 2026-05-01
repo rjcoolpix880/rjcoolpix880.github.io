@@ -349,7 +349,8 @@
         "projectType": "Public Safety Facility",
         "location": "Raleigh, NC",
         "link": "https://www.clarknexsen.com/project/central-communications-center/",
-        "briefDescription": "This public safety facility provides critical infrastructure for the City of Raleigh's emergency services. Ryan served as the Project Architect responsible for the entire exterior detailing, working closely with the design architect to translate the project's big idea into a high-performance facade. He managed the documentation and coordination from Schematic Design through CA to ensure the building met rigorous security requirements."
+        "briefDescription": "This public safety facility provides critical infrastructure for the City of Raleigh's emergency services. Ryan served as the Project Architect responsible for the entire exterior detailing, working closely with the design architect to translate the project's big idea into a high-performance facade. He managed the documentation and coordination from Schematic Design through CA to ensure the building met rigorous security requirements.",
+        "photo": "/content/1633.jpg"
     },
     {
         "projectID": "1467",
@@ -395,7 +396,8 @@
         "status": "Unbuilt",
         "projectType": "Visitors Center",
         "location": "Raleigh, NC",
-        "briefDescription": "This unbuilt project for the State of North Carolina was designed to provide a welcoming entry point for visitors to the capital. Ryan's role as an Intern Architect during the SD and CD phases focused on early design models and supporting the project\u2019s documentation. As a fresh professional, his work primarily involved typical drafting and modeling to support the senior design team."
+        "briefDescription": "This unbuilt project for the State of North Carolina was designed to provide a welcoming entry point for visitors to the capital. Ryan's role as an Intern Architect during the SD and CD phases focused on early design models and supporting the project\u2019s documentation. As a fresh professional, his work primarily involved typical drafting and modeling to support the senior design team.",
+        "photo": "/content/1513.jpg"
     },
     {
         "projectID": "1432",
@@ -440,7 +442,8 @@
         "projectType": "Student Center",
         "location": "Durham, NC",
         "link": "https://www.clarknexsen.com/project/wall-center-for-student-life-renovation/",
-        "briefDescription": "This renovation project focused on enhancing student engagement and social spaces at Duke University. Ryan contributed to the Schematic and Design Development phases by performing field measurements and drafting typical architectural details. His work supported the reorganization of the interior layout to create more inviting environments for student interaction."
+        "briefDescription": "This renovation project focused on enhancing student engagement and social spaces at Duke University. Ryan contributed to the Schematic and Design Development phases by performing field measurements and drafting typical architectural details. His work supported the reorganization of the interior layout to create more inviting environments for student interaction.",
+        "photo": "/content/5144.jpg"
     },
     {
         "projectID": "5884",
@@ -460,7 +463,9 @@
         "status": "Completed",
         "projectType": "Aviation",
         "location": "Morrisville, NC",
-        "briefDescription": "This aviation project involved the complex decommissioning and demolition of concourse structures at RDU International Airport. Ryan served as an Intern Architect during the Construction Document phase, focusing on technical requirements for site separation. He played a minor support role in the coordination and documentation of the structural removal."
+        "link": "https://www.clarknexsen.com/project/rdu-terminal-1-renovation/",
+        "briefDescription": "This aviation project involved the complex decommissioning and demolition of concourse structures at RDU International Airport. Ryan served as an Intern Architect during the Construction Document phase, focusing on technical requirements for site separation. He played a minor support role in the coordination and documentation of the structural removal.",
+        "photo": "/content/1582.jpg"
     },
     {
         "projectID": "1564",
@@ -483,7 +488,8 @@
         "status": "Completed",
         "projectType": "Library",
         "location": "Winston-Salem, NC",
-        "briefDescription": "This university library project focused on creating modern, collaborative learning environments for the arts. Ryan acted as a computational designer to create custom metal facade panels that incorporated a perforated school logo graphic. He developed the specific script used to generate the hole patterns for the screen wall, providing the technical logic necessary for the artistic feature."
+        "briefDescription": "This university library project focused on creating modern, collaborative learning environments for the arts. Ryan acted as a computational designer to create custom metal facade panels that incorporated a perforated school logo graphic. He developed the specific script used to generate the hole patterns for the screen wall, providing the technical logic necessary for the artistic feature.",
+        "photo": "/content/1564.jpg"
     },
     {
         "projectID": "1398",
@@ -500,7 +506,9 @@
         "status": "Completed",
         "projectType": "Lab",
         "location": "Manteo, NC",
-        "briefDescription": "This specialized lab facility provides a hub for marine and coastal research on the North Carolina coast. Ryan's involvement as an Intern Architect included supporting the design and documentation of the facility's research spaces. He provided minor contributions to the overall technical package for this highly specialized environmental lab."
+        "link": "https://www.clarknexsen.com/project/unc-coastal-studies-institute/",
+        "briefDescription": "This specialized lab facility provides a hub for marine and coastal research on the North Carolina coast. Ryan's involvement as an Intern Architect included supporting the design and documentation of the facility's research spaces. He provided minor contributions to the overall technical package for this highly specialized environmental lab.",
+        "photo": "/content/1398.jpg"
     },
     {
         "projectID": "8902",
@@ -542,7 +550,9 @@
         "status": "Completed",
         "projectType": "Aviation",
         "location": "Morrisville, NC",
-        "briefDescription": "The renovation of this aviation terminal focused on improving passenger flow and modernization of the interior experience. Ryan contributed to the Construction Document phase during his role as an Intern Architect, assisting with the coordination of building systems. He played a minor support role in finalizing the interior finishes and terminal coordination."
+        "link": "https://www.clarknexsen.com/project/rdu-terminal-1-renovation/",
+        "briefDescription": "The renovation of this aviation terminal focused on improving passenger flow and modernization of the interior experience. Ryan contributed to the Construction Document phase during his role as an Intern Architect, assisting with the coordination of building systems. He played a minor support role in finalizing the interior finishes and terminal coordination.",
+        "photo": "/content/1582.jpg"
     },
     {
         "projectID": "P6479",
@@ -559,7 +569,8 @@
         "completionDate": 2016,
         "status": "Unbuilt",
         "projectType": "Competition",
-        "briefDescription": "This competition entry for the MetLife building explored modernizing a high-rise facade using innovative steel systems. Ryan developed parametric studies for the building skin and integrated the design into Unreal Engine for real-time visualization of the panels. This allowed the team to study various lighting conditions and panel states, from fully open to closed, within a high-fidelity digital environment."
+        "briefDescription": "This competition entry for the MetLife building explored modernizing a high-rise facade using innovative steel systems. Ryan developed parametric studies for the building skin and integrated the design into Unreal Engine for real-time visualization of the panels. This allowed the team to study various lighting conditions and panel states, from fully open to closed, within a high-fidelity digital environment.",
+        "photo": "/content/P6479.jpg"
     },
     {
         "projectID": "7937",
@@ -582,7 +593,8 @@
         "status": "Unbuilt",
         "projectType": "Parking Deck",
         "location": "Chapel Hill, NC",
-        "briefDescription": "This unbuilt parking solution for UNC Chapel Hill was designed to respect the campus's strict aesthetic guidelines. Ryan created a custom script that allowed the design architect to study facade options while receiving real-time feedback on openness ratios and panel counts. This tool empowered the designer to find a solution that met both aesthetic goals and strict building code requirements."
+        "briefDescription": "This unbuilt parking solution for UNC Chapel Hill was designed to respect the campus's strict aesthetic guidelines. Ryan created a custom script that allowed the design architect to study facade options while receiving real-time feedback on openness ratios and panel counts. This tool empowered the designer to find a solution that met both aesthetic goals and strict building code requirements.",
+        "photo": "/content/7937.jpg"
     },
     {
         "projectID": "6412",
