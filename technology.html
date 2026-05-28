@@ -49,6 +49,19 @@
 				var divClasses = divClassesString.split(',');
 				showDiv(divClasses);
 			}
+
+			// Close mobile menu if it's open
+			var navList = document.getElementById("projectNavList");
+			if (navList && navList.classList.contains("menu-open")) {
+				navList.classList.remove("menu-open");
+			}
+		}
+
+		function toggleMobileMenu() {
+			var navList = document.getElementById("projectNavList");
+			if (navList) {
+				navList.classList.toggle("menu-open");
+			}
 		}
 
 		// Function to handle hash navigation
@@ -139,7 +152,11 @@
 
 		<div class="row">
 
-			<div class="col-third dullhover ">
+			<button id="mobileMenuBtn" class="mobile-menu-btn" onclick="toggleMobileMenu()">
+				&#9776; Select Project
+			</button>
+
+			<div id="projectNavList" class="col-third dullhover ">
 
 
 				<div class="navhover crop-container">
