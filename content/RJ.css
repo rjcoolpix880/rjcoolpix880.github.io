@@ -611,6 +611,18 @@ video {
 	.arch-show {
 		display: none;
 	}
+
+	/* Mobile styles for the project menu overlays */
+	.overlaypart1,
+	.overlaypart2,
+	.overlaypart3,
+	.overlaypart4 {
+		display: none;
+	}
+
+	.overlay {
+		opacity: 1;
+	}
 }
 
 /*this is the color of the bullet points*/
