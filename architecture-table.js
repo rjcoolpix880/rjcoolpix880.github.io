@@ -19,8 +19,8 @@ async function loadData() {
             fetch('bio-data.json').then(r => r.json())
         ]);
 
-        // Filter projects by section "Architecture"
-        projectsData = projectsRes.filter(p => p.section === 'Architecture');
+        // Filter projects by section "Architecture" or "Featured"
+        projectsData = projectsRes.filter(p => p.section === 'Architecture' || p.section === 'Featured');
         awardsData = awardsRes[0];
 
         // Process publications from bio-data.json
