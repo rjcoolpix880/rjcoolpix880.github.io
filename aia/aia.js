@@ -31,10 +31,14 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
 
 function renderProject(container, project, awards) {
+    const exhibit = container.getAttribute('exhibit');
+    const exhibitBadge = exhibit ? `<div class="exhibit-badge">${exhibit}</div>` : '';
+
     container.innerHTML = `
         <div class="cell-content">
             <div class="image-wrapper">
                 <img class="image" src="${project.photo}" alt="${project.projectName}">
+                ${exhibitBadge}
             </div>
             
             <div class="header">

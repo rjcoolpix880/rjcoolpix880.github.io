@@ -261,18 +261,37 @@
         "briefDescription": "This centralized platform was created to house and visualize all firm design data, specifically for the AIA2030 and SE2050 challenges. Ryan initiated and led the development of the warehouse, collaborating with IT to integrate data from over a dozen sources into a single platform. His work included automating the data output into the specific formats required for the AIA2030 commitment submissions."
     },
     {
+        "projectID": "tapGroup",
         "projectName": "AIA TAP National Advisory Group 2020 Chair",
         "architecturalDescription": null,
         "section": "Featured",
+        "startDate": 2017,
+        "completionDate": 2022,
         "technologyDescription": "2017-2022. I served on the leadership group for the AIA Technology in Architectural Practice Knowledge Community (TAP). Responsibilities included chairing the 2020 Building Connections Congress conference and the 2021 national AIA Innovation awards. Other involvement included advising the AIA Strategic Council, and serving on various task forces such as the national AIA COVID-19 task force. TAP serves as a resource for AIA members, the profession, and the public in the deployment of computer technology in the practice of architecture. Technology in Architectural Practice monitors the development of computer technology and its impact on architecture practice and the entire building life cycle, including design, construction, facility management, and retirement or reuse.",
-        "briefDescription": "Ryan served on the leadership group for the AIA Technology in Architectural Practice (TAP) community for six years, influencing how technology is deployed across the profession. As the 2020 Chair, he led the national conference and innovation awards while advising the AIA Strategic Council on emerging tech trends. His leadership helped set the national agenda for technology's role in the entire building life cycle."
+        "briefDescription": "Ryan served on the leadership group for the AIA Technology in Architectural Practice (TAP) community for six years, influencing how technology is deployed across the profession. As the 2020 Chair, he led the national conference and innovation awards while advising the AIA Strategic Council on emerging tech trends. His leadership helped set the national agenda for technology's role in the entire building life cycle.",
+        "photo": "/content/aia/aia.png"
     },
     {
+        "projectID": "tapBCC",
+        "projectName": "AIA TAP Building Connections Congress Chair",
+        "architecturalDescription": null,
+        "section": "Featured",
+        "startDate": 2020,
+        "completionDate": 2020,
+        "technologyDescription": ".",
+        "briefDescription": ".",
+        "photo": "/content/aia/aia.png"
+    },
+    {
+        "projectID": "tapChair",
         "projectName": "AIA TAP National Innovation Awards Chair",
         "architecturalDescription": null,
         "section": "Featured",
+        "startDate": 2021,
+        "completionDate": 2021,
         "technologyDescription": "2021. I served as the jury chair for the national AIA TAP Innovation Awards. This award recognizes the best in technology in architectural practice. The award is open to all AIA members and the winners are featured in the annual AIA Innovation awards publication. It is one of the most prestigious awards in architectural technology. The award is juried by a panel of 10 architects from across the United States. The jury evaluates projects on innovation, creativity, and the impact on architectural practice. The award is a great way to recognize the best in architectural technology and to share it with the rest of the profession.",
-        "briefDescription": "Ryan served as the jury chair for the national AIA TAP Innovation Awards, recognizing the best in architectural technology across the United States. He led a panel of 10 architects in evaluating projects on innovation, creativity, and impact on the profession."
+        "briefDescription": "Ryan served as the jury chair for the national AIA TAP Innovation Awards, recognizing the best in architectural technology across the United States. He led a panel of 10 architects in evaluating projects on innovation, creativity, and impact on the profession.",
+        "photo": "/content/aia/aia.png"
     },
     {
         "projectName": "Pebble Smart-watch App",

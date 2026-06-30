@@ -1,4 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root {
+    --accent-color: #7700ff;
+    /* Default vibrant accent color */
+    --font-size-title: 0.3rem;
+    --font-size-copy: 0.25rem;
+    --font-size-meta: 0.2rem;
+    --font-size-subtitle: 0.2rem;
+}
 
 html {
     /* The trick: Set root font size to scale based on the smaller viewport dimension */
@@ -66,6 +75,7 @@ body {
     justify-content: center;
     align-items: flex-start;
     overflow: hidden;
+    position: relative;
 }
 
 .image {
@@ -76,6 +86,27 @@ body {
     display: block;
 }
 
+.exhibit-badge {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: var(--accent-color);
+    color: #ffffff;
+    font-size: 0.18rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.15rem;
+    letter-spacing: 0.05rem;
+    box-sizing: border-box;
+}
+
 .header {
     height: 1rem;
     display: flex;
@@ -84,14 +115,14 @@ body {
 }
 
 .sub-title {
-    font-size: 0.2rem;
+    font-size: var(--font-size-subtitle);
     color: #888;
     font-weight: 500;
 }
 
 .title {
     margin: 0;
-    font-size: 0.3rem;
+    font-size: var(--font-size-title);
     font-weight: 700;
     line-height: 1.2;
 }
@@ -102,7 +133,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     gap: 0.1rem;
-    font-size: 0.2rem;
+    font-size: var(--font-size-meta);
     color: #666;
 }
 
@@ -119,7 +150,7 @@ body {
 
 .copy {
     margin: 0;
-    font-size: 0.25rem;
+    font-size: var(--font-size-copy);
     line-height: 1.4;
     color: #444;
     display: -webkit-box;
