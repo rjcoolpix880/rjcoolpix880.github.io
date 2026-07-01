@@ -34,13 +34,13 @@ document.addEventListener('DOMContentLoaded', async () => {
             return a.projectName.localeCompare(b.projectName) || a.name.localeCompare(b.name);
         });
 
-        // 3. Determine current page by parsing the filename (e.g. 6.html -> page 6)
+        // 3. Determine current page by parsing the filename (e.g. 8.html -> page 8)
         const path = window.location.pathname;
-        const filename = path.split('/').pop() || '6.html';
+        const filename = path.split('/').pop() || '8.html';
         const match = filename.match(/(\d+)\.html/);
-        const currentPage = match ? parseInt(match[1]) : 6;
+        const currentPage = match ? parseInt(match[1]) : 8;
         
-        const pageIndex = currentPage - 6; // 0 for page 6, 1 for page 7, 2 for page 8
+        const pageIndex = currentPage - 8; // 0 for page 8, 1 for page 9, 2 for page 10
         const itemsPerPage = 16;
         const pageAwards = allAwards.slice(pageIndex * itemsPerPage, (pageIndex + 1) * itemsPerPage);
         const colOffset = (pageIndex * 4) + 1;
@@ -69,8 +69,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             const colItems = pageAwards.slice(start, end);
 
             let contentHTML = '';
-            // Only add the main section header on the first column of the first page (Page 6)
-            if (currentPage === 6 && colIdx === 0) {
+            // Only add the main section header on the first column of the first page (Page 8)
+            if (currentPage === 8 && colIdx === 0) {
                 contentHTML += `<h1 class="title" style="margin-bottom: 0.6rem;">Awards</h1>`;
             } else {
                 // Ensure layout alignment matches columns with headers by adding a spacer
