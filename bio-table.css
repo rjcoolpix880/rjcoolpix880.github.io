@@ -1,0 +1,91 @@
+@import "architecture-table.css";
+
+/* Controls Styling */
+.controls select {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 0.875rem;
+  background-color: white;
+  color: var(--text-color);
+  cursor: pointer;
+  outline: none;
+}
+
+.controls select:focus {
+  border-color: var(--primary-color);
+}
+
+/* Section Pills */
+.section-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+  color: #0f172a;
+  background-color: white;
+  border: 1px solid transparent;
+  border-left-width: 5px;
+}
+
+/* Color codes based on pre-existing variables */
+.section-speaking-engagements { border-color: var(--sd-color); }       /* Peach Sunset */
+.section-publications { border-color: var(--cd-color); }               /* Powder Blue */
+.section-awards { border-color: #fde047; }                              /* Warm Yellow */
+.section-curriculum-vitae { border-color: var(--dd-color); }            /* Soft Lime */
+.section-juries-and-reviews { border-color: var(--ca-color); }          /* Lavender */
+.section-academic { border-color: var(--ca-color); }                    /* Lavender */
+.section-task-force-appointments { border-color: var(--primary-color); } /* Salmon */
+.section-jury-appointments { border-color: var(--primary-color); }      /* Salmon */
+.section-chair-appointments { border-color: var(--primary-color); }     /* Salmon */
+.section-internal-speaking-engagements { border-color: #cbd5e1; }       /* Light Slate */
+.section-other { border-color: #94a3b8; }                               /* Slate */
+
+/* Media thumbnail custom border-radius */
+.table-thumbnail {
+  max-width: 45px;
+  max-height: 45px;
+  border-radius: 6px;
+}
+
+/* Adjust title column weight */
+.title-cell {
+  font-weight: 600;
+}
+
+/* General Link styling */
+.bio-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 0.75rem;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.bio-link-btn:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  background-color: var(--hover-color);
+}
+
+.blurb-cell {
+  line-height: 1.45;
+  color: var(--secondary-color);
+  font-size: 0.825rem;
+}
+
+#bioTable td {
+  vertical-align: top;
+}
+
+

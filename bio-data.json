@@ -53,7 +53,7 @@
     "topic": "Computation",
     "body": "Ceraclad University",
     "title": "Building with Logic: A Practical Intro to Computational Design",
-    "blurb": "Discover how to translate your design intent into simple rules and data to solve complex challenges. This session introduces computational design, demonstrating how it’s not just for complex forms, but an invaluable tool for boosting creativity and efficiency on projects of any budget. You don't need to be a coding expert to get started. We’ll bridge the gap from concept to reality, showing how this method connects to BIM for clear documentation and the creation of fabrication-ready files for contractors.",
+    "blurb": "Discover how to translate your design intent into simple rules and data to solve complex challenges. This session introduces computational design, demonstrating how it's not just for complex forms, but an invaluable tool for boosting creativity and efficiency on projects of any budget. You don't need to be a coding expert to get started. We'll bridge the gap from concept to reality, showing how this method connects to BIM for clear documentation and the creation of fabrication-ready files for contractors.",
     "category": "Virtual",
     "city": "",
     "lat": "",
@@ -66,7 +66,7 @@
     "topic": "Computation",
     "body": "NC State AIAS",
     "title": "Computation in Practice",
-    "blurb": "Discover how to translate your design intent into simple rules and data to solve complex challenges. This session introduces computational design, demonstrating how it’s not just for complex forms, but an invaluable tool for boosting creativity and efficiency on projects of any budget. You don't need to be a coding expert to get started. We’ll bridge the gap from concept to reality, showing how this method connects to BIM for clear documentation and the creation of fabrication-ready files for contractors.",
+    "blurb": "Discover how to translate your design intent into simple rules and data to solve complex challenges. This session introduces computational design, demonstrating how it's not just for complex forms, but an invaluable tool for boosting creativity and efficiency on projects of any budget. You don't need to be a coding expert to get started. We'll bridge the gap from concept to reality, showing how this method connects to BIM for clear documentation and the creation of fabrication-ready files for contractors.",
     "category": "School",
     "city": "Raleigh",
     "lat": "35.7",
@@ -78,12 +78,14 @@
     "year": "2026",
     "topic": "AI",
     "body": "AI Forward",
-    "title": "AI in Creative Industry",
+    "title": "AI in Creative Industries",
+    "blurb": "A panel discussion exploring the role of AI in creative industries. The session was moderated by Dr. Sabri Gökmen (UNC Charlotte) and featured panelists Nick Ault (Little), Ryan Johnson (Clark Nexsen), and Je'Nen Chastain (apostrophe consulting).",
     "category": "Conference",
     "city": "Charlotte",
     "lat": "35.2",
     "long": "-80.8",
-    "attendees": 50
+    "attendees": 50,
+    "image": "content/aia/2026-thinkai.jfif"
   },
   {
     "section": "Speaking Engagements",
@@ -103,7 +105,7 @@
     "topic": "Computation",
     "body": "UNC Charlotte",
     "title": "Computation in Practice",
-    "blurb": "Discover how to translate your design intent into simple rules and data to solve complex challenges. This session introduces computational design, demonstrating how it’s not just for complex forms, but an invaluable tool for boosting creativity and efficiency on projects of any budget. You don't need to be a coding expert to get started. We’ll bridge the gap from concept to reality, showing how this method connects to BIM for clear documentation and the creation of fabrication-ready files for contractors.",
+    "blurb": "Discover how to translate your design intent into simple rules and data to solve complex challenges. This session introduces computational design, demonstrating how it's not just for complex forms, but an invaluable tool for boosting creativity and efficiency on projects of any budget. You don't need to be a coding expert to get started. We'll bridge the gap from concept to reality, showing how this method connects to BIM for clear documentation and the creation of fabrication-ready files for contractors.",
     "category": "School",
     "city": "Charlotte",
     "lat": "35.2",
@@ -120,7 +122,8 @@
     "category": "Conference",
     "city": "Las Vegas",
     "lat": "36.1",
-    "long": "-115.1"
+    "long": "-115.1",
+    "image": "aia/2026-psmj.png"
   },
   {
     "section": "Speaking Engagements",
@@ -128,11 +131,12 @@
     "topic": "Computation",
     "body": "AIA TAP Triangle Chapter",
     "title": "Building with Logic: A Practical Intro to Computational Design",
-    "blurb": "Discover how to translate your design intent into simple rules and data to solve complex challenges. This session introduces computational design, demonstrating how it’s not just for complex forms, but an invaluable tool for boosting creativity and efficiency on projects of any budget. You don't need to be a coding expert to get started. We’ll bridge the gap from concept to reality, showing how this method connects to BIM for clear documentation and the creation of fabrication-ready files for contractors.",
+    "blurb": "Discover how to translate your design intent into simple rules and data to solve complex challenges. This session introduces computational design, demonstrating how it's not just for complex forms, but an invaluable tool for boosting creativity and efficiency on projects of any budget. You don't need to be a coding expert to get started. We'll bridge the gap from concept to reality, showing how this method connects to BIM for clear documentation and the creation of fabrication-ready files for contractors.",
     "category": "Conference",
     "city": "Raleigh",
     "lat": "35.7",
-    "long": "-78.6"
+    "long": "-78.6",
+    "image": "content/aia/2025-AIA-TAP.jpg"
   },
   {
     "section": "Speaking Engagements",
@@ -144,7 +148,8 @@
     "category": "Conference",
     "city": "Raleigh",
     "lat": "35.7",
-    "long": "-78.6"
+    "long": "-78.6",
+    "image": "content/aia/2025-bimxt.jfif"
   },
   {
     "section": "Speaking Engagements",
@@ -190,7 +195,8 @@
     "category": "Conference",
     "city": "Charlotte",
     "lat": "35.2",
-    "long": "-80.8"
+    "long": "-80.8",
+    "image": "content/aia/2025-penc.png"
   },
   {
     "section": "Speaking Engagements",
@@ -201,7 +207,8 @@
     "category": "School",
     "city": "Charlotte",
     "lat": "35.2",
-    "long": "-80.8"
+    "long": "-80.8",
+    "image": "content/aia/genai_workshop.jpg"
   },
   {
     "section": "Speaking Engagements",
@@ -340,7 +347,8 @@
     "category": "Conference",
     "city": "San Francisco",
     "lat": "37.7",
-    "long": "-122.4"
+    "long": "-122.4",
+    "image": "aia/2022-aiasf.jfif"
   },
   {
     "section": "Speaking Engagements",
@@ -348,7 +356,7 @@
     "topic": "Computation",
     "body": "Advancing Computational Building Design Conference",
     "title": "Assessing Constructability of Complex Geometry in Early Design & Determining Your Design Limitations",
-    "blurb": "Estimating the cost and logistics consequences of custom design elements when you have no historical data to refer to. Understanding how to provide your computation with variables limited by standardized components to ease constructability reviews. Exploring when the design benefts justify custom parts and breaking the limitations of traditional suppliers and construction methods: how do you reach shared agreement that it’s worth the cost?",
+    "blurb": "Estimating the cost and logistics consequences of custom design elements when you have no historical data to refer to. Understanding how to provide your computation with variables limited by standardized components to ease constructability reviews. Exploring when the design benefts justify custom parts and breaking the limitations of traditional suppliers and construction methods: how do you reach shared agreement that it's worth the cost?",
     "category": "Conference",
     "city": "Dallas",
     "lat": "32.7",
@@ -360,6 +368,7 @@
     "topic": "Computation",
     "body": "AIA Triangle",
     "title": "How to think like a Computational Designer (Part 2)",
+    "blurb": "Did you know that in my career, BIM implementation has gone from 10% to 75%? Now that BIM is mainstream and we understand its capabilities, we realize that it isn't helping us make better decisions. Computational design is the next big paradigm shift in design technology and we are looking for it to help us make better decisions. Ultimately levering the power of computers to help us solve the issues in our firm, industry, and world. This is the second in a pair of talks centered around introducing and unpacking computational design. This second talk will build on the examples provided in the first talk , explain the history of computational design and unpack how we got to now. Most importatly, it will show you how to think like a computational designer.",
     "category": "Conference",
     "city": "Raleigh",
     "lat": "35.7",
@@ -371,6 +380,7 @@
     "topic": "Computation",
     "body": "AIA Triangle",
     "title": "How Computational Design Can Help Us All (Part 1)",
+    "blurb": "Did you know that in my career, BIM implementation has gone from 10% to 75%? Now that BIM is mainstream and we understand its capabilities, we realize that it isn't helping us make better decisions. Computational design is the next big paradigm shift in design technology and we are looking for it to help us make better decisions. Ultimately levering the power of computers to help us solve the issues in our firm, industry, and world. This is the first of a pair of talks centered around introducing and unpacking computational design. This first talk will provide tangable examples of how Computational design has been used in the Triangle to improve design and the design process.",
     "category": "Conference",
     "city": "Raleigh",
     "lat": "35.7",
@@ -399,6 +409,19 @@
     "lat": "38.9",
     "long": "-77.0",
     "attendees": 70
+  },
+  {
+    "section": "Speaking Engagements",
+    "year": "2019",
+    "topic": "Technology",
+    "body": "MarketScale AEC Podcast",
+    "title": "Let's Make Your Job (and Your Life) Easier",
+    "blurb": "Often it can feel like new technology does nothing but make our lives more complicated, but on today's episode of the MarketScale AEC Podcast we're going to take a look at two innovations that are making the lives of AEC professionals easier. Ryan Johnson, an architect with Clark Nexsen, joins the show to discuss how cloud technology has improved communication and collaboration throughout the duration of a project, explaining how cloud technology is beneficial from design to bidding to construction.",
+    "category": "Virtual",
+    "city": "",
+    "lat": "",
+    "long": "",
+    "link": "https://www.marketscale.com/industries/engineering-and-construction/marketscale-aec-01-10-19-lets-make-your-job-and-your-life-easier"
   },
   {
     "section": "Speaking Engagements",
@@ -528,7 +551,7 @@
     "projectID": "6169",
     "year": "2021",
     "body": "Clark Nexsen",
-    "title": "Higher Ed STEM Design: NC State’s New Engineering Building Puts Research On Display",
+    "title": "Higher Ed STEM Design: NC State's New Engineering Building Puts Research On Display",
     "scope": "Co-written by candidate",
     "link": "https://www.clarknexsen.com/blog-higher-ed-stem-design-nc-states-new-engineering-building-puts-research-on-display/"
   },
@@ -537,7 +560,7 @@
     "projectID": "6169",
     "year": "2021",
     "body": "Business North Carolina",
-    "title": "Building N.C. 2021: The state’s new distinctive structures",
+    "title": "Building N.C. 2021: The state's new distinctive structures",
     "scope": "About candidate's work",
     "link": "https://businessnc.com/building-n-c-2021-the-states-new-distinctive-structures/"
   },
@@ -632,7 +655,7 @@
   {
     "section": "Internal Speaking Engagements",
     "year": "2022",
-    "title": "Clark Nexsen: Revit time saving tips. Saving you time when there isn’t enough"
+    "title": "Clark Nexsen: Revit time saving tips. Saving you time when there isn't enough"
   },
   {
     "section": "Internal Speaking Engagements",
@@ -669,7 +692,7 @@
     "lat": "35.2",
     "long": "-80.8"
   },
-    {
+  {
     "section": "Juries and Reviews",
     "year": "2026",
     "title": "ARCH 4605/5605 Computational Practice - Minimal Surfaces Final Review",

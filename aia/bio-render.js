@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         sortByYear(teachingData);
         sortByYear(publicationsData);
 
-        // --- PAGE 4 RENDERING (CV Only) ---
+        // --- PAGE 5 RENDERING (CV Only) ---
         if (document.getElementById('cv-col')) {
             renderList(document.getElementById('cv-col'), "CV", cvData.slice(0, 7), (item) => `
                 <div class="bio-entry">
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             `);
         }
 
-        // --- PAGE 5 RENDERING (Speaking Part 1, Map, and Charts) ---
+        // --- PAGE 6 RENDERING (Speaking Part 1, Map, and Charts) ---
         if (document.getElementById('speaking-col-1') && document.getElementById('map')) {
             // Render first 16 speaking engagements in columns 1 and 2
             renderList(document.getElementById('speaking-col-1'), "Speaking", speakingData.slice(0, 8), speakingTemplate);
@@ -42,14 +42,14 @@ document.addEventListener('DOMContentLoaded', async () => {
             initCharts(speakingData);
         }
 
-        // --- PAGE 6 RENDERING (Speaking Part 2 - Remaining Engagements) ---
+        // --- PAGE 7 RENDERING (Speaking Part 2 - Remaining Engagements) ---
         if (document.getElementById('speaking-col-3')) {
             renderList(document.getElementById('speaking-col-3'), "Speaking", speakingData.slice(16, 23), speakingTemplate);
             renderList(document.getElementById('speaking-col-4'), "", speakingData.slice(23, 29), speakingTemplate);
             renderList(document.getElementById('speaking-col-5'), "", speakingData.slice(29, 35), speakingTemplate);
         }
 
-        // --- PAGE 7 RENDERING (Honors & Service) ---
+        // --- PAGE 8 RENDERING (Honors & Service) ---
         if (document.getElementById('awards-teaching-col')) {
             const awardsHTML = `
                 <div class="cell-content">

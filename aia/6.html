@@ -4,8 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Speaking - Part 2</title>
+    <title>Speaking & Analytics</title>
     <link rel="stylesheet" href="aia.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
+    <!-- D3 JS -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="navigation.js" defer></script>
     <script src="bio-render.js" defer></script>
 </head>
@@ -13,12 +23,38 @@
 <body>
     <div class="canvas">
         <div class="grid-container">
-            <div class="grid-item bio-column" id="speaking-col-3"></div>
-            <div class="grid-item bio-column" id="speaking-col-4"></div>
-            <div class="grid-item bio-column" id="speaking-col-5"></div>
-            <div class="grid-item" style="display: flex; flex-direction: column; justify-content: flex-start; height: 100%; overflow: hidden;">
-                <div class="image-wrapper" style="height: auto; border-radius: 0.05rem; overflow: hidden; display: flex; align-items: flex-start; justify-content: center; background-color: #eee;">
-                    <img src="/content/aia/2025-AIA-TAP.jpg" style="width: 100%; height: auto; display: block;" alt="AIA TAP 2025">
+            <div class="grid-item bio-column" id="speaking-col-1"></div>
+            <div class="grid-item bio-column" id="speaking-col-2"></div>
+            
+            <!-- Column 3 & 4: map on top, charts on bottom -->
+            <div class="grid-item" style="grid-column: span 2; display: flex; flex-direction: column; height: 100%; box-sizing: border-box; overflow: hidden; padding-bottom: 0.1rem;">
+                <div style="flex: 0 0 auto; display: flex; flex-direction: column; height: 6.8rem; min-height: 0;">
+                    <!-- Map Container -->
+                    <div id="map" style="width: 100%; height: 5.8rem; background-color: #eee; border-radius: 0.05rem; overflow: hidden; border: 1px solid #ccc;"></div>
+                    <!-- Legend -->
+                    <div id="map-legend" style="height: 0.8rem; display: flex; align-items: center; justify-content: center; gap: 0.4rem; font-size: 0.18rem; font-family: 'Lato', sans-serif;">
+                        <div style="display: flex; align-items: center; gap: 0.05rem;">
+                            <span style="display: inline-block; width: 0.15rem; height: 0.15rem; border-radius: 50%; background-color: #3388ff; border: 1px solid #fff;"></span>
+                            <span>Conference</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.05rem;">
+                            <span style="display: inline-block; width: 0.15rem; height: 0.15rem; border-radius: 50%; background-color: #ff7800; border: 1px solid #fff;"></span>
+                            <span>School</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.05rem;">
+                            <span style="display: inline-block; width: 0.15rem; height: 0.15rem; border-radius: 50%; background-color: #9b59b6; border: 1px solid #fff;"></span>
+                            <span>Mixed</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Separator line -->
+                <div style="height: 1px; background: #eee; margin: 0.05rem 0;"></div>
+                
+                <!-- Charts Container (Stacked Vertically) -->
+                <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-around; min-height: 0; padding: 0.1rem 0;">
+                    <div id="chart-body" style="flex: 1; width: 100%; display: flex; justify-content: center; align-items: center; min-height: 0;"></div>
+                    <div id="chart-category" style="flex: 1; width: 100%; display: flex; justify-content: center; align-items: center; min-height: 0;"></div>
                 </div>
             </div>
         </div>
