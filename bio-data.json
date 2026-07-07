@@ -58,7 +58,8 @@
     "city": "",
     "lat": "",
     "long": "",
-    "attendees": 40
+    "attendees": 40,
+    "image": "content/aia/ceraclad-logo.jpg"
   },
   {
     "section": "Speaking Engagements",
@@ -71,7 +72,8 @@
     "city": "Raleigh",
     "lat": "35.7",
     "long": "-78.6",
-    "attendees": 5
+    "attendees": 5,
+    "image": "content/aia/ncsu-logo.png"
   },
   {
     "section": "Speaking Engagements",
@@ -97,7 +99,8 @@
     "city": "Charlotte",
     "lat": "35.2",
     "long": "-80.8",
-    "attendees": 90
+    "attendees": 90,
+    "image": "content/aia/uncc-logo.jfif"
   },
   {
     "section": "Speaking Engagements",
@@ -110,7 +113,8 @@
     "city": "Charlotte",
     "lat": "35.2",
     "long": "-80.8",
-    "attendees": 90
+    "attendees": 90,
+    "image": "content/aia/uncc-logo.jfif"
   },
   {
     "section": "Speaking Engagements",
@@ -123,7 +127,7 @@
     "city": "Las Vegas",
     "lat": "36.1",
     "long": "-115.1",
-    "image": "aia/2026-psmj.png"
+    "image": "content/aia/2026-psmj-1.png"
   },
   {
     "section": "Speaking Engagements",
@@ -183,7 +187,9 @@
     "category": "Conference",
     "city": "Virtual",
     "lat": "",
-    "long": ""
+    "long": "",
+    "link": "https://www.youtube.com/watch?v=NA_peU7rEfc",
+    "image": "content/aia/bimxt-logo.webp"
   },
   {
     "section": "Speaking Engagements",
@@ -231,7 +237,8 @@
     "category": "Conference",
     "city": "Baltimore",
     "lat": "39.2",
-    "long": "-76.6"
+    "long": "-76.6",
+    "image": "content/aia/bimxt-logo.webp"
   },
   {
     "section": "Speaking Engagements",
@@ -243,7 +250,8 @@
     "category": "Conference",
     "city": "Washington DC",
     "lat": "38.9",
-    "long": "-77.0"
+    "long": "-77.0",
+    "image": "content/aia/bimxt-logo.webp"
   },
   {
     "section": "Speaking Engagements",
@@ -278,7 +286,8 @@
     "category": "Conference",
     "city": "Raleigh",
     "lat": "35.7",
-    "long": "-78.6"
+    "long": "-78.6",
+    "image": "content/aia/bimxt-logo.webp"
   },
   {
     "section": "Speaking Engagements",
@@ -289,7 +298,8 @@
     "category": "School",
     "city": "Urbana-Champaign",
     "lat": "41.8",
-    "long": "-87.6"
+    "long": "-87.6",
+    "image": "content/aia/uiuc-logo.png"
   },
   {
     "section": "Speaking Engagements",
@@ -300,7 +310,8 @@
     "category": "Conference",
     "city": "Dallas",
     "lat": "32.7",
-    "long": "-96.7"
+    "long": "-96.7",
+    "image": "content/aia/2024-acbd-logo.jpeg"
   },
   {
     "section": "Speaking Engagements",
@@ -324,7 +335,8 @@
     "category": "School",
     "city": "Charlotte",
     "lat": "35.2",
-    "long": "-80.8"
+    "long": "-80.8",
+    "image": "content/aia/uncc-logo.jfif"
   },
   {
     "section": "Speaking Engagements",
@@ -360,7 +372,8 @@
     "category": "Conference",
     "city": "Dallas",
     "lat": "32.7",
-    "long": "-96.7"
+    "long": "-96.7",
+    "image": "content/aia/2021-acbd-logo.png"
   },
   {
     "section": "Speaking Engagements",
@@ -372,7 +385,8 @@
     "category": "Conference",
     "city": "Raleigh",
     "lat": "35.7",
-    "long": "-78.6"
+    "long": "-78.6",
+    "image": "content/aia/AIA-Triangle-logo.png"
   },
   {
     "section": "Speaking Engagements",
@@ -384,7 +398,8 @@
     "category": "Conference",
     "city": "Raleigh",
     "lat": "35.7",
-    "long": "-78.6"
+    "long": "-78.6",
+    "image": "content/aia/AIA-Triangle-logo.png"
   },
   {
     "section": "Speaking Engagements",
@@ -396,7 +411,8 @@
     "city": "Washington DC",
     "lat": "38.9",
     "long": "-77.0",
-    "attendees": 70
+    "attendees": 70,
+    "image": "content/aia/aia.png"
   },
   {
     "section": "Speaking Engagements",
@@ -408,7 +424,8 @@
     "city": "Washington DC",
     "lat": "38.9",
     "long": "-77.0",
-    "attendees": 70
+    "attendees": 70,
+    "image": "content/aia/aia.png"
   },
   {
     "section": "Speaking Engagements",
@@ -432,7 +449,9 @@
     "category": "Conference",
     "city": "Charlotte",
     "lat": "35.2",
-    "long": "-80.8"
+    "long": "-80.8",
+    "link": "https://aiatriangle.org/leadership-forum/leadership-forum-previous-events/",
+    "image": "content/aia/aia.png"
   },
   {
     "section": "Task Force Appointments",
