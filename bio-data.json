@@ -1,6 +1,17 @@
 [
   {
     "section": "Speaking Engagements",
+    "year": "2026",
+    "topic": "AI",
+    "body": "No Exceptions Taken",
+    "title": "AI Forward: AI and the creative industry",
+    "blurb": "",
+    "category": "Virtual",
+    "link": "https://open.spotify.com/show/3ykc0nbm2DysuI4VDjOPDG",
+    "image": "content/aia/2026-noexceptions-logo.png"
+  },
+  {
+    "section": "Speaking Engagements",
     "year": "2024",
     "topic": "Technology",
     "body": "Grassfield High School STEM Academy",
