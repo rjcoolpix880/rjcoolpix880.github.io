@@ -20,13 +20,13 @@ document.addEventListener('DOMContentLoaded', async () => {
                     name: award.name,
                     body: award.body,
                     projectName: project.projectName || '',
-                    client: project.client || ''
+                    client: project.client || '',
+                    photo: project.photo || ''
                 });
             }
         }
 
-        // 2. Sort by year descending (newest first).
-        // If year is the same, sort by project name or award name for stability.
+        // 2. Sort by year descending (newest first)
         allAwards.sort((a, b) => {
             if (b.year !== a.year) {
                 return b.year - a.year;
@@ -34,16 +34,28 @@ document.addEventListener('DOMContentLoaded', async () => {
             return a.projectName.localeCompare(b.projectName) || a.name.localeCompare(b.name);
         });
 
-        // 3. Determine current page by parsing the filename (e.g. 9.html -> page 9)
+        // 3. Determine current page by parsing the filename (e.g. 10.html -> page 10)
         const path = window.location.pathname;
-        const filename = path.split('/').pop() || '9.html';
+        const filename = path.split('/').pop() || '10.html';
         const match = filename.match(/(\d+)\.html/);
-        const currentPage = match ? parseInt(match[1]) : 9;
+        const currentPage = match ? parseInt(match[1]) : 10;
         
-        const pageIndex = currentPage - 9; // 0 for page 9, 1 for page 10, 2 for page 11
-        const itemsPerPage = 16;
-        const pageAwards = allAwards.slice(pageIndex * itemsPerPage, (pageIndex + 1) * itemsPerPage);
-        const colOffset = (pageIndex * 4) + 1;
+        // Define page parameters
+        // Page 10 -> awards 0-17 (18 items)
+        // Page 11 -> awards 18-35 (18 items)
+        // Page 12 -> awards 36-47 (12 items)
+        let pageAwards = [];
+        let itemsPerCol = 6;
+        if (currentPage === 10) {
+            pageAwards = allAwards.slice(0, 18);
+            itemsPerCol = 6;
+        } else if (currentPage === 11) {
+            pageAwards = allAwards.slice(18, 36);
+            itemsPerCol = 6;
+        } else if (currentPage === 12) {
+            pageAwards = allAwards.slice(36, 48);
+            itemsPerCol = 4; // balanced distribution: 3 cols of 4
+        }
 
         // Render function for a single award entry
         const awardTemplate = (item) => `
@@ -57,10 +69,9 @@ document.addEventListener('DOMContentLoaded', async () => {
             </div>
         `;
 
-        // 4. Distribute awards into 4 columns (up to 4 per column)
-        const itemsPerCol = 4;
-        for (let colIdx = 0; colIdx < 4; colIdx++) {
-            const colId = `awards-col-${colOffset + colIdx}`;
+        // 4. Distribute awards into 3 columns
+        for (let colIdx = 0; colIdx < 3; colIdx++) {
+            const colId = `col-${colIdx + 1}`;
             const container = document.getElementById(colId);
             if (!container) continue;
 
@@ -69,8 +80,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             const colItems = pageAwards.slice(start, end);
 
             let contentHTML = '';
-            // Only add the main section header on the first column of the first page (Page 9)
-            if (currentPage === 9 && colIdx === 0) {
+            // Only add the main section header on the first column of the first page (Page 10)
+            if (currentPage === 10 && colIdx === 0) {
                 contentHTML += `<h1 class="title" style="margin-bottom: 0.6rem;">Awards</h1>`;
             } else {
                 // Ensure layout alignment matches columns with headers by adding a spacer
@@ -85,6 +96,34 @@ document.addEventListener('DOMContentLoaded', async () => {
                 </div>
             `;
             container.innerHTML = contentHTML;
+        }
+
+        // 5. Render project images in the 4th column (col-4)
+        const col4 = document.getElementById('col-4');
+        if (col4) {
+            const pagePhotos = pageAwards.map(a => a.photo).filter(p => p && p !== '');
+            const uniquePhotos = [...new Set(pagePhotos)];
+            
+            if (uniquePhotos.length === 0) {
+                col4.innerHTML = '';
+            } else {
+                const displayedPhotos = uniquePhotos.slice(0, 4);
+                col4.innerHTML = `
+                    <div class="cell-content" style="display: flex; flex-direction: column; gap: 0.5rem; height: 100%; overflow-y: auto;">
+                        ${displayedPhotos.map(photoUrl => {
+                            let img = photoUrl;
+                            if (!img.startsWith('/') && !img.startsWith('http')) {
+                                img = '/' + img;
+                            }
+                            return `
+                                <div style="width: 100%; border-radius: 0.05rem; overflow: hidden; background-color: #eee; flex-shrink: 0;">
+                                    <img src="${img}" style="width: 100%; height: auto; display: block;" alt="Award winning project">
+                                </div>
+                            `;
+                        }).join('')}
+                    </div>
+                `;
+            }
         }
 
     } catch (err) {

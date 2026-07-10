@@ -19,21 +19,42 @@ document.addEventListener('DOMContentLoaded', async () => {
         sortByYear(teachingData);
         sortByYear(publicationsData);
 
-        // --- PAGE 5 RENDERING (CV Only) ---
-        if (document.getElementById('cv-col')) {
-            renderList(document.getElementById('cv-col'), "CV", cvData.slice(0, 7), (item) => `
-                <div class="bio-entry">
-                    <div class="sub-title">${item.years}</div>
-                    <div class="copy">${item.firm}<br><strong>${item.title1}${item.title2 ? ' | ' + item.title2 : ''}</strong></div>
-                </div>
-            `);
+        // Determine current page number by filename
+        const path = window.location.pathname;
+        const filename = path.split('/').pop() || '5.html';
+        const match = filename.match(/(\d+)\.html/);
+        const currentPage = match ? parseInt(match[1]) : 5;
+
+        // --- PAGE 5 RENDERING (CV & Academic) ---
+        if (currentPage === 5) {
+            renderList(document.getElementById('col-1'), "CV", cvData.slice(0, 6), cvTemplate);
+            renderList(document.getElementById('col-2'), "", cvData.slice(6, 12), cvTemplate);
+            
+            // Honors & Teaching in Col 3
+            const col3 = document.getElementById('col-3');
+            if (col3) {
+                col3.innerHTML = `
+                    <div class="cell-content">
+                        <h1 class="title" style="margin-bottom: 0.2rem;">Honors</h1>
+                        <div class="entries-wrapper" style="flex: 0 0 auto; margin-bottom: 1rem; gap: 0.4rem;">
+                            ${honorsData.slice(0, 5).map(honorsTemplate).join('')}
+                        </div>
+                        <h1 class="title" style="margin-bottom: 0.2rem;">Teaching</h1>
+                        <div class="entries-wrapper" style="gap: 0.4rem;">
+                            ${teachingData.slice(0, 5).map(teachingTemplate).join('')}
+                        </div>
+                    </div>
+                `;
+            }
+            
+            // Images in Col 4
+            renderImageColumn(document.getElementById('col-4'), [...honorsData, ...teachingData]);
         }
 
         // --- PAGE 6 RENDERING (Speaking Part 1, Map, and Charts) ---
-        if (document.getElementById('speaking-col-1') && document.getElementById('map')) {
-            // Render first 16 speaking engagements in columns 1 and 2
-            renderList(document.getElementById('speaking-col-1'), "Speaking", speakingData.slice(0, 8), speakingTemplate);
-            renderList(document.getElementById('speaking-col-2'), "", speakingData.slice(8, 16), speakingTemplate);
+        else if (currentPage === 6) {
+            renderList(document.getElementById('col-1'), "Speaking", speakingData.slice(0, 6), speakingTemplate);
+            renderList(document.getElementById('col-2'), "", speakingData.slice(6, 12), speakingTemplate);
 
             // Initialize Map
             initLeafletMap(speakingData);
@@ -43,59 +64,39 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
 
         // --- PAGE 7 RENDERING (Speaking Part 2 - Remaining Engagements) ---
-        if (document.getElementById('speaking-col-3')) {
-            renderList(document.getElementById('speaking-col-3'), "Speaking", speakingData.slice(16, 23), speakingTemplate);
-            renderList(document.getElementById('speaking-col-4'), "", speakingData.slice(23, 29), speakingTemplate);
-            renderList(document.getElementById('speaking-col-5'), "", speakingData.slice(29, 35), speakingTemplate);
+        else if (currentPage === 7) {
+            renderList(document.getElementById('col-1'), "Speaking", speakingData.slice(12, 18), speakingTemplate);
+            renderList(document.getElementById('col-2'), "", speakingData.slice(18, 24), speakingTemplate);
+            renderList(document.getElementById('col-3'), "", speakingData.slice(24, 30), speakingTemplate);
+            
+            // Images in Col 4
+            renderImageColumn(document.getElementById('col-4'), speakingData.slice(12, 30));
         }
 
-        // --- PAGE 8 RENDERING (Honors & Service) ---
-        if (document.getElementById('awards-teaching-col')) {
-            const awardsHTML = `
-                <div class="cell-content">
-                    <h1 class="title">Honors</h1>
-                    <div class="entries-wrapper" style="flex: 0 0 auto; margin-bottom: 1.5rem;">
-                        ${honorsData.slice(0, 5).map(item => `
-                            <div class="bio-entry">
-                                <div class="sub-title">${item.year}</div>
-                                <div class="copy">${item.title}</div>
-                            </div>
-                        `).join('')}
-                    </div>
-                    <h1 class="title">Teaching</h1>
-                    <div class="entries-wrapper">
-                        ${teachingData.slice(0, 5).map(item => `
-                            <div class="bio-entry">
-                                <div class="sub-title">${item.year}</div>
-                                <div class="copy">${item.title}</div>
-                            </div>
-                        `).join('')}
-                    </div>
-                </div>
-            `;
-            document.getElementById('awards-teaching-col').innerHTML = awardsHTML;
+        // --- PAGE 8 RENDERING (Speaking Part 3, Service & Press Part 1) ---
+        else if (currentPage === 8) {
+            renderList(document.getElementById('col-1'), "Speaking", speakingData.slice(30, 36), speakingTemplate);
+            renderList(document.getElementById('col-2'), "Service", serviceData.slice(0, 6), serviceTemplate);
+            renderList(document.getElementById('col-3'), "Press", publicationsData.slice(0, 6), pressTemplate);
 
-            renderList(document.getElementById('service-col'), "Service", serviceData.slice(0, 10), (item) => `
-                <div class="bio-entry">
-                    <div class="sub-title">${item.year}</div>
-                    <div class="copy">${item.title}</div>
-                </div>
-            `);
+            // Images in Col 4
+            const page8Items = [
+                ...speakingData.slice(30, 36),
+                ...serviceData.slice(0, 6),
+                ...publicationsData.slice(0, 6)
+            ];
+            renderImageColumn(document.getElementById('col-4'), page8Items);
+        }
 
-            const pressLimit = 6;
-            renderList(document.getElementById('press-col-1'), "Press", publicationsData.slice(0, pressLimit), (item) => `
-                <div class="bio-entry">
-                    <div class="sub-title">${item.year}</div>
-                    <div class="copy"><strong>${item.body}</strong><br>${item.title}</div>
-                </div>
-            `);
+        // --- PAGE 9 RENDERING (Press Part 2) ---
+        else if (currentPage === 9) {
+            // Remaining 9 press items (6 to 14) distributed into 3 columns
+            renderList(document.getElementById('col-1'), "Press", publicationsData.slice(6, 9), pressTemplate);
+            renderList(document.getElementById('col-2'), "", publicationsData.slice(9, 12), pressTemplate);
+            renderList(document.getElementById('col-3'), "", publicationsData.slice(12, 15), pressTemplate);
 
-            renderList(document.getElementById('press-col-2'), "", publicationsData.slice(pressLimit, pressLimit * 2), (item) => `
-                <div class="bio-entry">
-                    <div class="sub-title">${item.year}</div>
-                    <div class="copy"><strong>${item.body}</strong><br>${item.title}</div>
-                </div>
-            `);
+            // Images in Col 4
+            renderImageColumn(document.getElementById('col-4'), publicationsData.slice(6, 15));
         }
 
     } catch (err) {
@@ -103,7 +104,43 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 });
 
+// Templates
+const cvTemplate = (item) => `
+    <div class="bio-entry">
+        <div class="sub-title">${item.years}</div>
+        <div class="copy">${item.firm}<br><strong>${item.title1}${item.title2 ? ' | ' + item.title2 : ''}</strong></div>
+    </div>
+`;
+
 const speakingTemplate = (item) => `
+    <div class="bio-entry">
+        <div class="sub-title">${item.year}</div>
+        <div class="copy"><strong>${item.body}</strong><br>${item.title}</div>
+    </div>
+`;
+
+const honorsTemplate = (item) => `
+    <div class="bio-entry">
+        <div class="sub-title">${item.year}</div>
+        <div class="copy">${item.title}</div>
+    </div>
+`;
+
+const teachingTemplate = (item) => `
+    <div class="bio-entry">
+        <div class="sub-title">${item.year}</div>
+        <div class="copy">${item.title}</div>
+    </div>
+`;
+
+const serviceTemplate = (item) => `
+    <div class="bio-entry">
+        <div class="sub-title">${item.year}</div>
+        <div class="copy">${item.title}</div>
+    </div>
+`;
+
+const pressTemplate = (item) => `
     <div class="bio-entry">
         <div class="sub-title">${item.year}</div>
         <div class="copy"><strong>${item.body}</strong><br>${item.title}</div>
@@ -118,6 +155,39 @@ function renderList(container, title, items, templateFn) {
             <div class="entries-wrapper">
                 ${items.map(templateFn).join('')}
             </div>
+        </div>
+    `;
+}
+
+function renderImageColumn(container, items) {
+    if (!container) return;
+    const uniqueImages = [];
+    items.forEach(item => {
+        let img = item.image || item.photo;
+        if (img) {
+            if (!img.startsWith('/') && !img.startsWith('http')) {
+                img = '/' + img;
+            }
+            if (!uniqueImages.includes(img)) {
+                uniqueImages.push(img);
+            }
+        }
+    });
+
+    if (uniqueImages.length === 0) {
+        container.innerHTML = '';
+        return;
+    }
+
+    const displayedImages = uniqueImages.slice(0, 4);
+
+    container.innerHTML = `
+        <div class="cell-content" style="display: flex; flex-direction: column; gap: 0.5rem; height: 100%; overflow-y: auto;">
+            ${displayedImages.map(imgUrl => `
+                <div style="width: 100%; border-radius: 0.05rem; overflow: hidden; background-color: #eee; flex-shrink: 0;">
+                    <img src="${imgUrl}" style="width: 100%; height: auto; display: block;" alt="Related visual">
+                </div>
+            `).join('')}
         </div>
     `;
 }
@@ -225,10 +295,9 @@ function initCharts(speakingData) {
     });
 
     const bodyData = Object.entries(bodyCounts).map(([name, value]) => ({ name, value }));
-    // Sort descending
     bodyData.sort((a, b) => b.value - a.value);
 
-    // Group small slices (value <= 1 and not one of the main groups if too many) into "Other"
+    // Group small slices into "Other"
     const mainBodies = [];
     let otherSum = 0;
     bodyData.forEach(d => {
@@ -273,7 +342,6 @@ function drawDonutChart(containerId, data, centerLabel, accentColor) {
         .append("g")
         .attr("transform", `translate(${width / 2}, ${height / 2})`);
 
-    // Label shifted below the donut chart with more clearance
     svg.append("text")
         .attr("text-anchor", "middle")
         .attr("dy", "1.6rem")
@@ -284,7 +352,6 @@ function drawDonutChart(containerId, data, centerLabel, accentColor) {
         .style("letter-spacing", "0.5px")
         .text(centerLabel);
 
-    // Base color transformation
     const baseColor = d3.hsl(accentColor);
     const colorScale = (i, N) => {
         if (N <= 1) return baseColor.toString();

@@ -8,9 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const currentPage = parseInt(match[1]);
 
+    const MAX_PAGE = 12;
+
     const navigate = (direction) => {
         const nextPage = currentPage + direction;
-        if (nextPage < 1) return; // Don't go below page 1
+        if (nextPage < 1 || nextPage > MAX_PAGE) return; // Boundary check
         window.location.href = `${nextPage}.html`;
     };
 
@@ -36,8 +38,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.key === 'ArrowRight') navigate(1);
     });
 
-    // 5. Hide left arrow on page 1
+    // 5. Hide left arrow on page 1, right arrow on page MAX_PAGE
     if (currentPage <= 1) {
         leftArrow.style.display = 'none';
+    }
+    if (currentPage >= MAX_PAGE) {
+        rightArrow.style.display = 'none';
     }
 });

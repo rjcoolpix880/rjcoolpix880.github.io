@@ -9,7 +9,8 @@
     "category": "Virtual",
     "city": "Chesapeake",
     "lat": "36.7",
-    "long": "-76.3"
+    "long": "-76.3",
+    "image": "content/aia/grassfield-logo.jpeg"
   },
   {
     "section": "Speaking Engagements",
@@ -21,7 +22,8 @@
     "category": "Virtual",
     "city": "Chesapeake",
     "lat": "36.7",
-    "long": "-76.3"
+    "long": "-76.3",
+    "image": "content/aia/grassfield-logo.jpeg"
   },
   {
     "section": "Speaking Engagements",
@@ -33,7 +35,8 @@
     "category": "Virtual",
     "city": "Chesapeake",
     "lat": "36.7",
-    "long": "-76.3"
+    "long": "-76.3",
+    "image": "content/aia/grassfield-logo.jpeg"
   },
   {
     "section": "Speaking Engagements",
@@ -45,7 +48,8 @@
     "category": "Virtual",
     "city": "Chesapeake",
     "lat": "36.7",
-    "long": "-76.3"
+    "long": "-76.3",
+    "image": "content/aia/grassfield-logo.jpeg"
   },
   {
     "section": "Speaking Engagements",
@@ -165,7 +169,8 @@
     "category": "Conference",
     "city": "Austin",
     "lat": "30.2",
-    "long": "-97.7"
+    "long": "-97.7",
+    "image": "content/aia/psmj-logo.png"
   },
   {
     "section": "Speaking Engagements",
@@ -176,7 +181,8 @@
     "category": "Conference",
     "city": "Virtual",
     "lat": "",
-    "long": ""
+    "long": "",
+    "image": "content/aia/psmj-logo.png"
   },
   {
     "section": "Speaking Engagements",
@@ -225,7 +231,8 @@
     "category": "Conference",
     "city": "Raleigh",
     "lat": "35.7",
-    "long": "-78.6"
+    "long": "-78.6",
+    "image": "content/aia/scup-logo.png"
   },
   {
     "section": "Speaking Engagements",
@@ -263,7 +270,8 @@
     "category": "Conference",
     "city": "Raleigh",
     "lat": "35.7",
-    "long": "-78.6"
+    "long": "-78.6",
+    "image": "content/aia/tcrew-logo.png"
   },
   {
     "section": "Speaking Engagements",
@@ -274,7 +282,8 @@
     "category": "School",
     "city": "Johnson City",
     "lat": "36.3",
-    "long": "-82.3"
+    "long": "-82.3",
+    "image": "content/aia/etsu-logo.png"
   },
   {
     "section": "Speaking Engagements",
@@ -323,7 +332,8 @@
     "category": "School",
     "city": "Raleigh",
     "lat": "35.7",
-    "long": "-78.6"
+    "long": "-78.6",
+    "image": "content/aia/diversify-logo.png"
   },
   {
     "section": "Speaking Engagements",
@@ -347,7 +357,8 @@
     "category": "Conference",
     "city": "Raleigh",
     "lat": "35.7",
-    "long": "-78.6"
+    "long": "-78.6",
+    "image": "content/aia/tcrew-logo.png"
   },
   {
     "section": "Speaking Engagements",
@@ -438,7 +449,8 @@
     "city": "",
     "lat": "",
     "long": "",
-    "link": "https://www.marketscale.com/industries/engineering-and-construction/marketscale-aec-01-10-19-lets-make-your-job-and-your-life-easier"
+    "link": "https://www.marketscale.com/industries/engineering-and-construction/marketscale-aec-01-10-19-lets-make-your-job-and-your-life-easier",
+    "image": "content/aia/marketscale-logo.png"
   },
   {
     "section": "Speaking Engagements",
@@ -456,45 +468,53 @@
   {
     "section": "Task Force Appointments",
     "year": "2022",
-    "title": "AIA Awards Task Group (appointed by AIA board of directors)"
+    "title": "AIA Awards Task Group (appointed by AIA board of directors)",
+    "image": "content/aia/aia.png"
   },
   {
     "section": "Task Force Appointments",
     "year": "2020",
     "title": "COVID-19 AIA Business Task Force",
-    "link": "https://www.aia.org/resources/6295205-covid-19-business-resources-to-thrive-"
+    "link": "https://www.aia.org/resources/6295205-covid-19-business-resources-to-thrive-",
+    "image": "content/aia/aia.png"
   },
   {
     "section": "Jury Appointments",
     "year": "2020",
     "title": "National AIA Innovation Awards Juror",
-    "link": "https://www.aia.org/awards/7406-innovation-awards"
+    "link": "https://www.aia.org/awards/7406-innovation-awards",
+    "image": "content/aia/aia.png"
   },
   {
     "section": "Jury Appointments",
     "year": "2021",
     "title": "ENR Mid atlantic Best Projects Juror",
-    "link": "https://www.enr.com/articles/52673-regions-winning-teams-withstand-tough-2020"
+    "link": "https://www.enr.com/articles/52673-regions-winning-teams-withstand-tough-2020",
+    "image": "content/aia/enr-logo.png"
   },
   {
     "section": "Chair Appointments",
     "year": "2021",
-    "title": "National AIA Innovation Awards Chair"
+    "title": "National AIA Innovation Awards Chair",
+    "image": "content/aia/aia.png"
   },
   {
     "section": "Chair Appointments",
     "year": "2020",
-    "title": "National AIA Building Connections Congress Chair"
+    "title": "National AIA Building Connections Congress Chair",
+    "image": "content/aia/aia.png"
   },
   {
     "section": "Awards",
     "year": "2025",
-    "title": "AEC Technology Hackathon: Best Collaboration - Team BIM Shady."
+    "title": "AEC Technology Hackathon: Best Collaboration - Team BIM Shady.",
+    "image": "content/aia/aectech-logo.png"
   },
   {
     "section": "Awards",
     "year": "2021",
-    "title": "ENR National Top 20 under 40 Recipient"
+    "title": "ENR National Top 20 under 40 Recipient",
+    "image": "content/aia/enr-logo.png"
   },
   {
     "section": "Publications",
@@ -503,7 +523,8 @@
     "body": "Parametric Architecture",
     "title": "Parking Deck 2, A Renewal Project By Clark Nexen",
     "scope": "about candidate's work",
-    "link": "https://parametric-architecture.com/parking-deck-2-a-renewal-project-by-clark-nexen/?srsltid=AfmBOoq6csmP_wFVkLeXZKs6Ng9O4yKkp0TUexRTRY4DuGe1ChdCtUpE"
+    "link": "https://parametric-architecture.com/parking-deck-2-a-renewal-project-by-clark-nexen/?srsltid=AfmBOoq6csmP_wFVkLeXZKs6Ng9O4yKkp0TUexRTRY4DuGe1ChdCtUpE",
+    "image": "content/aia/parametricarchitecture-logo.png"
   },
   {
     "section": "Publications",
@@ -512,7 +533,8 @@
     "year": "2026",
     "title": "Rhinozine 3D : Drawn in Code, Cast in Concrete: The MCIC Monumental Stair",
     "scope": "about candidate's work",
-    "link": "https://rhino3dzine.com/stories/digital-fabrication/drawn-in-code-cast-in-concrete-the-mcic-monumental-stair/"
+    "link": "https://rhino3dzine.com/stories/digital-fabrication/drawn-in-code-cast-in-concrete-the-mcic-monumental-stair/",
+    "image": "content/aia/rhinozine-logo.png"
   },
   {
     "section": "Publications",
@@ -521,7 +543,8 @@
     "body": "AIA TAP Innovation Awards Submission",
     "scope": "Written by candidate",
     "title": "A workflow for iteratively designing and structural analysis of structural forms",
-    "link": "https://issuu.com/clarknexsen/docs/tap_innovation_award_-_process_-_r2_edit_for_websi?fr=sNmFiMDU0NjA2Mjc"
+    "link": "https://issuu.com/clarknexsen/docs/tap_innovation_award_-_process_-_r2_edit_for_websi?fr=sNmFiMDU0NjA2Mjc",
+    "image": "content/aia/2025-AIA-TAP.jpg"
   },
   {
     "section": "Publications",
@@ -530,7 +553,8 @@
     "body": "Business North Carolina",
     "title": "Point Taken: Clark Nexsen designs an innovative space for the Air Force Academy",
     "scope": "Includes interview with candidate",
-    "link": "https://businessnc.com/point-taken-clark-nexsen-designs-an-innovative-space-for-the-air-force-academy/"
+    "link": "https://businessnc.com/point-taken-clark-nexsen-designs-an-innovative-space-for-the-air-force-academy/",
+    "image": "content/aia/businessnc-logo.png"
   },
   {
     "section": "Publications",
@@ -539,7 +563,8 @@
     "body": "Clark Nexsen",
     "title": "Monumental Stairs: How Computational Design Guided Collaboration and Innovation at the U.S. Air Force Academy",
     "scope": "Written by candidate",
-    "link": "https://www.clarknexsen.com/monumental-stairs-how-computational-design-guided-collaboration-and-innovation-at-the-u-s-air-force-academy/"
+    "link": "https://www.clarknexsen.com/monumental-stairs-how-computational-design-guided-collaboration-and-innovation-at-the-u-s-air-force-academy/",
+    "image": "content/aia/clarknexsen-logo.png"
   },
   {
     "section": "Publications",
@@ -547,7 +572,8 @@
     "body": "Clark Nexsen",
     "title": "Bringing Marketing's Vision to Life with Computational Design: 2022 Holiday Card Story",
     "scope": "co-written by candidate",
-    "link": "https://www.clarknexsen.com/bringing-marketings-vision-to-life-with-computational-design-2022-holiday-card-story/"
+    "link": "https://www.clarknexsen.com/bringing-marketings-vision-to-life-with-computational-design-2022-holiday-card-story/",
+    "image": "content/aia/clarknexsen-logo.png"
   },
   {
     "section": "Publications",
@@ -555,7 +581,8 @@
     "body": "Clark Nexsen",
     "title": "Q&A with Clark Nexsen Computational Designer Ryan Johnson",
     "scope": "Co-written by candidate",
-    "link": "https://www.clarknexsen.com/blog-qa-with-clark-nexsen-computational-designer-ryan-johnson/"
+    "link": "https://www.clarknexsen.com/blog-qa-with-clark-nexsen-computational-designer-ryan-johnson/",
+    "image": "content/aia/clarknexsen-logo.png"
   },
   {
     "section": "Publications",
@@ -563,7 +590,8 @@
     "body": "Clark Nexsen",
     "title": "Leveraging the Power of Parametric Design for CANstruction",
     "scope": "Written by candidate",
-    "link": "https://www.clarknexsen.com/blog-leveraging-power-parametric-design-canstruction/"
+    "link": "https://www.clarknexsen.com/blog-leveraging-power-parametric-design-canstruction/",
+    "image": "content/aia/clarknexsen-logo.png"
   },
   {
     "section": "Publications",
@@ -572,7 +600,8 @@
     "body": "Clark Nexsen",
     "title": "Higher Ed STEM Design: NC State's New Engineering Building Puts Research On Display",
     "scope": "Co-written by candidate",
-    "link": "https://www.clarknexsen.com/blog-higher-ed-stem-design-nc-states-new-engineering-building-puts-research-on-display/"
+    "link": "https://www.clarknexsen.com/blog-higher-ed-stem-design-nc-states-new-engineering-building-puts-research-on-display/",
+    "image": "content/aia/clarknexsen-logo.png"
   },
   {
     "section": "Publications",
@@ -581,7 +610,8 @@
     "body": "Business North Carolina",
     "title": "Building N.C. 2021: The state's new distinctive structures",
     "scope": "About candidate's work",
-    "link": "https://businessnc.com/building-n-c-2021-the-states-new-distinctive-structures/"
+    "link": "https://businessnc.com/building-n-c-2021-the-states-new-distinctive-structures/",
+    "image": "content/aia/businessnc-logo.png"
   },
   {
     "section": "Publications",
@@ -590,7 +620,8 @@
     "body": "Associated Construction Publications",
     "title": "Fitts-Woolard Hall at North Carolina State University Brings Engineering All Together",
     "scope": "About candidate's work",
-    "link": "https://acppubs.com/BE/article/8CAEA39E-fitts-woolard-hall-at-north-carolina-state-university-brings-engineering-all-together"
+    "link": "https://acppubs.com/BE/article/8CAEA39E-fitts-woolard-hall-at-north-carolina-state-university-brings-engineering-all-together",
+    "image": "content/aia/acp-logo.avif"
   },
   {
     "section": "Publications",
@@ -598,7 +629,8 @@
     "body": "Architect Magazine",
     "title": "Architect Magazine: Digging into BIM Data ",
     "scope": "Quoted",
-    "link": "https://www.architectmagazine.com/aia-architect/aiafuture/digging-into-bim-data_o"
+    "link": "https://www.architectmagazine.com/aia-architect/aiafuture/digging-into-bim-data_o",
+    "image": "content/aia/architectmagazine-logo.avif"
   },
   {
     "section": "Publications",
@@ -606,16 +638,18 @@
     "body": "AIA North Carolina",
     "title": "AIA NC: The Weekly Build ",
     "scope": "Quoted",
-    "content": "Message from AIANC President, Richard Alsop, Jr., FAIA \n\n One of the most valuable reasons for AIA membership is collaboration with professionals who share similar interests. I'd like to share a personal perspective from Ryan Johnson, AIA, Computational Design Specialist and Associate Principal with ClarkNexsen. \n\n Like many architects, I reached a point in my career where I was looking around and wondering, 'What's next?' I found the Technology in Architectural Practice (TAP) community and was immediately excited to discover a group passionate about the same specific interests I had. \n\n My path to leadership in TAP was simple: I raised my hand. I learned quickly that you don't need to be an expert to join a Knowledge Community; you just need to be willing to contribute. I started by saying 'yes' to small tasks and simply ensuring I followed through. That consistency eventually led to my serving as the national Chair. \n\n The real value, however, was the network. I was looking for an environment where I could 'geek out' on technology with industry leaders who were operating at the highest level. Collaborating with these individuals allowed me to absorb their knowledge and observe how they approached strategy at aspirational firms across the U.S.\n\n That engagement accelerated my professional growth and gave me the confidence to carve out a unique leadership role that has had a direct impact on my firm. My time with TAP was a crucial first step in building our internal Practice Technology team, allowing us to not only improve productivity but drive innovation with a team of incredible talent. For anyone looking to advance their career: find your community and raise your hand."
+    "content": "Message from AIANC President, Richard Alsop, Jr., FAIA \n\n One of the most valuable reasons for AIA membership is collaboration with professionals who share similar interests. I'd like to share a personal perspective from Ryan Johnson, AIA, Computational Design Specialist and Associate Principal with ClarkNexsen. \n\n Like many architects, I reached a point in my career where I was looking around and wondering, 'What's next?' I found the Technology in Architectural Practice (TAP) community and was immediately excited to discover a group passionate about the same specific interests I had. \n\n My path to leadership in TAP was simple: I raised my hand. I learned quickly that you don't need to be an expert to join a Knowledge Community; you just need to be willing to contribute. I started by saying 'yes' to small tasks and simply ensuring I followed through. That consistency eventually led to my serving as the national Chair. \n\n The real value, however, was the network. I was looking for an environment where I could 'geek out' on technology with industry leaders who were operating at the highest level. Collaborating with these individuals allowed me to absorb their knowledge and observe how they approached strategy at aspirational firms across the U.S.\n\n That engagement accelerated my professional growth and gave me the confidence to carve out a unique leadership role that has had a direct impact on my firm. My time with TAP was a crucial first step in building our internal Practice Technology team, allowing us to not only improve productivity but drive innovation with a team of incredible talent. For anyone looking to advance their career: find your community and raise your hand.",
+    "image": "content/aia/aianc-logo.png"
   },
   {
     "section": "Publications",
     "projectID": "1538",
     "year": "2013",
     "body": "Architect Magazine",
-    "title": "(Project) Architect Magazine: James B. Hunt Jr. Library, Designed by Sn\u00c3\u00b8hetta",
+    "title": "(Project) Architect Magazine: James B. Hunt Jr. Library, Designed by SnÃ¸hetta",
     "scope": "About candidate's work",
-    "link": "https://www.architectmagazine.com/design/buildings/james-b-hunt-jr-library-designed-by-snhetta_o"
+    "link": "https://www.architectmagazine.com/design/buildings/james-b-hunt-jr-library-designed-by-snhetta_o",
+    "image": "content/aia/architectmagazine-logo.avif"
   },
   {
     "section": "Publications",
@@ -624,72 +658,86 @@
     "body": "ArchDaily",
     "title": "Green Square Parking Deck / Pearce Brinkley Cease + Lee",
     "scope": "About candidate's work",
-    "link": "https://www.archdaily.com/264934/green-square-parking-deck-pearce-brinkley-cease-lee"
+    "link": "https://www.archdaily.com/264934/green-square-parking-deck-pearce-brinkley-cease-lee",
+    "image": "content/aia/archdaily-logo.png"
   },
   {
     "section": "Internal Speaking Engagements",
     "year": "2024",
-    "title": "Clark Nexsen: CNCPT - Clark Nexsen's AI Strategy : Beyond the blueprint"
+    "title": "Clark Nexsen: CNCPT - Clark Nexsen's AI Strategy : Beyond the blueprint",
+    "image": "content/aia/clarknexsen-logo.png"
   },
   {
     "section": "Internal Speaking Engagements",
     "year": "2024",
-    "title": "Clark Nexsen: CNCPT - AI Toolkit Training: How to use the CNCPT AI Toolkit"
+    "title": "Clark Nexsen: CNCPT - AI Toolkit Training: How to use the CNCPT AI Toolkit",
+    "image": "content/aia/clarknexsen-logo.png"
   },
   {
     "section": "Internal Speaking Engagements",
     "year": "2024",
-    "title": "Clark Nexsen: CNCPT - AI Policy Training: Your Guide to Smart Use"
+    "title": "Clark Nexsen: CNCPT - AI Policy Training: Your Guide to Smart Use",
+    "image": "content/aia/clarknexsen-logo.png"
   },
   {
     "section": "Internal Speaking Engagements",
     "year": "2024",
-    "title": "Clark Nexsen: CNCPT - AI Tools in Action: A Look Into Our Changing Toolset"
+    "title": "Clark Nexsen: CNCPT - AI Tools in Action: A Look Into Our Changing Toolset",
+    "image": "content/aia/clarknexsen-logo.png"
   },
   {
     "section": "Internal Speaking Engagements",
     "year": "2023",
-    "title": "Clark Nexsen: CNCPT - AI's and the Future of Work: A Clark Nexsen Perspective"
+    "title": "Clark Nexsen: CNCPT - AI's and the Future of Work: A Clark Nexsen Perspective",
+    "image": "content/aia/clarknexsen-logo.png"
   },
   {
     "section": "Internal Speaking Engagements",
     "year": "2023",
-    "title": "Clark Nexsen: CNCPT - Reality Capture: An Interview with Luke on Reality Capture"
+    "title": "Clark Nexsen: CNCPT - Reality Capture: An Interview with Luke on Reality Capture",
+    "image": "content/aia/clarknexsen-logo.png"
   },
   {
     "section": "Internal Speaking Engagements",
     "year": "2023",
-    "title": "Clark Nexsen: CNCPT - The Intersection of Technology and Creativity: A Discussion with Xander on Drones impact on Design"
+    "title": "Clark Nexsen: CNCPT - The Intersection of Technology and Creativity: A Discussion with Xander on Drones impact on Design",
+    "image": "content/aia/clarknexsen-logo.png"
   },
   {
     "section": "Internal Speaking Engagements",
     "year": "2023",
-    "title": "Clark Nexsen:  How the BRCC Patton Building team used computational design to overcome aggressive inflation"
+    "title": "Clark Nexsen:  How the BRCC Patton Building team used computational design to overcome aggressive inflation",
+    "image": "content/aia/clarknexsen-logo.png"
   },
   {
     "section": "Internal Speaking Engagements",
     "year": "2022",
-    "title": "Clark Nexsen: Making Revit Work For You_ Annoyance to Automation"
+    "title": "Clark Nexsen: Making Revit Work For You_ Annoyance to Automation",
+    "image": "content/aia/clarknexsen-logo.png"
   },
   {
     "section": "Internal Speaking Engagements",
     "year": "2022",
-    "title": "Clark Nexsen: Revit time saving tips. Saving you time when there isn't enough"
+    "title": "Clark Nexsen: Revit time saving tips. Saving you time when there isn't enough",
+    "image": "content/aia/clarknexsen-logo.png"
   },
   {
     "section": "Internal Speaking Engagements",
     "year": "2021",
-    "title": "Clark Nexsen: Assessing Constructability of Complex Geometry in Early Design and Determining your Design"
+    "title": "Clark Nexsen: Assessing Constructability of Complex Geometry in Early Design and Determining your Design",
+    "image": "content/aia/clarknexsen-logo.png"
   },
   {
     "section": "Internal Speaking Engagements",
     "year": "2020",
-    "title": "Clark Nexsen: How to think like a computational designer"
+    "title": "Clark Nexsen: How to think like a computational designer",
+    "image": "content/aia/clarknexsen-logo.png"
   },
   {
     "section": "Internal Speaking Engagements",
     "year": "2020",
-    "title": "Clark Nexsen:  What the heck is computational design?"
+    "title": "Clark Nexsen:  What the heck is computational design?",
+    "image": "content/aia/clarknexsen-logo.png"
   },
   {
     "section": "Juries and Reviews",
@@ -699,7 +747,8 @@
     "category": "Juries",
     "city": "Raleigh",
     "lat": "35.7",
-    "long": "-78.6"
+    "long": "-78.6",
+    "image": "content/aia/ncsu-logo.png"
   },
   {
     "section": "Juries and Reviews",
@@ -709,7 +758,8 @@
     "category": "Juries",
     "city": "Charlotte",
     "lat": "35.2",
-    "long": "-80.8"
+    "long": "-80.8",
+    "image": "content/aia/uncc-logo.jfif"
   },
   {
     "section": "Juries and Reviews",
@@ -719,7 +769,8 @@
     "category": "Juries",
     "city": "Charlotte",
     "lat": "35.2",
-    "long": "-80.8"
+    "long": "-80.8",
+    "image": "content/aia/uncc-logo.jfif"
   },
   {
     "section": "Academic",
@@ -729,7 +780,8 @@
     "category": "Academic",
     "city": "Raleigh",
     "lat": "35.7",
-    "long": "-78.6"
+    "long": "-78.6",
+    "image": "content/aia/ncsu-logo.png"
   },
   {
     "section": "Curriculum Vitae",
