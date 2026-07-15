@@ -2,6 +2,17 @@
   {
     "section": "Speaking Engagements",
     "year": "2026",
+    "topic": "Computation",
+    "body": "VA NOMA - Project Pipeline",
+    "title": "Abstraction: The facade of the Williamsburg Performing Arts Center",
+    "blurb": "",
+    "category": "Virtual",
+    "attendees": 35,
+    "image": "content/aia/2026-abstraction.png"
+  },
+  {
+    "section": "Speaking Engagements",
+    "year": "2026",
     "topic": "AI",
     "body": "No Exceptions Taken",
     "title": "AI Forward: AI and the creative industry",
