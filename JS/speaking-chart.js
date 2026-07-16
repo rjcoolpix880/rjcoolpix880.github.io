@@ -35,6 +35,16 @@ window.renderSpeakingChart = function(data, container) {
     const fields = ['topic', 'year', 'category', 'body'];
     let currentField = 'topic';
 
+    window.changeChartField = function(field) {
+        currentField = field;
+        menu.querySelectorAll('span').forEach(s => {
+            const isMatch = s.textContent.toLowerCase() === field.toLowerCase();
+            s.style.borderBottom = isMatch ? '2px solid #FA8072' : '2px solid transparent';
+            s.style.color = isMatch ? '#313131' : '#b3b3b3';
+        });
+        updateChart();
+    };
+
     fields.forEach(field => {
         const btn = document.createElement('span');
         btn.textContent = field;
@@ -59,15 +69,10 @@ window.renderSpeakingChart = function(data, container) {
         };
 
         btn.onclick = function() {
-            currentField = field;
-            // Update UI
-            menu.querySelectorAll('span').forEach(s => {
-                s.style.borderBottom = '2px solid transparent';
-                s.style.color = '#b3b3b3';
-            });
-            btn.style.borderBottom = '2px solid #FA8072';
-            btn.style.color = '#313131';
-            updateChart();
+            if (window.updateSpeakingFilter) {
+                window.updateSpeakingFilter(null, null);
+            }
+            window.changeChartField(field);
         };
         menu.appendChild(btn);
     });
@@ -211,15 +216,33 @@ window.renderSpeakingChart = function(data, container) {
         const enter = u.enter()
             .append("path")
             .attr("class", "slice")
-            .attr("fill", (d, i) => colorScale(i, aggregated.length))
             .attr("stroke", "white")
             .style("stroke-width", "2px")
             .style("cursor", "pointer");
 
         // Update all
         svg.selectAll(".slice")
+            .on("click", function(event, d) {
+                event.stopPropagation();
+                const clickedValue = d.data[0];
+                if (window.activeFilter && window.activeFilter.field === currentField && window.activeFilter.value === clickedValue) {
+                    if (window.updateSpeakingFilter) {
+                        window.updateSpeakingFilter(null, null);
+                    }
+                } else {
+                    if (window.updateSpeakingFilter) {
+                        window.updateSpeakingFilter(currentField, clickedValue);
+                    }
+                }
+            })
             .transition()
             .duration(1000)
+            .attr("fill", (d, i) => {
+                if (window.activeFilter && window.activeFilter.field === currentField) {
+                    return d.data[0] === window.activeFilter.value ? colorScale(i, aggregated.length) : "#e0e0e0";
+                }
+                return colorScale(i, aggregated.length);
+            })
             .attrTween("d", function(d) {
                 this._current = this._current || d;
                 const interpolate = d3.interpolate(this._current, d);
@@ -270,8 +293,63 @@ window.renderSpeakingChart = function(data, container) {
             .transition()
             .duration(1000)
             .attr("transform", d => `translate(${arc.centroid(d)})`)
-            .text(d => d.data[1]);
+            .text(d => d.data[1])
+            .style("opacity", function(d) {
+                if (window.activeFilter && window.activeFilter.field === currentField) {
+                    return d.data[0] === window.activeFilter.value ? 1 : 0.3;
+                }
+                return 1;
+            });
+
+        // Define global function to refresh visual filtering representation on slices
+        window.refreshChartFilterVisuals = function() {
+            svg.selectAll(".slice")
+                .transition()
+                .duration(300)
+                .attr("fill", function(d, i) {
+                    if (window.activeFilter && window.activeFilter.field === currentField) {
+                        return d.data[0] === window.activeFilter.value ? colorScale(i, aggregated.length) : "#e0e0e0";
+                    }
+                    return colorScale(i, aggregated.length);
+                });
+
+            svg.selectAll(".slice-label")
+                .transition()
+                .duration(300)
+                .style("opacity", function(d) {
+                    if (window.activeFilter && window.activeFilter.field === currentField) {
+                        return d.data[0] === window.activeFilter.value ? 1 : 0.3;
+                    }
+                    return 1;
+                });
+        };
     }
 
     updateChart();
+
+    // Click off handling on the SVG background/empty area
+    d3.select(chartDiv).select("svg").on("click", function(event) {
+        if (!event.target.classList.contains('slice')) {
+            if (window.updateSpeakingFilter) {
+                window.updateSpeakingFilter(null, null);
+            }
+        }
+    });
+
+    // Global document click off handling (clicks outside chart/list)
+    if (window._speakingChartDocClickHandler) {
+        document.removeEventListener('click', window._speakingChartDocClickHandler);
+    }
+    window._speakingChartDocClickHandler = function(event) {
+        if (window.activeFilter) {
+            const chartCont = document.getElementById('speaking-chart-container');
+            const listCont = document.querySelector('.col-2third.container');
+            if (chartCont && !chartCont.contains(event.target) && listCont && !listCont.contains(event.target)) {
+                if (window.updateSpeakingFilter) {
+                    window.updateSpeakingFilter(null, null);
+                }
+            }
+        }
+    };
+    document.addEventListener('click', window._speakingChartDocClickHandler);
 };

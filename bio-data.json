@@ -1,5 +1,14 @@
 [
   {
+    "section": "Publications",
+    "year": "2026",
+    "body": "Deutsch, Randy (Routledge)",
+    "title": "The Agentic Architect: AI and the Resurgence of Practice",
+    "scope": "Quoted",
+    "link": "https://www.routledge.com/The-Agentic-Architect-AI-and-the-Resurgence-of-Practice/Deutsch/p/book/9781041167075",
+    "image": "content/aia/2026-agenticArchitect.jpg"
+  },
+  {
     "section": "Speaking Engagements",
     "year": "2026",
     "topic": "Computation",
@@ -20,7 +29,7 @@
     "body": "VA NOMA - Project Pipeline",
     "title": "Abstraction: The facade of the Williamsburg Performing Arts Center",
     "blurb": "",
-    "category": "Virtual",
+    "category": "School",
     "attendees": 35,
     "image": "content/aia/2026-abstraction.png"
   },

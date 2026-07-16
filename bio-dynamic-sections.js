@@ -2,6 +2,78 @@ document.addEventListener('DOMContentLoaded', function() {
     var container = document.getElementById('dynamic-bio-sections');
     if (!container) return;
 
+    // Inject styles for interactivity
+    var style = document.createElement('style');
+    style.textContent = `
+        .speaking-engagement-item {
+            transition: opacity 0.3s ease;
+        }
+        .speaking-engagement-item.greyed-out {
+            opacity: 0.25;
+        }
+        .interactive-year, .interactive-body {
+            transition: color 0.2s ease, text-decoration 0.2s ease;
+        }
+        .interactive-year:hover, .interactive-body:hover {
+            color: #FA8072;
+            text-decoration: underline;
+        }
+    `;
+    document.head.appendChild(style);
+
+    // Global state and logic for interactivity
+    window.activeFilter = null;
+
+    window.updateSpeakingFilter = function(field, value) {
+        if (field && value) {
+            window.activeFilter = { field: field, value: value };
+        } else {
+            window.activeFilter = null;
+        }
+
+        // 1. Update the list items opacity
+        var listItems = document.querySelectorAll('.speaking-engagement-item');
+        listItems.forEach(function(li) {
+            if (!window.activeFilter) {
+                li.classList.remove('greyed-out');
+            } else {
+                var match = false;
+                if (field === 'body') {
+                    var itemBody = li.getAttribute('data-body') || '';
+                    var filterVal = value;
+                    if (filterVal === 'AIA' && itemBody.includes('AIA')) match = true;
+                    else if (filterVal === 'PSMJ' && itemBody.includes('PSMJ')) match = true;
+                    else if (filterVal === 'BIMxt' && itemBody.includes('BIMxt')) match = true;
+                    else if (filterVal === 'UNC Charlotte' && itemBody.includes('UNC Charlotte')) match = true;
+                    else if (filterVal === 'NC State' && itemBody.includes('NC State')) match = true;
+                    else if (filterVal === 'Grassfield STEM' && itemBody.includes('Grassfield')) match = true;
+                    else if (itemBody === filterVal) match = true;
+                } else {
+                    var itemVal = li.getAttribute('data-' + field);
+                    match = (itemVal === value);
+                }
+
+                if (match) {
+                    li.classList.remove('greyed-out');
+                } else {
+                    li.classList.add('greyed-out');
+                }
+            }
+        });
+
+        // 2. Update the pie chart visual
+        if (window.refreshChartFilterVisuals) {
+            window.refreshChartFilterVisuals();
+        }
+    };
+
+    window.selectFieldAndValue = function(field, value) {
+        if (window.changeChartField) {
+            window.changeChartField(field);
+        }
+        window.updateSpeakingFilter(field, value);
+    };
+
     var jsonPath = 'bio-data.json';
 
     // Defined explicit order for sections
@@ -146,13 +218,45 @@ document.addEventListener('DOMContentLoaded', function() {
                             // 1. Add Year
                             if (entry.year) {
                                 var yearText = entry.year + ' ';
-                                li.appendChild(document.createTextNode(yearText));
+                                if (sectionName === "Speaking Engagements") {
+                                    var yearSpan = document.createElement('span');
+                                    yearSpan.className = 'interactive-year';
+                                    yearSpan.style.cursor = 'pointer';
+                                    yearSpan.textContent = yearText;
+                                    yearSpan.onclick = function(e) {
+                                        e.stopPropagation();
+                                        if (window.selectFieldAndValue) {
+                                            window.selectFieldAndValue('year', entry.year);
+                                        }
+                                    };
+                                    li.appendChild(yearSpan);
+                                } else {
+                                    li.appendChild(document.createTextNode(yearText));
+                                }
                             }
 
                             // 2. Add Body (Bold) if it exists
                             if (entry.body) {
                                 var strong = document.createElement('strong');
                                 strong.textContent = entry.body;
+                                if (sectionName === "Speaking Engagements") {
+                                    strong.className = 'interactive-body';
+                                    strong.style.cursor = 'pointer';
+                                    strong.onclick = function(e) {
+                                        e.stopPropagation();
+                                        if (window.selectFieldAndValue) {
+                                            let groupedBody = entry.body;
+                                            if (entry.body.includes("AIA")) groupedBody = "AIA";
+                                            else if (entry.body.includes("PSMJ")) groupedBody = "PSMJ";
+                                            else if (entry.body.includes("BIMxt")) groupedBody = "BIMxt";
+                                            else if (entry.body.includes("UNC Charlotte")) groupedBody = "UNC Charlotte";
+                                            else if (entry.body.includes("NC State")) groupedBody = "NC State";
+                                            else if (entry.body.includes("Grassfield")) groupedBody = "Grassfield STEM";
+                                            
+                                            window.selectFieldAndValue('body', groupedBody);
+                                        }
+                                    };
+                                }
                                 li.appendChild(strong);
                                 li.appendChild(document.createTextNode(' ')); // Space after body
                             }
@@ -166,6 +270,15 @@ document.addEventListener('DOMContentLoaded', function() {
                                 li.appendChild(a);
                             } else {
                                 li.appendChild(document.createTextNode(entry.title));
+                            }
+
+                            // Add classes and data attributes for Speaking Engagements list item
+                            if (sectionName === "Speaking Engagements") {
+                                li.className = 'speaking-engagement-item';
+                                li.setAttribute('data-topic', entry.topic || '');
+                                li.setAttribute('data-year', entry.year || '');
+                                li.setAttribute('data-category', entry.category || '');
+                                li.setAttribute('data-body', entry.body || '');
                             }
                         }
 
