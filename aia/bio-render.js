@@ -1,7 +1,18 @@
 document.addEventListener('DOMContentLoaded', async () => {
     try {
         const res = await fetch('/bio-data.json');
-        const data = await res.json();
+        let data = await res.json();
+
+        // Filter data by status (only keep if status is complete, null, empty, or undefined)
+        data = data.filter(entry => {
+            if (entry.status === undefined || entry.status === null || entry.status === '') {
+                return true;
+            }
+            if (typeof entry.status === 'string' && entry.status.toLowerCase() === 'complete') {
+                return true;
+            }
+            return false;
+        });
 
         // 1. Filter data by sections
         const cvData = data.filter(item => item.section === "Curriculum Vitae");

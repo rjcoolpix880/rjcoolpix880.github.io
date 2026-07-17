@@ -11,7 +11,18 @@ document.addEventListener('DOMContentLoaded', async () => {
 async function loadData() {
     try {
         const response = await fetch('bio-data.json');
-        bioData = await response.json();
+        const rawData = await response.json();
+        
+        // Filter by status (show if status is 'complete', null, or undefined/not set)
+        bioData = rawData.filter(entry => {
+            if (entry.status === undefined || entry.status === null || entry.status === '') {
+                return true;
+            }
+            if (typeof entry.status === 'string' && entry.status.toLowerCase() === 'complete') {
+                return true;
+            }
+            return false;
+        });
         
         populateSectionFilter();
         filterAndRender();

@@ -23,8 +23,19 @@ async function loadData() {
         projectsData = projectsRes.filter(p => p.section === 'Architecture' || p.section === 'Featured');
         awardsData = awardsRes[0];
 
+        // Filter bio-data by status (only keep if status is complete, null, empty, or undefined)
+        const filteredBioRes = bioRes.filter(entry => {
+            if (entry.status === undefined || entry.status === null || entry.status === '') {
+                return true;
+            }
+            if (typeof entry.status === 'string' && entry.status.toLowerCase() === 'complete') {
+                return true;
+            }
+            return false;
+        });
+
         // Process publications from bio-data.json
-        const publications = bioRes.filter(item => item.section === 'Publications' && item.projectID);
+        const publications = filteredBioRes.filter(item => item.section === 'Publications' && item.projectID);
         publicationsData = publications.reduce((acc, pub) => {
             if (!acc[pub.projectID]) acc[pub.projectID] = [];
             acc[pub.projectID].push(pub);

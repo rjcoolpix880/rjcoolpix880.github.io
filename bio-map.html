@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Speaking Engagements Map</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-          crossorigin=""/>
-    
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
     <style>
         body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
         }
+
         #map {
             width: 100%;
             height: 100vh;
         }
+
         .virtual-events-card {
             background: rgba(255, 255, 255, 0.9);
             border: 2px solid rgba(0, 0, 0, 0.2);
             border-radius: 6px;
             padding: 10px 12px;
-            box-shadow: 0 1px 5px rgba(0,0,0,0.25);
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             font-size: 11px;
             font-weight: bold;
@@ -34,46 +36,52 @@
             min-width: 110px;
             pointer-events: auto;
         }
+
         .virtual-events-title {
             margin-bottom: 6px;
             text-align: center;
-            border-bottom: 1px solid rgba(0,0,0,0.1);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
             padding-bottom: 4px;
         }
+
         .virtual-dots-container {
             position: relative;
             width: 100px;
             height: 60px;
             margin: 0 auto;
         }
+
         .virtual-dot {
             position: absolute;
             width: 12px;
             height: 12px;
             border-radius: 50%;
             border: 1.5px solid #fff;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
             cursor: pointer;
             box-sizing: border-box;
             transition: transform 0.15s ease-in-out;
         }
+
         .virtual-dot:hover {
             transform: scale(1.3);
             z-index: 1000;
         }
     </style>
 </head>
+
 <body>
     <div id="map"></div>
 
     <!-- Leaflet JavaScript -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-            crossorigin=""></script>
-    
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
     <script>
-        // Initialize the map
-        var map = L.map('map').setView([39.0, -95.0], 4); // Center on USA
+        // Initialize the map with fractional zoom support
+        var map = L.map('map', {
+            zoomSnap: 0.5
+        }).setView([39.0, -95.0], 4.5); // Center on USA with slightly closer zoom
 
         // Add CartoDB Positron No Labels tile layer - no text labels, just state outlines and water
         L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png', {
@@ -94,41 +102,41 @@
         // Helper to generate centroid-centered hexagonal grid offsets for N items
         function getHexOffsets(N, D) {
             if (N <= 1) return [{ x: 0, y: 0 }];
-            
+
             var grid = [];
             var range = Math.ceil(Math.sqrt(N)) + 2;
-            
+
             for (var u = -range; u <= range; u++) {
                 for (var v = -range; v <= range; v++) {
                     var x = D * (u + 0.5 * v);
                     var y = D * (Math.sqrt(3) / 2) * v;
-                    var dist = Math.sqrt(x*x + y*y);
+                    var dist = Math.sqrt(x * x + y * y);
                     var angle = Math.atan2(y, x);
                     grid.push({ x: x, y: y, dist: dist, angle: angle });
                 }
             }
-            
+
             // Sort by distance first (tight packing), then by angle to form symmetric patterns
-            grid.sort(function(a, b) {
+            grid.sort(function (a, b) {
                 if (Math.abs(a.dist - b.dist) > 0.01) {
                     return a.dist - b.dist;
                 }
                 return a.angle - b.angle;
             });
-            
+
             var selected = grid.slice(0, N);
-            
+
             // Calculate centroid to center the cluster exactly at the coordinates
             var sumX = 0;
             var sumY = 0;
-            selected.forEach(function(p) {
+            selected.forEach(function (p) {
                 sumX += p.x;
                 sumY += p.y;
             });
             var cx = sumX / N;
             var cy = sumY / N;
-            
-            return selected.map(function(p) {
+
+            return selected.map(function (p) {
                 return {
                     x: p.x - cx,
                     y: p.y - cy
@@ -139,9 +147,9 @@
         // Dynamically adjust physical marker coordinates based on current zoom pixel calculations
         function updateOffsets() {
             var T = 28; // Merge threshold in pixels to prevent inter-city overlap at zoomed-out levels
-            
+
             // Clone staticGroups to activeGroups to perform temporary merges
-            var activeGroups = staticGroups.map(function(g) {
+            var activeGroups = staticGroups.map(function (g) {
                 return {
                     centerLatLng: g.centerLatLng,
                     markers: g.markers.slice()
@@ -159,17 +167,17 @@
                         if (pI.distanceTo(pJ) < T) {
                             var markersI = activeGroups[i].markers;
                             var markersJ = activeGroups[j].markers;
-                            
+
                             // Merge markers
                             activeGroups[i].markers = markersI.concat(markersJ);
-                            
+
                             // Calculate new centroid based on number of markers in each group
                             var wI = markersI.length;
                             var wJ = markersJ.length;
                             var newLat = (activeGroups[i].centerLatLng.lat * wI + activeGroups[j].centerLatLng.lat * wJ) / (wI + wJ);
                             var newLng = (activeGroups[i].centerLatLng.lng * wI + activeGroups[j].centerLatLng.lng * wJ) / (wI + wJ);
                             activeGroups[i].centerLatLng = L.latLng(newLat, newLng);
-                            
+
                             activeGroups.splice(j, 1);
                             merged = true;
                             break;
@@ -180,17 +188,17 @@
             }
 
             // Apply offsets to each active group
-            activeGroups.forEach(function(group) {
+            activeGroups.forEach(function (group) {
                 var N = group.markers.length;
                 if (N === 1) {
                     group.markers[0].marker.setLatLng(group.centerLatLng);
                     return;
                 }
-                
+
                 var offsets = getHexOffsets(N, 12.5); // Tight packing spacing D = 12.5px
                 var centerPoint = map.latLngToLayerPoint(group.centerLatLng);
-                
-                group.markers.forEach(function(item, index) {
+
+                group.markers.forEach(function (item, index) {
                     var offset = offsets[index];
                     var newPoint = L.point(centerPoint.x + offset.x, centerPoint.y + offset.y);
                     var newLatLng = map.layerPointToLatLng(newPoint);
@@ -204,12 +212,12 @@
             .then(response => response.json())
             .then(data => {
                 // Filter physical and virtual entries
-                var physicalEntries = data.filter(entry => 
+                var physicalEntries = data.filter(entry =>
                     entry.section === 'Speaking Engagements' && entry.lat && entry.long && entry.lat !== '' && entry.long !== ''
                 );
-                
-                var virtualEntries = data.filter(entry => 
-                    entry.section === 'Speaking Engagements' && 
+
+                var virtualEntries = data.filter(entry =>
+                    entry.section === 'Speaking Engagements' &&
                     (entry.category === 'Virtual' || !entry.lat || !entry.long || entry.lat === '' || entry.long === '')
                 );
 
@@ -219,7 +227,7 @@
                     var lat = parseFloat(entry.lat);
                     var lng = parseFloat(entry.long);
                     var locationKey = lat + ',' + lng;
-                    
+
                     if (!locationMap[locationKey]) {
                         locationMap[locationKey] = {
                             lat: lat,
@@ -228,7 +236,7 @@
                             city: entry.city || ''
                         };
                     }
-                    
+
                     locationMap[locationKey].entries.push(entry);
                 });
 
@@ -239,10 +247,10 @@
                         centerLatLng: L.latLng(location.lat, location.lng),
                         markers: []
                     };
-                    
+
                     // Sort entries by year descending so the layout ordering stays consistent
                     location.entries.sort((a, b) => parseInt(b.year) - parseInt(a.year));
-                    
+
                     location.entries.forEach((entry, i) => {
                         var color = categoryColors[entry.category] || '#3388ff';
                         var marker = L.circleMarker(group.centerLatLng, {
@@ -270,81 +278,83 @@
                         popupContent += '</div>';
 
                         marker.bindPopup(popupContent);
-                        
+
                         group.markers.push({
                             marker: marker
                         });
                     });
-                    
+
                     staticGroups.push(group);
                 });
 
                 // Attach zoom events
                 map.on('zoomend', updateOffsets);
                 map.on('viewreset', updateOffsets);
-                
+
                 // Initial positioning calculation
                 updateOffsets();
 
-                // Fit map bounds to show all markers
+                // Fit map bounds to show all markers, then zoom in an extra 0.5 levels for spacing
                 if (Object.keys(locationMap).length > 0) {
-                    var bounds = Object.values(locationMap).map(location => 
+                    var bounds = Object.values(locationMap).map(location =>
                         [location.lat, location.lng]
                     );
-                    map.fitBounds(bounds, { padding: [50, 50] });
+                    var latLngBounds = L.latLngBounds(bounds);
+                    var targetZoom = map.getBoundsZoom(latLngBounds, false, [50, 50]);
+                    map.setView(latLngBounds.getCenter(), targetZoom);
                 }
-                
-                // Recalculate offsets after fitBounds starts/completes
+
+                // Recalculate offsets after setView completes
                 updateOffsets();
 
                 // Create static custom control overlay for virtual engagements
                 if (virtualEntries.length > 0) {
                     var virtualControl = L.control({ position: 'bottomleft' });
-                    
-                    virtualControl.onAdd = function(map) {
+
+                    virtualControl.onAdd = function (map) {
                         var card = L.DomUtil.create('div', 'virtual-events-card');
                         L.DomEvent.disableClickPropagation(card);
-                        
+
                         var title = document.createElement('div');
                         title.className = 'virtual-events-title';
                         title.textContent = 'Virtual';
                         card.appendChild(title);
-                        
+
                         var container = document.createElement('div');
                         container.className = 'virtual-dots-container';
                         card.appendChild(container);
-                        
+
                         var cx = 50;
                         var cy = 30;
                         var D = 12.5; // Spacing for tight cluster
-                        
+
                         // Sort virtual entries by year descending
                         virtualEntries.sort((a, b) => parseInt(b.year) - parseInt(a.year));
-                        
+
                         // Generate tight hexagonal offsets for the virtual items
                         var offsets = getHexOffsets(virtualEntries.length, D);
-                        
+
                         virtualEntries.forEach((entry, i) => {
                             var offset = offsets[i];
                             var dot = document.createElement('div');
                             dot.className = 'virtual-dot';
-                            
+
                             var color = categoryColors[entry.category] || '#9b59b6';
                             dot.style.backgroundColor = color;
                             dot.style.left = (cx + offset.x - 6) + 'px';
                             dot.style.top = (cy + offset.y - 6) + 'px';
-                            
+
                             // Map container click simulation for popup positioning
-                            dot.addEventListener('click', function(e) {
+                            dot.addEventListener('click', function (e) {
                                 L.DomEvent.stopPropagation(e);
-                                
+
                                 var rect = dot.getBoundingClientRect();
                                 var mapRect = map.getContainer().getBoundingClientRect();
                                 var clickX = rect.left - mapRect.left + rect.width / 2;
                                 var clickY = rect.top - mapRect.top;
-                                
+
                                 var latlng = map.containerPointToLatLng(L.point(clickX, clickY));
-                                
+
                                 var popupContent = '<div style="max-width: 250px; font-family: Arial, sans-serif; line-height: 1.4;">';
                                 popupContent += '<span style="color:#888; font-size:10px; text-transform:uppercase; font-weight:bold;">Virtual Engagement</span><br>';
                                 popupContent += '<span style="font-weight:bold; font-size:13px; color:#333;">' + entry.year + '</span>';
@@ -362,13 +372,13 @@
                                     .setContent(popupContent)
                                     .openOn(map);
                             });
-                            
+
                             container.appendChild(dot);
                         });
-                        
+
                         return card;
                     };
-                    
+
                     virtualControl.addTo(map);
                 }
             })
@@ -377,4 +387,5 @@
             });
     </script>
 </body>
+
 </html>

@@ -93,6 +93,17 @@ document.addEventListener('DOMContentLoaded', function() {
     fetch(jsonPath)
         .then(function(response) { return response.json(); })
         .then(function(data) {
+            // Filter data by status (only keep if status is complete, null, empty, or undefined)
+            data = data.filter(function(entry) {
+                if (entry.status === undefined || entry.status === null || entry.status === '') {
+                    return true;
+                }
+                if (typeof entry.status === 'string' && entry.status.toLowerCase() === 'complete') {
+                    return true;
+                }
+                return false;
+            });
+
             // Group data by section
             var groupedData = {};
             data.forEach(function(entry) {

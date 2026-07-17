@@ -1,5 +1,16 @@
 [
   {
+    "status": "applied",
+    "section": "Speaking Engagements",
+    "year": "2027",
+    "category": "Conference",
+    "topic": "Computation",
+    "body": "AIA National Conference",
+    "title": "Encoding Your Design Logic (and how AI is changing it)",
+    "blurb": "Within the daily reality of a practicing design firm, translating your creative ideas into physical, built reality is often blocked by tight budgets, complex geometries, or coordination hurdles. Computational design is one of our most powerful tools to overcome these bottlenecks - specifically by encoding your architectural design logic through codifying the rules, physical interactions, and relationships between real building elements. Yet, because this has traditionally required learning complex coding, these benefits have often felt completely out of reach for everyday designers. \n\n Through highly visual storytelling - using rich project imagery, diagnostic logic animations, and real-world case studies of award-winning, built Architecture across a range of budgets—you will discover how encoding logical rules protects and amplifies your creative intent. We will dissect exactly how rule-based logic resolved a monumental, self-supporting concrete staircase, optimized a folded metal facade when a project's budget was halved, and elevated design throughout a higher-education facility. This approach acts as a practical bridge, translating raw design ideas into physical, fabrication-ready reality - all within tight budget constraints.\n\n Finally, we will explore how Artificial Intelligence is transforming this landscape by making computational workflows accessible to every designer. By translating natural language into executable code, AI tools are removing the coding barrier entirely. Moving beyond theoretical AI, we will dissect active, applied workflows on a public school and a public library. These real-world projects prove that we are no longer limited by our technical ability - only by our creativity. We will conclude with a clear blueprint to strategically navigate this tech transition, focusing on firm culture, change management, and a practical business strategy to add computational thinking and AI to your firm's technology toolkit.",
+    "learningObjectives": "1. Define the core principles of computational design by identifying how to translate creative design intent into simple, logical rules and relationships between building elements. \n\n 2. Analyze complex architectural challenges - from halved budgets to intricate geometries - to evaluate how rule-based logic protects and enhances your design intent. \n\n 3. Apply emerging natural language AI tools to convert plain, everyday language into executable scripts, bypassing the traditional barrier of complex coding. \n\n 4. Evaluate organizational and cultural strategies to successfully integrate computational thinking and emerging AI tools into a practicing firm's technology toolkit."
+  },
+  {
     "section": "Publications",
     "year": "2026",
     "body": "Deutsch, Randy (Routledge)",
@@ -9,6 +20,7 @@
     "image": "content/aia/2026-agenticArchitect.jpg"
   },
   {
+    "status": "complete",
     "section": "Speaking Engagements",
     "year": "2026",
     "topic": "Computation",
@@ -172,6 +184,7 @@
     "body": "PSMJ",
     "title": "Vibe Coding: Balancing the Power and Peril of AI Automation",
     "blurb": "\"Vibe Coding\" represents a new paradigm where designers use AI to translate creative intent into executable code, bypassing syntax to build everything from simple automations to complex web applications. However, this democratization brings a critical tension: while it exponentially increases staff capabilities, it introduces significant risks regarding data privacy, security vulnerabilities, and unverified code execution. This session cuts through the hype to explore the reality of this \"grey zone,\" helping leaders identify where AI coding is a safe innovation engine and where it requires expert oversight to prevent security nightmares.",
+    "learningObjectives": "1. The Spectrum of Autonomy: Understanding the leap from simple task automation in Python , executing code inside  Revit/Rhino, to agentic workflows where AI writes, checks, and executes complex code. \n\n 2. Navigating the Risk/Reward: Analyzing the hidden dangers of 'black box' code generation—including database vulnerabilities and malicious injections—when empowering staff without traditional security training. \n\n 3. The Investment 'Sweet Spot': Why the highest ROI often comes not from replacing experts, but from equipping your existing computational designers with AI to act as a massive force multiplier. \n\n 4. Defining Safe Boundaries: How to distinguish between low-risk internal tools (design scripts) and high-stakes external applications (web/databases) to set effective firm-wide policies.",
     "category": "Conference",
     "city": "Las Vegas",
     "lat": "36.1",
