@@ -1,5 +1,28 @@
 [
     {
+        "projectName": "James City County Government Center",
+        "client": "James City County",
+        "AOR": "Clark Nexsen",
+        "designArchitect": "Clark Nexsen",
+        "phases": [
+            "CD"
+        ],
+        "architecturalDescription": "The James City County Government Center consolidates 12 county departments into a unified, 300,000 sq ft civic facility on Longhill Road. Designed as a focal point for public service and community life, the building features flexible meeting spaces for Board of Supervisors proceedings, a structured parking garage, and campus integration with a future Williamsburg Regional Library branch.\n\nMy involvement on the project was focused specifically on the computational design of the lobby's feature wood wall. To create a dynamic architectural centerpiece within budget constraints, I developed an algorithmic system that utilized a fixed set of standardized panel types and sizes. By optimizing the distribution and orientation of these fixed panels, the computational design generates a seamless, non-repeating visual texture that anchors the lobby while keeping fabrication and assembly efficient.",
+        "technologyDescription": "Lobby Wood Feature Wall: I applied computational design to develop the geometric logic for the lobby's feature wood wall. Working within strict fabrication constraints, the goal was to create a dynamic visual texture without incurring the cost of fully custom panel geometries. Using algorithmic placement tools, I designed a system using a fixed inventory of panel sizes and types, arranging them to eliminate obvious repeating patterns across the wall surface. This computational optimization delivered a rich, non-repetitive architectural element while streamlining panel fabrication and installation.",
+        "projectID": "10442",
+        "hours": 40,
+        "section": "Architecture",
+        "compD": true,
+        "role": "Computational Designer",
+        "startDate": 2025,
+        "completionDate": 2027,
+        "status": "In Design",
+        "sqft": "300,000 sqft",
+        "projectType": "Government Center",
+        "location": "Williamsburg, VA",
+        "briefDescription": "The new James City County Government Center consolidates 12 county departments into a single modern civic facility on Longhill Road. As the computational designer for the lobby's feature wood wall, Ryan developed a parametric workflow to arrange a fixed set of standardized panel sizes into a complex, non-repeating texture, balancing visual depth with cost-effective fabrication."
+    },
+    {
         "projectID": "8953",
         "projectName": "Madera Cyber Innovation Center",
         "client": "United States Air Force Academy",
