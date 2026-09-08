@@ -1,83 +1,59 @@
-/**
- * Speaking Engagements Donut Chart
- * Colors segments by selected category (topic, category, or body)
- * Base color: #FA8072 (Salmon)
- */
+// Helper function to generate identical color palette across Chart, Map, and Text List
+// Color palette ranges from Primary Coral (#FA8072), through Soft Lilac (#AF7EE1), to Slate Cyan (#00ABD8)
+window.getSalmonColorPalette = function(speakingData, field) {
+    if (!speakingData || !speakingData.length) return {};
+    const items = speakingData.filter(d => d.section === "Speaking Engagements");
+    const aggregated = d3.rollups(
+        items,
+        v => v.length,
+        d => {
+            const val = d[field] || "Other";
+            if (field === 'body') {
+                if (val.includes("AIA")) return "AIA";
+                if (val.includes("PSMJ")) return "PSMJ";
+                if (val.includes("BIMxt")) return "BIMxt";
+                if (val.includes("UNC Charlotte")) return "UNC Charlotte";
+                if (val.includes("NC State")) return "NC State";
+                if (val.includes("Grassfield")) return "Grassfield STEM";
+            }
+            return val;
+        }
+    ).sort((a, b) => b[1] - a[1]);
+
+    const total = aggregated.length;
+    const colorMap = {};
+    const colorInterpolator = d3.scaleLinear()
+        .domain([0, 0.5, 1])
+        .range(['#FA8072', '#AF7EE1', '#00ABD8']);
+
+    aggregated.forEach((item, i) => {
+        let color = "#FA8072";
+        if (total > 1) {
+            color = colorInterpolator(i / (total - 1));
+        }
+        colorMap[item[0]] = color;
+    });
+    return colorMap;
+};
 
 window.renderSpeakingChart = function(data, container) {
     if (!data || !container) return;
 
-    // Filter to only Speaking Engagements (though bio-dynamic-sections already does this)
+    // Filter to only Speaking Engagements
     const speakingData = data.filter(d => d.section === "Speaking Engagements");
     const totalCount = speakingData.length;
 
-    const menuLabel = document.createElement('div');
-    menuLabel.textContent = 'View by:';
-    menuLabel.style.fontSize = '9px';
-    menuLabel.style.fontFamily = 'Roboto Slab, serif';
-    menuLabel.style.textTransform = 'uppercase';
-    menuLabel.style.letterSpacing = '2px';
-    menuLabel.style.color = '#d3d3d3';
-    menuLabel.style.marginBottom = '5px';
-    menuLabel.style.textAlign = 'center';
-    container.appendChild(menuLabel);
-
-    const menu = document.createElement('div');
-    menu.style.display = 'flex';
-    menu.style.gap = '15px';
-    menu.style.marginBottom = '20px';
-    menu.style.fontSize = '12px';
-    menu.style.fontFamily = 'Roboto Slab, serif';
-    menu.style.textTransform = 'uppercase';
-    menu.style.letterSpacing = '1px';
-    menu.style.justifyContent = 'center';
-
     const fields = ['topic', 'year', 'category', 'body'];
-    let currentField = 'topic';
+    let currentField = window.currentChartField || 'topic';
 
     window.changeChartField = function(field) {
         currentField = field;
-        menu.querySelectorAll('span').forEach(s => {
-            const isMatch = s.textContent.toLowerCase() === field.toLowerCase();
-            s.style.borderBottom = isMatch ? '2px solid #FA8072' : '2px solid transparent';
-            s.style.color = isMatch ? '#313131' : '#b3b3b3';
-        });
+        window.currentChartField = field;
         updateChart();
+        if (window.onChartFieldChanged) {
+            window.onChartFieldChanged(field);
+        }
     };
-
-    fields.forEach(field => {
-        const btn = document.createElement('span');
-        btn.textContent = field;
-        btn.style.cursor = 'pointer';
-        btn.style.paddingBottom = '2px';
-        btn.style.borderBottom = field === currentField ? '2px solid #FA8072' : '2px solid transparent';
-        btn.style.color = field === currentField ? '#313131' : '#b3b3b3';
-        btn.style.transition = 'all 0.3s ease';
-        
-        btn.onmouseover = function() {
-            if (currentField !== field) {
-                btn.style.color = '#FA8072';
-                btn.style.borderBottom = '2px solid rgba(250, 128, 114, 0.3)';
-            }
-        };
-
-        btn.onmouseout = function() {
-            if (currentField !== field) {
-                btn.style.color = '#b3b3b3';
-                btn.style.borderBottom = '2px solid transparent';
-            }
-        };
-
-        btn.onclick = function() {
-            if (window.updateSpeakingFilter) {
-                window.updateSpeakingFilter(null, null);
-            }
-            window.changeChartField(field);
-        };
-        menu.appendChild(btn);
-    });
-
-    container.appendChild(menu);
 
     // Chart container
     const chartDiv = document.createElement('div');
@@ -193,14 +169,13 @@ window.renderSpeakingChart = function(data, container) {
             .innerRadius(radius * 0.9)
             .outerRadius(radius * 0.9);
 
-        // Color scale: #FA8072 and lighter
-        // Base HSL: 6, 93%, 71%
+        // Color scale: Primary Coral (#FA8072) -> Soft Lilac (#AF7EE1) -> Slate Cyan (#00ABD8)
         const colorScale = (i, total) => {
             if (total <= 1) return "#FA8072";
-            const step = 20 / (total - 1);
-            const l = 71 + (i * step);
-            const s = 0.93 - (i * (0.3 / (total - 1))); // Slightly desaturate as it gets lighter
-            return d3.hsl(6, s, l / 100).toString();
+            const colorInterpolator = d3.scaleLinear()
+                .domain([0, 0.5, 1])
+                .range(['#FA8072', '#AF7EE1', '#00ABD8']);
+            return colorInterpolator(i / (total - 1));
         };
 
         const data_ready = pie(aggregated);
@@ -274,24 +249,22 @@ window.renderSpeakingChart = function(data, container) {
                 totalLabel.style("display", "block");
             });
 
-        // Add labels (sums) in middle of segments
+        // Add labels (sums) in middle of segments (only if segment is large enough)
+        svg.selectAll(".slice-label").remove();
+
+        const labelSlices = data_ready.filter(d => (d.endAngle - d.startAngle) > 0.18);
+
         const t = svg.selectAll(".slice-label")
-            .data(data_ready, d => d.data[0]);
+            .data(labelSlices, d => d.data[0]);
 
-        t.exit().remove();
-
-        const tEnter = t.enter()
+        t.enter()
             .append("text")
             .attr("class", "slice-label")
             .attr("text-anchor", "middle")
             .style("fill", "white")
-            .style("font-size", "12px")
+            .style("font-size", "11px")
             .style("font-family", "Roboto Slab, serif")
-            .style("pointer-events", "none");
-
-        svg.selectAll(".slice-label")
-            .transition()
-            .duration(1000)
+            .style("pointer-events", "none")
             .attr("transform", d => `translate(${arc.centroid(d)})`)
             .text(d => d.data[1])
             .style("opacity", function(d) {

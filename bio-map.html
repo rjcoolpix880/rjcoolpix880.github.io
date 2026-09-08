@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 
+    <!-- Google Fonts: Roboto Slab for chart/legend consistency -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <style>
         body {
             margin: 0;
@@ -17,50 +22,68 @@
         }
 
         #map {
+            position: relative;
             width: 100%;
             height: 100vh;
+        }
+
+        .leaflet-control-attribution {
+            font-size: 9px !important;
+            background: rgba(255, 255, 255, 0.5) !important;
+            color: #888 !important;
+            padding: 2px 6px !important;
+            border-radius: 3px 0 0 0;
+        }
+
+        .leaflet-control-attribution a {
+            color: #777 !important;
+            text-decoration: none !important;
+        }
+
+        .leaflet-control-attribution a:hover {
+            text-decoration: underline !important;
         }
 
         .virtual-events-card {
             background: rgba(255, 255, 255, 0.9);
             border: 2px solid rgba(0, 0, 0, 0.2);
             border-radius: 6px;
-            padding: 10px 12px;
+            padding: 8px 10px;
             box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            font-size: 11px;
+            font-family: 'Roboto Slab', serif;
+            font-size: 10px;
             font-weight: bold;
             color: #333;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            min-width: 110px;
+            min-width: 100px;
             pointer-events: auto;
         }
 
         .virtual-events-title {
-            margin-bottom: 6px;
+            margin-bottom: 4px;
             text-align: center;
             border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-            padding-bottom: 4px;
+            padding-bottom: 2px;
         }
 
         .virtual-dots-container {
             position: relative;
-            width: 100px;
-            height: 60px;
+            width: 90px;
+            height: 50px;
             margin: 0 auto;
         }
 
         .virtual-dot {
             position: absolute;
-            width: 12px;
-            height: 12px;
+            width: 11px;
+            height: 11px;
             border-radius: 50%;
             border: 1.5px solid #fff;
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
             cursor: pointer;
             box-sizing: border-box;
-            transition: transform 0.15s ease-in-out;
+            transition: transform 0.15s ease-in-out, opacity 0.3s ease;
         }
 
         .virtual-dot:hover {
@@ -78,34 +101,83 @@
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
     <script>
-        // Initialize the map with fractional zoom support
         var map = L.map('map', {
             zoomSnap: 0.5
-        }).setView([39.0, -95.0], 4.5); // Center on USA with slightly closer zoom
+        }).setView([39.0, -95.0], 4.5);
 
-        // Add CartoDB Positron No Labels tile layer - no text labels, just state outlines and water
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png', {
-            attribution: '© OpenStreetMap contributors © CARTO',
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png?key=cb1_321a_1_7a108b74b3cef2187aa6ee5b', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> &copy; <a href="https://carto.com/" target="_blank">CARTO</a>',
             maxZoom: 19,
             subdomains: 'abcd'
         }).addTo(map);
 
-        // Color mapping for categories
-        var categoryColors = {
-            'Conference': '#3388ff',
-            'School': '#ff7800',
-            'Virtual': '#9b59b6'
-        };
-
+        var currentField = 'topic';
+        var activeFilter = null;
+        var allSpeakingData = [];
+        var allPhysicalMarkers = [];
+        var allVirtualDots = [];
         var staticGroups = [];
 
-        // Helper to generate centroid-centered hexagonal grid offsets for N items
+        function normalizeValue(field, rawVal) {
+            var val = rawVal || "Other";
+            if (field === 'body') {
+                if (val.includes("AIA")) return "AIA";
+                if (val.includes("PSMJ")) return "PSMJ";
+                if (val.includes("BIMxt")) return "BIMxt";
+                if (val.includes("UNC Charlotte")) return "UNC Charlotte";
+                if (val.includes("NC State")) return "NC State";
+                if (val.includes("Grassfield")) return "Grassfield STEM";
+            }
+            return val;
+        }
+
+        function interpolateCoralToCyan(t) {
+            // Clamp t between 0.0 and 1.0
+            t = Math.max(0, Math.min(1, t));
+
+            // Route: Primary Coral (#FA8072) -> Soft Lilac (#AF7EE1) -> Slate Cyan (#00ABD8)
+            var r, g, b;
+            if (t <= 0.5) {
+                var p = t * 2; // 0 to 1
+                r = Math.round(250 + p * (175 - 250));
+                g = Math.round(128 + p * (126 - 128));
+                b = Math.round(114 + p * (225 - 114));
+            } else {
+                var p = (t - 0.5) * 2; // 0 to 1
+                r = Math.round(175 + p * (0   - 175));
+                g = Math.round(126 + p * (171 - 126));
+                b = Math.round(225 + p * (216 - 225));
+            }
+            return "rgb(" + r + ", " + g + ", " + b + ")";
+        }
+
+        function computeColorMap(data, field) {
+            var counts = {};
+            data.forEach(function(d) {
+                var v = normalizeValue(field, d[field]);
+                counts[v] = (counts[v] || 0) + 1;
+            });
+
+            var sortedKeys = Object.keys(counts).sort(function(a, b) {
+                return counts[b] - counts[a];
+            });
+
+            var total = sortedKeys.length;
+            var colorMap = {};
+            sortedKeys.forEach(function(key, i) {
+                if (total <= 1) {
+                    colorMap[key] = "#FA8072";
+                } else {
+                    colorMap[key] = interpolateCoralToCyan(i / (total - 1));
+                }
+            });
+            return { colorMap: colorMap, keys: sortedKeys };
+        }
+
         function getHexOffsets(N, D) {
             if (N <= 1) return [{ x: 0, y: 0 }];
-
             var grid = [];
             var range = Math.ceil(Math.sqrt(N)) + 2;
-
             for (var u = -range; u <= range; u++) {
                 for (var v = -range; v <= range; v++) {
                     var x = D * (u + 0.5 * v);
@@ -115,48 +187,23 @@
                     grid.push({ x: x, y: y, dist: dist, angle: angle });
                 }
             }
-
-            // Sort by distance first (tight packing), then by angle to form symmetric patterns
             grid.sort(function (a, b) {
-                if (Math.abs(a.dist - b.dist) > 0.01) {
-                    return a.dist - b.dist;
-                }
+                if (Math.abs(a.dist - b.dist) > 0.01) return a.dist - b.dist;
                 return a.angle - b.angle;
             });
-
             var selected = grid.slice(0, N);
-
-            // Calculate centroid to center the cluster exactly at the coordinates
-            var sumX = 0;
-            var sumY = 0;
-            selected.forEach(function (p) {
-                sumX += p.x;
-                sumY += p.y;
-            });
-            var cx = sumX / N;
-            var cy = sumY / N;
-
-            return selected.map(function (p) {
-                return {
-                    x: p.x - cx,
-                    y: p.y - cy
-                };
-            });
+            var sumX = 0, sumY = 0;
+            selected.forEach(function(p) { sumX += p.x; sumY += p.y; });
+            var cx = sumX / N, cy = sumY / N;
+            return selected.map(function(p) { return { x: p.x - cx, y: p.y - cy }; });
         }
 
-        // Dynamically adjust physical marker coordinates based on current zoom pixel calculations
         function updateOffsets() {
-            var T = 28; // Merge threshold in pixels to prevent inter-city overlap at zoomed-out levels
-
-            // Clone staticGroups to activeGroups to perform temporary merges
+            var T = 28;
             var activeGroups = staticGroups.map(function (g) {
-                return {
-                    centerLatLng: g.centerLatLng,
-                    markers: g.markers.slice()
-                };
+                return { centerLatLng: g.centerLatLng, markers: g.markers.slice() };
             });
 
-            // Perform hierarchical merging of groups that are too close in pixel space
             var merged = true;
             while (merged) {
                 merged = false;
@@ -167,17 +214,11 @@
                         if (pI.distanceTo(pJ) < T) {
                             var markersI = activeGroups[i].markers;
                             var markersJ = activeGroups[j].markers;
-
-                            // Merge markers
                             activeGroups[i].markers = markersI.concat(markersJ);
-
-                            // Calculate new centroid based on number of markers in each group
-                            var wI = markersI.length;
-                            var wJ = markersJ.length;
+                            var wI = markersI.length, wJ = markersJ.length;
                             var newLat = (activeGroups[i].centerLatLng.lat * wI + activeGroups[j].centerLatLng.lat * wJ) / (wI + wJ);
                             var newLng = (activeGroups[i].centerLatLng.lng * wI + activeGroups[j].centerLatLng.lng * wJ) / (wI + wJ);
                             activeGroups[i].centerLatLng = L.latLng(newLat, newLng);
-
                             activeGroups.splice(j, 1);
                             merged = true;
                             break;
@@ -187,17 +228,14 @@
                 }
             }
 
-            // Apply offsets to each active group
             activeGroups.forEach(function (group) {
                 var N = group.markers.length;
                 if (N === 1) {
                     group.markers[0].marker.setLatLng(group.centerLatLng);
                     return;
                 }
-
-                var offsets = getHexOffsets(N, 12.5); // Tight packing spacing D = 12.5px
+                var offsets = getHexOffsets(N, 12.5);
                 var centerPoint = map.latLngToLayerPoint(group.centerLatLng);
-
                 group.markers.forEach(function (item, index) {
                     var offset = offsets[index];
                     var newPoint = L.point(centerPoint.x + offset.x, centerPoint.y + offset.y);
@@ -207,62 +245,102 @@
             });
         }
 
-        // Fetch and process JSON data
+        window.setMapField = function(field) {
+            currentField = field;
+            var result = computeColorMap(allSpeakingData, field);
+            var colorMap = result.colorMap;
+
+            allPhysicalMarkers.forEach(function(item) {
+                var val = normalizeValue(field, item.entry[field]);
+                var c = colorMap[val] || '#FA8072';
+                item.marker.setStyle({ fillColor: c });
+            });
+
+            allVirtualDots.forEach(function(v) {
+                var val = normalizeValue(field, v.entry[field]);
+                var c = colorMap[val] || '#FA8072';
+                v.element.style.backgroundColor = c;
+            });
+        };
+
+        window.updateMapFilter = function(filterField, filterValue) {
+            if (filterField && filterValue) {
+                activeFilter = { field: filterField, value: filterValue };
+            } else {
+                activeFilter = null;
+            }
+
+            allPhysicalMarkers.forEach(function(item) {
+                var entry = item.entry;
+                var match = false;
+                if (!activeFilter) {
+                    match = true;
+                } else {
+                    var val = normalizeValue(filterField, entry[filterField]);
+                    match = (val === filterValue);
+                }
+
+                if (match) {
+                    item.marker.setStyle({ fillOpacity: 0.85, opacity: 1, radius: 6 });
+                } else {
+                    item.marker.setStyle({ fillOpacity: 0.15, opacity: 0.25, radius: 5 });
+                }
+            });
+
+            allVirtualDots.forEach(function(v) {
+                var entry = v.entry;
+                var match = false;
+                if (!activeFilter) {
+                    match = true;
+                } else {
+                    var val = normalizeValue(filterField, entry[filterField]);
+                    match = (val === filterValue);
+                }
+
+                if (match) {
+                    v.element.style.opacity = '1';
+                } else {
+                    v.element.style.opacity = '0.2';
+                }
+            });
+        };
+
         fetch('bio-data.json')
             .then(response => response.json())
             .then(data => {
-                // Filter physical and virtual entries
-                var physicalEntries = data.filter(entry =>
-                    entry.section === 'Speaking Engagements' && entry.lat && entry.long && entry.lat !== '' && entry.long !== ''
-                );
+                allSpeakingData = data.filter(entry => entry.section === 'Speaking Engagements');
 
-                var virtualEntries = data.filter(entry =>
-                    entry.section === 'Speaking Engagements' &&
-                    (entry.category === 'Virtual' || !entry.lat || !entry.long || entry.lat === '' || entry.long === '')
-                );
+                var physicalEntries = allSpeakingData.filter(entry => entry.lat && entry.long && entry.lat !== '' && entry.long !== '');
+                var virtualEntries = allSpeakingData.filter(entry => entry.category === 'Virtual' || !entry.lat || !entry.long || entry.lat === '' || entry.long === '');
 
-                // Aggregate physical entries by location (lat, long)
                 var locationMap = {};
                 physicalEntries.forEach(entry => {
                     var lat = parseFloat(entry.lat);
                     var lng = parseFloat(entry.long);
                     var locationKey = lat + ',' + lng;
-
                     if (!locationMap[locationKey]) {
-                        locationMap[locationKey] = {
-                            lat: lat,
-                            lng: lng,
-                            entries: [],
-                            city: entry.city || ''
-                        };
+                        locationMap[locationKey] = { lat: lat, lng: lng, entries: [], city: entry.city || '' };
                     }
-
                     locationMap[locationKey].entries.push(entry);
                 });
 
-                // Populate physical marker groups
                 staticGroups = [];
-                Object.values(locationMap).forEach(location => {
-                    var group = {
-                        centerLatLng: L.latLng(location.lat, location.lng),
-                        markers: []
-                    };
+                allPhysicalMarkers = [];
 
-                    // Sort entries by year descending so the layout ordering stays consistent
+                Object.values(locationMap).forEach(location => {
+                    var group = { centerLatLng: L.latLng(location.lat, location.lng), markers: [] };
                     location.entries.sort((a, b) => parseInt(b.year) - parseInt(a.year));
 
-                    location.entries.forEach((entry, i) => {
-                        var color = categoryColors[entry.category] || '#3388ff';
+                    location.entries.forEach((entry) => {
                         var marker = L.circleMarker(group.centerLatLng, {
                             radius: 6,
-                            fillColor: color,
+                            fillColor: '#FA8072',
                             color: '#fff',
                             weight: 1.5,
                             opacity: 1,
                             fillOpacity: 0.85
                         }).addTo(map);
 
-                        // Create popup content
                         var popupContent = '<div style="max-width: 250px; font-family: Arial, sans-serif; line-height: 1.4;">';
                         if (location.city) {
                             popupContent += '<span style="color:#888; font-size:10px; text-transform:uppercase; font-weight:bold;">' + location.city + '</span><br>';
@@ -277,37 +355,39 @@
                         }
                         popupContent += '</div>';
 
-                        marker.bindPopup(popupContent);
-
-                        group.markers.push({
-                            marker: marker
+                        // Remove map popup so clicking marker filters text list directly
+                        marker.on('click', function(e) {
+                            var val = normalizeValue(currentField, entry[currentField]);
+                            if (window.parent && window.parent.updateSpeakingFilter) {
+                                if (activeFilter && activeFilter.field === currentField && activeFilter.value === val) {
+                                    window.parent.updateSpeakingFilter(null, null);
+                                } else {
+                                    window.parent.updateSpeakingFilter(currentField, val);
+                                }
+                            }
                         });
+
+                        var mObj = { marker: marker, entry: entry };
+                        group.markers.push(mObj);
+                        allPhysicalMarkers.push(mObj);
                     });
 
                     staticGroups.push(group);
                 });
 
-                // Attach zoom events
                 map.on('zoomend', updateOffsets);
                 map.on('viewreset', updateOffsets);
-
-                // Initial positioning calculation
                 updateOffsets();
 
-                // Fit map bounds to show all markers, then zoom in an extra 0.5 levels for spacing
                 if (Object.keys(locationMap).length > 0) {
-                    var bounds = Object.values(locationMap).map(location =>
-                        [location.lat, location.lng]
-                    );
+                    var bounds = Object.values(locationMap).map(location => [location.lat, location.lng]);
                     var latLngBounds = L.latLngBounds(bounds);
                     var targetZoom = map.getBoundsZoom(latLngBounds, false, [50, 50]);
                     map.setView(latLngBounds.getCenter(), targetZoom);
                 }
-
-                // Recalculate offsets after setView completes
                 updateOffsets();
 
-                // Create static custom control overlay for virtual engagements
+                allVirtualDots = [];
                 if (virtualEntries.length > 0) {
                     var virtualControl = L.control({ position: 'bottomleft' });
 
@@ -324,56 +404,35 @@
                         container.className = 'virtual-dots-container';
                         card.appendChild(container);
 
-                        var cx = 50;
-                        var cy = 30;
-                        var D = 12.5; // Spacing for tight cluster
+                        var cx = 45;
+                        var cy = 25;
+                        var D = 12.5;
 
-                        // Sort virtual entries by year descending
                         virtualEntries.sort((a, b) => parseInt(b.year) - parseInt(a.year));
-
-                        // Generate tight hexagonal offsets for the virtual items
                         var offsets = getHexOffsets(virtualEntries.length, D);
 
                         virtualEntries.forEach((entry, i) => {
                             var offset = offsets[i];
                             var dot = document.createElement('div');
                             dot.className = 'virtual-dot';
+                            dot.style.backgroundColor = '#FA8072';
+                            dot.style.left = (cx + offset.x - 5) + 'px';
+                            dot.style.top = (cy + offset.y - 5) + 'px';
 
-                            var color = categoryColors[entry.category] || '#9b59b6';
-                            dot.style.backgroundColor = color;
-                            dot.style.left = (cx + offset.x - 6) + 'px';
-                            dot.style.top = (cy + offset.y - 6) + 'px';
-
-                            // Map container click simulation for popup positioning
                             dot.addEventListener('click', function (e) {
                                 L.DomEvent.stopPropagation(e);
-
-                                var rect = dot.getBoundingClientRect();
-                                var mapRect = map.getContainer().getBoundingClientRect();
-                                var clickX = rect.left - mapRect.left + rect.width / 2;
-                                var clickY = rect.top - mapRect.top;
-
-                                var latlng = map.containerPointToLatLng(L.point(clickX, clickY));
-
-                                var popupContent = '<div style="max-width: 250px; font-family: Arial, sans-serif; line-height: 1.4;">';
-                                popupContent += '<span style="color:#888; font-size:10px; text-transform:uppercase; font-weight:bold;">Virtual Engagement</span><br>';
-                                popupContent += '<span style="font-weight:bold; font-size:13px; color:#333;">' + entry.year + '</span>';
-                                if (entry.body) {
-                                    popupContent += ' • <span style="font-weight:bold; color:#555; font-size:12px;">' + entry.body + '</span>';
+                                var val = normalizeValue(currentField, entry[currentField]);
+                                if (window.parent && window.parent.updateSpeakingFilter) {
+                                    if (activeFilter && activeFilter.field === currentField && activeFilter.value === val) {
+                                        window.parent.updateSpeakingFilter(null, null);
+                                    } else {
+                                        window.parent.updateSpeakingFilter(currentField, val);
+                                    }
                                 }
-                                popupContent += '<br><span style="font-size:12px; display:inline-block; margin-top:4px; color:#111;">' + entry.title + '</span>';
-                                if (entry.link) {
-                                    popupContent += '<br><a href="' + entry.link + '" target="_blank" style="color:#3388ff; text-decoration:none; font-size:11px; font-weight:bold; display:inline-block; margin-top:6px;">View Details &rarr;</a>';
-                                }
-                                popupContent += '</div>';
-
-                                L.popup()
-                                    .setLatLng(latlng)
-                                    .setContent(popupContent)
-                                    .openOn(map);
                             });
 
                             container.appendChild(dot);
+                            allVirtualDots.push({ element: dot, entry: entry });
                         });
 
                         return card;
@@ -381,10 +440,10 @@
 
                     virtualControl.addTo(map);
                 }
+
+                window.setMapField(currentField);
             })
-            .catch(error => {
-                console.error('Error loading JSON data:', error);
-            });
+            .catch(error => console.error('Error loading JSON data:', error));
     </script>
 </body>
 

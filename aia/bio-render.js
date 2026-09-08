@@ -209,14 +209,15 @@ function initLeafletMap(speakingData) {
     const map = L.map('map', { attributionControl: false }).setView([39.0, -95.0], 4);
 
     // CartoDB Positron No Labels tile layer
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png', {
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png?key=cb1_321a_1_7a108b74b3cef2187aa6ee5b', {
         maxZoom: 19,
         subdomains: 'abcd'
     }).addTo(map);
 
     const categoryColors = {
-        'Conference': '#3388ff',
-        'School': '#ff7800'
+        'Conference': '#FA8072',
+        'School': '#D45042',
+        'Virtual': '#F7A89E'
     };
 
     // Filter valid locations
