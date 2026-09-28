@@ -1,5 +1,19 @@
 [
   {
+    "section": "Speaking Engagements",
+    "year": "2026",
+    "topic": "AI",
+    "body": "AIA TAP Triangle Chapter",
+    "title": "Vibe Coding: Balancing the Power and Peril of AI Automation",
+    "blurb": "\"Vibe Coding\" represents a new paradigm where designers use AI to translate creative intent into executable code, bypassing syntax to build everything from simple automations to complex web applications. However, this democratization brings a critical tension: while it exponentially increases staff capabilities, it introduces significant risks regarding data privacy, security vulnerabilities, and unverified code execution. This session cuts through the hype to explore the reality of this \"grey zone,\" helping leaders identify where AI coding is a safe innovation engine and where it requires expert oversight to prevent security nightmares.",
+    "learningObjectives": "* The Spectrum of Autonomy: Understanding the leap from simple task automation in Python , executing code inside  Revit/Rhino, to agentic workflows where AI writes, checks, and executes complex code. \n\n * Navigating the Risk/Reward: Analyzing the hidden dangers of \"black box\" code generation—including database vulnerabilities and malicious injections—when empowering staff without traditional security training. \n\n * The Investment \"Sweet Spot\": Why the highest ROI often comes not from replacing experts, but from equipping your existing computational designers with AI to act as a massive force multiplier. \n\n * Defining Safe Boundaries: How to distinguish between low-risk internal tools (design scripts) and high-stakes external applications (web/databases) to set effective firm-wide policies.",
+    "category": "Conference",
+    "city": "Raleigh",
+    "lat": "35.7",
+    "long": "-78.6",
+    "image": "content/aia/2026-AIA-TAP.jpg"
+  },
+  {
     "status": "applied",
     "section": "Speaking Engagements",
     "year": "2027",
