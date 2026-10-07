@@ -11,7 +11,8 @@
     "city": "Raleigh",
     "lat": "35.7",
     "long": "-78.6",
-    "image": "content/aia/2026-AIA-TAP.jpg"
+    "image": "content/aia/2026-AIA-TAP.jpg",
+    "attendees": 70
   },
   {
     "status": "applied",
