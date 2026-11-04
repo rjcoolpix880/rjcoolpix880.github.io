@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Ryan Johnson - Photography</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="content/RJ.css">
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300');
+		@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+		@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+		/* ============================================================
+		   Justified Rows — Adapted to RJ.css styling
+		   Group photos into ".row" divs yourself — 1, 2, 3, or more per
+		   row. Just drop in:
+		     <figure class="photo">
+		       <img src="..._small.webp" data-full="....jpg" alt="..." loading="lazy">
+		     </figure>
+		   — no dimensions to type. The script at the bottom of this page
+		   reads each photo's real pixel size once it loads and sets
+		   --ar (width / height) on it automatically.
+
+		   Flexbox grows every photo in a row proportional to --ar until
+		   the row fills the full width — since growth matches each
+		   photo's own ratio, they all land on the same height. No
+		   cropping, only scaling.
+
+		   A row with one photo becomes a full-width HERO photo automatically,
+		   and automatically uses its full-resolution image (data-full).
+
+		   Want deliberate whitespace instead? Give that photo
+		   class="photo--inset" and set its own width directly (e.g.
+		   style="flex-basis: 66.67%" for 2/3), then use justify-content
+		   on the .row to choose where the leftover space sits:
+		     justify-content: flex-start  -> photo left, gap on the right
+		     justify-content: center      -> gap split evenly both sides
+		     justify-content: flex-end    -> photo right, gap on the left
+
+		   THE STACK CASE — two photos stacked on the left, matched by
+		   one tall photo on the right — is a ".photo--stack": a column
+		   of 2 photos that counts as ONE item in the row. Set --ar by
+		   hand (roughly 1 / (1/ar1 + 1/ar2), nudged by eye for the gap)
+		   or omit --ar to let the script estimate it automatically.
+		   ============================================================ */
+
+		:root {
+			--gap: 20px;
+			--gutter: 0px;
+			--serif: 'Lora', serif;
+			--sans: 'Teko', sans-serif;
+			--slab: 'Roboto Slab', serif;
+			--text: #313131;
+			--muted: gray;
+			--rule: #b3b3b3;
+		}
+
+		.rows {
+			padding: 0 var(--gutter) var(--gap);
+		}
+
+		.rows .row {
+			display: flex;
+			gap: var(--gap);
+			margin-bottom: var(--gap);
+			align-items: flex-start;
+		}
+
+		.rows .row>.photo {
+			margin: 0;
+			flex-grow: var(--ar, 1);
+			flex-shrink: 1;
+			flex-basis: 0;
+			min-width: 0;
+		}
+
+		.rows .row img {
+			display: block;
+			width: 100%;
+			height: auto;
+			max-height: none;
+			cursor: pointer;
+		}
+
+		/* Guarantee: a photo alone in a row always fills the full width
+		   (but never overrides an inset photo's deliberate whitespace) */
+		.rows .row>.photo:only-child:not(.photo--inset) {
+			flex-grow: 1;
+		}
+
+		/* An "inset" photo opts out of growing — it keeps a fixed width
+		   you set yourself, leaving the rest of the row as whitespace */
+		.rows .row>.photo--inset {
+			flex-grow: 0;
+		}
+
+		/* Two (or more) photos stacked vertically as a single row item */
+		.rows .photo--stack {
+			display: flex;
+			flex-direction: column;
+			gap: var(--gap);
+		}
+
+		.rows .photo--stack figure {
+			margin: 0;
+		}
+
+		.rows .photo--stack img {
+			width: 100%;
+			height: auto;
+			max-height: none;
+			display: block;
+		}
+
+		/* Optional caption under any figure */
+		.rows figcaption {
+			color: var(--muted);
+			font-family: var(--serif);
+			font-size: 11px;
+			font-style: italic;
+			text-align: right;
+			margin-top: 4px;
+			line-height: 1.3;
+		}
+
+		/* Text grid item inside a row — styled with main site fonts & lines */
+		.rows .photo--text {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-self: stretch;
+			padding: clamp(1.25rem, 2.5vw, 2.25rem);
+			border-top: 1px solid var(--rule);
+			border-bottom: 1px solid var(--rule);
+			font-family: var(--serif);
+			box-sizing: border-box;
+		}
+
+		.rows .photo--text .text-kicker {
+			font-family: var(--slab);
+			font-weight: 300;
+			font-size: 12px;
+			letter-spacing: 0.5px;
+			text-transform: uppercase;
+			color: var(--muted);
+			margin-bottom: 8px;
+			display: block;
+		}
+
+		.rows .photo--text h5 {
+			margin-top: 0;
+			margin-bottom: 10px;
+		}
+
+		.rows .photo--text p {
+			margin: 0;
+			font-size: 15px;
+			line-height: 1.6;
+			color: var(--text);
+		}
+
+		/* Essay / section break between .rows groups */
+		.essay {
+			max-width: 750px;
+			margin: 40px 0;
+			padding: 20px 0;
+			border-top: 1px solid var(--rule);
+			border-bottom: 1px solid var(--rule);
+			font-family: var(--serif);
+			color: var(--text);
+		}
+
+		.essay h6 {
+			margin-top: 0;
+			margin-bottom: 6px;
+		}
+
+		.essay p {
+			margin: 0;
+			font-size: 15px;
+			line-height: 1.6;
+		}
+
+		@media (max-width: 640px) {
+			.rows .row {
+				flex-wrap: wrap;
+			}
+
+			.rows .row>.photo,
+			.rows .row>.photo--inset {
+				flex-basis: 100% !important;
+				flex-grow: 0;
+			}
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="entirepage">
+
+		<div class="whiteline"></div>
+		<div class="whiteline"></div>
+
+		<h5>
+			<a href="index.html" class="home-arrow">
+				<span style="pointer-events: none; user-select: none;">&#8249;</span>
+			</a>
+		</h5>
+
+		<div class="whiteline"></div>
+		<div class="blacklinethin"></div>
+		<div style="height:50px"></div>
+
+		<div class="container">
+			<h4>PHOTO&shy;GRAPHY</h4>
+		</div>
+
+		<div style="height:30px"></div>
+		<div class="blackline"></div>
+		<div style="height:35px"></div>
+
+		<!-- ============================================================
+		     1. BAHÁ'Í TEMPLE OF SOUTH AMERICA (Santiago, Chile)
+		        Hero: Wide dusk aerial -> Details: Oculus, top-down & context
+		     ============================================================ -->
+		<div class="rows">
+
+			<!-- HERO (Full-width, full-res) -->
+			<div class="row">
+				<figure class="photo">
+					<img src="content/photo-portfolio/DJI_0736-HDR.jpg"
+						data-full="content/photo-portfolio/DJI_0736-HDR.jpg" alt="Bahá'í Temple dusk aerial hero"
+						loading="lazy">
+				</figure>
+			</div>
+
+			<!-- DETAILS: Close-up oculus + top-down geometry + reflecting pool -->
+			<div class="row">
+				<figure class="photo">
+					<img src="content/photo-portfolio/DJI_0765-HDR_small.webp"
+						data-full="content/photo-portfolio/DJI_0765-HDR.jpg" alt="Bahá'í Temple oculus detail"
+						loading="lazy">
+				</figure>
+
+				<figure class="photo">
+					<img src="content/photo-portfolio/DJI_0752-HDR_small.webp"
+						data-full="content/photo-portfolio/DJI_0752-HDR.jpg" alt="Bahá'í Temple reflecting pool"
+						loading="lazy">
+				</figure>
+			</div>
+
+			<!-- DETAILS: Mountain foothills context pair -->
+			<div class="row">
+
+				<figure class="photo">
+					<img src="content/photo-portfolio/DJI_0678-HDR-2_small.webp"
+						data-full="content/photo-portfolio/DJI_0678-HDR-2.jpg" alt="Bahá'í Temple wide landscape"
+						loading="lazy">
+				</figure>
+			</div>
+
+		</div>
+
+		<div class="blacklinethin"></div>
+		<div style="height:35px"></div>
+
+		<!-- ============================================================
+		     2. BIBLIOTECA VASCONCELOS (Mexico City)
+		        Hero: Wide central aisle -> Details: 3 vertical stack/glass studies
+		     ============================================================ -->
+		<div class="rows">
+
+			<!-- HERO (Full-width, full-res) -->
+			<div class="row">
+				<figure class="photo">
+					<img src="content/photo-portfolio/_DSF6286.jpg" data-full="content/photo-portfolio/_DSF6286.jpg"
+						alt="Biblioteca Vasconcelos central aisle hero" loading="lazy">
+				</figure>
+			</div>
+
+			<!-- DETAILS: 3 vertical details of suspended stacks, atrium canyon & glass floor -->
+			<div class="row">
+				<figure class="photo">
+					<img src="content/photo-portfolio/_DSF6281_small.webp"
+						data-full="content/photo-portfolio/_DSF6281.jpg" alt="Biblioteca Vasconcelos suspended stacks"
+						loading="lazy">
+				</figure>
+				<figure class="photo">
+					<img src="content/photo-portfolio/_DSF6294_small.webp"
+						data-full="content/photo-portfolio/_DSF6294.jpg"
+						alt="Biblioteca Vasconcelos atrium in black and white" loading="lazy">
+				</figure>
+				<figure class="photo">
+					<img src="content/photo-portfolio/_DSF6318_small.webp"
+						data-full="content/photo-portfolio/_DSF6318.jpg" alt="Biblioteca Vasconcelos glass floor detail"
+						loading="lazy">
+				</figure>
+			</div>
+
+		</div>
+
+		<div class="blacklinethin"></div>
+		<div style="height:35px"></div>
+
+		<!-- ============================================================
+		     3. BOSTON UNIVERSITY CENTER FOR COMPUTING & DATA SCIENCES
+		        Hero: Full exterior tower + atrium -> Details: 3 tight facade studies
+		     ============================================================ -->
+		<div class="rows">
+
+			<!-- HERO PAIR: Full building exterior + full interior atrium (using full-res for large scale) -->
+			<div class="row">
+				<figure class="photo">
+					<img src="content/photo-portfolio/_DSF8466.jpg" data-full="content/photo-portfolio/_DSF8466.jpg"
+						alt="BU Data Sciences exterior tower" loading="lazy">
+				</figure>
+				<figure class="photo">
+					<img src="content/photo-portfolio/_DSF8410.jpg" data-full="content/photo-portfolio/_DSF8410.jpg"
+						alt="BU Data Sciences interior atrium" loading="lazy">
+				</figure>
+			</div>
+
+			<!-- DETAILS: 3 close-up facade/louver & reflection studies -->
+			<div class="row">
+				<figure class="photo">
+					<img src="content/photo-portfolio/_DSF8387_small.webp"
+						data-full="content/photo-portfolio/_DSF8387.jpg" alt="BU Data Sciences louver detail"
+						loading="lazy">
+				</figure>
+				<figure class="photo">
+					<img src="content/photo-portfolio/_DSF8465_small.webp"
+						data-full="content/photo-portfolio/_DSF8465.jpg" alt="BU Data Sciences facade reflections"
+						loading="lazy">
+				</figure>
+				<figure class="photo">
+					<img src="content/photo-portfolio/_DSF8470_small.webp"
+						data-full="content/photo-portfolio/_DSF8470.jpg" alt="BU Data Sciences diagonal fins detail"
+						loading="lazy">
+				</figure>
+			</div>
+
+		</div>
+
+		<div class="blacklinethin"></div>
+		<div style="height:35px"></div>
+
+		<!-- ============================================================
+		     4. POPOCATÉPETL & DÍA DE LOS MUERTOS (Mexico)
+		        Hero: Wide smoking volcano -> Details: Cloud slopes, marigolds & candles
+		     ============================================================ -->
+		<div class="rows">
+
+			<!-- HERO (Full-width, full-res) -->
+			<div class="row">
+				<figure class="photo">
+					<img src="content/photo-portfolio/_DSF6368.jpg" data-full="content/photo-portfolio/_DSF6368.jpg"
+						alt="Popocatépetl volcano hero" loading="lazy">
+				</figure>
+			</div>
+
+			<!-- DETAILS: Volcano slope detail + candle niches + marigold detail -->
+			<div class="row">
+				<figure class="photo">
+					<img src="content/photo-portfolio/_DSF6395_small.webp"
+						data-full="content/photo-portfolio/_DSF6395.jpg" alt="Volcano slopes in clouds" loading="lazy">
+				</figure>
+				<figure class="photo">
+					<img src="content/photo-portfolio/_DSF3953_small.webp"
+						data-full="content/photo-portfolio/_DSF3953.jpg" alt="Candle-lit stone niches" loading="lazy">
+				</figure>
+				<figure class="photo">
+					<img src="content/photo-portfolio/_DSF3040_small.webp"
+						data-full="content/photo-portfolio/_DSF3040.jpg" alt="Marigold flowers detail" loading="lazy">
+				</figure>
+			</div>
+
+			<!-- DETAILS: Night shrine + top-down celebration aerial -->
+			<div class="row">
+				<figure class="photo">
+					<img src="content/photo-portfolio/_DSF4083_small.webp"
+						data-full="content/photo-portfolio/_DSF4083.jpg" alt="Candle-lit night shrine" loading="lazy">
+				</figure>
+				<figure class="photo">
+					<img src="content/photo-portfolio/dji_fly_20251031_191432_250_1761959741438_photo_optimized_small.webp"
+						data-full="content/photo-portfolio/dji_fly_20251031_191432_250_1761959741438_photo_optimized.jpg"
+						alt="Night crowd aerial" loading="lazy">
+				</figure>
+			</div>
+
+		</div>
+
+		<div class="blacklinethin"></div>
+		<div style="height:35px"></div>
+
+		<!-- ============================================================
+		     5. ECUADOR — ANDES MOUNTAINS & QUILOTOA
+		        Hero: Wide Andean ridges -> Details: Crater lake, switchbacks, waterfall & páramo
+		     ============================================================ -->
+		<div class="rows">
+
+			<!-- HERO (Full-width, full-res) -->
+			<div class="row">
+				<figure class="photo">
+					<img src="content/photo-portfolio/DJI_2.jpg" data-full="content/photo-portfolio/DJI_2.jpg"
+						alt="Andes mountain ridges hero" loading="lazy">
+				</figure>
+			</div>
+
+			<!-- DETAILS: Quilotoa crater lake + switchback road + waterfall canyon -->
+			<div class="row">
+				<figure class="photo">
+					<img src="content/photo-portfolio/_DSF3476_small.webp"
+						data-full="content/photo-portfolio/_DSF3476.jpg" alt="Quilotoa crater lake" loading="lazy">
+				</figure>
+				<figure class="photo">
+					<img src="content/photo-portfolio/DJI_4_small.webp" data-full="content/photo-portfolio/DJI_4.jpg"
+						alt="Mountain switchbacks aerial" loading="lazy">
+				</figure>
+				<figure class="photo">
+					<img src="content/photo-portfolio/_DSF2417_small.webp"
+						data-full="content/photo-portfolio/_DSF2417.jpg" alt="Andean waterfall canyon" loading="lazy">
+				</figure>
+			</div>
+
+			<!-- DETAILS: Páramo grass detail + valley aerial -->
+			<div class="row">
+				<figure class="photo">
+					<img src="content/photo-portfolio/_DSF0515_small.webp"
+						data-full="content/photo-portfolio/_DSF0515.jpg" alt="Páramo grass and misty peak"
+						loading="lazy">
+				</figure>
+				<figure class="photo">
+					<img src="content/photo-portfolio/DJI_1_small.webp" data-full="content/photo-portfolio/DJI_1.jpg"
+						alt="Andes valley aerial" loading="lazy">
+				</figure>
+			</div>
+
+		</div>
+
+		<div class="blacklinethin"></div>
+		<div style="height:35px"></div>
+
+		<!-- ============================================================
+		     6. QUITO — COLONIAL STREETS, COURTYARDS & ROOFTOPS
+		        Hero: Symmetrical courtyard -> Details: Cobblestone street, gate, rooftops
+		     ============================================================ -->
+		<div class="rows">
+
+			<!-- HERO (Full-width, full-res) -->
+			<div class="row">
+				<figure class="photo">
+					<img src="content/photo-portfolio/_DSF0959.jpg" data-full="content/photo-portfolio/_DSF0959.jpg"
+						alt="Symmetrical columbarium courtyard hero" loading="lazy">
+				</figure>
+			</div>
+
+			<!-- DETAILS: Volcano over rooftops + cobblestone street + iron gate + night roof -->
+			<div class="row">
+				<figure class="photo">
+					<img src="content/photo-portfolio/_DSF2459_small.webp"
+						data-full="content/photo-portfolio/_DSF2459.jpg" alt="Snow-capped volcano over rooftops"
+						loading="lazy">
+				</figure>
+				<figure class="photo">
+					<img src="content/photo-portfolio/_DSF2319_small.webp"
+						data-full="content/photo-portfolio/_DSF2319.jpg" alt="Quito cobblestone street" loading="lazy">
+				</figure>
+			</div>
+			<div class="row">
+
+				<figure class="photo">
+					<img src="content/photo-portfolio/_DSF0058_small.webp"
+						data-full="content/photo-portfolio/_DSF0058.jpg" alt="Iron gate courtyard view" loading="lazy">
+				</figure>
+				<figure class="photo">
+					<img src="content/photo-portfolio/_DSF0744_small.webp"
+						data-full="content/photo-portfolio/_DSF0744.jpg" alt="Warm light on tiled rooftop at night"
+						loading="lazy">
+				</figure>
+			</div>
+
+		</div>
+
+		<div class="blacklinethin"></div>
+		<div style="height:35px"></div>
+
+		<!-- ============================================================
+		     7. NEW YORK CITY & ARCHITECTURAL FACADE STUDIES
+		        Hero: Vessel at Hudson Yards -> Details: Little Island & facade geometry
+		     ============================================================ -->
+		<div class="rows">
+
+			<!-- HERO (Full-width, full-res) -->
+			<div class="row">
+				<figure class="photo">
+					<img src="content/photo-portfolio/_DSF0679.JPG" data-full="content/photo-portfolio/_DSF0679.JPG"
+						alt="Vessel at Hudson Yards hero" loading="lazy">
+				</figure>
+			</div>
+
+			<!-- DETAILS: Little Island columns centered & smaller with whitespace on both sides -->
+			<div class="row" style="justify-content: center">
+				<figure class="photo photo--inset" style="flex-basis: 45%">
+					<img src="content/photo-portfolio/_DSF0633_small.webp"
+						data-full="content/photo-portfolio/_DSF0633.JPG" alt="Little Island concrete columns"
+						loading="lazy">
+				</figure>
+			</div>
+
+			<!-- DETAILS: Glass facade grid + monument & gridded building facade -->
+			<div class="row">
+				<figure class="photo">
+					<img src="content/photo-portfolio/DSCF1178_small.webp"
+						data-full="content/photo-portfolio/DSCF1178.JPG" alt="Glass facade grid" loading="lazy">
+				</figure>
+				<figure class="photo">
+					<img src="content/photo-portfolio/_DSF8629_small.webp"
+						data-full="content/photo-portfolio/_DSF8629.JPG" alt="Monument and gridded building facade"
+						loading="lazy">
+				</figure>
+			</div>
+
+			<!-- DETAILS: Vertical facade fins + geodesic lattice structure -->
+			<div class="row">
+				<figure class="photo">
+					<img src="content/photo-portfolio/DSCF1333_small.webp"
+						data-full="content/photo-portfolio/DSCF1333.JPG" alt="Vertical facade fins" loading="lazy">
+				</figure>
+				<figure class="photo">
+					<img src="content/photo-portfolio/MVIMG_20190727_123644_small.webp"
+						data-full="content/photo-portfolio/MVIMG_20190727_123644.jpg" alt="Geodesic lattice structure"
+						loading="lazy">
+				</figure>
+			</div>
+
+		</div>
+
+		<div class="blacklinethin"></div>
+		<div style="height:35px"></div>
+
+		<!-- ============================================================
+		     8. SCULPTURAL STAIRCASES & CONCRETE GEOMETRY
+		        Hero: White spiral staircase -> Details: Concrete stairs, colonnade & monument
+		     ============================================================ -->
+		<div class="rows">
+
+			<!-- HERO (Full-width, full-res) -->
+			<div class="row">
+				<figure class="photo">
+					<img src="content/photo-portfolio/DJI_20250520172836_0019_D-3.jpg"
+						data-full="content/photo-portfolio/DJI_20250520172836_0019_D-3.jpg"
+						alt="White spiral staircase from above hero" loading="lazy">
+				</figure>
+			</div>
+
+			<!-- DETAILS: Concrete spiral staircase centered & smaller with whitespace on both sides -->
+			<div class="row" style="justify-content: center">
+				<figure class="photo photo--inset" style="flex-basis: 45%">
+					<img src="content/photo-portfolio/_DSF7414_small.webp"
+						data-full="content/photo-portfolio/_DSF7414.jpg" alt="Concrete spiral staircase" loading="lazy">
+				</figure>
+			</div>
+
+			<!-- DETAILS: Museum stair + sunlit colonnade on the line below -->
+			<div class="row">
+				<figure class="photo">
+					<img src="content/photo-portfolio/_DSF8192_small.webp"
+						data-full="content/photo-portfolio/_DSF8192.JPG" alt="Sculptural concrete museum staircase"
+						loading="lazy">
+				</figure>
+				<figure class="photo">
+					<img src="content/photo-portfolio/_DSF7302_small.webp"
+						data-full="content/photo-portfolio/_DSF7302.JPG" alt="White concrete structure in sunlight"
+						loading="lazy">
+				</figure>
+			</div>
+
+			<!-- DETAILS: Minimal wall/railing centered & smaller with whitespace on both sides -->
+			<div class="row" style="justify-content: center">
+				<figure class="photo photo--inset" style="flex-basis: 45%">
+					<img src="content/photo-portfolio/_DSF2098_small.webp"
+						data-full="content/photo-portfolio/_DSF2098.JPG" alt="Minimal architectural wall and railing"
+						loading="lazy">
+				</figure>
+			</div>
+
+		</div>
+
+		<div class="blacklinethin"></div>
+		<div style="height:35px"></div>
+
+		<!-- ============================================================
+		     9. VINEYARDS, TREES & NATURAL GEOMETRY
+		        Hero: Top-down vineyard rows -> Details: Wine bottle, palm frond & foggy trees
+		     ============================================================ -->
+		<div class="rows">
+
+			<!-- HERO (Full-width, full-res) -->
+			<div class="row">
+				<figure class="photo">
+					<img src="content/photo-portfolio/DJI_0126.jpg" data-full="content/photo-portfolio/DJI_0126.jpg"
+						alt="Top-down vineyard rows hero" loading="lazy">
+				</figure>
+			</div>
+
+			<!-- DETAILS: Wine bottle in valley + backlit palm leaf + foggy tree silhouettes -->
+			<div class="row">
+				<figure class="photo">
+					<img src="content/photo-portfolio/_DSF2373_small.webp"
+						data-full="content/photo-portfolio/_DSF2373.JPG" alt="Wine bottle in vineyard valley"
+						loading="lazy">
+				</figure>
+				<figure class="photo">
+					<img src="content/photo-portfolio/_DSF9734_small.webp"
+						data-full="content/photo-portfolio/_DSF9734.JPG" alt="Backlit palm leaf geometry"
+						loading="lazy">
+				</figure>
+
+			</div>
+			<div class="row">
+
+				<figure class="photo">
+					<img src="content/photo-portfolio/_DSF8724_small.webp"
+						data-full="content/photo-portfolio/_DSF8724.jpg" alt="Tree silhouette in fog" loading="lazy">
+				</figure>
+
+			</div>
+
+		</div>
+
+		<div style="height:30px"></div>
+		<div class="blackline"></div>
+		<div class="whitelineBig"></div>
+
+	</div>
+
+	<script>
+		// Automatically use the full-resolution image (data-full) whenever a photo
+		// is placed alone in a full-width row.
+		document.querySelectorAll('.rows .row > .photo:only-child:not(.photo--inset) img[data-full]').forEach(img => {
+			const fullSrc = img.getAttribute('data-full');
+			if (fullSrc && img.getAttribute('src') !== fullSrc) {
+				img.setAttribute('src', fullSrc);
+			}
+		});
+
+		// Auto-detect each photo's real aspect ratio and set --ar on it,
+		// so the CSS above doesn't need width/height typed in by hand.
+		document.querySelectorAll('.rows .row > .photo:not(.photo--stack):not(.photo--inset):not(.photo--text)').forEach(photo => {
+			const img = photo.querySelector('img');
+			if (!img) return;
+			const setRatio = () => {
+				if (img.naturalWidth && img.naturalHeight) {
+					photo.style.setProperty('--ar', img.naturalWidth / img.naturalHeight);
+				}
+			};
+			if (img.complete && img.naturalWidth) {
+				setRatio();
+			} else {
+				img.addEventListener('load', setRatio, { once: true });
+			}
+		});
+
+		// Also auto-estimate --ar for .photo--stack if not set manually via inline style="--ar: ..."
+		document.querySelectorAll('.rows .row > .photo--stack').forEach(stack => {
+			if (stack.style.getPropertyValue('--ar')) return;
+			const imgs = Array.from(stack.querySelectorAll('img'));
+			if (!imgs.length) return;
+			const updateStackRatio = () => {
+				if (imgs.every(img => img.naturalWidth && img.naturalHeight)) {
+					const invSum = imgs.reduce((sum, img) => sum + (img.naturalHeight / img.naturalWidth), 0);
+					if (invSum > 0) {
+						stack.style.setProperty('--ar', (1 / invSum).toFixed(3));
+					}
+				}
+			};
+			imgs.forEach(img => {
+				if (img.complete && img.naturalWidth) {
+					updateStackRatio();
+				} else {
+					img.addEventListener('load', updateStackRatio, { once: true });
+				}
+			});
+		});
+	</script>
+	<script src="imageModal.js"></script>
+</body>
+
+</html>

@@ -1,5 +1,5 @@
 import os
-from PIL import Image
+from PIL import Image, ImageOps
 
 # ==========================================
 # CONFIGURATION
@@ -38,7 +38,10 @@ def process_images(base_dir):
                 
                 # Open and process the image
                 try:
-                    with Image.open(filepath) as img:
+                    with Image.open(filepath) as raw_img:
+                        img = ImageOps.exif_transpose(raw_img)
+                        if img is None:
+                            img = raw_img
                         # Convert color palettes to truecolor so WebP compression works properly
                         if img.mode in ("RGBA", "P"):
                             img = img.convert("RGBA")
